@@ -24,44 +24,7 @@
 
 
 # 项目结构
-
-D:.
-|   README.md
-|   structure.txt
-|   
-+---corecode
-|   \---utils
-|           .gitkeep
-|           README.md
-|           
-+---data
-|   |   .gitkeep
-|   |   README.md
-|   |   
-|   +---processed
-|   |       .gitkeep
-|   |       
-|   \---raw
-|           .gitkeep
-|           
-+---experiments ← 实验与测试脚本（模型验证、参数调优等）
-|       .gitkeep
-|       exlog.docx
-|       
-+---paper
-|       .gitkeep
-|       paperlog.txt
-|       
-\---results
-    |   log.txt
-    |   
-    +---figures
-    |       .gitkeep
-    |       
-    \---table
-            .gitkeep
-
-
+```none
 ├─README.md ← 项目说明文件（当前文件）
 │
 ├─corecode/ ← 主要模型与算法代码（核心代码区）
@@ -89,3 +52,4 @@ D:.
 ├── figures/
 ├── tables/
 └── summary.txt
+```
