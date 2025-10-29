@@ -41,4 +41,4 @@ dependencies:
 
   # pip 安装的补充（如果 conda 包不全）
   - pip:
-      - lark-parser==1.1.7  # 符号解析扩展（可选）
+      - lark==1.1.7  # 符号解析扩展（可选）
