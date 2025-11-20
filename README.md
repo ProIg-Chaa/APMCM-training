@@ -49,7 +49,14 @@
 │ 
 │
 └─results/ ← 输出结果（图表、模型评估、结果总结）
-├── figures/
+├── figures/datafeature/
 ├── tables/
 └── summary.txt
 ```
+
+
+DAY 1:
+每个人完成一道题目2024 C
+
+1.参考优秀论文，看看优秀论文做了些什么 论文结构 数据可视化(matplotlib,matlab)
+2.把实现代码放在仓库里边，根据代码分类放置
