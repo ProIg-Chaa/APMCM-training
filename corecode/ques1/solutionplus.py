@@ -53,7 +53,7 @@ def get_corrected_elasticity(df):
     if calculated_elasticity > 0:
         print("【警告】检测到正的需求弹性，这违背经济学供需原理。")
         print("       原因可能是2018-2019非洲猪瘟导致的价格与需求同向波动。")
-        print("【修正】已强制将弹性修正为文献经验值: -0.8")
+        print("【修正】已强制将弹性修正为文献经验值: -1.0")
         return -1.0
     else:
         print("弹性系数符合逻辑(负值)，予以保留。")
