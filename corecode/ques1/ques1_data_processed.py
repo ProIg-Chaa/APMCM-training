@@ -6,23 +6,23 @@ import numpy as np
 # =====================================================
 
 # 中国从美国/巴西/阿根廷进口的大豆（量、值）
-df_trade = pd.read_csv("china_soybean_imports.csv")
+df_trade = pd.read_csv(r"D:\GS_LearningAndWork\MATH-model\APMCM-training\data\processed\ques1\中国大豆进口\formalresult.csv")
 # 示例列：year, origin (US/Brazil/Argentina), import_volume, import_value
 
 # 各国年度产量、库存（USDA PSD）
-df_supply = pd.read_csv("soybean_supply.csv")
+df_supply = pd.read_csv(r"D:\GS_LearningAndWork\MATH-model\APMCM-training\data\processed\ques1\各国出口数据\soybean_production_export_consumption_stock.csv")
 # 示例列：year, country, production, ending_stocks
 
 # 国际价格（期货均价）、FOB价格（如有）
-df_price = pd.read_csv("soybean_price.csv")
+df_price = pd.read_csv(r"D:\GS_LearningAndWork\MATH-model\APMCM-training\data\processed\ques1\大豆价格\formalresult.csv")
 # 示例列：year, futures_price, us_fob, br_fob, ar_fob
 
 # 汇率（人民币兑美元，美元兑巴西雷亚尔/阿根廷比索）
-df_fx = pd.read_csv("exchange_rates.csv")
+df_fx = pd.read_csv(r"D:\GS_LearningAndWork\MATH-model\APMCM-training\data\processed\ques1\exrate\exrate.csv")
 # 示例列：year, rmb_usd, usd_brl, usd_ars
 
 # 关税（MFN + 加征关税）
-df_tariff = pd.read_csv("tariffs.csv")
+df_tariff = pd.read_csv(r"D:\GS_LearningAndWork\MATH-model\APMCM-training\data\processed\ques1\tariff\tariff.csv")
 # 示例列：year, origin, mfn_rate, additional_rate
 
 # =====================================================
