@@ -3,7 +3,6 @@ import numpy as np
 import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 import seaborn as sns
-import os
 
 # --- Plot settings (Handle fonts if needed) ---
 plt.rcParams['font.sans-serif'] = ['Arial', 'DejaVu Sans']
@@ -130,10 +129,7 @@ def run_gradient_simulation(df, elasticity, target_country='United States'):
 # 4. Main Execution Block
 # ==========================================
 if __name__ == "__main__":
-    # 数据文件路径
-    file_path = r'C:\Users\15963\Desktop\APMCM-training\corecode\ques1\panel_cleaned.csv'
-    # 图片保存路径
-    save_path = r'C:\Users\15963\Desktop\APMCM-training\results\figures\ques1\final_prediction'
+    file_path = 'panel_cleaned.csv'
 
     try:
         df = load_and_prep_data(file_path)
@@ -168,11 +164,7 @@ if __name__ == "__main__":
         axes[1].set_ylabel('Export Value (Billion USD)', fontsize=12)
         axes[1].axvline(0, color='grey', linestyle='--', alpha=0.6)
 
-        # 创建保存目录（若不存在）
-        os.makedirs(save_path, exist_ok=True)
-        # 保存图片
         plt.tight_layout()
-        plt.savefig(os.path.join(save_path, 'tariff_impact_plot.png'), dpi=300, bbox_inches='tight')
         plt.show()
 
         # Key scenario table
