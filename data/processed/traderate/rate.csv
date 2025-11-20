@@ -1,0 +1,10 @@
+Year,CNY_per_USD,BRL_per_USD,ARS_per_USD,USD_per_USD,Notes / 主引用
+2017,6.76,3.19,17.72,1.00,"CNY: Macrotrends; BRL: FRED/Macrotrends; ARS: BCRA/Market series (see TradingEconomics/Wikipedia)."
+2018,6.63,3.87,37.49,1.00,"CNY: Macrotrends; BRL: FRED; ARS: exchange-rates/market series"
+2019,6.91,4.04,63.01,1.00,"CNY: Macrotrends; BRL: FRED; ARS: exchange-rates / Macrotrends"
+2020,6.90,5.16,85.49,1.00,"CNY: Macrotrends/FRED; BRL: FRED (2020=5.1587); ARS: market averages"
+2021,6.45,5.40,105.83,1.00,"CNY: Macrotrends/FRED; BRL: FRED (2021=5.3958); ARS: market averages"
+2022,6.73,5.16,169.15,1.00,"CNY: Macrotrends/FRED; BRL: FRED (2022=5.1605); ARS: market series (大幅贬值)"
+2023,7.09,4.99,371.66,1.00,"CNY: Macrotrends/FRED; BRL: FRED (2023=4.9946); ARS: 市场/官方并列汇率，数值为常见市场年均"
+2024,7.19,5.39,1030.78,1.00,"CNY: Macrotrends/FRED; BRL: FRED (2024=5.3872); ARS: 年末与年均差距大（见来源）"
+2025,7.21,~5.30,~1300–1400,1.00,"CNY: Macrotrends (2025 provisional avg ~7.21); BRL: market/FRED provisional; ARS: 2025市场波动剧烈，区间为近期市场平均（需按来源核验）"
