@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  21 NOV 2025 13:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  21 NOV 2025 19:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -610,117 +610,124 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \c@problem=\count328
 \c@proof=\count329
 \c@solution=\count330
+) (d:/programfile/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count331
+\float@exts=\toks37
+\float@box=\box69
+\@float@everytoks=\toks38
+\@floatcapt=\box70
 ) (d:/programfile/texlive/2024/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 22.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 23.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 22.
+(Font)              scaled to size 12.0pt on input line 23.
  (./test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 22.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 22.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 23.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 23.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 23.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 23.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 23.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -756,46 +763,47 @@ LaTeX Font Info:    ... okay on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 22.
-LaTeX Info: Command `\ddddot' is already robust on input line 22.
+LaTeX Info: Command `\dddot' is already robust on input line 23.
+LaTeX Info: Command `\ddddot' is already robust on input line 23.
 (d:/programfile/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
+\scratchcounter=\count332
 \scratchdimen=\dimen276
-\scratchbox=\box69
-\nofMPsegments=\count332
-\nofMParguments=\count333
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count334
+\scratchbox=\box71
+\nofMPsegments=\count333
+\nofMParguments=\count334
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count335
 \MPscratchDim=\dimen277
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
-\everyMPtoPDFconversion=\toks38
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
+\everyMPtoPDFconversion=\toks40
 ) (d:/programfile/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count337
-\c@mv@tabular=\count338
-\c@mv@boldtabular=\count339
+\c@lstlisting=\count338
+\c@mv@tabular=\count339
+\c@mv@boldtabular=\count340
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./apmcmthesis.cfg
 File: apmcmthesis.cfg 2019/11/05 v1.0 apmcmthesis configuration file
 ) (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1minntx.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/untxmia.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/untxsym.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/untxsyc.fd)
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 28.
+(Font)              scaled to size 12.0pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 37.
+(Font)              scaled to size 10.95pt on input line 38.
  [1{d:/programfile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}
 
 ]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 38.
+(Font)              scaled to size 17.28pt on input line 39.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 38.
+(Font)              scaled to size 17.28pt on input line 39.
  (./test.toc
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 4.
@@ -805,22 +813,33 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 
  [3]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 45.
+(Font)              scaled to size 14.4pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 45.
+(Font)              scaled to size 14.4pt on input line 46.
  [1] [2]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
-(Font)              scaled to size 12.0pt on input line 56.
- [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+(Font)              scaled to size 12.0pt on input line 57.
+ [3] [4] [5]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 112.
+
+Overfull \hbox (71.9001pt too wide) in paragraph at lines 113--134
+ [][] 
+ []
+
+
+Overfull \vbox (49.08505pt too high) has occurred while \output is active []
+
+ [6] [7] [8] [9] [10] [11] [12] [13] [14] (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 207.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 250.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
 File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 207.
- [13] 
+(Font)              scaled to size 10.95pt on input line 250.
+ [15] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./test.aux)
  ***********
@@ -829,18 +848,18 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14257 strings out of 476065
- 211346 string characters out of 5791683
+ 14332 strings out of 476065
+ 212591 string characters out of 5791683
  1956190 words of memory out of 5000000
- 36104 multiletter control sequences out of 15000+600000
- 588301 words of font info for 100 fonts, out of 8000000 for 9000
+ 36169 multiletter control sequences out of 15000+600000
+ 591558 words of font info for 107 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,12n,131p,1768b,1357s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on test.pdf (16 pages, 149641 bytes).
+<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on test.pdf (18 pages, 172399 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

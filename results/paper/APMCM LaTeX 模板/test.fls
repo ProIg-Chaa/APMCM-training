@@ -165,6 +165,8 @@ INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/float/float.sty
+INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/float/float.sty
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/url/url.sty
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/url/url.sty
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
@@ -290,6 +292,17 @@ INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-BoldItal
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-BoldItalic-tlf-ot1.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXBMI.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-BoldItalic-tlf-ot1r.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Bold-tlf-ot1.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txbmiaX.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1r.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmia.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -298,6 +311,8 @@ INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
 INPUT d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
 INPUT test.aux
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb

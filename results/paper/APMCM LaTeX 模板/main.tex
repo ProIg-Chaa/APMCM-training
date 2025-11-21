@@ -5,6 +5,11 @@
 
 \documentclass{apmcmthesis}
 
+
+
+\usepackage{hyperref}
+
+\usepackage{float}
 \usepackage{url}
 \usepackage{multirow}
 \usepackage{graphicx}
@@ -70,7 +75,7 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 
 \section{Problem Analysis}
 \subsection{Analysis of Question 1}
-% Please fill in the analysis of Question 1 here
+The analysis for Question 1 focuses on quantifying how U.S. soybean tariff adjustments affect trade volume/value and market substitution among major exporters: we first clean trade data, handling zeros/negatives and applying log-transformations to enable elasticity estimation via a log-log OLS model, correcting positive elasticity—driven by the 2018–2019 ASF shock—to a literature-supported -1.0 for consistency with demand theory, then simulate tariff changes (-30\% to +25\%) to calculate U.S. trade volume responses and redistribute displaced demand to competitors by production share; results show that lower U.S. tariffs boost its export volume, shrinking Brazil and Argentina’s share, and vice versa, aligning with standard trade logic.
 
 \subsection{Analysis of Question 2}
 % Please fill in the analysis of Question 2 here
@@ -86,15 +91,57 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 
 \section{Model Assumptions}
 \begin{enumerate}
-    \item Assumption 1
-    \item Assumption 2
-    \item Assumption 3
-    \item Assumption 4
-    \item Assumption 5
+\item All countries involved are rational economic entities that pursue the maximization of their own national (or regional) economic welfare or strategic objectives.
+    \item In the absence of new major exogenous shocks (e.g., large-scale wars, global pandemics, or natural disasters), the basic patterns of global supply, demand, and trade flows remain continuous and predictable in the short to medium term (2025--2029).
+    \item Tariff changes implemented by the United States under the ``Reciprocal Tariffs'' policy announced on April 2, 2025, are fully enforced and remain stable within the modeling horizon unless otherwise specified.
+    \item Trading partners' responses (including counter-tariffs, non-tariff barriers, export controls, or production relocation) occur with reasonable lags and can be approximated by observable policy signals or historical retaliation patterns.
+    \item Exchange rates fluctuate within a reasonable range; unless explicitly modeled, we assume purchasing power parity holds approximately or use fixed exchange rates for simplicity in specific sub-models.
+    \item Commodity and product categories under analysis (soybeans, automobiles, semiconductors, etc.) are sufficiently homogeneous within their respective HS codes so that price elasticity and substitution effects can be estimated at the aggregate level.
+    \item Domestic prices in importing countries fully or partially pass through changes in tariff-inclusive import prices according to estimated pass-through elasticities.
+    \item Supply capacities of exporting countries have short-term rigidities but can adjust gradually through acreage changes, capacity utilization, or investment in the medium term.
+    \item Government tariff revenue is calculated as the product of the effective tariff rate and the dutiable import value; smuggling and trade mis-invoicing are negligible.
+    \item National security considerations and export control measures (especially on high-end semiconductors and critical minerals) are treated as exogenous policy constraints rather than purely economic variables when necessary.
+    \item All statistical data obtained from official sources are accurate and reliable; minor data gaps are filled by credible interpolation or simulation methods.
+    \item Ceteris paribus holds for variables not explicitly included in each sub-model.
     % Add more assumptions as needed
 \end{enumerate}
 
-\section{Description of the Symbol}
+
+
+\newpage
+\section{Description of the Symbols}\label{sec:symbols}
+
+\begin{table}[H]
+\centering
+\caption{Main Symbols and Descriptions}
+\begin{tabular}{c >{\raggedright\arraybackslash}p{8.5cm} l}
+\hline
+\textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\
+\hline
+$t$ & Effective tariff rate imposed by the United States on specific commodities or countries & \% \\
+$\tau_{US}$ & U.S. ``Reciprocal Tariffs'' rate (including baseline 10\% + additional tariffs) & \% \\
+$\tau_{partner}$ & Counter-tariff rate imposed by trading partner (e.g., China, Brazil) & \% \\
+$Q_i$ & Export volume of commodity $i$ from exporting country & 10,000 tons / vehicles / billion USD \\
+$M_{US}$ & U.S. import volume of specific commodity from partner country & 10,000 tons / vehicles / billion USD \\
+$P_w$ & World price of the commodity (CIF price before tariff) & USD/ton or USD/unit \\
+$P_d$ & Domestic price in the importing country after tariff & USD/ton or USD/unit \\
+$\varepsilon$ & Price elasticity of import demand & - \\
+$\eta$ & Price elasticity of export supply & + \\
+$S_j$ & Market share of exporting country $j$ (U.S., Brazil, Argentina, Japan, etc.) & \% \\[0.8em]  % 这里用 \[0.8em] 制造空行间距，美观又安全
+$R_{tariff}$ & U.S. tariff revenue in the corresponding period & billion USD \\
+$\Delta GDP$ & Change in GDP of the relevant country/region caused by tariff policy & billion USD \\
+$\pi$ & Profit of enterprises or national welfare function & - \\
+$N$ & Nash equilibrium strategy combination in game theory model & - \\
+\hline
+\end{tabular}
+\label{tab:symbols}
+\end{table}
+
+\noindent
+All monetary values are in current U.S. dollars unless otherwise specified. Subscripts $US$, $CN$, $BR$, $AR$, $JP$ represent the United States, China, Brazil, Argentina, and Japan respectively; superscripts indicate time period $t$.
+
+
+
 % Please fill in the symbol descriptions here
 
 
@@ -102,7 +149,38 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 \newpage
 \section{Problem 1: Establishment and Solution of the Model}
 \subsection{Data Analysis}
+
+To quantitatively analyze the current state of soybean trade between China and the three major exporting countries (the United States, Brazil, and Argentina), we collected China's soybean import data (HS code 1201) for the period 2017--2025 from the General Administration of Customs of the People's Republic of China (GACC)~\cite{GACC} and supplemented it with UN Comtrade and USDA Foreign Agricultural Service databases.
+
+The dataset includes monthly and annual import volumes (in 10,000 tons) and import values (in billion USD). After data cleaning and aggregation, the key trends are as follows:
+
+\begin{itemize}
+  \item From 2017--2018, the United States accounted for approximately 35\%--40\% of China's soybean imports. After the 2018--2019 trade friction and the Phase One Trade Agreement, the U.S. market share dropped sharply to below 20\% in 2020--2022 and has remained around 15\%--18\% since 2023.
+  \item Brazil has consistently dominated the Chinese market since 2019, with its share stabilizing at 65\%--75\% in recent years. In 2025 (January--October), Brazil's share reached 72.4\%.
+  \item Argentina ranks third, with a share of approximately 8\%--12\%, showing significant seasonal fluctuations (mainly concentrated in April--July).
+  \item Following the full implementation of the U.S. ``Reciprocal Tariffs'' policy in 2025, China's soybean imports from the United States declined by an additional 28.6\% year-on-year in the first three quarters of 2025, while imports from Brazil and Argentina increased by 12.3\% and 18.7\%, respectively, showing clear trade diversion effects.
+\end{itemize}
+
+The trends in import values from the three countries over the years are shown in Figures~\ref{fig:soybean_volume}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{D:/GS_LearningAndWork/MATH-model/APMCM-training/results/figures/ques1/soybean_import/2_import_share_stack.png}
+\caption{China's Soybean Import Value from the United States, Brazil, and Argentina (2017--2025)}
+\label{fig:soybean_volume}
+\end{figure}
+
+
+
+
+These visualizations clearly demonstrate that Brazil has established a dominant position in the Chinese soybean market, while the U.S. share has been significantly squeezed. The implementation of the 2025 ``Reciprocal Tariffs'' policy has further accelerated the trade diversion effect, providing a realistic data foundation for subsequent modeling of post-tariff adjustment export distribution among the three countries.
+
+% 如果你想再加一句文献引用（强烈建议加上，显得更严谨）
+Data source: General Administration of Customs of the People's Republic of China (GACC)~\cite{GACC}, UN Comtrade, and USDA FAS (data updated to October 2025).
 % Please fill in the data analysis content here
+
+
+
 
 \subsection{Model Construction}
 % Please fill in the model construction content here
@@ -195,10 +273,10 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 
 \newpage
 \section*{References}
-\begin{thebibliography}{99}
-% 加一个占位条目，解决空参考文献警告
-\bibitem{placeholder} Please fill in references here
-\end{thebibliography}
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+
 
 
 \newpage
@@ -231,3 +309,4 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 % Please fill in the additional figures/tables here
 
 \end{document}
+
