@@ -1,11 +1,11 @@
 country,hs6,start_date,end_date,tariff_rate,type,notes
-Global,ALL,2016-01-01,2024-12-31,MFN 0-20%,MFN baseline,Average ~3%
-Global,ALL,2025-04-05,2025-08-06,10%,Reciprocal baseline,Added globally
-Global,ALL,2025-08-07,,10% + country-specific 0–40%,Reciprocal updated,
-China,ALL,2018-07-06,,7.5%–25%,Section 301,List 1–4
-China,ALL,2025-04-10,2025-11-15,30%–57%,Reciprocal + Section301 + IEEPA,Peak levels
-China,ALL,2025-11-16,,~30%,Post-agreement,Mutual reduction
+Global,ALL,2016-01-01,2024-12-31,MFN 0–20%,MFN baseline,Global MFN rates (avg ~3%)
+Global,ALL,2025-04-05,2025-08-06,10%,Reciprocal baseline,Global reciprocal tariff introduced
+Global,ALL,2025-08-07,,10% + country-specific 0–40%,Reciprocal updated,Post-Aug update with country tiers
+China,ALL,2018-07-06,,7.5%–25%,Section 301,List 1–4 tariffs (trade war)
+China,ALL,2025-04-10,2025-11-15,30%–57%,Reciprocal + Section 301 + IEEPA,Peak combined tariffs
+China,ALL,2025-11-16,,~30%,Post-agreement,Mutual tariff reduction after deal
 EU,Steel/Aluminum,2025-03-12,2025-06-03,25%,Section 232,Exemptions removed
-EU,Steel/Aluminum,2025-06-04,,50%,Section 232,Increased
-Brazil,ALL,2025-08-07,,50%,Reciprocal,
-Canada/Mexico,Selected,2025-02-01,2025-04-30,25%–35%,IEEPA + S232,Partial rollback later
+EU,Steel/Aluminum,2025-06-04,,50%,Section 232,Tariff doubled
+Brazil,ALL,2025-08-07,,50%,Reciprocal,Higher-tier reciprocal rate
+Canada/Mexico,Selected,2025-02-01,2025-04-30,25%–35%,IEEPA + Section 232,Partial rollback later
