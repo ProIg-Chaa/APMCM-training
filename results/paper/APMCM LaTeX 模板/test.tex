@@ -5,6 +5,11 @@
 
 \documentclass{apmcmthesis}
 
+
+
+\usepackage{hyperref}
+
+\usepackage{subcaption}
 \usepackage{float}
 \usepackage{url}
 \usepackage{multirow}
@@ -46,7 +51,7 @@
 \subsection{Background}
 Since the 2020s, driven by the "America First" trade ideology, U.S. tariff policy has entered a phase of in-depth adjustment. On April 2, 2025, the Trump administration introduced the so-called "Reciprocal Tariffs" policy, establishing a 10\% "minimum baseline tariff" on all trading partners and imposing additional higher tariffs on approximately 60 countries and regions with which the U.S. ran trade deficits, including China. The U.S. claimed that varying tariff rates and non-tariff barriers among trading partners made it harder for American manufacturers to sell products abroad, leading to persistent U.S. trade deficits and manufacturing decline. Thus, it imposed "reciprocal tariffs" on all countries to reduce its trade deficit and promote manufacturing reshoring. However, this policy is inconsistent with the fundamental principle of "Most-Favored-Nation (MFN) Treatment" of the World Trade Organization (WTO) and also challenges the WTO's tariff preference principle for developing countries. Under WTO rules, members must apply uniform tariffs to all partners, but the Trump administration exercised unilateral pressure and bilateral negotiations to implement widely varying tariff standards across economies, with agreed rates far exceeding previous levels. According to a tariff tracking tool jointly developed by the WTO and International Monetary Fund (IMF), the U.S. trade-weighted average tariff rate on all products rose sharply from 2.44\% at the start of 2025 to 20.11\% by August 2025. A Yale Budget Lab report noted that this tariff increase pushed the U.S. overall average effective tariff rate to its highest level since 1933.
 
-Beyond serving as a source of fiscal revenue, tariffs are an important tool of national trade policy. Appropriate tariffs can protect domestic industries from global economic monopoly and coercive practices, and are therefore permitted by the WTO. However, the impact of tariffs is multifaceted: excessively high tariffs hinder the development of global trade and are detrimental to long-term world economic growth. In the short term, high U.S. tariffs may bring benefits such as increased tariff revenue and a reduced trade deficit, but they also lead to declining exports and higher domestic consumer prices. For example, according to statistics from the General Administration of Customs of the People's Republic of China (GACC), in the month the "reciprocal tariffs" took effect, U.S. imports from China fell 20\% year-on-year, while U.S. exports to China dropped 13\% due to Chinese countermeasures. By May 2025, imports from China had fallen 35\% compared with May 2024, and exports to China declined 18\%. In absolute terms, the U.S. trade deficit with China narrowed from \$30.8 billion in May 2024 to \$18.0 billion in May 2025, but U.S. exports to China also fell from \$13.2 billion to \$10.4 billion, negatively impacting related U.S. industries. Overall, the adverse effects of high tariffs on U.S. trade and the economy cannot be overlooked.
+Beyond serving as a source of fiscal revenue, tariffs are an important tool of national trade policy. Appropriate tariffs can protect domestic industries from global economic monopoly and coercive practices, and are therefore permitted by the WTO. However, the impact of tariffs is multifaceted: excessively high tariffs hinder the development of global trade and are detrimental to long-term world economic growth. In the short term, high U.S. tariffs may bring benefits such as increased tariff revenue and a reduced trade deficit, but they also lead to declining exports and higher domestic consumer prices. For example, according to statistics from the General Administration of Customs of the People's Republic of China (GACC\footnote{\cite{GACC} General Administration of Customs of the People's Republic of China, UN Comtrade, and USDA FAS (October 2025)}), in the month the "reciprocal tariffs" took effect, U.S. imports from China fell 20\% year-on-year, while U.S. exports to China dropped 13\% due to Chinese countermeasures. By May 2025, imports from China had fallen 35\% compared with May 2024, and exports to China declined 18\%. In absolute terms, the U.S. trade deficit with China narrowed from \$30.8 billion in May 2024 to \$18.0 billion in May 2025, but U.S. exports to China also fell from \$13.2 billion to \$10.4 billion, negatively impacting related U.S. industries. Overall, the adverse effects of high tariffs on U.S. trade and the economy cannot be overlooked.
 
 The introduction of this policy marks a further escalation of U.S. unilateral trade protectionism, exerting a direct impact on the global economic and trade landscape. The implementation of the U.S. "Reciprocal Tariffs" policy has disrupted traditional tariff rules and the global trade order. Globally, developed economies such as Europe and the United States have long dominated the formulation of global tariff rules and the maintenance of trade order, but their trade policies have gradually tilted toward protectionism in recent years, with the U.S. "Reciprocal Tariffs" policy being a typical example. While in the short term, some countries with trade surpluses with the U.S. (such as China) have been significantly impacted by the tariffs, in the long run, the policy will further hinder global trade development, undermine world economic growth, trigger countermeasures from many countries, and exacerbate global trade frictions.
 
@@ -71,7 +76,7 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 
 \section{Problem Analysis}
 \subsection{Analysis of Question 1}
-% Please fill in the analysis of Question 1 here
+The analysis for Question 1 focuses on quantifying how U.S. soybean tariff adjustments affect trade volume/value and market substitution among major exporters: we first clean trade data, handling zeros/negatives and applying log-transformations to enable elasticity estimation via a log-log OLS model, correcting positive elasticity—driven by the 2018–2019 ASF shock—to a literature-supported -1.0 for consistency with demand theory, then simulate tariff changes (-30\% to +25\%) to calculate U.S. trade volume responses and redistribute displaced demand to competitors by production share; results show that lower U.S. tariffs boost its export volume, shrinking Brazil and Argentina’s share, and vice versa, aligning with standard trade logic.
 
 \subsection{Analysis of Question 2}
 % Please fill in the analysis of Question 2 here
@@ -104,7 +109,6 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 
 
 
-\newpage
 \section{Description of the Symbols}\label{sec:symbols}
 
 \begin{table}[H]
@@ -143,115 +147,202 @@ All monetary values are in current U.S. dollars unless otherwise specified. Subs
 
 % 手动分页，避免Problem部分跨页混乱
 \newpage
-\section{Problem 1: Model Establishment and Solution of the Model}
+\section{Problem 1: Establishment and Solution of the Model}
+\subsection{Data Collection}
 
-\subsection{Data Sources and Preprocessing}
+Through a literature review, the following factors that influence the export volumes of Brazil, the United States, and Argentina after tariff adjustments have been identified, as illustrated in Figure 2.
 
-The dataset used in this study is a panel combining multiple authoritative sources:
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/soybean_data_hierarchy.png}
+\caption{China's Soybean Import Value from the United States, Brazil, and Argentina(2017--2025)}
+\label{fig:soybean_volume}
+\end{figure}
+
+
+
+
+
+\subsubsection{Data Analysis}
+
+To quantitatively analyze the current state of soybean trade between China and the three major exporters—the United States, Brazil, and Argentina—we firstly collected China’s soybean import data (HS code 1201) for the period 2017--2025 from the General Administration of Customs of the People’s Republic of China\hspace{0pt} (GACC\footnote{Data sources include the General Administration of Customs of the People's Republic of China (GACC), UN Comtrade, and USDA Foreign Agricultural Service (October 2025).})
+, supplemented with data from UN Comtrade and the USDA Foreign Agricultural Service.
+
+The final dataset we obtained includes the soybean import volume, soybean value of China from the United States, Argentina, and Brazil, as well as the changes in the exchange rates of these three countries against the US dollar, the changes in China-US tariffs, and other relevant indicators.
+
+\paragraph{Market Concentration and Trade Diversion Effect}
+The analysis confirms China’s high dependence on the three origins, with **Brazil consistently dominating the market**. Brazil’s annual import volume increased substantially from $50.93$ million tons in 2017 to $79.0$ million tons in 2025, with its market share soaring from approximately 55\% to over 70\%. This expansion occurred despite high volatility in the **Brazilian Real exchange rate**, suggesting that its low cost base and reliable supply outweigh currency risks for Chinese buyers. Conversely, U.S. exports to China were significantly disrupted by the 2018--2019 trade tensions, plunging from $32.86$ million tons in 2017 to $16.64$ million tons in 2018. The **trade-diversion effect** is evident during this period: the sharp drop in U.S. market share was immediately and almost entirely absorbed by Brazil and Argentina, indicating that South American soybeans served as a **near-perfect substitute** for U.S. product.
+
+\paragraph{Price Volatility and Tariff Influence}
+The \textbf{cif-tax price} time series reveals how tariff adjustments directly translated into higher final costs for Chinese importers. During the trade tensions, the reciprocal tariffs imposed on U.S. soybeans caused a measurable spike in the final import price from the U.S. relative to its competitors. This differential in the \texttt{cif\_tax\_price} is the primary mechanism driving the observed \textbf{sharp reduction in U.S. import volume} and the \textbf{rise in the Argentine/Brazilian volumes}. This relationship between price and volume, although complex due to confounding factors like the African Swine Fever (ASF) epidemic which affected total demand, forms the basis for the price elasticity estimation in our model. Argentina, while a smaller supplier, maintained a relatively stable market share (5\%--10\%), primarily reflecting seasonal production and export fluctuations rather than price sensitivity alone.
+
+\paragraph{Supply Capacity and Model Justification}
+The collected **production volume** data from the exporting countries is crucial for controlling supply-side effects in the econometric model. For instance, temporary production shortfalls in the U.S. due to weather or planting decisions might lead to a price increase and a volume decrease, regardless of tariffs. By including the `production` variable in the OLS regression, we isolate the true **price elasticity** of demand, making the estimate more robust. Furthermore, the substantial and reliable supply from Brazil and Argentina, evidenced by their high production figures, confirms their ability to fully cover the market gap created by U.S. export shortfalls, thereby justifying the **perfect substitution assumption** used in the tariff simulation engine.
+
+The following figure presents separately the trends of China's soybean imports, the changes in the exchange rates of these three countries against the US dollar, and the changes in the tariffs imposed by China on the United States.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/2_import_share_stack.png}
+\caption{China's Soybean Import Value and Market Share from the United States, Brazil, and Argentina (2017--2025)}
+\label{fig:soybean_volume}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/exchange_rate_trend_optimized.png}
+    \caption{The exchange rate trends of China, Argentina, and Brazil against the US dollar\\(2017--2025)}
+    \label{fig:exchange_rate}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/1_tariff_trend.png}
+    \caption{The changes in tariffs imposed by China on the United States and MFN countries\\(2018--2025)}
+    \label{fig:tariff_trend}
+\end{subfigure}
+\caption{Exchange rate and tariff trends related to Chinese soybean imports}
+\label{fig:combined_figures}
+\end{figure}
+
+
+
+
+
+
+These visualizations clearly demonstrate that Brazil has established a dominant position in the Chinese soybean market, while the U.S. share has been significantly squeezed. The implementation of the 2025 ``Reciprocal Tariffs'' policy has further accelerated the trade diversion effect, providing a realistic data foundation for subsequent modeling of post-tariff adjustment export distribution among the three countries.
+
+% 如果你想再加一句文献引用（强烈建议加上，显得更严谨）
+
+
+
+% Please fill in the data analysis content here
+
+
+\subsubsection{Analysis of Controlling Factors}
+
+\noindent Beyond the direct impact of tariffs and prices, several other factors significantly influence the intricate dynamics of the global soybean trade. These controlling factors are crucial for understanding the broader context of China's import decisions and the supply capabilities of major exporting nations. Our model incorporates some of these factors in the econometric estimation phase to improve the accuracy of price elasticity, while acknowledging the limitations in fully endogenizing all macro-level influences in the simulation.
+
+\paragraph{Production Volume (Supply Capacity)}
 \begin{itemize}
-    \item Monthly import volume and value of soybeans from the United States, Brazil, and Argentina to China: competition attachments, General Administration of Customs of China (GACC), and UN Comtrade;
-    \item Annual production and ending stocks of the three countries: USDA PSD Online;
-    \item CIF price inclusive of tariffs, tariff rates (including the hypothetical 2025 rates given in the problem), RMB/USD/BRL exchange rates: WTO tariff database, World Bank, and competition description;
-    \item Baltic Dry Index (BDI) and soybean futures prices are used as auxiliary references.
+    \item \textbf{Role in Model}: As seen in Equation (1), $\ln(\text{Production}_{i,t})$ is included as an explanatory variable in the OLS regression. This accounts for the supply-side capacity of each exporting country ($i$) at time $t$. Higher production in an exporting country generally indicates greater availability for export, potentially influencing the quantity China imports from that origin. This variable helps to isolate the pure price effect by controlling for supply shocks or long-term growth trends in production.
+    \item \textbf{Data Source}: Annual production and stock data from USDA PSD Online are utilized, providing a reliable measure of the export potential from the United States, Brazil, and Argentina.
+    \item \textbf{Analytical Impact}: While production directly affects the observed trade volumes in the historical data, in the simulation phase, it primarily serves as a fixed share for allocating trade diverted from the US to its competitors. Future dynamic changes in production due to tariff adjustments are not directly modeled, representing a simplification.
 \end{itemize}
 
-Data cleaning steps: remove records with missing values; replace zero or negative values in import volume, CIF price inclusive of tax, production, import value, and total tariff with NaN and drop them; then take natural logarithms of the core variables to construct a log-log regression model.
+\paragraph{Exchange Rates}
+
+\begin{itemize}
+    \item \textbf{Role in Model}: Although not explicitly included as a direct regressor in the OLS formula (Equation 1), exchange rates (e.g., RMB/USD, RMB/BRL, RMB/ARS) are implicitly captured within the \texttt{cif\_tax\_price} variable. Changes in exchange rates affect the local currency cost of imported soybeans for China, thereby influencing the \texttt{cif\_tax\_price} and, consequently, China's import demand.
+    \item \textbf{Data Source}: Exchange rate data from the World Bank and IMF provide the necessary inputs for calculating the local currency equivalent of international soybean prices.
+    \item \textbf{Analytical Impact}: Fluctuations in exchange rates can alter the competitiveness of different origins. A depreciation of the Brazilian Real against the RMB, for instance, would make Brazilian soybeans relatively cheaper for Chinese importers, even if the USD-denominated international price remains constant. This effect is integrated into the price variable during data preprocessing.
+\end{itemize}
+
+\paragraph{Freight Costs (Shipping Rates)}
+
+\begin{itemize}
+    \item \textbf{Role in Model}: Similar to exchange rates, freight costs are implicitly incorporated into the \texttt{cif\_tax\_price}. The "Cost" component of CIF includes transportation expenses. Higher shipping costs directly increase the landed price of soybeans, which can deter imports or shift sourcing to closer or more cost-effective origins.
+    \item \textbf{Data Source}: The Baltic Dry Index (BDI) and similar shipping rate indices (e.g., from Baltic Exchange) provide proxies for global freight costs, contributing to the construction of \texttt{cif\_tax\_price}.
+    \item \textbf{Analytical Impact}: Significant changes in global shipping costs can reconfigure trade routes and affect the relative competitiveness of distant suppliers like the US and Brazil versus closer ones if they existed. By including these in the \texttt{cif\_tax\_price}, the model accounts for their historical influence on trade volumes.
+\end{itemize}
+
+
+\paragraph{Macroeconomic Conditions (Implicit)}
+\begin{itemize}
+    \item \textbf{Role in Model}: Macroeconomic factors, such as overall economic growth, consumer income, and industrial demand (e.g., for animal feed), influence the aggregate demand for soybeans in China. While not explicitly modeled as separate regressors, their impact is partially absorbed by the constant term ($\beta_0$) and the time series nature of the panel data. Severe macroeconomic downturns or upswings would inevitably affect China's total soybean import demand, which might be reflected in the residual error ($\epsilon_{i,t}$) or general shifts in demand not directly tied to price or production.
+    \item \textbf{Analytical Impact}: The current model primarily focuses on price and supply-side elasticities for a given level of overall demand. Future refinements could include a separate demand-side model that accounts for Chinese economic indicators explicitly.
+\end{itemize}
+
+\paragraph{Fixed Effects for Origin}
+\begin{itemize}
+    \item \textbf{Role in Model}: The `C(origin)` term in Equation (1) represents country-specific fixed effects. These capture unobserved, time-invariant characteristics of each exporting country that affect China's import volume, such as established trade relationships, quality perceptions, logistical efficiencies, or political factors not explicitly measured.
+    \item \textbf{Analytical Impact}: Fixed effects are crucial for controlling for omitted variable bias that might arise from constant differences between the US, Brazil, and Argentina, thereby allowing for a more accurate estimation of price and production elasticities.
+\end{itemize}
 
 \subsection{Model Construction}
 
-\subsubsection{Price Elasticity of Demand Estimation (Log-Log Model)}
+\noindent This model is designed to assess the impact of changes in US tariffs on soybean exports to China, specifically evaluating the effects on the trade flows of the three largest producers: the United States, Brazil, and Argentina. A two-stage methodology is employed: first, an econometric model is used to estimate the price elasticity of soybean import demand; second, a tariff gradient simulation engine is constructed to predict the reallocation of trade volume and value based on this elasticity.
 
-We estimate China's import demand function for soybeans using the following panel fixed-effects model:
+\subsubsection{Price Elasticity Estimation Model}
+
+To accurately capture the sensitivity of China's soybean import volume to price fluctuations, we utilize a **Panel Data Ordinary Least Squares (OLS)** regression model in a Log-Log functional form. This structure allows for direct estimation of the price elasticity coefficient ($\beta_1$), while incorporating country fixed effects ($\text{Origin}_i$) to control for unobserved, time-invariant differences across the exporting nations.
+
+\paragraph{Econometric Model Formula}
+The Log-Log model is specified as follows:
 \begin{equation}
-\ln V_{it} = \beta_0 + \beta_1 \ln P_{it} + \beta_2 \ln Prod_{it} + \sum_{k} \gamma_k D(origin_k) + \varepsilon_{it}
+    \ln(\text{Volume}_{i,t}) = \beta_0 + \beta_1 \ln(\text{Price}_{i,t}) + \beta_2 \ln(\text{Production}_{i,t}) + \sum_{i=2}^{N} \gamma_i \cdot \text{Origin}_i + \epsilon_{i,t}
 \end{equation}
-where  
-$V_{it}$ = import volume (metric tons) from country $i$ in period $t$;\\
-$P_{it}$ = CIF price inclusive of tariff (\text{USD/ton});\\
-$Prod_{it}$ = soybean production of exporting country $i$ in period $t$ (controls supply capacity);\\
-$D(\text{origin}_k)$ = origin fixed effects.
-
-
-The coefficient $\beta_1$ is the price elasticity of import demand.
-
-Empirical regression yields a positive $\beta_1$, which contradicts standard demand theory. This anomaly arises from the 2018–2019 African Swine Fever (ASF) shock in China that simultaneously drove up both soybean prices and import volumes, creating severe endogeneity. Following economic theory and widely accepted literature values for soybean demand elasticity (typically –0.8 to –1.2), we correct the estimated elasticity to –1.0 for subsequent simulation.
-
-\subsubsection{Tariff Adjustment Gradient Simulation Model}
-
-Using the most recent year in the data as the baseline, we simulate the impact of U.S.-China tariff changes on the export volumes and values of the United States, Brazil, and Argentina.
-
-Let:
+Where:
 \begin{itemize}
-    \item $\tau_{US}^0$: current total tariff rate on U.S. soybeans;
-    \item $\Delta\tau$: tariff adjustment (ranging from –30\% to +25\%);
-    \item $\eta = -1.0$: corrected price elasticity of demand.
+    \item $\ln(\text{Volume}_{i,t})$: The natural logarithm of China's monthly soybean import volume from exporting country $i$ at time $t$.
+    \item $\ln(\text{Price}_{i,t})$: The natural logarithm of the Cost, Insurance, and Freight (CIF), tax-paid price of soybeans imported from country $i$.
+    \item $\ln(\text{Production}_{i,t})$: The natural logarithm of the soybean production volume for country $i$ at time $t$.
+    \item $\text{Origin}_i$: Dummy variables representing the fixed effects of the exporting countries (US, Brazil, Argentina).
+    \item $\beta_1$: The price elasticity coefficient ($\eta$), representing the percentage change in import volume resulting from a 1\% change in price.
 \end{itemize}
 
-The relative price change caused by the tariff adjustment is
-\begin{equation}
-\frac{P_{new}}{P_{old}} = \frac{1+\tau_{US}^0 + \Delta\tau}{1+\tau_{US^0} \implies \Delta\% P = \frac{1+\tau_{US}^0 + \Delta\tau}{1+\tau_{US}^0} - 1
-\end{equation}
+\paragraph{Elasticity Correction Mechanism}
+Due to potential historical shocks (such as the African Swine Fever epidemic), the estimated $\beta_1$ may occasionally be positive, which violates the fundamental law of demand. To ensure the economic soundness of the simulation, if the estimated $\beta_1 > 0$, the price elasticity will be conservatively corrected to a value commonly used in trade literature: $\eta = -1.0$.
 
-The percentage change in U.S. export volume is
-\begin{equation}
-\Delta\% V_{US} = \eta \times \Delta\% P
-\end{equation}
+\subsubsection{Tariff Gradient Simulation Engine}
 
-U.S. new export volume and value are then
-\begin{align}
-V_{US}^{new} &= V_{US}^0 \times (1 + \Delta\% V_{US}) \\
-Value_{US}^{new} &= Value_{US}^0 \times (1 + \Delta\% V_{US})
-\end{align}
-(assuming unit value remains approximately constant in the short run).
+The simulation engine forecasts the reallocation of trade flows among the three countries based on the corrected price elasticity ($\eta$) under a predefined tariff adjustment gradient ($\Delta t$) imposed by the US. The simulation uses the latest complete year's trade data as the baseline, assuming that Brazil and Argentina are perfect substitutes for US soybeans in the Chinese market.
 
-The volume lost (or gained) by the United States is fully redistributed to Brazil and Argentina according to their relative production shares (substitution effect under Armington assumption):
-\begin{equation}
-\Delta V_j = -\Delta V_{US} \times \frac{Prod_j}{\sum_{k\neq US} Prod_k}, \quad j = \text{Brazil, Argentina}
-\end{equation}
+\paragraph{US Trade Flow Changes}
+A tariff adjustment $\Delta t$ results in a new US tariff rate, $\text{Tariff}^{\text{new}}_{\text{US}} = \max(0, \text{Tariff}^{\text{base}}_{\text{US}} + \Delta t)$.
 
-Competitors' new values are calculated as new volume × original unit price.
+\begin{enumerate}
+    \item \textbf{Price Change Rate ($\Delta P_{\text{US}}$)}
+    The rate of change in import price induced by the tariff adjustment:
+    \begin{equation}
+        \Delta P_{\text{US}} = \frac{1 + \text{Tariff}^{\text{new}}_{\text{US}}}{1 + \text{Tariff}^{\text{base}}_{\text{US}}} - 1
+    \end{equation}
 
-We simulate 56 scenarios with $\Delta\tau$ evenly spaced from –30\% to +25\%.
+    \item \textbf{Import Volume Change Rate ($\Delta Q_{\text{US}}$)}
+    The change rate of import volume, calculated using the price elasticity ($\eta$):
+    \begin{equation}
+        \Delta Q_{\text{US}} = \Delta P_{\text{US}} \times \eta
+    \end{equation}
 
-\subsection{Model Solving and Key Results}
+    \item \textbf{New Import Volume and Value}
+    \begin{align*}
+        \text{Volume}^{\text{new}}_{\text{US}} &= \text{Volume}^{\text{base}}_{\text{US}} \times (1 + \Delta Q_{\text{US}}) \\
+        \text{Value}^{\text{new}}_{\text{US}} &= \text{Value}^{\text{base}}_{\text{US}} \times (1 + \Delta Q_{\text{US}})
+    \end{align*}
+\end{enumerate}
 
-The Python program (see Appendix Code) implements the above procedure and generates the following outputs:
+\paragraph{Competitor Substitution Effect}
+We assume that any increase or decrease in US trade volume ($\Delta \text{Volume}_{\text{US}}$) is fully transferred to the competing nations (Brazil and Argentina) through a substitution effect.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{tariff_impact_plot.png}
-\caption{Impact of U.S. Tariff Adjustments on Soybean Export Volume (left) and Export Value (right) to China (baseline year = latest year in data)}
-\label{fig:tariff_impact}
-\end{figure}
+\begin{enumerate}
+    \item \textbf{Transfer Volume ($\Delta Q_{\text{transfer}}$)}
+    The total trade volume change that needs to be absorbed by or shifted from competitors:
+    \begin{equation}
+        \Delta Q_{\text{transfer}} = \text{Volume}^{\text{base}}_{\text{US}} - \text{Volume}^{\text{new}}_{\text{US}} = - \Delta \text{Volume}_{\text{US}}
+    \end{equation}
+    
+    \item \textbf{Substitution Allocation}
+    The transfer volume $\Delta Q_{\text{transfer}}$ is allocated to competitor $c$ based on its **proportion of total production** ($\text{Share}^{\text{prod}}_c$) in the baseline year:
+    \begin{equation}
+        \Delta \text{Volume}_{c} = \Delta Q_{\text{transfer}} \times \text{Share}^{\text{prod}}_c
+    \end{equation}
+    Where, $\text{Share}^{\text{prod}}_c = \frac{\text{Production}^{\text{base}}_c}{\sum_{c \in \{\text{Brazil, Argentina}\}} \text{Production}^{\text{base}}_c}$.
 
-\begin{table}[htbp]
-\centering
-\caption{Export Volume Distribution under Typical Tariff Scenarios (Million Metric Tons)}
-\begin{tabular}{lrrr}
-\toprule
-Tariff Adjustment & United States & Brazil & Argentina \\
-\midrule
--25\% & 68.24 & 42.18 & 8.76 \\
--10\% & 52.37 & 51.33 & 10.66 \\
- 0\% (baseline) & 41.85 & 58.92 & 12.24 \\
-+10\% & 33.49 & 64.71 & 13.44 \\
-+25\% & 22.97 & 72.30 & 15.01 \\
-\bottomrule
-\end{tabular}
-\label{tab:key_scenarios}
-\end{table}
+    \item \textbf{New Competitor Import Volume and Value}
+    Assuming the unit import price for competitors remains constant, the new volume and value are:
+    \begin{align*}
+        \text{Volume}^{\text{new}}_c &= \max(0, \text{Volume}^{\text{base}}_c + \Delta \text{Volume}_{c}) \\
+        \text{Value}^{\text{new}}_c &= \text{Volume}^{\text{new}}_c \times \left( \frac{\text{Value}^{\text{base}}_c}{\text{Volume}^{\text{base}}_c} \right)
+    \end{align*}
+\end{enumerate}
+% Please fill in the model construction content here
 
-\subsection{Result Analysis and Policy Implications}
+\subsection{Model Solving}
+% Please fill in the model solving content here
 
-1. When tariffs on U.S. soybeans are reduced (e.g., –25\%), U.S. exports to China increase dramatically (from ~42 Mt to over 68 Mt), while Brazil and Argentina lose corresponding market share.
-
-2. When tariffs are raised by 25\%, U.S. exports drop to approximately 23 Mt, with almost all lost volume captured by Brazil and marginally by Argentina.
-
-3. Export value follows a similar pattern to volume because unit prices among the three origins are close and the substitution effect dominates.
-
-4. The simulation results fully conform to standard trade theory after correcting the elasticity sign, confirming that lowering tariffs on U.S. soybeans would substantially restore American market share in China and reduce the dominance currently enjoyed by Brazil.
-
-The model provides a transparent, replicable quantitative tool for evaluating the trade consequences of future U.S.-China tariff policies on the global soybean market.
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
 
 
 \newpage
@@ -335,10 +426,10 @@ The model provides a transparent, replicable quantitative tool for evaluating th
 
 \newpage
 \section*{References}
-\begin{thebibliography}{99}
-% 加一个占位条目，解决空参考文献警告
-\bibitem{placeholder} Please fill in references here
-\end{thebibliography}
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+
 
 
 \newpage
@@ -371,3 +462,4 @@ The model provides a transparent, replicable quantitative tool for evaluating th
 % Please fill in the additional figures/tables here
 
 \end{document}
+
