@@ -1,19 +1,21 @@
 # Fdb version 4
-["bibtex main"] 1763736675.77637 "main.aux" "main.bbl" "main" 1763736702.60133 0
+["bibtex main"] 1763742389.81166 "main.aux" "main.bbl" "main" 1763742578.12562 0
   "./refs.bib" 1763728578 210 ac587dd4b9a8a135e73fa6299513311e ""
   "d:/programfile/texlive/2024/texmf-dist/bibtex/bst/base/apalike.bst" 1727499712 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1763736701 11528 b391255c05574089ef4914432efe9427 "pdflatex"
+  "main.aux" 1763742577 12812 c0b8a3d80e02579a35b41301178b19fd "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1763736698.93744 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" "main.pdf" "main" 1763736702.60177 0
+["pdflatex"] 1763742574.15665 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" "main.pdf" "main" 1763742578.12602 0
   "apmcmthesis.cfg" 1763516798 3135 0a0756cee74f785872b894ae4e85c566 ""
   "apmcmthesis.cls" 1763516798 13415 41f2f271e9a04b028112181c0e45ab2b ""
-  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" 1763736698 34875 da263ea395dc06d6beb75f08c5f4ebaf ""
+  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" 1763742573 43092 0ff837cd216101419d796e56c8bb2823 ""
+  "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1727499787 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1727500340 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1727500696 3124 3813fd4c981d99822890a2861b0d274c ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727499996 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1727499904 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1727499634 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1727499634 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm" 1727499634 1112 cbc11b646ccc26599775160605aaee3a ""
@@ -66,6 +68,7 @@
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txsys.tfm" 1727500340 1660 d580b6f461bbd2ab53b1fd3851108c0e ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm" 1727500696 1600 20cdf11dab97d5d39e847571f9314407 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm" 1727500789 1200 1032be7d597a4dce33bcda3c08fc1be0 ""
+  "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1727499787 136101 b18d10b3436f8cb0cd04046deb340fe7 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb" 1727500340 32409 eee1344d05b8bec92e60a2ec9a7f49e3 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb" 1727500340 34733 61fa3c01fac511e451670c1b454ff211 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb" 1727500340 33424 8b2b99d9d7571201cc7eece13c492c55 ""
@@ -213,11 +216,12 @@
   "figures/2_import_share_stack.png" 1763625635 694347 ce7ff870294784bbc222f45fa388ea58 ""
   "figures/exchange_rate_trend_optimized.png" 1763625635 289734 532b4c019dfc6c67408b4b573cbb49a3 ""
   "figures/soybean_data_hierarchy.png" 1763730308 32979 2c45f039ac2efc99f2d9ac2b7cdd6b52 ""
-  "main.aux" 1763736701 11528 b391255c05574089ef4914432efe9427 "pdflatex"
-  "main.bbl" 1763736676 203 5458a622e2144e3f0202bc4f338433ac "bibtex main"
-  "main.out" 1763736701 8691 e361edc3cb5c717b52a7594ef284e911 "pdflatex"
-  "main.tex" 1763736698 34875 da263ea395dc06d6beb75f08c5f4ebaf ""
-  "main.toc" 1763736701 5701 250087f877815476b5efdb9629b9a410 "pdflatex"
+  "figures/tariff_impact_plot.png" 1763654608 229843 0eda54dfec4bdc3c9438326a80402d0d ""
+  "main.aux" 1763742577 12812 c0b8a3d80e02579a35b41301178b19fd "pdflatex"
+  "main.bbl" 1763742390 203 5458a622e2144e3f0202bc4f338433ac "bibtex main"
+  "main.out" 1763742577 9522 0134d11a61bd1683711a52f6bd4fa9a5 "pdflatex"
+  "main.tex" 1763742573 43092 0ff837cd216101419d796e56c8bb2823 ""
+  "main.toc" 1763742577 6377 8beff46869fdd895bba04f242decdc95 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
