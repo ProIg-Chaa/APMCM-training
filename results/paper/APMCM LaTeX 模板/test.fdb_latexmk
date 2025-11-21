@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex test"] 1763736937.46311 "test.aux" "test.bbl" "test" 1763736941.55321 0
+["bibtex test"] 1763743214.76188 "test.aux" "test.bbl" "test" 1763743219.1985 0
   "./refs.bib" 1763728578 210 ac587dd4b9a8a135e73fa6299513311e ""
   "d:/programfile/texlive/2024/texmf-dist/bibtex/bst/base/apalike.bst" 1727499712 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "test.aux" 1763736940 11528 b391255c05574089ef4914432efe9427 "pdflatex"
+  "test.aux" 1763743218 11403 e8d04a98397062b1ffc46d2c4a4aae90 "pdflatex"
   (generated)
   "test.bbl"
   "test.blg"
   (rewritten before read)
-["pdflatex"] 1763736937.88166 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex" "test.pdf" "test" 1763736941.55363 0
+["pdflatex"] 1763743215.1371 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex" "test.pdf" "test" 1763743219.19887 0
   "apmcmthesis.cfg" 1763516798 3135 0a0756cee74f785872b894ae4e85c566 ""
   "apmcmthesis.cls" 1763516798 13415 41f2f271e9a04b028112181c0e45ab2b ""
-  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex" 1763736929 34875 da263ea395dc06d6beb75f08c5f4ebaf ""
+  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex" 1763743205 30217 7f631af3b960b0dc1333674cb410bdba ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1727500340 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1727500696 3124 3813fd4c981d99822890a2861b0d274c ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727499996 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -37,7 +37,6 @@
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1727500172 520 4889cce2180234b97cad636b6039c722 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXBMI.tfm" 1727500340 1392 a17207635f5e84ce99b1f3136dfb1ea1 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm" 1727500340 1408 ef71a9098da4d5a1a85b5920860b6731 ""
-  "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI7.tfm" 1727500340 1556 4df22ac3e5cc03ff0898d83d8817c6cf ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm" 1727500340 2976 0e6dc2c6c1f88a98285fe5183da02574 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1r.tfm" 1727500340 2980 5351564c3231510c7077e78a0bc39960 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-BoldItalic-tlf-ot1.tfm" 1727500340 3064 570d50df65742c0d191f091857b6fda3 ""
@@ -67,7 +66,6 @@
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm" 1727500696 1600 20cdf11dab97d5d39e847571f9314407 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm" 1727500789 1200 1032be7d597a4dce33bcda3c08fc1be0 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb" 1727500340 32409 eee1344d05b8bec92e60a2ec9a7f49e3 ""
-  "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb" 1727500340 34733 61fa3c01fac511e451670c1b454ff211 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb" 1727500340 33424 8b2b99d9d7571201cc7eece13c492c55 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb" 1727500340 56686 3d6d86b0a770bb2c243f4c4351685fc2 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb" 1727500340 45943 7899c7ea4fdd83f3625178689816dcee ""
@@ -83,10 +81,8 @@
   "d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf" 1727500340 956 44be8e0aea9c6d145fc21c9948a6b4b5 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxexx.vf" 1727500340 1716 73c8d39d4c3ace9ec98a8f066bb3b494 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi.vf" 1727500340 2612 4fd3785b7e98639f68f908a08c642071 ""
-  "d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi7.vf" 1727500340 2576 4000b56c7179792370b883556f71007a ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmia.vf" 1727500340 2056 17a96727a1080b515c483edfb4650902 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxsy.vf" 1727500340 1804 0d5405efa3655e9ce85ebf4efa9b7f0b ""
-  "d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxsy7.vf" 1727500340 1932 eb3a33127536e5b93d4fbe6076112b0d ""
   "d:/programfile/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1727500311 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "d:/programfile/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1727499656 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "d:/programfile/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1727499716 40635 c40361e206be584d448876bba8a64a3b ""
@@ -213,11 +209,12 @@
   "figures/2_import_share_stack.png" 1763625635 694347 ce7ff870294784bbc222f45fa388ea58 ""
   "figures/exchange_rate_trend_optimized.png" 1763625635 289734 532b4c019dfc6c67408b4b573cbb49a3 ""
   "figures/soybean_data_hierarchy.png" 1763730308 32979 2c45f039ac2efc99f2d9ac2b7cdd6b52 ""
-  "test.aux" 1763736940 11528 b391255c05574089ef4914432efe9427 "pdflatex"
-  "test.bbl" 1763736937 203 5458a622e2144e3f0202bc4f338433ac "bibtex test"
-  "test.out" 1763736940 8691 e361edc3cb5c717b52a7594ef284e911 "pdflatex"
-  "test.tex" 1763736929 34875 da263ea395dc06d6beb75f08c5f4ebaf ""
-  "test.toc" 1763736940 5701 250087f877815476b5efdb9629b9a410 "pdflatex"
+  "figures/tariff_impact_plot.png" 1763654608 229843 0eda54dfec4bdc3c9438326a80402d0d ""
+  "test.aux" 1763743218 11403 e8d04a98397062b1ffc46d2c4a4aae90 "pdflatex"
+  "test.bbl" 1763743215 203 5458a622e2144e3f0202bc4f338433ac "bibtex test"
+  "test.out" 1763743218 10044 d10ea5b0a095527e4e5e239713dba764 "pdflatex"
+  "test.tex" 1763743205 30217 7f631af3b960b0dc1333674cb410bdba ""
+  "test.toc" 1763743218 5282 797b0cba898c0fcdca27092e7ad26664 "pdflatex"
   (generated)
   "test.aux"
   "test.log"

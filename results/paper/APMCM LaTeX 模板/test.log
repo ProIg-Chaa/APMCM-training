@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  21 NOV 2025 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  22 NOV 2025 00:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -727,139 +727,135 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks38
 \@floatcapt=\box70
 )
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 28.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 61.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 28.
- (./test.aux
-
-LaTeX Warning: Label `fig:soybean_volume' multiply defined.
-
-)
+(Font)              scaled to size 12.0pt on input line 61.
+ (./test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 28.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 28.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 61.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 61.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 28.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 28.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 61.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 28.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 28.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 61.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 28.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 28.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 61.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(90.47977pt, 416.54834pt, 90.47977pt)
-* v-part:(T,H,B)=(72.26997pt, 700.5069pt, 72.26997pt)
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=416.54834pt
-* \textheight=625.96062pt
-* \oddsidemargin=18.20978pt
-* \evensidemargin=18.20978pt
-* \topmargin=-37.00002pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
 * \headheight=14.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -877,8 +873,8 @@ LaTeX Font Info:    ... okay on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 28.
-LaTeX Info: Command `\ddddot' is already robust on input line 28.
+LaTeX Info: Command `\dddot' is already robust on input line 61.
+LaTeX Info: Command `\ddddot' is already robust on input line 61.
 (d:/programfile/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count345
@@ -908,23 +904,23 @@ Package caption Info: End \AtBeginDocument code.
  (./apmcmthesis.cfg
 File: apmcmthesis.cfg 2019/11/05 v1.0 apmcmthesis configuration file
 )
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 61.
  (./test.out) (./test.out)
 \@outlinefile=\write4
 \openout4 = `test.out'.
 
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1minntx.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/untxmia.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/untxsym.fd) (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/untxsyc.fd)
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 34.
+(Font)              scaled to size 12.0pt on input line 67.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 43.
+(Font)              scaled to size 10.95pt on input line 76.
  [1{d:/programfile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}
 
 ]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 44.
+(Font)              scaled to size 17.28pt on input line 80.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 44.
+(Font)              scaled to size 17.28pt on input line 80.
  (./test.toc
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 4.
@@ -934,114 +930,105 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 
  [3]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 51.
+(Font)              scaled to size 14.4pt on input line 88.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 51.
+(Font)              scaled to size 14.4pt on input line 88.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 54.
+(Font)              scaled to size 8.8pt on input line 91.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 54.
+(Font)              scaled to size 10.0pt on input line 91.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 54.
+(Font)              size <5> substituted on input line 91.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 54.
+(Font)              size <5> substituted on input line 91.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 54.
+(Font)              size <5> substituted on input line 91.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 54.
+(Font)              scaled to size 7.3pt on input line 91.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 
+l.92 
       [1]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
+(Font)              scaled to size 12.0pt on input line 96.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.62 \subsubsection{Question 1}
-                                [2]
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
-(Font)              scaled to size 12.0pt on input line 62.
-
+l.105 \subsubsection{Question 4}
+                                 [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.73 
-      [3] [4] [5]
+l.132     \item T
+                 rading partners' responses (including counter-tariffs, non-... [3]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 116.
+(Font)              scaled to size 10.95pt on input line 148.
 
-Overfull \hbox (71.9001pt too wide) in paragraph at lines 117--138
+Overfull \hbox (4.75157pt too wide) in paragraph at lines 149--170
  [][] 
  []
 
-[6] [7]
-Overfull \vbox (49.08505pt too high) has occurred while \output is active []
-
- [8] [9]
-<figures/soybean_data_hierarchy.png, id=398, 965.10562pt x 209.28188pt>
+[4] [5]
+<figures/soybean_data_hierarchy.png, id=385, 965.10562pt x 209.28188pt>
 File: figures/soybean_data_hierarchy.png Graphic file (type png)
 <use figures/soybean_data_hierarchy.png>
-Package pdftex.def Info: figures/soybean_data_hierarchy.png  used on input line 157.
-(pdftex.def)             Requested size: 416.54834pt x 90.32794pt.
-
-Underfull \hbox (badness 3271) in paragraph at lines 158--158
-[][]|\OT1/ntxtlf/b/n/10.95 China's Soy-bean Im-port Value from the United States, Brazil, and
- []
-
-[10 <./figures/soybean_data_hierarchy.png>]
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 177.
- (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
-File: ot1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 177.
-<figures/2_import_share_stack.png, id=411, 1149.093pt x 570.2103pt>
-File: figures/2_import_share_stack.png Graphic file (type png)
-<use figures/2_import_share_stack.png>
-Package pdftex.def Info: figures/2_import_share_stack.png  used on input line 185.
-(pdftex.def)             Requested size: 416.54834pt x 206.70247pt.
- [11]
-<figures/exchange_rate_trend_optimized.png, id=420, 1003.5894pt x 569.2467pt>
-File: figures/exchange_rate_trend_optimized.png Graphic file (type png)
-<use figures/exchange_rate_trend_optimized.png>
-Package pdftex.def Info: figures/exchange_rate_trend_optimized.png  used on input line 194.
-(pdftex.def)             Requested size: 199.94142pt x 113.40433pt.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 195.
-<figures/1_tariff_trend.png, id=421, 998.0487pt x 570.2103pt>
-File: figures/1_tariff_trend.png Graphic file (type png)
-<use figures/1_tariff_trend.png>
-Package pdftex.def Info: figures/1_tariff_trend.png  used on input line 201.
-(pdftex.def)             Requested size: 199.94142pt x 114.23145pt.
- [12 <./figures/2_import_share_stack.png> <./figures/exchange_rate_trend_optimized.png> <./figures/1_tariff_trend.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 229.
+Package pdftex.def Info: figures/soybean_data_hierarchy.png  used on input line 189.
+(pdftex.def)             Requested size: 459.51054pt x 99.64302pt.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 196.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 229.
+(Font)              scaled to size 12.0pt on input line 196.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 197.
+ (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
+File: ot1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 197.
+ [6{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./figures/soybean_data_hierarchy.png>]
+<figures/2_import_share_stack.png, id=397, 1149.093pt x 570.2103pt>
+File: figures/2_import_share_stack.png Graphic file (type png)
+<use figures/2_import_share_stack.png>
+Package pdftex.def Info: figures/2_import_share_stack.png  used on input line 213.
+(pdftex.def)             Requested size: 459.51054pt x 228.01917pt.
+<figures/exchange_rate_trend_optimized.png, id=398, 1003.5894pt x 569.2467pt>
+File: figures/exchange_rate_trend_optimized.png Graphic file (type png)
+<use figures/exchange_rate_trend_optimized.png>
+Package pdftex.def Info: figures/exchange_rate_trend_optimized.png  used on input line 225.
+(pdftex.def)             Requested size: 232.17242pt x 131.68835pt.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 226.
+<figures/1_tariff_trend.png, id=399, 998.0487pt x 570.2103pt>
+File: figures/1_tariff_trend.png Graphic file (type png)
+<use figures/1_tariff_trend.png>
+Package pdftex.def Info: figures/1_tariff_trend.png  used on input line 232.
+(pdftex.def)             Requested size: 232.17242pt x 132.64212pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 229.
- [13{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [14] [15] [16]
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.8pt on input line 296.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.6pt on input line 296.
- [17] [18] [19] [20] [21] [22] [23] (./test.bbl) [24] (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+(Font)              scaled to size 6.6pt on input line 247.
+ [7 <./figures/2_import_share_stack.png> <./figures/exchange_rate_trend_optimized.png> <./figures/1_tariff_trend.png>] [8] [9]
+<figures/tariff_impact_plot.png, id=429, 1145.2386pt x 422.5386pt>
+File: figures/tariff_impact_plot.png Graphic file (type png)
+<use figures/tariff_impact_plot.png>
+Package pdftex.def Info: figures/tariff_impact_plot.png  used on input line 339.
+(pdftex.def)             Requested size: 459.51054pt x 169.53468pt.
+ [10 <./figures/tariff_impact_plot.png>] [11] [12] [13] [14] (./test.bbl) [15] (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 438.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 436.
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 438.
- [25] 
+(Font)              scaled to size 10.95pt on input line 436.
+ [16] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./test.aux)
  ***********
@@ -1053,25 +1040,22 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: E361EDC3CB5C717B52A7594EF284E911;8691.
+(rerunfilecheck)             Checksum: D10EA5B0A095527E4E5E239713DBA764;10044.
  ) 
 Here is how much of TeX's memory you used:
- 21220 strings out of 476065
- 321250 string characters out of 5791683
- 1957190 words of memory out of 5000000
- 42790 multiletter control sequences out of 15000+600000
- 619122 words of font info for 170 fonts, out of 8000000 for 9000
+ 21197 strings out of 476065
+ 321344 string characters out of 5791683
+ 1956190 words of memory out of 5000000
+ 42801 multiletter control sequences out of 15000+600000
+ 613233 words of font info for 157 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,13n,131p,1768b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on test.pdf (28 pages, 1388730 bytes).
+ 95i,13n,131p,3195b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on test.pdf (19 pages, 1616203 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 504 compressed objects within 6 object streams
- 136 named destinations out of 1000 (max. 500000)
- 437 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
 
