@@ -1,0 +1,206 @@
+% !Mode:: "TeX:UTF-8"
+% Recommended compilation methods:
+% 1. pdfLaTeX (recommended)
+% 2. XeLaTeX
+
+\documentclass{apmcmthesis}
+
+\usepackage{url}
+
+%%%%%%%%%%%% Contest Information %%%%%%%%%%%%%%%%%%%%%%%%%%
+\tihao{A}                            % Problem choice
+\baominghao{apmcm253XXXXX}           % Team control number
+
+\begin{document}
+
+\pagestyle{frontmatterstyle}
+
+\begin{abstract}
+The \verb|apmcmthesis| \LaTeX{} template is provided by \url{https://www.latexstudio.net} for the Asia-Pacific Mathematical Contest in Modeling (\url{http://www.apmcm.org}). It allows teams to concentrate on content rather than formatting.
+
+Basic \LaTeX{} knowledge is assumed (references, equations, figures, tables, etc.). All commonly used packages are pre-loaded.
+
+The latest template is maintained at \url{https://github.com/latexstudio/APMCMThesis}.
+
+\keywords{\LaTeX \quad Mathematical Modeling \quad APMCM \quad Thesis Template}
+\end{abstract}
+
+% If the contest requires a Chinese abstract, delete the following block or translate it separately.
+% \begin{abstract*}
+% Chinese abstract here (optional)
+% \keywords{keywords in Chinese}
+% \end{abstract*}
+
+\newpage
+\tableofcontents
+
+\newpage
+\pagestyle{mainmatterstyle}
+\setcounter{page}{1}
+
+\section{Introduction}
+To clarify the origin of the problem, the following background information is provided.
+
+\section{Problem Restatement}
+
+\subsection{How do we approximate the entire process?}
+
+\begin{itemize}
+  \item Point 1
+  \item Point 2
+  \item Point 3
+\end{itemize}
+
+\subsection{How do we define the optimal configuration?}
+
+\begin{enumerate}
+  \item From the perspective of efficiency:
+  \item From the perspective of cost:
+  \item Trade-off between the two:
+\end{enumerate}
+
+\subsection{Local Optimization vs. Global Optimization}
+
+\begin{itemize}
+  \item Local optimization
+  \item Global optimization
+  \item Practical balance
+\end{itemize}
+
+\subsection{Differences in Weights and Sizes}
+
+\subsection{What if no data are available?}
+
+\section{Models}
+
+\subsection{Basic Model}
+
+\subsubsection{Notation and Definitions}
+Most symbols and definitions are derived from queuing theory.
+
+\subsubsection{Assumptions}
+
+\begin{enumerate}
+  \item Assumption 1
+  \item Assumption 2
+  \item Assumption 3
+\end{enumerate}
+
+\subsubsection{Model Formulation}
+
+1) Utility function
+\begin{itemize}
+  \item Waiting cost:
+  \item Congestion loss:
+  \item Weight of each factor:
+  \item Trade-off strategy:
+\end{itemize}
+
+% Remove or replace the original promotional images
+%\begin{figure}[!ht]
+%  \centering
+%  \includegraphics[width=3cm]{example-image-a} \quad \includegraphics[width=5cm]{example-image-b}
+%  \caption{Follow our updates for more resources (optional)}
+%\end{figure}
+
+3) Global vs. local optimization
+\begin{itemize}
+  \item Global optimization:
+  \item Local optimization:
+  \item Optimal number of servers:
+\end{itemize}
+
+\subsubsection{Solution and Results}
+
+\begin{enumerate}
+  \item Integer programming solution
+  \item Numerical results
+\end{enumerate}
+
+\subsubsection{Result Analysis}
+
+\begin{itemize}
+  \item Comparison of local and global optimization
+  \item Sensitivity analysis: results are sensitive to the three key parameters
+  \item Parameter trends
+  \item Comparison with existing designs
+\end{itemize}
+
+\subsubsection{Strengths and Weaknesses}
+
+\begin{description}
+  \item[Strengths:] The improved model addresses factors neglected in the basic model. Results show it is more reasonable and significantly outperforms current designs.
+  \item[Weaknesses:] The model is still a large-scale approximation, limiting its use in high-precision scenarios.
+\end{description}
+
+\section{Conclusions}
+
+\subsection{Summary of Results}
+
+\begin{itemize}
+  \item Key finding 1
+  \item Key finding 2
+  \item Key finding 3
+\end{itemize}
+
+\subsection{Methods Employed}
+
+\begin{itemize}
+  \item Queuing theory
+  \item Integer programming
+  \item Sensitivity analysis
+\end{itemize}
+
+\subsection{Applications}
+
+\begin{itemize}
+  \item Application 1
+  \item Application 2
+  \item Application 3
+\end{itemize}
+
+\section{Future Work}
+
+\subsection{Alternative Approaches}
+
+\subsubsection{Limitations of Queuing Theory}
+\subsubsection{Other Potential Models}
+\subsubsection{Data-Driven Methods}
+\subsubsection{Dynamic Optimization}
+
+\section*{References}
+\begin{thebibliography}{9}
+\bibitem{ref1} Author(s), Book/Journal Title, Publisher/Journal, Year.
+\bibitem{latexstudio} \LaTeX{} Resources and Tutorials, \url{https://www.latexstudio.net}
+\bibitem{github} APMCMThesis Template Repository, \url{https://github.com/latexstudio/APMCMThesis}
+\end{thebibliography}
+
+\newpage
+\section*{Appendix}
+
+\begin{lstlisting}[language=matlab,caption={MATLAB source code of the algorithm}]
+kk=2; [mdd,ndd]=size(dd);
+while ~isempty(V)
+    [tmpd,j]=min(W(i,V)); tmpj=V(j);
+    for k=2:ndd
+        [tmp1,jj]=min(dd(1,k)+W(dd(2,k),V));
+        tmp2=V(jj); tt(k-1,:)=[tmp1,tmp2,jj];
+    end
+    tmp=[tmpd,tmpj,j;tt]; [tmp3,tmp4]=min(tmp(:,1));
+    if tmp3==tmpd
+        ss(1:2,kk)=[i;tmp(tmp4,2)];
+    else
+        tmp5=find(ss(:,tmp4)~=0); tmp6=length(tmp5);
+        if dd(2,tmp4)==ss(tmp6,tmp4)
+            ss(1:tmp6+1,kk)=[ss(tmp5,tmp4);tmp(tmp4,2)];
+        else
+            ss(1:3,kk)=[i;dd(2,tmp4);tmp(tmp4,2)];
+        end
+    end
+    dd=[dd,[tmp3;tmp(tmp4,2)]]; V(tmp(tmp4,3))=[];
+    [mdd,ndd]=size(dd); kk=kk+1;
+end
+S=ss; D=dd(1,:);
+\end{lstlisting}
+
+\end{document}

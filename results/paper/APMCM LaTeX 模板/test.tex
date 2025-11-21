@@ -1,0 +1,233 @@
+% !Mode:: "TeX:UTF-8"
+% Recommended compilation methods:
+% 1. pdfLaTeX (recommended)
+% 2. XeLaTeX
+
+\documentclass{apmcmthesis}
+
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+% 优化页边距/页眉设置，解决Overfull vbox
+\setlength{\headheight}{14pt}
+\setlength{\textheight}{22cm} % 调整文本高度，避免内容溢出
+
+%%%%%%%%%%%% Contest Information %%%%%%%%%%%%%%%%%%%%%%%%%%
+\tihao{C}                            % Problem choice
+\baominghao{apmcm25304033}           % Team control number
+
+\begin{document}
+
+\pagestyle{frontmatterstyle}
+
+\begin{abstract}
+% Please fill in the abstract content here
+\keywords{U.S. Tariff Policies \quad Global Trade \quad Regional Economies \quad Mathematical Modeling \quad Trade Impact Analysis}
+\end{abstract}
+
+% Uncomment if Chinese abstract is required
+% \begin{abstract*}
+% 请在此填写中文摘要（可选）
+% \keywords{美国关税政策 \quad 全球贸易 \quad 区域经济 \quad 数学建模 \quad 贸易影响分析}
+% \end{abstract*}
+
+\newpage
+\tableofcontents
+
+\newpage
+\pagestyle{mainmatterstyle}
+\setcounter{page}{1}
+
+\section{Introduction}
+\subsection{Background}
+Since the 2020s, driven by the "America First" trade ideology, U.S. tariff policy has entered a phase of in-depth adjustment. On April 2, 2025, the Trump administration introduced the so-called "Reciprocal Tariffs" policy, establishing a 10\% "minimum baseline tariff" on all trading partners and imposing additional higher tariffs on approximately 60 countries and regions with which the U.S. ran trade deficits, including China. The U.S. claimed that varying tariff rates and non-tariff barriers among trading partners made it harder for American manufacturers to sell products abroad, leading to persistent U.S. trade deficits and manufacturing decline. Thus, it imposed "reciprocal tariffs" on all countries to reduce its trade deficit and promote manufacturing reshoring. However, this policy is inconsistent with the fundamental principle of "Most-Favored-Nation (MFN) Treatment" of the World Trade Organization (WTO) and also challenges the WTO's tariff preference principle for developing countries. Under WTO rules, members must apply uniform tariffs to all partners, but the Trump administration exercised unilateral pressure and bilateral negotiations to implement widely varying tariff standards across economies, with agreed rates far exceeding previous levels. According to a tariff tracking tool jointly developed by the WTO and International Monetary Fund (IMF), the U.S. trade-weighted average tariff rate on all products rose sharply from 2.44\% at the start of 2025 to 20.11\% by August 2025. A Yale Budget Lab report noted that this tariff increase pushed the U.S. overall average effective tariff rate to its highest level since 1933.
+
+Beyond serving as a source of fiscal revenue, tariffs are an important tool of national trade policy. Appropriate tariffs can protect domestic industries from global economic monopoly and coercive practices, and are therefore permitted by the WTO. However, the impact of tariffs is multifaceted: excessively high tariffs hinder the development of global trade and are detrimental to long-term world economic growth. In the short term, high U.S. tariffs may bring benefits such as increased tariff revenue and a reduced trade deficit, but they also lead to declining exports and higher domestic consumer prices. For example, according to statistics from the General Administration of Customs of the People's Republic of China (GACC), in the month the "reciprocal tariffs" took effect, U.S. imports from China fell 20\% year-on-year, while U.S. exports to China dropped 13\% due to Chinese countermeasures. By May 2025, imports from China had fallen 35\% compared with May 2024, and exports to China declined 18\%. In absolute terms, the U.S. trade deficit with China narrowed from \$30.8 billion in May 2024 to \$18.0 billion in May 2025, but U.S. exports to China also fell from \$13.2 billion to \$10.4 billion, negatively impacting related U.S. industries. Overall, the adverse effects of high tariffs on U.S. trade and the economy cannot be overlooked.
+
+The introduction of this policy marks a further escalation of U.S. unilateral trade protectionism, exerting a direct impact on the global economic and trade landscape. The implementation of the U.S. "Reciprocal Tariffs" policy has disrupted traditional tariff rules and the global trade order. Globally, developed economies such as Europe and the United States have long dominated the formulation of global tariff rules and the maintenance of trade order, but their trade policies have gradually tilted toward protectionism in recent years, with the U.S. "Reciprocal Tariffs" policy being a typical example. While in the short term, some countries with trade surpluses with the U.S. (such as China) have been significantly impacted by the tariffs, in the long run, the policy will further hinder global trade development, undermine world economic growth, trigger countermeasures from many countries, and exacerbate global trade frictions.
+
+This study aims to combine global trade dynamics and the actual impact of the U.S. "Reciprocal Tariffs" policy to assess its effects on the international economic and trade landscape, industrial development of various countries, and consumer welfare since its implementation. It strives to establish a scientific evaluation framework for the impact of tariff policies, predict the evolutionary trend of global trade rules in the future, and provide strategic recommendations for countries to respond to unilateral tariff policies, safeguard the multilateral trading system, and achieve the sustainable development of the global economy and trade.
+
+\subsection{Question Restatement}
+By utilizing the attached U.S. foreign trade data (2020 onwards) and supplementary information collected from authoritative channels such as WTO reports and national customs statistics, we will conduct an in-depth analysis of how U.S. tariff adjustments reshape cross-border trade patterns and affect the economic operations of key regions. Combined with the current global trade order and the policy responses of major economies, we will put forward practical countermeasures and development suggestions for industries, such as soybean, automobile, and semiconductor, impacted by tariff changes.
+\subsubsection{Question 1}
+The U.S., Brazil and Argentina are top soybean exporters, and China the largest importer. Analyze their current soybean trade, build a model to assess U.S. tariff impacts on their soybean industries, and estimate post-adjustment export volume and value distribution.
+
+\subsubsection{Question 2}
+The U.S. is the second-largest auto market and top importer; 46\% of its 2024 car sales were imports, mainly from Japan. Japan also produces in the U.S. or Mexico for U.S. export. Analyze Japan’s U.S. auto position, build a model with Japan’s non-tariff responses to study U.S. tariff impacts on their auto trade, U.S. import structure and U.S. auto industry.
+
+\subsubsection{Question 3}
+The U.S. leads the global semiconductor industry but lacks strong manufacturing. Biden’s 2022 CHIPS Act uses subsidies; Trump’s 2025 admin claims tariffs work better. The U.S. also controls high-end chip exports to China. Build a model to analyze U.S. tariff effects on domestic semiconductor manufacturing and high/mid/low-end chip trade, considering efficiency and national security.
+
+\subsubsection{Question 4}
+Higher tariffs may raise U.S. short-term tariff revenue but cut trade volumes, lowering revenue long-term. Build a model to analyze short/medium-term tariff impacts on U.S. revenue and predict net changes in Trump’s second term.
+
+\subsubsection{Question 5}
+U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal tariffs and rare earth/lithium battery export controls. These affect U.S. trade, agriculture, industry and financial markets. Select/construct indicators to model tariff impacts on the U.S. economy and evaluate if "reciprocal tariffs" drive manufacturing reshoring.
+
+\section{Problem Analysis}
+\subsection{Analysis of Question 1}
+% Please fill in the analysis of Question 1 here
+
+\subsection{Analysis of Question 2}
+% Please fill in the analysis of Question 2 here
+
+\subsection{Analysis of Question 3}
+% Please fill in the analysis of Question 3 here
+
+\subsection{Analysis of Question 4}
+% Please fill in the analysis of Question 4 here
+
+\subsection{Analysis of Question 5}
+% Please fill in the analysis of Question 5 here
+
+\section{Model Assumptions}
+\begin{enumerate}
+    \item Assumption 1
+    \item Assumption 2
+    \item Assumption 3
+    \item Assumption 4
+    \item Assumption 5
+    % Add more assumptions as needed
+\end{enumerate}
+
+\section{Description of the Symbol}
+% Please fill in the symbol descriptions here
+
+
+% 手动分页，避免Problem部分跨页混乱
+\newpage
+\section{Problem 1: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
+
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Problem 2: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
+
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Problem 3: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
+
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Problem 4: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
+
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Problem 5: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
+
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Model Evaluation}
+\subsection{Advantages of the Model}
+\begin{enumerate}
+    \item Advantage 1
+    \item Advantage 2
+    \item Advantage 3
+    % Add more advantages as needed
+\end{enumerate}
+
+\subsection{Disadvantages of the Model}
+\begin{enumerate}
+    \item Disadvantage 1
+    \item Disadvantage 2
+    \item Disadvantage 3
+    % Add more disadvantages as needed
+\end{enumerate}
+
+
+\newpage
+\section*{References}
+\begin{thebibliography}{99}
+% 加一个占位条目，解决空参考文献警告
+\bibitem{placeholder} Please fill in references here
+\end{thebibliography}
+
+
+\newpage
+\section*{Appendix}
+\subsection{Appendix A: Source Code}
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 1}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 2}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 3}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 4}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 5}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\subsection{Appendix B: Supplementary Data}
+% Please fill in the supplementary data here
+
+\subsection{Appendix C: Additional Figures/Tables}
+% Please fill in the additional figures/tables here
+
+\end{document}
