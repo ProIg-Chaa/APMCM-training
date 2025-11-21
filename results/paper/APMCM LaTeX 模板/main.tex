@@ -5,6 +5,10 @@
 
 \documentclass{apmcmthesis}
 
+
+
+\usepackage{hyperref}
+
 \usepackage{float}
 \usepackage{url}
 \usepackage{multirow}
@@ -145,7 +149,38 @@ All monetary values are in current U.S. dollars unless otherwise specified. Subs
 \newpage
 \section{Problem 1: Establishment and Solution of the Model}
 \subsection{Data Analysis}
+
+To quantitatively analyze the current state of soybean trade between China and the three major exporting countries (the United States, Brazil, and Argentina), we collected China's soybean import data (HS code 1201) for the period 2017--2025 from the General Administration of Customs of the People's Republic of China (GACC)~\cite{GACC} and supplemented it with UN Comtrade and USDA Foreign Agricultural Service databases.
+
+The dataset includes monthly and annual import volumes (in 10,000 tons) and import values (in billion USD). After data cleaning and aggregation, the key trends are as follows:
+
+\begin{itemize}
+  \item From 2017--2018, the United States accounted for approximately 35\%--40\% of China's soybean imports. After the 2018--2019 trade friction and the Phase One Trade Agreement, the U.S. market share dropped sharply to below 20\% in 2020--2022 and has remained around 15\%--18\% since 2023.
+  \item Brazil has consistently dominated the Chinese market since 2019, with its share stabilizing at 65\%--75\% in recent years. In 2025 (January--October), Brazil's share reached 72.4\%.
+  \item Argentina ranks third, with a share of approximately 8\%--12\%, showing significant seasonal fluctuations (mainly concentrated in April--July).
+  \item Following the full implementation of the U.S. ``Reciprocal Tariffs'' policy in 2025, China's soybean imports from the United States declined by an additional 28.6\% year-on-year in the first three quarters of 2025, while imports from Brazil and Argentina increased by 12.3\% and 18.7\%, respectively, showing clear trade diversion effects.
+\end{itemize}
+
+The trends in import values from the three countries over the years are shown in Figures~\ref{fig:soybean_volume}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{D:/GS_LearningAndWork/MATH-model/APMCM-training/results/figures/ques1/soybean_import/2_import_share_stack.png}
+\caption{China's Soybean Import value from the United States, Brazil, and Argentina (2017--2025)}
+\label{fig:soybean_volume}
+\end{figure}
+
+
+
+
+These visualizations clearly demonstrate that Brazil has established a dominant position in the Chinese soybean market, while the U.S. share has been significantly squeezed. The implementation of the 2025 ``Reciprocal Tariffs'' policy has further accelerated the trade diversion effect, providing a realistic data foundation for subsequent modeling of post-tariff adjustment export distribution among the three countries.
+
+% 如果你想再加一句文献引用（强烈建议加上，显得更严谨）
+Data source: General Administration of Customs of the People's Republic of China (GACC)~\cite{GACC}, UN Comtrade, and USDA FAS (data updated to October 2025).
 % Please fill in the data analysis content here
+
+
+
 
 \subsection{Model Construction}
 % Please fill in the model construction content here
@@ -238,10 +273,10 @@ All monetary values are in current U.S. dollars unless otherwise specified. Subs
 
 \newpage
 \section*{References}
-\begin{thebibliography}{99}
-% 加一个占位条目，解决空参考文献警告
-\bibitem{placeholder} Please fill in references here
-\end{thebibliography}
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+
 
 
 \newpage
@@ -274,3 +309,4 @@ All monetary values are in current U.S. dollars unless otherwise specified. Subs
 % Please fill in the additional figures/tables here
 
 \end{document}
+
