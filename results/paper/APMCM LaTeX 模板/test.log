@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  21 NOV 2025 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  21 NOV 2025 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -627,12 +627,13 @@ File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 23.
- (./test.aux)
+
+No file test.aux.
 \openout1 = `test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 23.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 23.
- (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/omlntxmi.fd
+(d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 23.
@@ -804,25 +805,42 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 17.28pt on input line 39.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 39.
- (./test.toc
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 4.
- [2])
+
+No file test.toc.
 \tf@toc=\write4
 \openout4 = `test.toc'.
 
- [3]
+[2]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 46.
- [1] [2]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 50.
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 50.
+
+[1]
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 57.
+
+[2]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
 (Font)              scaled to size 12.0pt on input line 57.
- [3] [4] [5]
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 112.
 
+
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 68.
+
+[3]
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 93.
+
+[4]
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 107.
+
+[5]
 Overfull \hbox (71.9001pt too wide) in paragraph at lines 113--134
  [][] 
  []
@@ -830,36 +848,54 @@ Overfull \hbox (71.9001pt too wide) in paragraph at lines 113--134
 
 Overfull \vbox (49.08505pt too high) has occurred while \output is active []
 
- [6] [7] [8] [9] [10] [11] [12] [13] [14] (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/02/21 1.10 listings language file
-)
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 250.
- (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
-File: ot1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 250.
- [15] 
-enddocument/afterlastpage: lastpage setting LastPage.
-(./test.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2020/03/25>
- ***********
- ) 
-Here is how much of TeX's memory you used:
- 14332 strings out of 476065
- 212591 string characters out of 5791683
- 1956190 words of memory out of 5000000
- 36169 multiletter control sequences out of 15000+600000
- 591558 words of font info for 107 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 95i,12n,131p,1768b,1357s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on test.pdf (18 pages, 172399 bytes).
-PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 135.
+
+[6]
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 145.
+
+[7]
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 152.
+ (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 152.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 172.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 172.
+
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 178.
+
+[8{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}])
+Runaway argument?
+{1+\tau _{US^0} \implies \Delta \% P = \frac {1+\tau _{US}^0 + \Delta \ETC.
+! File ended while scanning use of \frac .
+<inserted text> 
+                \par 
+<*> .../results/paper/APMCM LaTeX 模板/test.tex"
+                                                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> .../results/paper/APMCM LaTeX 模板/test.tex"
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 13898 strings out of 476065
+ 208572 string characters out of 5791683
+ 1936190 words of memory out of 5000000
+ 35740 multiletter control sequences out of 15000+600000
+ 592276 words of font info for 110 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 95i,12n,131p,1768b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

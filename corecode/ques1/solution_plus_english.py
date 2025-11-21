@@ -131,9 +131,9 @@ def run_gradient_simulation(df, elasticity, target_country='United States'):
 # ==========================================
 if __name__ == "__main__":
     # 数据文件路径
-    file_path = r'C:\Users\15963\Desktop\APMCM-training\corecode\ques1\panel_cleaned.csv'
+    file_path = r'panel_cleaned.csv'
     # 图片保存路径
-    save_path = r'C:\Users\15963\Desktop\APMCM-training\results\figures\ques1\final_prediction'
+    save_path = r'results/ques1/'
 
     try:
         df = load_and_prep_data(file_path)
