@@ -6,29 +6,32 @@
 \documentclass{apmcmthesis}
 
 \usepackage{url}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+% 优化页边距/页眉设置，解决Overfull vbox
+\setlength{\headheight}{14pt}
+\setlength{\textheight}{22cm} % 调整文本高度，避免内容溢出
 
 %%%%%%%%%%%% Contest Information %%%%%%%%%%%%%%%%%%%%%%%%%%
-\tihao{A}                            % Problem choice
-\baominghao{apmcm253XXXXX}           % Team control number
+\tihao{C}                            % Problem choice
+\baominghao{apmcm25304033}           % Team control number
 
 \begin{document}
 
 \pagestyle{frontmatterstyle}
 
 \begin{abstract}
-The \verb|apmcmthesis| \LaTeX{} template is provided by \url{https://www.latexstudio.net} for the Asia-Pacific Mathematical Contest in Modeling (\url{http://www.apmcm.org}). It allows teams to concentrate on content rather than formatting.
-
-Basic \LaTeX{} knowledge is assumed (references, equations, figures, tables, etc.). All commonly used packages are pre-loaded.
-
-The latest template is maintained at \url{https://github.com/latexstudio/APMCMThesis}.
-
-\keywords{\LaTeX \quad Mathematical Modeling \quad APMCM \quad Thesis Template}
+% Please fill in the abstract content here
+\keywords{U.S. Tariff Policies \quad Global Trade \quad Regional Economies \quad Mathematical Modeling \quad Trade Impact Analysis}
 \end{abstract}
 
-% If the contest requires a Chinese abstract, delete the following block or translate it separately.
+% Uncomment if Chinese abstract is required
 % \begin{abstract*}
-% Chinese abstract here (optional)
-% \keywords{keywords in Chinese}
+% 请在此填写中文摘要（可选）
+% \keywords{美国关税政策 \quad 全球贸易 \quad 区域经济 \quad 数学建模 \quad 贸易影响分析}
 % \end{abstract*}
 
 \newpage
@@ -39,168 +42,192 @@ The latest template is maintained at \url{https://github.com/latexstudio/APMCMTh
 \setcounter{page}{1}
 
 \section{Introduction}
-To clarify the origin of the problem, the following background information is provided.
+\subsection{Background}
+Since the 2020s, driven by the "America First" trade ideology, U.S. tariff policy has entered a phase of in-depth adjustment. On April 2, 2025, the Trump administration introduced the so-called "Reciprocal Tariffs" policy, establishing a 10\% "minimum baseline tariff" on all trading partners and imposing additional higher tariffs on approximately 60 countries and regions with which the U.S. ran trade deficits, including China. The U.S. claimed that varying tariff rates and non-tariff barriers among trading partners made it harder for American manufacturers to sell products abroad, leading to persistent U.S. trade deficits and manufacturing decline. Thus, it imposed "reciprocal tariffs" on all countries to reduce its trade deficit and promote manufacturing reshoring. However, this policy is inconsistent with the fundamental principle of "Most-Favored-Nation (MFN) Treatment" of the World Trade Organization (WTO) and also challenges the WTO's tariff preference principle for developing countries. Under WTO rules, members must apply uniform tariffs to all partners, but the Trump administration exercised unilateral pressure and bilateral negotiations to implement widely varying tariff standards across economies, with agreed rates far exceeding previous levels. According to a tariff tracking tool jointly developed by the WTO and International Monetary Fund (IMF), the U.S. trade-weighted average tariff rate on all products rose sharply from 2.44\% at the start of 2025 to 20.11\% by August 2025. A Yale Budget Lab report noted that this tariff increase pushed the U.S. overall average effective tariff rate to its highest level since 1933.
 
-\section{Problem Restatement}
+Beyond serving as a source of fiscal revenue, tariffs are an important tool of national trade policy. Appropriate tariffs can protect domestic industries from global economic monopoly and coercive practices, and are therefore permitted by the WTO. However, the impact of tariffs is multifaceted: excessively high tariffs hinder the development of global trade and are detrimental to long-term world economic growth. In the short term, high U.S. tariffs may bring benefits such as increased tariff revenue and a reduced trade deficit, but they also lead to declining exports and higher domestic consumer prices. For example, according to statistics from the General Administration of Customs of the People's Republic of China (GACC), in the month the "reciprocal tariffs" took effect, U.S. imports from China fell 20\% year-on-year, while U.S. exports to China dropped 13\% due to Chinese countermeasures. By May 2025, imports from China had fallen 35\% compared with May 2024, and exports to China declined 18\%. In absolute terms, the U.S. trade deficit with China narrowed from \$30.8 billion in May 2024 to \$18.0 billion in May 2025, but U.S. exports to China also fell from \$13.2 billion to \$10.4 billion, negatively impacting related U.S. industries. Overall, the adverse effects of high tariffs on U.S. trade and the economy cannot be overlooked.
 
-\subsection{How do we approximate the entire process?}
+The introduction of this policy marks a further escalation of U.S. unilateral trade protectionism, exerting a direct impact on the global economic and trade landscape. The implementation of the U.S. "Reciprocal Tariffs" policy has disrupted traditional tariff rules and the global trade order. Globally, developed economies such as Europe and the United States have long dominated the formulation of global tariff rules and the maintenance of trade order, but their trade policies have gradually tilted toward protectionism in recent years, with the U.S. "Reciprocal Tariffs" policy being a typical example. While in the short term, some countries with trade surpluses with the U.S. (such as China) have been significantly impacted by the tariffs, in the long run, the policy will further hinder global trade development, undermine world economic growth, trigger countermeasures from many countries, and exacerbate global trade frictions.
 
-\begin{itemize}
-  \item Point 1
-  \item Point 2
-  \item Point 3
-\end{itemize}
+This study aims to combine global trade dynamics and the actual impact of the U.S. "Reciprocal Tariffs" policy to assess its effects on the international economic and trade landscape, industrial development of various countries, and consumer welfare since its implementation. It strives to establish a scientific evaluation framework for the impact of tariff policies, predict the evolutionary trend of global trade rules in the future, and provide strategic recommendations for countries to respond to unilateral tariff policies, safeguard the multilateral trading system, and achieve the sustainable development of the global economy and trade.
 
-\subsection{How do we define the optimal configuration?}
+\subsection{Question Restatement}
+By utilizing the attached U.S. foreign trade data (2020 onwards) and supplementary information collected from authoritative channels such as WTO reports and national customs statistics, we will conduct an in-depth analysis of how U.S. tariff adjustments reshape cross-border trade patterns and affect the economic operations of key regions. Combined with the current global trade order and the policy responses of major economies, we will put forward practical countermeasures and development suggestions for industries, such as soybean, automobile, and semiconductor, impacted by tariff changes.
+\subsubsection{Question 1}
+The U.S., Brazil and Argentina are top soybean exporters, and China the largest importer. Analyze their current soybean trade, build a model to assess U.S. tariff impacts on their soybean industries, and estimate post-adjustment export volume and value distribution.
 
+\subsubsection{Question 2}
+The U.S. is the second-largest auto market and top importer; 46\% of its 2024 car sales were imports, mainly from Japan. Japan also produces in the U.S. or Mexico for U.S. export. Analyze Japan’s U.S. auto position, build a model with Japan’s non-tariff responses to study U.S. tariff impacts on their auto trade, U.S. import structure and U.S. auto industry.
+
+\subsubsection{Question 3}
+The U.S. leads the global semiconductor industry but lacks strong manufacturing. Biden’s 2022 CHIPS Act uses subsidies; Trump’s 2025 admin claims tariffs work better. The U.S. also controls high-end chip exports to China. Build a model to analyze U.S. tariff effects on domestic semiconductor manufacturing and high/mid/low-end chip trade, considering efficiency and national security.
+
+\subsubsection{Question 4}
+Higher tariffs may raise U.S. short-term tariff revenue but cut trade volumes, lowering revenue long-term. Build a model to analyze short/medium-term tariff impacts on U.S. revenue and predict net changes in Trump’s second term.
+
+\subsubsection{Question 5}
+U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal tariffs and rare earth/lithium battery export controls. These affect U.S. trade, agriculture, industry and financial markets. Select/construct indicators to model tariff impacts on the U.S. economy and evaluate if "reciprocal tariffs" drive manufacturing reshoring.
+
+\section{Problem Analysis}
+\subsection{Analysis of Question 1}
+% Please fill in the analysis of Question 1 here
+
+\subsection{Analysis of Question 2}
+% Please fill in the analysis of Question 2 here
+
+\subsection{Analysis of Question 3}
+% Please fill in the analysis of Question 3 here
+
+\subsection{Analysis of Question 4}
+% Please fill in the analysis of Question 4 here
+
+\subsection{Analysis of Question 5}
+% Please fill in the analysis of Question 5 here
+
+\section{Model Assumptions}
 \begin{enumerate}
-  \item From the perspective of efficiency:
-  \item From the perspective of cost:
-  \item Trade-off between the two:
+    \item Assumption 1
+    \item Assumption 2
+    \item Assumption 3
+    \item Assumption 4
+    \item Assumption 5
+    % Add more assumptions as needed
 \end{enumerate}
 
-\subsection{Local Optimization vs. Global Optimization}
+\section{Description of the Symbol}
+% Please fill in the symbol descriptions here
 
-\begin{itemize}
-  \item Local optimization
-  \item Global optimization
-  \item Practical balance
-\end{itemize}
 
-\subsection{Differences in Weights and Sizes}
+% 手动分页，避免Problem部分跨页混乱
+\newpage
+\section{Problem 1: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
 
-\subsection{What if no data are available?}
+\subsection{Model Construction}
+% Please fill in the model construction content here
 
-\section{Models}
+\subsection{Model Solving}
+% Please fill in the model solving content here
 
-\subsection{Basic Model}
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
 
-\subsubsection{Notation and Definitions}
-Most symbols and definitions are derived from queuing theory.
 
-\subsubsection{Assumptions}
+\newpage
+\section{Problem 2: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
 
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Problem 3: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
+
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Problem 4: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
+
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Problem 5: Establishment and Solution of the Model}
+\subsection{Data Analysis}
+% Please fill in the data analysis content here
+
+\subsection{Model Construction}
+% Please fill in the model construction content here
+
+\subsection{Model Solving}
+% Please fill in the model solving content here
+
+\subsection{Result Analysis}
+% Please fill in the result analysis content here
+
+
+\newpage
+\section{Model Evaluation}
+\subsection{Advantages of the Model}
 \begin{enumerate}
-  \item Assumption 1
-  \item Assumption 2
-  \item Assumption 3
+    \item Advantage 1
+    \item Advantage 2
+    \item Advantage 3
+    % Add more advantages as needed
 \end{enumerate}
 
-\subsubsection{Model Formulation}
-
-1) Utility function
-\begin{itemize}
-  \item Waiting cost:
-  \item Congestion loss:
-  \item Weight of each factor:
-  \item Trade-off strategy:
-\end{itemize}
-
-% Remove or replace the original promotional images
-%\begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=3cm]{example-image-a} \quad \includegraphics[width=5cm]{example-image-b}
-%  \caption{Follow our updates for more resources (optional)}
-%\end{figure}
-
-3) Global vs. local optimization
-\begin{itemize}
-  \item Global optimization:
-  \item Local optimization:
-  \item Optimal number of servers:
-\end{itemize}
-
-\subsubsection{Solution and Results}
-
+\subsection{Disadvantages of the Model}
 \begin{enumerate}
-  \item Integer programming solution
-  \item Numerical results
+    \item Disadvantage 1
+    \item Disadvantage 2
+    \item Disadvantage 3
+    % Add more disadvantages as needed
 \end{enumerate}
 
-\subsubsection{Result Analysis}
 
-\begin{itemize}
-  \item Comparison of local and global optimization
-  \item Sensitivity analysis: results are sensitive to the three key parameters
-  \item Parameter trends
-  \item Comparison with existing designs
-\end{itemize}
-
-\subsubsection{Strengths and Weaknesses}
-
-\begin{description}
-  \item[Strengths:] The improved model addresses factors neglected in the basic model. Results show it is more reasonable and significantly outperforms current designs.
-  \item[Weaknesses:] The model is still a large-scale approximation, limiting its use in high-precision scenarios.
-\end{description}
-
-\section{Conclusions}
-
-\subsection{Summary of Results}
-
-\begin{itemize}
-  \item Key finding 1
-  \item Key finding 2
-  \item Key finding 3
-\end{itemize}
-
-\subsection{Methods Employed}
-
-\begin{itemize}
-  \item Queuing theory
-  \item Integer programming
-  \item Sensitivity analysis
-\end{itemize}
-
-\subsection{Applications}
-
-\begin{itemize}
-  \item Application 1
-  \item Application 2
-  \item Application 3
-\end{itemize}
-
-\section{Future Work}
-
-\subsection{Alternative Approaches}
-
-\subsubsection{Limitations of Queuing Theory}
-\subsubsection{Other Potential Models}
-\subsubsection{Data-Driven Methods}
-\subsubsection{Dynamic Optimization}
-
+\newpage
 \section*{References}
-\begin{thebibliography}{9}
-\bibitem{ref1} Author(s), Book/Journal Title, Publisher/Journal, Year.
-\bibitem{latexstudio} \LaTeX{} Resources and Tutorials, \url{https://www.latexstudio.net}
-\bibitem{github} APMCMThesis Template Repository, \url{https://github.com/latexstudio/APMCMThesis}
+\begin{thebibliography}{99}
+% 加一个占位条目，解决空参考文献警告
+\bibitem{placeholder} Please fill in references here
 \end{thebibliography}
+
 
 \newpage
 \section*{Appendix}
-
-\begin{lstlisting}[language=matlab,caption={MATLAB source code of the algorithm}]
-kk=2; [mdd,ndd]=size(dd);
-while ~isempty(V)
-    [tmpd,j]=min(W(i,V)); tmpj=V(j);
-    for k=2:ndd
-        [tmp1,jj]=min(dd(1,k)+W(dd(2,k),V));
-        tmp2=V(jj); tt(k-1,:)=[tmp1,tmp2,jj];
-    end
-    tmp=[tmpd,tmpj,j;tt]; [tmp3,tmp4]=min(tmp(:,1));
-    if tmp3==tmpd
-        ss(1:2,kk)=[i;tmp(tmp4,2)];
-    else
-        tmp5=find(ss(:,tmp4)~=0); tmp6=length(tmp5);
-        if dd(2,tmp4)==ss(tmp6,tmp4)
-            ss(1:tmp6+1,kk)=[ss(tmp5,tmp4);tmp(tmp4,2)];
-        else
-            ss(1:3,kk)=[i;dd(2,tmp4);tmp(tmp4,2)];
-        end
-    end
-    dd=[dd,[tmp3;tmp(tmp4,2)]]; V(tmp(tmp4,3))=[];
-    [mdd,ndd]=size(dd); kk=kk+1;
-end
-S=ss; D=dd(1,:);
+\subsection{Appendix A: Source Code}
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 1}]
+# Please fill in the source code here
 \end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 2}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 3}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 4}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 5}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\subsection{Appendix B: Supplementary Data}
+% Please fill in the supplementary data here
+
+\subsection{Appendix C: Additional Figures/Tables}
+% Please fill in the additional figures/tables here
 
 \end{document}
