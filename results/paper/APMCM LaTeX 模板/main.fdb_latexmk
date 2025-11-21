@@ -1,17 +1,17 @@
 # Fdb version 4
-["bibtex main"] 1763726626.40527 "main.aux" "main.bbl" "main" 1763726629.47854 0
-  "./refs.bib" 1763726131 269 b04341304684c09525521edd34490097 ""
+["bibtex main"] 1763727346.52451 "main.aux" "main.bbl" "main" 1763727349.6901 0
+  "./refs.bib" 1763726918 269 f028670d21f9e88e30ad4dcb7027ce1f ""
   "d:/programfile/texlive/2024/texmf-dist/bibtex/bst/base/apalike.bst" 1727499712 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1763726628 8217 30bf9588532421797d55f65b7cc54d71 "pdflatex"
+  "main.aux" 1763727348 8217 78e273b6ea99457f3f3085a796aba71c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1763726626.76515 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" "main.pdf" "main" 1763726629.47896 0
+["pdflatex"] 1763727346.90954 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" "main.pdf" "main" 1763727349.69053 0
   "apmcmthesis.cfg" 1763516798 3135 0a0756cee74f785872b894ae4e85c566 ""
   "apmcmthesis.cls" 1763516798 13415 41f2f271e9a04b028112181c0e45ab2b ""
   "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/figures/ques1/soybean_import/2_import_share_stack.png" 1763625635 694347 ce7ff870294784bbc222f45fa388ea58 ""
-  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" 1763726619 20225 3524a8d2ecf187913ecaf64e167f71a3 ""
+  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" 1763727343 20218 0b01b915b139be9bcabf1a7aa4fe8bbb ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1727500340 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1727500696 3124 3813fd4c981d99822890a2861b0d274c ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727499996 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -190,11 +190,11 @@
   "d:/programfile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727500931 5421115 77b0a5bd00d59a9884f9fb52a9325dac ""
   "d:/programfile/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727501034 6812652 7a7cf0d09ff8fe263beb1c2fa3d7c578 ""
   "d:/programfile/texlive/2024/texmf.cnf" 1727500920 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1763726628 8217 30bf9588532421797d55f65b7cc54d71 "pdflatex"
-  "main.bbl" 1763726626 286 10e664f8a9679b56bfba696f2087ceb8 "bibtex main"
-  "main.out" 1763726628 7829 f9fba278b04e6d1fc012ffd3528b0d4c "pdflatex"
-  "main.tex" 1763726619 20225 3524a8d2ecf187913ecaf64e167f71a3 ""
-  "main.toc" 1763726628 4310 b95b3c9bc43243e14f59c323cd2628ee "pdflatex"
+  "main.aux" 1763727348 8217 78e273b6ea99457f3f3085a796aba71c "pdflatex"
+  "main.bbl" 1763727346 286 43398090c6a419bc43dc6572f046c4fe "bibtex main"
+  "main.out" 1763727348 7829 f9fba278b04e6d1fc012ffd3528b0d4c "pdflatex"
+  "main.tex" 1763727343 20218 0b01b915b139be9bcabf1a7aa4fe8bbb ""
+  "main.toc" 1763727348 4310 b95b3c9bc43243e14f59c323cd2628ee "pdflatex"
   (generated)
   "main.aux"
   "main.log"

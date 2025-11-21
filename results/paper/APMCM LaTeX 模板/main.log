@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  21 NOV 2025 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  21 NOV 2025 20:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -971,7 +971,7 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 File: D:/GS_LearningAndWork/MATH-model/APMCM-training/results/figures/ques1/soybean_import/2_import_share_stack.png Graphic file (type png)
 <use D:/GS_LearningAndWork/MATH-model/APMCM-training/results/figures/ques1/soybean_import/2_import_share_stack.png>
 Package pdftex.def Info: D:/GS_LearningAndWork/MATH-model/APMCM-training/results/figures/ques1/soybean_import/2_import_share_stack.png  used on input line 168.
-(pdftex.def)             Requested size: 408.21559pt x 202.56963pt.
+(pdftex.def)             Requested size: 416.54834pt x 206.70247pt.
  [10{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [11 <d:/GS_LearningAndWork/MATH-model/APMCM-training/results/figures/ques1/soybean_import/2_import_share_stack.png>] [12] [13] [14] [15] [16] (./main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 6.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
@@ -996,15 +996,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F9FBA278B04E6D1FC012FFD3528B0D4C;7829.
  ) 
 Here is how much of TeX's memory you used:
- 20949 strings out of 476065
- 316861 string characters out of 5791683
+ 20950 strings out of 476065
+ 316871 string characters out of 5791683
  1957190 words of memory out of 5000000
- 42589 multiletter control sequences out of 15000+600000
+ 42590 multiletter control sequences out of 15000+600000
  592210 words of font info for 109 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,12n,131p,1768b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (21 pages, 821148 bytes).
+Output written on main.pdf (21 pages, 821180 bytes).
 PDF statistics:
  506 PDF objects out of 1000 (max. 8388607)
  412 compressed objects within 5 object streams
