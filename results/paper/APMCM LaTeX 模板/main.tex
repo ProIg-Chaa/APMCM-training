@@ -70,7 +70,7 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 
 \section{Problem Analysis}
 \subsection{Analysis of Question 1}
-% Please fill in the analysis of Question 1 here
+The analysis for Question 1 focuses on quantifying how U.S. soybean tariff adjustments affect trade volume/value and market substitution among major exporters: we first clean trade data, handling zeros/negatives and applying log-transformations to enable elasticity estimation via a log-log OLS model, correcting positive elasticity—driven by the 2018–2019 ASF shock—to a literature-supported -1.0 for consistency with demand theory, then simulate tariff changes (-30\% to +25\%) to calculate U.S. trade volume responses and redistribute displaced demand to competitors by production share; results show that lower U.S. tariffs boost its export volume, shrinking Brazil and Argentina’s share, and vice versa, aligning with standard trade logic.
 
 \subsection{Analysis of Question 2}
 % Please fill in the analysis of Question 2 here
@@ -86,11 +86,18 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 
 \section{Model Assumptions}
 \begin{enumerate}
-    \item Assumption 1
-    \item Assumption 2
-    \item Assumption 3
-    \item Assumption 4
-    \item Assumption 5
+    \item All countries involved are rational economic entities that pursue the maximization of their own national (or regional) economic welfare or strategic objectives.
+    \item In the absence of new major exogenous shocks (e.g., large-scale wars, global pandemics, or natural disasters), the basic patterns of global supply, demand, and trade flows remain continuous and predictable in the short to medium term (2025--2029).
+    \item Tariff changes implemented by the United States under the ``Reciprocal Tariffs'' policy announced on April 2, 2025, are fully enforced and remain stable within the modeling horizon unless otherwise specified.
+    \item Trading partners' responses (including counter-tariffs, non-tariff barriers, export controls, or production relocation) occur with reasonable lags and can be approximated by observable policy signals or historical retaliation patterns.
+    \item Exchange rates fluctuate within a reasonable range; unless explicitly modeled, we assume purchasing power parity holds approximately or use fixed exchange rates for simplicity in specific sub-models.
+    \item Commodity and product categories under analysis (soybeans, automobiles, semiconductors, etc.) are sufficiently homogeneous within their respective HS codes so that price elasticity and substitution effects can be estimated at the aggregate level.
+    \item Domestic prices in importing countries fully or partially pass through changes in tariff-inclusive import prices according to estimated pass-through elasticities.
+    \item Supply capacities of exporting countries have short-term rigidities but can adjust gradually through acreage changes, capacity utilization, or investment in the medium term.
+    \item Government tariff revenue is calculated as the product of the effective tariff rate and the dutiable import value; smuggling and trade mis-invoicing are negligible.
+    \item National security considerations and export control measures (especially on high-end semiconductors and critical minerals) are treated as exogenous policy constraints rather than purely economic variables when necessary.
+    \item All statistical data obtained from official sources are accurate and reliable; minor data gaps are filled by credible interpolation or simulation methods.
+    \item Ceteris paribus holds for variables not explicitly included in each sub-model.
     % Add more assumptions as needed
 \end{enumerate}
 
