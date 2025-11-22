@@ -1,0 +1,4 @@
+Tier,HS_Codes,Description
+High,"854231;854232","Advanced logic, processors, GPU, AI accelerators"
+Mid,"854233;854239","MCU, automotive chips, mid-range logic/memory"
+Low,"854121;854129","Discrete, analog, legacy logic, power devices"

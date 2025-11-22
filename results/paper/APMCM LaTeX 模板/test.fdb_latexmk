@@ -1,16 +1,8 @@
 # Fdb version 4
-["bibtex test"] 1763743214.76188 "test.aux" "test.bbl" "test" 1763743219.1985 0
-  "./refs.bib" 1763728578 210 ac587dd4b9a8a135e73fa6299513311e ""
-  "d:/programfile/texlive/2024/texmf-dist/bibtex/bst/base/apalike.bst" 1727499712 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "test.aux" 1763743218 11403 e8d04a98397062b1ffc46d2c4a4aae90 "pdflatex"
-  (generated)
-  "test.bbl"
-  "test.blg"
-  (rewritten before read)
-["pdflatex"] 1763743215.1371 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex" "test.pdf" "test" 1763743219.19887 0
+["pdflatex"] 1763783308.98726 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex" "test.pdf" "test" 1763783312.35692 2
   "apmcmthesis.cfg" 1763516798 3135 0a0756cee74f785872b894ae4e85c566 ""
   "apmcmthesis.cls" 1763516798 13415 41f2f271e9a04b028112181c0e45ab2b ""
-  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex" 1763743205 30217 7f631af3b960b0dc1333674cb410bdba ""
+  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex" 1763783304 40047 8934d17c9436d0bbfa9c5ef0da0f5007 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1727500340 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1727500696 3124 3813fd4c981d99822890a2861b0d274c ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727499996 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -166,7 +158,6 @@
   "d:/programfile/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1727500178 678 4792914a8f45be57bb98413425e4c7af ""
   "d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg" 1727500203 1830 20af84c556326f7c12b9202ebe363f56 ""
   "d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/listings.sty" 1727500203 81322 d02238bdeb305f2c9f9d0229f99371d0 ""
-  "d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty" 1727500203 205167 fca232873050cd2da4f9c0c32402c38a ""
   "d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty" 1727500203 77022 5c8c440739265e7ba15b8379ece6ecd7 ""
   "d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty" 1727500203 329 f19f5da7234b51d16764e23d20999c73 ""
   "d:/programfile/texlive/2024/texmf-dist/tex/latex/multirow/bigstrut.sty" 1727500320 1247 4ebb2dd983304c0951758f7a60a4e901 ""
@@ -210,11 +201,10 @@
   "figures/exchange_rate_trend_optimized.png" 1763625635 289734 532b4c019dfc6c67408b4b573cbb49a3 ""
   "figures/soybean_data_hierarchy.png" 1763730308 32979 2c45f039ac2efc99f2d9ac2b7cdd6b52 ""
   "figures/tariff_impact_plot.png" 1763654608 229843 0eda54dfec4bdc3c9438326a80402d0d ""
-  "test.aux" 1763743218 11403 e8d04a98397062b1ffc46d2c4a4aae90 "pdflatex"
-  "test.bbl" 1763743215 203 5458a622e2144e3f0202bc4f338433ac "bibtex test"
-  "test.out" 1763743218 10044 d10ea5b0a095527e4e5e239713dba764 "pdflatex"
-  "test.tex" 1763743205 30217 7f631af3b960b0dc1333674cb410bdba ""
-  "test.toc" 1763743218 5282 797b0cba898c0fcdca27092e7ad26664 "pdflatex"
+  "test.aux" 1763783312 10472 791af7ffc478319b1a482004fae40aa6 "pdflatex"
+  "test.out" 1763783312 9086 c508cdeb4dda633fcfb9af190e0c83e3 "pdflatex"
+  "test.tex" 1763783304 40047 8934d17c9436d0bbfa9c5ef0da0f5007 ""
+  "test.toc" 1763783312 4812 d7d1ffc91e478e185bb0457efe80fca2 "pdflatex"
   (generated)
   "test.aux"
   "test.log"
