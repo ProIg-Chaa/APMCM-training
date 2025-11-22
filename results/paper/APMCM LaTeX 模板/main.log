@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  22 NOV 2025 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  23 NOV 2025 00:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1026,110 +1026,138 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.141 
-       [2] [3]
+l.131 
+       [2]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 168.
+(Font)              scaled to size 10.95pt on input line 164.
 
-Overfull \hbox (4.75157pt too wide) in paragraph at lines 169--190
+Overfull \hbox (4.75157pt too wide) in paragraph at lines 165--186
  [][] 
  []
 
-[4]
-<figures/soybean_data_hierarchy.png, id=518, 965.10562pt x 209.28188pt>
+[3] [4]
+<figures/soybean_data_hierarchy.png, id=532, 965.10562pt x 209.28188pt>
 File: figures/soybean_data_hierarchy.png Graphic file (type png)
 <use figures/soybean_data_hierarchy.png>
-Package pdftex.def Info: figures/soybean_data_hierarchy.png  used on input line 209.
+Package pdftex.def Info: figures/soybean_data_hierarchy.png  used on input line 205.
 (pdftex.def)             Requested size: 459.51054pt x 99.64302pt.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 216.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 212.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 216.
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 217.
+(Font)              scaled to size 12.0pt on input line 212.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 213.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
 File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 217.
+(Font)              scaled to size 12.0pt on input line 213.
  [5{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./figures/soybean_data_hierarchy.png>]
-<figures/2_import_share_stack.png, id=531, 1149.093pt x 570.2103pt>
+<figures/2_import_share_stack.png, id=546, 1149.093pt x 570.2103pt>
 File: figures/2_import_share_stack.png Graphic file (type png)
 <use figures/2_import_share_stack.png>
-Package pdftex.def Info: figures/2_import_share_stack.png  used on input line 233.
+Package pdftex.def Info: figures/2_import_share_stack.png  used on input line 229.
 (pdftex.def)             Requested size: 459.51054pt x 228.01917pt.
-<figures/exchange_rate_trend_optimized.png, id=532, 1003.5894pt x 569.2467pt>
+<figures/exchange_rate_trend_optimized.png, id=547, 1003.5894pt x 569.2467pt>
 File: figures/exchange_rate_trend_optimized.png Graphic file (type png)
 <use figures/exchange_rate_trend_optimized.png>
-Package pdftex.def Info: figures/exchange_rate_trend_optimized.png  used on input line 245.
+Package pdftex.def Info: figures/exchange_rate_trend_optimized.png  used on input line 241.
 (pdftex.def)             Requested size: 232.17242pt x 131.68835pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 246.
-<figures/1_tariff_trend.png, id=533, 998.0487pt x 570.2103pt>
+(Font)              scaled to size 10.0pt on input line 242.
+<figures/1_tariff_trend.png, id=548, 998.0487pt x 570.2103pt>
 File: figures/1_tariff_trend.png Graphic file (type png)
 <use figures/1_tariff_trend.png>
-Package pdftex.def Info: figures/1_tariff_trend.png  used on input line 252.
+Package pdftex.def Info: figures/1_tariff_trend.png  used on input line 248.
 (pdftex.def)             Requested size: 232.17242pt x 132.64212pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 267.
+(Font)              scaled to size 6.6pt on input line 263.
  [6 <./figures/2_import_share_stack.png> <./figures/exchange_rate_trend_optimized.png> <./figures/1_tariff_trend.png>] [7]
-<figures/tariff_impact_plot.png, id=558, 1145.2386pt x 422.5386pt>
+<figures/tariff_impact_plot.png, id=572, 1145.2386pt x 422.5386pt>
 File: figures/tariff_impact_plot.png Graphic file (type png)
 <use figures/tariff_impact_plot.png>
-Package pdftex.def Info: figures/tariff_impact_plot.png  used on input line 359.
+Package pdftex.def Info: figures/tariff_impact_plot.png  used on input line 355.
 (pdftex.def)             Requested size: 459.51054pt x 169.53468pt.
- [8] [9 <./figures/tariff_impact_plot.png>] [10] [11] [12]
-<figures/historytrafgain.png, id=598, 1324.95pt x 466.74374pt>
+ [8] [9 <./figures/tariff_impact_plot.png>]
+<figures/ques2/tariff_table.jpg, id=588, 1947.275pt x 1284.8pt>
+File: figures/ques2/tariff_table.jpg Graphic file (type jpg)
+<use figures/ques2/tariff_table.jpg>
+Package pdftex.def Info: figures/ques2/tariff_table.jpg  used on input line 406.
+(pdftex.def)             Requested size: 411.14528pt x 271.2667pt.
+ [10 <./figures/ques2/tariff_table.jpg>]
+<figures/ques2/jp_automakers_us_performance.jpg, id=598, 1986.42125pt x 1284.8pt>
+File: figures/ques2/jp_automakers_us_performance.jpg Graphic file (type jpg)
+<use figures/ques2/jp_automakers_us_performance.jpg>
+Package pdftex.def Info: figures/ques2/jp_automakers_us_performance.jpg  used on input line 418.
+(pdftex.def)             Requested size: 232.17242pt x 150.15044pt.
+<figures/ques2/sales_trend.png, id=599, 1899.34593pt x 1230.09563pt>
+File: figures/ques2/sales_trend.png Graphic file (type png)
+<use figures/ques2/sales_trend.png>
+Package pdftex.def Info: figures/ques2/sales_trend.png  used on input line 424.
+(pdftex.def)             Requested size: 232.17242pt x 150.36426pt.
+ [11 <./figures/ques2/jp_automakers_us_performance.jpg> <./figures/ques2/sales_trend.png (PNG copy)>]
+<figures/ques2/supply_chain_reconfiguration.jpg, id=615, 1947.275pt x 1284.8pt>
+File: figures/ques2/supply_chain_reconfiguration.jpg Graphic file (type jpg)
+<use figures/ques2/supply_chain_reconfiguration.jpg>
+Package pdftex.def Info: figures/ques2/supply_chain_reconfiguration.jpg  used on input line 501.
+(pdftex.def)             Requested size: 386.95897pt x 255.30867pt.
+ [12]
+<figures/ques2/import structure.png, id=624, 1204.5pt x 451.6875pt>
+File: figures/ques2/import structure.png Graphic file (type png)
+<use figures/ques2/import structure.png>
+Package pdftex.def Info: figures/ques2/import structure.png  used on input line 516.
+(pdftex.def)             Requested size: 386.95897pt x 145.10811pt.
+ [13 <./figures/ques2/supply_chain_reconfiguration.jpg> <./figures/ques2/import structure.png (PNG copy)>] [14] [15]
+<figures/historytrafgain.png, id=658, 1324.95pt x 466.74374pt>
 File: figures/historytrafgain.png Graphic file (type png)
 <use figures/historytrafgain.png>
-Package pdftex.def Info: figures/historytrafgain.png  used on input line 539.
+Package pdftex.def Info: figures/historytrafgain.png  used on input line 654.
 (pdftex.def)             Requested size: 459.51054pt x 161.86714pt.
+ [16]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 544.
+(hyperref)                removing `subscript' on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 544.
+(hyperref)                removing `math shift' on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 544.
-
-[13 <./figures/historytrafgain.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 554.
+(hyperref)                removing `math shift' on input line 669.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 554.
+(hyperref)                removing `math shift' on input line 669.
 
-[14] [15]
-<figures/Commodity_Prices_Heatmap.png, id=637, 2834.33907pt x 1781.90718pt>
+[17 <./figures/historytrafgain.png>] [18] [19]
+<figures/Commodity_Prices_Heatmap.png, id=702, 2834.33907pt x 1781.90718pt>
 File: figures/Commodity_Prices_Heatmap.png Graphic file (type png)
 <use figures/Commodity_Prices_Heatmap.png>
-Package pdftex.def Info: figures/Commodity_Prices_Heatmap.png  used on input line 666.
+Package pdftex.def Info: figures/Commodity_Prices_Heatmap.png  used on input line 781.
 (pdftex.def)             Requested size: 232.17242pt x 145.9542pt.
-<figures/Inflation_Structure_Evolution.png, id=638, 2539.23656pt x 2032.59375pt>
+<figures/Inflation_Structure_Evolution.png, id=703, 2539.23656pt x 2032.59375pt>
 File: figures/Inflation_Structure_Evolution.png Graphic file (type png)
 <use figures/Inflation_Structure_Evolution.png>
-Package pdftex.def Info: figures/Inflation_Structure_Evolution.png  used on input line 673.
+Package pdftex.def Info: figures/Inflation_Structure_Evolution.png  used on input line 788.
 (pdftex.def)             Requested size: 232.17242pt x 185.84094pt.
- [16]
-Overfull \hbox (31.82762pt too wide) in paragraph at lines 716--726
+ [20 <./figures/Commodity_Prices_Heatmap.png (PNG copy)> <./figures/Inflation_Structure_Evolution.png (PNG copy)>]
+Overfull \hbox (31.82762pt too wide) in paragraph at lines 831--841
  [][] 
  []
 
-[17 <./figures/Commodity_Prices_Heatmap.png (PNG copy)> <./figures/Inflation_Structure_Evolution.png (PNG copy)>] (./main.bbl [18]) (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+(./main.bbl [21]) (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 794.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 909.
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 794.
- [19] [20] 
+(Font)              scaled to size 10.95pt on input line 909.
+ [22] [23] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1145,21 +1173,21 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F504CB4188CF877FC7852DEA0DD8EDC0;15821.
+(rerunfilecheck)             Checksum: 3322487BE8BC772F606E58681B9099F0;16571.
  ) 
 Here is how much of TeX's memory you used:
- 25041 strings out of 476065
- 441403 string characters out of 5791683
+ 25156 strings out of 476065
+ 444155 string characters out of 5791683
  1961190 words of memory out of 5000000
- 46569 multiletter control sequences out of 15000+600000
- 614037 words of font info for 160 fonts, out of 8000000 for 9000
+ 46656 multiletter control sequences out of 15000+600000
+ 630578 words of font info for 202 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,13n,131p,709b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (22 pages, 2887019 bytes).
+<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (25 pages, 3610533 bytes).
 PDF statistics:
- 774 PDF objects out of 1000 (max. 8388607)
- 633 compressed objects within 7 object streams
- 171 named destinations out of 1000 (max. 500000)
- 649 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 842 PDF objects out of 1000 (max. 8388607)
+ 688 compressed objects within 7 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 698 words of extra memory for PDF output out of 10000 (max. 10000000)
 

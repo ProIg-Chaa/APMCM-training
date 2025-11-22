@@ -38,7 +38,7 @@ def solve_impact_analysis(tariff_base, tariff_add_range):
         s_J, s_M, s_U = shares
 
         # 3. 经济传导 (价格与总需求)
-        C_avg = s_J * Cost_J + s_M * Cost_M + s_U * Cost_U
+        C_avg = s_J * Cost_fJ + s_M * Cost_M + s_U * Cost_U
         if len(results) == 0: base_price = C_avg  # 记录初始价格
 
         price_change = (C_avg - base_price) / base_price

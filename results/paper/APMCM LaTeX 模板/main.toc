@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
 \contentsline {subsection}{\numberline {1\,.\,1}Background}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1\,.\,2}Question Restatement}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1\,.\,2}Question Restatement}{2}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,1}Question 1}{2}{subsubsection.1.2.1}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,2}Question 2}{2}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,3}Question 3}{2}{subsubsection.1.2.3}%
@@ -34,49 +34,49 @@
 \contentsline {subsection}{\numberline {6\,.\,1}Data Collection and Preprocessing}{9}{subsection.6.1}%
 \contentsline {subsubsection}{\numberline {6\,.\,1\,.\,1}Data Sources and Indicator Selection}{10}{subsubsection.6.1.1}%
 \contentsline {subsubsection}{\numberline {6\,.\,1\,.\,2}Descriptive Statistical Analysis}{10}{subsubsection.6.1.2}%
-\contentsline {paragraph}{1. Tariff Policy and Trade Barriers (2010--2025)}{10}{paragraph*.11}%
-\contentsline {paragraph}{2. Market Structure: The Shift from Import to Localization}{11}{paragraph*.12}%
-\contentsline {paragraph}{3. Cost Drivers: Exchange Rates and Energy}{11}{paragraph*.13}%
 \contentsline {subsection}{\numberline {6\,.\,2}Model Construction}{11}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,1}Supply Side: Three-Path Cost Game}{11}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,2}Market Share Allocation (Logit Model)}{11}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,3}Demand Side: Economic Transmission Effects}{11}{subsubsection.6.2.3}%
-\contentsline {subsection}{\numberline {6\,.\,3}Model Solving and Parameter Calibration}{11}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6\,.\,3\,.\,1}Key Scenario Solving Results}{12}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,1}Supply Side: Multi-Echelon Cost Minimization}{11}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,2}Demand Side: Logit Choice and Price Transmission}{11}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6\,.\,3}Model Solution and Calibration}{11}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6\,.\,4}Result Analysis}{12}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,1}Impact on U.S.-Japan Auto Trade Dynamics}{12}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,2}Supply Chain Reconfiguration (The "Mexico Problem")}{12}{subsubsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,3}Impact on the U.S. Auto Industry}{13}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,1}Critical Thresholds and Trade Diversion}{12}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,2}Supply Chain Reconfiguration}{12}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,3}Welfare Implications and Import Structure}{13}{subsubsection.6.4.3}%
 \contentsline {section}{\numberline {7}Problem 3: Establishment and Solution of the Model}{13}{section.7}%
-\contentsline {subsection}{\numberline {7\,.\,1}Data Analysis}{13}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7\,.\,2}Model Construction}{13}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7\,.\,3}Model Solving}{13}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7\,.\,4}Result Analysis}{13}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Problem 4: Establishment and Solution of the Model}{13}{section.8}%
-\contentsline {subsection}{\numberline {8\,.\,1}Data Collection and Parameter Calibration}{13}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,1}Effective Tax Base Calibration ($V_{base}$)}{13}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,2}Macroeconomic Growth Rate ($g$)}{14}{subsubsection.8.1.2}%
-\contentsline {subsection}{\numberline {8\,.\,2}Model Construction}{14}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,1}Core Equations}{14}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,2}Shock Magnitude and Dynamic Elasticity}{14}{subsubsection.8.2.2}%
-\contentsline {subsection}{\numberline {8\,.\,3}Result Solving Analysis}{15}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,1}Simulation Results}{15}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,2}Analysis of Dynamics}{15}{subsubsection.8.3.2}%
-\contentsline {section}{\numberline {9}Problem 5: Establishment and Solution of the Model}{16}{section.9}%
-\contentsline {subsection}{\numberline {9\,.\,1}The Impact of Tariff Adjustments}{16}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9\,.\,2}Data Collection}{16}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9\,.\,3}Model Construction and Empirical Results}{17}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,1}Theoretical Framework and Model Specification}{17}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,2}Estimation Methodology}{17}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,3}Empirical Results}{17}{subsubsection.9.3.3}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,4}Economic Interpretation and Policy Implications}{18}{subsubsection.9.3.4}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,5}Robustness}{18}{subsubsection.9.3.5}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,6}Conclusion}{18}{subsubsection.9.3.6}%
-\contentsline {section}{\numberline {10}Model Evaluation}{18}{section.10}%
-\contentsline {subsection}{\numberline {10\,.\,1}Advantages of the Model}{18}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10\,.\,2}Disadvantages of the Model}{18}{subsection.10.2}%
-\contentsline {section}{\numberline {11}References}{19}{section.11}%
-\contentsline {subsection}{\numberline {11\,.\,1}Appendix A: Source Code}{19}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11\,.\,2}Appendix B: Supplementary Data}{20}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11\,.\,3}Appendix C: Additional Figures/Tables}{20}{subsection.11.3}%
+\contentsline {subsection}{\numberline {7\,.\,1}Data Collection and Analysis}{13}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7\,.\,1\,.\,1}Data Sources}{14}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7\,.\,1\,.\,2}Parameter Calibration: Reverse Engineering Costs}{14}{subsubsection.7.1.2}%
+\contentsline {subsection}{\numberline {7\,.\,2}Model Construction}{14}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7\,.\,2\,.\,1}Supply Side: Cost Structure}{15}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7\,.\,2\,.\,2}Demand Side: Logit Market Allocation}{15}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7\,.\,2\,.\,3}Objective Functions}{15}{subsubsection.7.2.3}%
+\contentsline {subsection}{\numberline {7\,.\,3}Result Analysis}{15}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7\,.\,3\,.\,1}Evaluation of Policy Effectiveness}{15}{subsubsection.7.3.1}%
+\contentsline {section}{\numberline {8}Problem 4: Establishment and Solution of the Model}{16}{section.8}%
+\contentsline {subsection}{\numberline {8\,.\,1}Data Collection and Parameter Calibration}{16}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,1}Effective Tax Base Calibration ($V_{base}$)}{17}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,2}Macroeconomic Growth Rate ($g$)}{17}{subsubsection.8.1.2}%
+\contentsline {subsection}{\numberline {8\,.\,2}Model Construction}{17}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,1}Core Equations}{17}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,2}Shock Magnitude and Dynamic Elasticity}{18}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8\,.\,3}Result Solving Analysis}{18}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,1}Simulation Results}{18}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,2}Analysis of Dynamics}{18}{subsubsection.8.3.2}%
+\contentsline {section}{\numberline {9}Problem 5: Establishment and Solution of the Model}{19}{section.9}%
+\contentsline {subsection}{\numberline {9\,.\,1}The Impact of Tariff Adjustments}{19}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9\,.\,2}Data Collection}{19}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9\,.\,3}Model Construction and Empirical Results}{20}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,1}Theoretical Framework and Model Specification}{20}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,2}Estimation Methodology}{20}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,3}Empirical Results}{20}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,4}Economic Interpretation and Policy Implications}{21}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,5}Robustness}{21}{subsubsection.9.3.5}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,6}Conclusion}{21}{subsubsection.9.3.6}%
+\contentsline {section}{\numberline {10}Model Evaluation}{21}{section.10}%
+\contentsline {subsection}{\numberline {10\,.\,1}Advantages of the Model}{21}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10\,.\,2}Disadvantages of the Model}{21}{subsection.10.2}%
+\contentsline {section}{\numberline {11}References}{22}{section.11}%
+\contentsline {subsection}{\numberline {11\,.\,1}Appendix A: Source Code}{22}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11\,.\,2}Appendix B: Supplementary Data}{23}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11\,.\,3}Appendix C: Additional Figures/Tables}{23}{subsection.11.3}%
 \contentsfinish 
