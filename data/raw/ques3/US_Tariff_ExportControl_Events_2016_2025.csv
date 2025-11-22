@@ -1,0 +1,11 @@
+Year,Date,Event_Type,Description,Applied_Tariff_Percent,Export_Control_Intensity,Notes
+2016,,None,Baseline MFN zero tariff,0,0,
+2017,,None,Baseline MFN zero tariff,0,0,
+2018,2018-07,Section301_List1,25% tariff on Chinese semiconductors,25,0,Start of US-China semiconductor tariff war
+2019,2019-05,Huawei_EntityList,Export restrictions on Huawei,25,1,First major tech export control
+2020,2020-12,SMIC_EntityList,Restrictions on advanced equipment for SMIC,25,2,Bans 10nm and below tools
+2021,,None,No major new policy,25,2,
+2022,2022-10-07,BIS_Oct7_Rules,Advanced chips & equipment export ban,25,4,Major structural tech decoupling
+2023,2023-10-17,BIS_Update,Closing GPU loopholes (A800/H800),25,5,Full-scale AI chip export control
+2024,2024-05,Section301_Review,Announced increase to 50% tariffs on semiconductors,50,5,To take effect in 2025
+2025E,2025-01,Reciprocal_Tariffs,50% tariff fully effective,50,5,High-tariff regime in force

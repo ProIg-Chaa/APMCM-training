@@ -1,71 +1,61 @@
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {subsection}{\numberline {1\,.\,1}Background}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1\,.\,1}Background}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1\,.\,2}Question Restatement}{2}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,1}Question 1}{3}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,2}Question 2}{3}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,1}Question 1}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,2}Question 2}{2}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,3}Question 3}{3}{subsubsection.1.2.3}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,4}Question 4}{3}{subsubsection.1.2.4}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,5}Question 5}{3}{subsubsection.1.2.5}%
-\contentsline {section}{\numberline {2}Problem Analysis}{4}{section.2}%
-\contentsline {subsection}{\numberline {2\,.\,1}Analysis of Question 1}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2\,.\,2}Analysis of Question 2}{4}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2\,.\,3}Analysis of Question 3}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2\,.\,4}Analysis of Question 4}{4}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2\,.\,5}Analysis of Question 5}{4}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Model Assumptions}{4}{section.3}%
-\contentsline {section}{\numberline {4}Description of the Symbols}{7}{section.4}%
-\contentsline {section}{\numberline {5}Problem 1: Establishment and Solution of the Model}{9}{section.5}%
-\contentsline {subsection}{\numberline {5\,.\,1}Data Collection}{9}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5\,.\,1\,.\,1}Data Analysis}{9}{subsubsection.5.1.1}%
-\contentsline {paragraph}{Market Concentration and Trade Diversion Effect}{9}{paragraph*.3}%
-\contentsline {paragraph}{Price Volatility and Tariff Influence}{10}{paragraph*.4}%
-\contentsline {paragraph}{Supply Capacity and Model Justification}{10}{paragraph*.5}%
-\contentsline {subsubsection}{\numberline {5\,.\,1\,.\,2}Analysis of Controlling Factors}{12}{subsubsection.5.1.2}%
-\contentsline {paragraph}{Production Volume (Supply Capacity)}{12}{paragraph*.8}%
-\contentsline {paragraph}{Exchange Rates}{12}{paragraph*.9}%
-\contentsline {paragraph}{Freight Costs (Shipping Rates)}{13}{paragraph*.10}%
-\contentsline {paragraph}{Macroeconomic Conditions (Implicit)}{13}{paragraph*.11}%
-\contentsline {paragraph}{Fixed Effects for Origin}{14}{paragraph*.12}%
-\contentsline {subsection}{\numberline {5\,.\,2}Model Construction}{14}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5\,.\,2\,.\,1}Price Elasticity Estimation Model}{14}{subsubsection.5.2.1}%
-\contentsline {paragraph}{Econometric Model Formula}{14}{paragraph*.13}%
-\contentsline {paragraph}{Elasticity Correction Mechanism}{15}{paragraph*.14}%
-\contentsline {subsubsection}{\numberline {5\,.\,2\,.\,2}Tariff Gradient Simulation Engine}{15}{subsubsection.5.2.2}%
-\contentsline {paragraph}{US Trade Flow Changes}{15}{paragraph*.15}%
-\contentsline {paragraph}{Competitor Substitution Effect}{16}{paragraph*.16}%
-\contentsline {subsection}{\numberline {5\,.\,3}Core Steps of Parameter Calibration}{16}{subsection.5.3}%
-\contentsline {paragraph}{5.3.1 Setting of the Initial Elasticity Estimation Model}{16}{paragraph*.17}%
-\contentsline {paragraph}{5.3.2 Initial Estimation Results and Problem Identification}{17}{paragraph*.18}%
-\contentsline {paragraph}{5.3.3 Basis for Elasticity Coefficient Correction}{17}{paragraph*.19}%
-\contentsline {subsection}{\numberline {5\,.\,4}Result Analysis}{17}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5\,.\,4\,.\,1}Export Volume and Value Trends}{17}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5\,.\,4\,.\,2}Impacts on the Soybean Industry}{19}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5\,.\,4\,.\,3}Verification of Result Rationality}{19}{subsubsection.5.4.3}%
-\contentsline {section}{\numberline {6}Problem 2: Establishment and Solution of the Model}{20}{section.6}%
-\contentsline {subsection}{\numberline {6\,.\,1}Data Analysis}{20}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6\,.\,2}Model Construction}{20}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6\,.\,3}Model Solving}{20}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6\,.\,4}Result Analysis}{20}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Problem 3: Establishment and Solution of the Model}{21}{section.7}%
-\contentsline {subsection}{\numberline {7\,.\,1}Data Analysis}{21}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7\,.\,2}Model Construction}{21}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7\,.\,3}Model Solving}{21}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7\,.\,4}Result Analysis}{21}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Problem 4: Establishment and Solution of the Model}{22}{section.8}%
-\contentsline {subsection}{\numberline {8\,.\,1}Data Analysis}{22}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8\,.\,2}Model Construction}{22}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8\,.\,3}Model Solving}{22}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8\,.\,4}Result Analysis}{22}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Problem 5: Establishment and Solution of the Model}{23}{section.9}%
-\contentsline {subsection}{\numberline {9\,.\,1}Data Analysis}{23}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9\,.\,2}Model Construction}{23}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9\,.\,3}Model Solving}{23}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9\,.\,4}Result Analysis}{23}{subsection.9.4}%
-\contentsline {section}{\numberline {10}Model Evaluation}{24}{section.10}%
-\contentsline {subsection}{\numberline {10\,.\,1}Advantages of the Model}{24}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10\,.\,2}Disadvantages of the Model}{24}{subsection.10.2}%
-\contentsline {section}{\numberline {11}References}{25}{section.11}%
-\contentsline {subsection}{\numberline {11\,.\,1}Appendix A: Source Code}{26}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11\,.\,2}Appendix B: Supplementary Data}{26}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11\,.\,3}Appendix C: Additional Figures/Tables}{26}{subsection.11.3}%
+\contentsline {section}{\numberline {2}Problem Analysis}{3}{section.2}%
+\contentsline {subsection}{\numberline {2\,.\,1}Analysis of Question 1}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2\,.\,2}Analysis of Question 2}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2\,.\,3}Analysis of Question 3}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2\,.\,4}Analysis of Question 4}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2\,.\,5}Analysis of Question 5}{3}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Model Assumptions}{3}{section.3}%
+\contentsline {section}{\numberline {4}Description of the Symbols}{5}{section.4}%
+\contentsline {section}{\numberline {5}Problem 1: Impact of U.S. Tariff Adjustments on Global Soybean Trade}{6}{section.5}%
+\contentsline {subsection}{\numberline {5\,.\,1}Data Collection and Preprocessing}{6}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5\,.\,1\,.\,1}Data Sources and Indicator Selection}{6}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5\,.\,1\,.\,2}Descriptive Statistical Analysis}{6}{subsubsection.5.1.2}%
+\contentsline {paragraph}{Market Concentration and Trade Diversion}{6}{paragraph*.3}%
+\contentsline {paragraph}{Price Transmission Mechanism}{7}{paragraph*.5}%
+\contentsline {subsection}{\numberline {5\,.\,2}Model Construction}{7}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5\,.\,2\,.\,1}Stage 1: Price Elasticity Estimation (Log-Log Model)}{8}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5\,.\,2\,.\,2}Stage 2: Tariff Gradient Simulation Engine}{8}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5\,.\,3}Model Solving and Parameter Calibration}{8}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5\,.\,3\,.\,1}Initial Regression and Anomaly Detection}{8}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5\,.\,3\,.\,2}Parameter Correction and Calibration}{9}{subsubsection.5.3.2}%
+\contentsline {subsection}{\numberline {5\,.\,4}Result Analysis}{9}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5\,.\,4\,.\,1}Scenario Simulation: Export Volume and Value}{9}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5\,.\,4\,.\,2}Industrial and Economic Implications}{10}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5\,.\,4\,.\,3}Model Validity Check}{10}{subsubsection.5.4.3}%
+\contentsline {section}{\numberline {6}Problem 2: Establishment and Solution of the Model}{11}{section.6}%
+\contentsline {section}{\numberline {7}Problem 3: Establishment and Solution of the Model}{11}{section.7}%
+\contentsline {subsection}{\numberline {7\,.\,1}Data Analysis}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7\,.\,2}Model Construction}{11}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7\,.\,3}Model Solving}{11}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7\,.\,4}Result Analysis}{11}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Problem 4: Establishment and Solution of the Model}{11}{section.8}%
+\contentsline {subsection}{\numberline {8\,.\,1}Data Analysis}{11}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8\,.\,2}Model Construction}{11}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8\,.\,3}Model Solving}{11}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8\,.\,4}Result Analysis}{11}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Problem 5: Establishment and Solution of the Model}{11}{section.9}%
+\contentsline {subsection}{\numberline {9\,.\,1}The Impact of Tariff Adjustments}{11}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9\,.\,2}Data Collection}{11}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9\,.\,3}Model Construction and Empirical Results}{12}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,1}Theoretical Framework and Model Specification}{12}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,2}Estimation Methodology}{12}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,3}Empirical Results}{13}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,4}Economic Interpretation and Policy Implications}{13}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,5}Robustness}{13}{subsubsection.9.3.5}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,6}Conclusion}{13}{subsubsection.9.3.6}%
+\contentsline {section}{\numberline {10}Model Evaluation}{14}{section.10}%
+\contentsline {subsection}{\numberline {10\,.\,1}Advantages of the Model}{14}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10\,.\,2}Disadvantages of the Model}{14}{subsection.10.2}%
+\contentsline {section}{\numberline {11}References}{14}{section.11}%
+\contentsline {subsection}{\numberline {11\,.\,1}Appendix A: Source Code}{14}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11\,.\,2}Appendix B: Supplementary Data}{15}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11\,.\,3}Appendix C: Additional Figures/Tables}{15}{subsection.11.3}%
 \contentsfinish 

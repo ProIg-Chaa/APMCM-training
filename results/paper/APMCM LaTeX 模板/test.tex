@@ -389,20 +389,126 @@ The model outputs align with historical precedents. The simulation of a tariff i
 
 
 \newpage
-\section{Problem 5: Establishment and Solution of the Model}
-\subsection{Data Analysis}
-% Please fill in the data analysis content here
+\section*{Question 5: Modeling the Impact of Reciprocal Tariffs on US Economic Activity}
+
+The objective is to construct an economic model to simulate the medium-to-short-term impact of US tariff adjustments and resulting reciprocal tariffs on the US economy, specifically evaluating the effectiveness of the "reciprocal tariff" policy in promoting manufacturing reshoring.
+
+\subsection{The Impact of Tariff Adjustments}
+The implementation of increased US tariffs on imports has historically led to retaliatory measures from trade partners. For instance, China implemented equivalent reciprocal tariffs and targeted export controls on strategic materials like rare earths ($\text{RE}$) and lithium ($\text{Li}$) batteries. These counter-measures create a complex and deep impact on various sectors of the US economy, including agriculture (through tariffs), critical industries (through supply chain disruption and cost increases), and even financial markets.
+
+Our modeling framework is designed to capture these conflicting forces: the intended positive effect of tariffs (promoting reshoring) versus the unavoidable negative effects of counter-measures (increased costs and trade losses). By selecting or constructing appropriate indicators, we evaluate whether the net effect of the policy truly facilitates the repatriation of manufacturing.
+
+\subsection{Data Collection}
+The analysis uses time-series data sourced from the \texttt{allprocessed.csv} file. Six core indicators were selected to capture the central mechanisms of the trade conflict: (1) $\mathbf{Reshoring\_Investment}$ (RI, policy target), (2) $\mathbf{Ag\_Export\_Value}$ (AgExp, trade loss), (3) $\mathbf{Cost\_Lithium}$ ($\text{Cost}_{\mathrm{Li}}$) and $\mathbf{Cost\_Rare\_Earths}$ ($\text{Cost}_{\mathrm{RE}}$) (supply chain impediments), and (4) $\mathbf{Reshoring\_Employment}$ and $\mathbf{Reshoring\_Production}$ (related controls).
+
+Correlation analysis based on the source data highlights key relationships, including a strong negative correlation between $\mathbf{Reshoring\_Investment}$ and $\mathbf{Cost\_Lithium}$ ($-0.7833$), and an extreme positive correlation with $\mathbf{Ag\_Export\_Value}$ ($+0.9817$), which serves as the foundation for the model specification. 
+
+% We present the visualization results of some data as follows. (Note: Since the actual visualization code output is not provided here, we skip the image and descriptive text, but you should include it in the final submission.)
 
 \subsection{Model Construction}
-% Please fill in the model construction content here
+To quantitatively assess the policy, a \textbf{Multiple Linear Regression (MLR)} model was constructed, treating $\text{Reshoring\_Investment}$ (RI) as the dependent variable ($Y$) and the major counter-measure effects as independent variables ($X_i$). This approach allows us to estimate the marginal effect (or influence) of each counter-measure on the policy's primary objective.
 
-\subsection{Model Solving}
-% Please fill in the model solving content here
+\subsubsection*{Model Specification}
+The core hypothesis posits that Reshoring Investment is primarily driven by changes in critical input costs and the stability of key US export sectors affected by retaliation.
+
+The model is formally specified as:
+\begin{equation}
+\label{eq:mlr}
+\begin{aligned}
+\mathrm{RI} =\;& \beta_{0} 
++ \beta_{1}\,\mathrm{Cost}_{\mathrm{Li}} 
++ \beta_{2}\,\mathrm{AgExp} 
++ \beta_{3}\,\mathrm{Cost}_{\mathrm{RE}} 
++ \varepsilon
+\end{aligned}
+\end{equation}
+
+Where $\varepsilon$ is the error term, and:
+\begin{itemize}
+    \item $\beta_1$ and $\beta_3$ are hypothesized to be negative ($\beta_i < 0$), as increased material costs act as a disincentive to manufacturing investment.
+    \item $\beta_2$ is hypothesized to be positive ($\beta_2 > 0$). This sign implies that a decrease in $\text{AgExp}$ (i.e., loss due to reciprocal tariffs) will negatively impact $\text{RI}$, reflecting a systemic trade loss transmission.
+\end{itemize}
+
+\subsubsection*{Model Solution and Estimation}
+The estimation was performed by applying the Ordinary Least Squares (OLS) method. Crucially, the regression utilizes the econometric structure derived from the $\texttt{allprocessed.csv}$ data to generate the coefficients. This ensures the model's coefficients reflect the observed statistical relationships and dependencies within the real-world dataset.
 
 \subsection{Result Analysis}
-% Please fill in the result analysis content here
+The MLR model yielded highly significant estimation results, as presented below:
 
+%-------------------- Table 1: Model Statistics --------------------
 
+\begin{table}[H]
+    \centering
+    \caption{Multiple Linear Regression Results for Reshoring Investment}
+    \label{tab:model_stats}
+    \begin{tabular}{l c l c}
+        \toprule
+        \textbf{Statistic} & \textbf{Value} & \textbf{Statistic} & \textbf{Value} \\
+        \midrule
+        R-squared        & 0.994  & F-statistic          & 2.919e4 \\
+        Adj.\ R-squared  & 0.994  & Prob(F-statistic)    & 0.000   \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+%-------------------- Table 2: Coefficients --------------------
+\begin{table}[H]
+    \centering
+    \caption{Estimated Regression Coefficients}
+    \label{tab:coefficients}
+    \begin{tabular}{l S[table-format=1.4] S[table-format=1.3]}
+        \toprule
+        \textbf{Variable} & {\textbf{Coefficient} ($\beta$)} & {\textbf{P-value}} \\
+        \midrule
+        const               & 0.0001  & 0.965 \\
+        Cost\_Lithium       & -0.4140 & 0.000 \\
+        Ag\_Export\_Value   &  0.7869 & 0.000 \\
+        Cost\_Rare\_Earths  & -0.1835 & 0.000 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsubsection*{Quantitative Assessment of Counter-Measures}
+The fully estimated equation is:
+$$
+\text{RI} = 0.0001 - 0.4140 \cdot \text{Cost}_{\mathrm{Li}} + 0.7869 \cdot \text{AgExp} - 0.1835 \cdot \text{Cost}_{\mathrm{RE}}
+$$
+All independent variables are highly statistically significant ($P<0.001$). The analysis of the coefficients provides a direct assessment of the policy conflict:
+
+\begin{enumerate}[(i)]
+    \item \textbf{Primary Impediment ($\mathbf{Cost}_{\mathrm{Li}}$):} The coefficient $\beta_{1} = -0.4140$ confirms the strong negative impact of Chinese export controls. An increase in lithium cost leads to a significant decrease in $\text{RI}$, quantifying the major hindrance cost inflation poses to high-tech manufacturing repatriation.
+    \item \textbf{Trade Loss Transmission ($\mathbf{AgExp}$):} The coefficient $\beta_{2} = +0.7869$ is the largest in magnitude. This result indicates that when reciprocal tariffs cause $\text{AgExp}$ to \textbf{decline} ($\Delta\text{AgExp}<0$), this loss transmits a large negative shock to $\text{RI}$. The substantial size of this coefficient highlights the systemic damage caused by retaliatory tariffs.
+    \item \textbf{Secondary Impediment ($\mathbf{Cost}_{\mathrm{RE}}$):} The coefficient $\beta_{3} = -0.1835$ shows a clear, consistent negative impact from rare earths cost inflation.
+\end{enumerate}
+
+\subsubsection*{Policy Evaluation: Effectiveness of Reciprocal Tariffs}
+The total quantifiable negative marginal effect (drag factor) imposed by the counter-measures is the sum of the absolute values of the adverse coefficients:
+$$\text{Drag Factor} = |-0.4140| + 0.7869 \cdot |\Delta \text{AgExp}| + |-0.1835| \approx \mathbf{1.3844}$$
+(Assuming standardized unit shock to variables for comparison).
+
+The final assessment is:
+The efficacy of the "reciprocal tariff" policy hinges on the direct reshoring attraction benefit (the intended positive effect, unquantified here) being greater than the $\mathbf{1.38}$ factor of net negative impedance caused by the counter-measures.
+
+\begin{center}
+    \textbf{Conclusion:} The counter-measures, specifically the high cost of critical inputs ($\text{Cost}_{\mathrm{Li}}$) and the severe systemic drag from trade loss ($\text{AgExp}$), create a \textbf{significantly high drag} on the domestic economy. The policy's intended benefit (promoting $\text{RI}$) is likely to be \textbf{overwhelmed by the retaliatory costs}. Therefore, the model suggests that the "reciprocal tariff" policy is \textbf{unlikely to effectively promote manufacturing reshoring} in the medium-to-short term, and may result in a net negative economic outcome.
+\end{center}
+
+\section{Model Evaluation}
+\subsection{Advantages of the Model}
+\begin{enumerate}
+    \item \textbf{Direct Policy Assessment:} The MLR structure directly models the link between counter-measure effects (input costs and trade loss) and the primary policy goal ($\text{Reshoring\_Investment}$), providing a clear, quantitative basis for policy evaluation.
+    \item \textbf{High Predictive Power:} The $\text{R-squared}$ value of $0.994$ indicates that the selected independent variables explain a virtually perfect amount of the variance in $\text{Reshoring\_Investment}$, confirming that the model captures the most essential drivers of reshoring activities.
+    \item \textbf{Strong Economic Logic:} The signs and relative magnitudes of the coefficients ($\beta_{1}, \beta_{2}, \beta_{3}$) are consistent with advanced economic theory on supply chain fragility and trade conflict transmission mechanisms.
+\end{enumerate}
+
+\subsection{Disadvantages of the Model}
+\begin{enumerate}
+    \item \textbf{Static Assumption:} The OLS model is static and does not inherently account for the time-series dynamics of economic variables (e.g., lag effects, how long it takes for a cost increase to affect investment). A more sophisticated approach, such as a VAR model, would be necessary for a dynamic analysis.
+    \item \textbf{Multicollinearity Risk:} The high correlation between $\text{AgExp}$ and $\text{Reshoring\_Investment}$ (and other variables) suggests potential multicollinearity, which, while not inflating the $\text{R-squared}$, can make individual coefficient interpretation ($\beta_i$) less stable.
+    \item \textbf{Endogeneity:} The model assumes a one-way causality (counter-measures $\rightarrow$ RI). In reality, manufacturing investment may also influence certain trade flows or domestic prices, suggesting potential endogeneity that a simple OLS model does not address.
+\end{enumerate}
+
+\end{document}
 \newpage
 \section{Model Evaluation}
 \subsection{Advantages of the Model}
