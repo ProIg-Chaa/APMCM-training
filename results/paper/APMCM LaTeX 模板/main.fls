@@ -353,13 +353,13 @@ INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Italic-tl
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-ot1r.tfm
 OUTPUT main.toc
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm

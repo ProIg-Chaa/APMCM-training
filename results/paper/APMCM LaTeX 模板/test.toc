@@ -31,26 +31,43 @@
 \contentsline {subsubsection}{\numberline {5\,.\,4\,.\,2}Industrial and Economic Implications}{10}{subsubsection.5.4.2}%
 \contentsline {subsubsection}{\numberline {5\,.\,4\,.\,3}Model Validity Check}{10}{subsubsection.5.4.3}%
 \contentsline {section}{\numberline {6}Problem 2: Establishment and Solution of the Model}{11}{section.6}%
-\contentsline {section}{\numberline {7}Problem 3: Establishment and Solution of the Model}{11}{section.7}%
-\contentsline {subsection}{\numberline {7\,.\,1}Data Analysis}{11}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7\,.\,2}Model Construction}{11}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7\,.\,3}Model Solving}{11}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7\,.\,4}Result Analysis}{11}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Problem 4: Establishment and Solution of the Model}{12}{section.8}%
-\contentsline {subsection}{\numberline {8\,.\,1}Data Collection and Parameter Calibration}{12}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,1}Effective Tax Base Calibration ($V_{base}$)}{12}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,2}Macroeconomic Growth Rate ($g$)}{12}{subsubsection.8.1.2}%
-\contentsline {subsection}{\numberline {8\,.\,2}Model Construction}{12}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,1}Core Equations}{12}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,2}Shock Magnitude and Dynamic Elasticity}{13}{subsubsection.8.2.2}%
-\contentsline {subsection}{\numberline {8\,.\,3}Result Solving Analysis}{13}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,1}Simulation Results}{13}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,2}Analysis of Dynamics}{13}{subsubsection.8.3.2}%
-\contentsline {section}{\numberline {9}Model Evaluation}{17}{section.9}%
-\contentsline {subsection}{\numberline {9\,.\,1}Advantages of the Model}{17}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9\,.\,2}Disadvantages of the Model}{17}{subsection.9.2}%
-\contentsline {section}{\numberline {10}References}{18}{section.10}%
-\contentsline {subsection}{\numberline {10\,.\,1}Appendix A: Source Code}{19}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10\,.\,2}Appendix B: Supplementary Data}{19}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10\,.\,3}Appendix C: Additional Figures/Tables}{19}{subsection.10.3}%
+\contentsline {subsection}{\numberline {6\,.\,1}Data Collection and Preprocessing}{11}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,1\,.\,1}Data Sources and Indicator Selection}{11}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,1\,.\,2}Descriptive Statistical Analysis}{11}{subsubsection.6.1.2}%
+\contentsline {paragraph}{1. U.S. Auto Tariff Trend (2010--2025)}{11}{paragraph*.11}%
+\contentsline {paragraph}{2. U.S. Auto Market Demand and Japan Import Structure (2015--2025)}{12}{paragraph*.13}%
+\contentsline {paragraph}{3. Exchange Rate and Production Cost Calibration}{13}{paragraph*.15}%
+\contentsline {subsection}{\numberline {6\,.\,2}Model Construction}{13}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,1}Supply Side: Three-Path Cost Game (Non-Tariff Responses)}{13}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,2}Market Share Allocation (Logit Model)}{13}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,3}Demand Side: Economic Transmission Effects}{13}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6\,.\,3}Model Solving and Parameter Calibration}{14}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6\,.\,3\,.\,1}Key Scenario Solving Results}{14}{subsubsection.6.3.1}%
+\contentsline {subsection}{\numberline {6\,.\,4}Result Analysis}{14}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,1}Impact on U.S.-Japan Auto Trade}{14}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,2}Impact on U.S. Auto Import Structure}{14}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,3}Impact on U.S. Auto Industry}{15}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,4}Deep Insight: Mexico Leakage Effect}{15}{subsubsection.6.4.4}%
+\contentsline {section}{\numberline {7}Problem 3: Establishment and Solution of the Model}{15}{section.7}%
+\contentsline {subsection}{\numberline {7\,.\,1}Data Analysis}{15}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7\,.\,2}Model Construction}{15}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7\,.\,3}Model Solving}{15}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7\,.\,4}Result Analysis}{15}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Problem 4: Establishment and Solution of the Model}{16}{section.8}%
+\contentsline {subsection}{\numberline {8\,.\,1}Data Collection and Parameter Calibration}{16}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,1}Effective Tax Base Calibration ($V_{base}$)}{16}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,2}Macroeconomic Growth Rate ($g$)}{16}{subsubsection.8.1.2}%
+\contentsline {subsection}{\numberline {8\,.\,2}Model Construction}{16}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,1}Core Equations}{16}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,2}Shock Magnitude and Dynamic Elasticity}{17}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8\,.\,3}Result Solving Analysis}{17}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,1}Simulation Results}{17}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,2}Analysis of Dynamics}{17}{subsubsection.8.3.2}%
+\contentsline {section}{\numberline {9}Model Evaluation}{21}{section.9}%
+\contentsline {subsection}{\numberline {9\,.\,1}Advantages of the Model}{21}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9\,.\,2}Disadvantages of the Model}{21}{subsection.9.2}%
+\contentsline {section}{\numberline {10}References}{22}{section.10}%
+\contentsline {subsection}{\numberline {10\,.\,1}Appendix A: Source Code}{23}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10\,.\,2}Appendix B: Supplementary Data}{23}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10\,.\,3}Appendix C: Additional Figures/Tables}{23}{subsection.10.3}%
 \contentsfinish 
