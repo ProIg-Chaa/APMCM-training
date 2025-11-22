@@ -1,9 +1,25 @@
 \begin{thebibliography}{}
 
+\bibitem[Cavallo et~al., 2021]{Cavallo2021}
+Cavallo, A., Gopinath, G., Neiman, B., and Tang, J. (2021).
+\newblock Tariff pass‑through at the border and at the store: Evidence from u.s. trade policy.
+\newblock {\em American Economic Review: Insights}, 3(1):19--34.
+
 \bibitem[{GACC}, 2025]{GACC}
 {GACC} (2025).
 \newblock Gacc statistics.
 \newblock \url{https://www.stats.customs.gov.cn}.
+\newblock Accessed: 2025-11-19.
+
+\bibitem[Kee et~al., 2008]{Kee2008}
+Kee, H.~L., Nicita, A., and Olarreaga, M. (2008).
+\newblock Import demand elasticities and trade distortions.
+\newblock {\em The Review of Economics and Statistics}, 90(4):666--682.
+
+\bibitem[{U.S. Department of the Treasury}, 2025]{USTreasury2025}
+{U.S. Department of the Treasury} (2025).
+\newblock Monthly treasury statement.
+\newblock \url{https://www.treasury.gov/resource-center/data-chart-center/Pages/treasury-monthly-statement.aspx}.
 \newblock Accessed: 2025-11-19.
 
 \end{thebibliography}
