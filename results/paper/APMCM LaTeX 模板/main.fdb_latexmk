@@ -1,21 +1,19 @@
 # Fdb version 4
-["bibtex main"] 1763801466.89207 "main.aux" "main.bbl" "main" 1763801471.49761 0
+["bibtex main"] 1763818520.73023 "main.aux" "main.bbl" "main" 1763818525.41592 0
   "./refs.bib" 1763794617 3907 68ab6f09ed5904764852b360ca3ce651 ""
   "d:/programfile/texlive/2024/texmf-dist/bibtex/bst/base/apalike.bst" 1727499712 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1763801470 18931 72a1fd6b3d4b8c09dde1da432046b750 "pdflatex"
+  "main.aux" 1763818524 18255 a4f9331086f647ece6640c32085ac336 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1763801467.29967 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" "main.pdf" "main" 1763801471.49805 0
+["pdflatex"] 1763818521.12719 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" "main.pdf" "main" 1763818525.41641 0
   "apmcmthesis.cfg" 1763516798 3135 0a0756cee74f785872b894ae4e85c566 ""
   "apmcmthesis.cls" 1763516798 13415 41f2f271e9a04b028112181c0e45ab2b ""
-  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" 1763801457 46620 001103dd688d0fe01b820dbc99b882b3 ""
-  "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1727499787 2900 1537cc8184ad1792082cd229ecc269f4 ""
+  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" 1763818511 47732 06afb0a404870af6d9498f184aa1a430 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1727500340 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1727500696 3124 3813fd4c981d99822890a2861b0d274c ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727499996 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1727499904 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1727499634 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1727499634 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm" 1727499634 1112 cbc11b646ccc26599775160605aaee3a ""
@@ -67,7 +65,6 @@
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txsys.tfm" 1727500340 1660 d580b6f461bbd2ab53b1fd3851108c0e ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm" 1727500696 1600 20cdf11dab97d5d39e847571f9314407 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm" 1727500789 1200 1032be7d597a4dce33bcda3c08fc1be0 ""
-  "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1727499787 136101 b18d10b3436f8cb0cd04046deb340fe7 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb" 1727500340 32409 eee1344d05b8bec92e60a2ec9a7f49e3 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb" 1727500340 33424 8b2b99d9d7571201cc7eece13c492c55 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb" 1727500340 56686 3d6d86b0a770bb2c243f4c4351685fc2 ""
@@ -221,11 +218,11 @@
   "figures/historytrafgain.png" 1763623762 71535 c629f112359aa61a539f1057c92960bf ""
   "figures/soybean_data_hierarchy.png" 1763730308 32979 2c45f039ac2efc99f2d9ac2b7cdd6b52 ""
   "figures/tariff_impact_plot.png" 1763654608 229843 0eda54dfec4bdc3c9438326a80402d0d ""
-  "main.aux" 1763801470 18931 72a1fd6b3d4b8c09dde1da432046b750 "pdflatex"
-  "main.bbl" 1763801467 1402 9674782fdf0b1a4928f3e4df4d9012af "bibtex main"
-  "main.out" 1763801470 16051 e875df2c364441537d208d7cfab5e985 "pdflatex"
-  "main.tex" 1763801457 46620 001103dd688d0fe01b820dbc99b882b3 ""
-  "main.toc" 1763801470 8418 98e25cf1f72e826c401e4bab112facda "pdflatex"
+  "main.aux" 1763818524 18255 a4f9331086f647ece6640c32085ac336 "pdflatex"
+  "main.bbl" 1763818521 1402 9674782fdf0b1a4928f3e4df4d9012af "bibtex main"
+  "main.out" 1763818524 15821 f504cb4188cf877fc7852dea0dd8edc0 "pdflatex"
+  "main.tex" 1763818511 47732 06afb0a404870af6d9498f184aa1a430 ""
+  "main.toc" 1763818524 8299 57e1f99bc878d3b30ea9a457eb1b1ad0 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
