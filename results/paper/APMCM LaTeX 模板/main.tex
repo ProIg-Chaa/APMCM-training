@@ -101,7 +101,8 @@
 \subsection{Background}
 Since the 2020s, driven by the "America First" trade ideology, U.S. tariff policy has undergone major adjustments. On April 2, 2025, the Trump administration introduced the "Reciprocal Tariffs" policy, establishing a 10\% baseline tariff on all trading partners and higher tariffs on around 60 countries with which the U.S. ran trade deficits, including China. The stated goal was to reduce trade deficits and promote manufacturing reshoring, but the policy violated WTO principles, including Most-Favored-Nation (MFN) treatment and tariff preferences for developing countries.
 
-The U.S. trade-weighted average tariff rose sharply from 2.44\% at the start of 2025 to 20.11\% by August 2025, reaching the highest effective level since 1933 \cite{GACC}. While tariffs can protect domestic industries and generate revenue, excessively high tariffs harm exports and raise domestic consumer prices. For example, after the policy's implementation, U.S. imports from China fell 35\% and exports to China declined 18\% year-on-year by May 2025, narrowing the trade deficit from \$30.8 billion to \$18.0 billion but negatively impacting U.S. industries.
+The U.S. trade-weighted average tariff rose sharply from 2.44\% at the start of 2025 to 20.11\% by August 2025, reaching the highest effective level since 1933 (GACC\footnote{\cite{GACC} General Administration of Customs of the People's Republic of China, UN Comtrade, and USDA FAS (October 2025)})
+. While tariffs can protect domestic industries and generate revenue, excessively high tariffs harm exports and raise domestic consumer prices. For example, after the policy's implementation, U.S. imports from China fell 35\% and exports to China declined 18\% year-on-year by May 2025, narrowing the trade deficit from \$30.8 billion to \$18.0 billion but negatively impacting U.S. industries.
 
 Overall, the "Reciprocal Tariffs" policy reflects a shift toward protectionism, disrupts global trade rules, and may hinder long-term global economic growth. This study aims to evaluate the policy's effects on international trade, industrial development, and consumer welfare, providing a framework to assess unilateral tariff measures and inform strategic responses to preserve the multilateral trading system.
 
@@ -125,7 +126,8 @@ U.S. tariff hikes may trigger partner countermeasures, like China’s reciprocal
 
 \section{Problem Analysis}
 \subsection{Analysis of Question 1}
-The analysis for Question 1 focuses on quantifying how U.S. soybean tariff adjustments affect trade volume/value and market substitution among major exporters: we first clean trade data, handling zeros/negatives and applying log-transformations to enable elasticity estimation via a log-log OLS model, correcting positive elasticity—driven by the 2018–2019 ASF shock—to a literature-supported -1.0 for consistency with demand theory, then simulate tariff changes (-30\% to +25\%) to calculate U.S. trade volume responses and redistribute displaced demand to competitors by production share; results show that lower U.S. tariffs boost its export volume, shrinking Brazil and Argentina’s share, and vice versa, aligning with standard trade logic.
+
+We estimate U.S. soybean trade responses to tariff changes by cleaning trade data, applying log-log OLS to measure elasticity  (corrected to -1.0\footnote{\cite{Elobeid2021} Corrected based on Elobeid et al., 2021, consistent with standard demand elasticity literature}), and simulating tariffs from -30\% to +25\%, then redistribute displaced demand to competitors; results show lower U.S. tariffs increase its exports at the expense of Brazil and Argentina, and vice versa.  
 
 \subsection{Analysis of Question 2}
 % Please fill in the analysis of Question 2 here
@@ -134,6 +136,9 @@ The analysis for Question 1 focuses on quantifying how U.S. soybean tariff adjus
 % Please fill in the analysis of Question 3 here
 
 \subsection{Analysis of Question 4}
+
+We model U.S. tariff revenue by comparing a baseline scenario with constant tariffs to a policy scenario with increased tariffs, adjusting import volumes using a dynamic elasticity to capture short-term drops and medium-term supply chain effects; this shows tariffs can boost revenue initially, but declining import volumes over time reduce net gains.  
+
 % Please fill in the analysis of Question 4 here
 
 \subsection{Analysis of Question 5}
@@ -390,17 +395,113 @@ The model outputs align with historical precedents. The simulation of a tariff i
 
 
 \section{Problem 4: Establishment and Solution of the Model}
-\subsection{Data Analysis}
-% Please fill in the data analysis content here
+
+\subsection{Data Collection and Parameter Calibration}
+To quantify the net impact of the tariff policy on U.S. federal revenue (2025-2028), we constructed a dataset distinguishing between "Natural Economic Growth" and "Policy Shock Effects." We integrated data from the CBO Budget Outlook, FRED Macroeconomic Data, and U.S. Treasury (MTS) detailed reports\footnote{\cite{USTreasury2025} U.S. Department of the Treasury, Monthly Treasury Statement, 2025; GACC Statistics, 2025}.
+We present the visualization results of some data as follows.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/historytrafgain.png}
+\caption{Historical U.S. Tariff Revenue and Trade-Weighted Average Tariff Rate (2015-2024)}
+\label{fig:history_traff_gain}
+\end{figure}
+
+\subsubsection{Effective Tax Base Calibration ($V_{base}$)}
+Based on the provided \textit{MTS\_RcptSrc.csv} file (U.S. Treasury Monthly Statement), we extracted the historical revenue data.
+\begin{itemize}
+    \item \textbf{Historical Data:} The actual customs duties revenue for FY2024 was identified as $\$80.3$ Billion.
+    \item \textbf{Reverse Engineering the Base:} Given the initial trade-weighted average tariff rate $\tau_{old} = 2.44\%$, we calibrated the effective tax base (total import value) for the initial state $t=0$ (Year 2024):
+    \begin{equation}
+        V_{2024} = \frac{\text{Actual Revenue}}{\tau_{old}} = \frac{80.3 \text{ Billion}}{0.0244} \approx 3,290 \text{ Billion USD}
+    \end{equation}
+\end{itemize}
+
+\subsubsection{Macroeconomic Growth Rate ($g$)}
+To simulate the "Business-as-Usual" (BAU) scenario, we adopted the Nominal GDP growth rates from the CBO's report. The growth rate $g(t)$ accounts for both Real GDP growth and PCE Inflation:
+\begin{itemize}
+    \item \textbf{2025-2026:} Real GDP ($2.2\%$) + Inflation ($2.1\%$) $\approx 4.3\%$.
+    \item \textbf{2027-2028:} Projected average nominal growth $\approx 4.1\%$.
+\end{itemize}
+Thus, the baseline growth sequence is defined as $g = [4.3\%, 4.3\%, 4.1\%, 4.1\%]$.
 
 \subsection{Model Construction}
-% Please fill in the model construction content here
+We established a **Dynamic Difference-in-Differences Revenue Model** to calculate the net revenue change ($Net\_Change$) under the Trump administration's second term tariff policy compared to the CBO baseline.
 
-\subsection{Model Solving}
-% Please fill in the model solving content here
+\subsubsection{Core Equations}
+\textbf{1. CBO Baseline Scenario ($Baseline$):} Assuming the tariff rate remains at $\tau_{old} = 2.44\%$, the import volume grows naturally according to CBO predictions:
+\begin{equation}
+    V_{base}(t) = V_{2024} \cdot \prod_{i=1}^{t} (1 + g[i])
+\end{equation}
+\begin{equation}
+    R_{base}(t) = V_{base}(t) \cdot \tau_{old}
+\end{equation}
 
-\subsection{Result Analysis}
-% Please fill in the result analysis content here
+\textbf{2. Policy Shock Scenario ($Policy$):} The tariff rate rises to $\tau_{new} = 20.11\%$. This creates a price shock that suppresses the import volume through a dynamic elasticity coefficient\footnote{\cite{Kee2008, Cavallo2021} Kee et al. (2008) and Cavallo et al. (2021); empirical estimates of import elasticity and tariff pass-through.}:
+\begin{equation}
+    V_{policy}(t) = V_{base}(t) \cdot [1 + \varepsilon(t) \cdot \Delta P]
+\end{equation}
+\begin{equation}
+    R_{policy}(t) = V_{policy}(t) \cdot \tau_{new}
+\end{equation}
+
+\subsubsection{Shock Magnitude and Dynamic Elasticity}
+\begin{itemize}
+    \item \textbf{Price Shock Factor ($\Delta P$):} The percentage increase in import costs due to tariffs is calculated as:
+    \begin{equation}
+        \Delta P = \frac{\tau_{new} - \tau_{old}}{1 + \tau_{old}} = \frac{20.11\% - 2.44\%}{1 + 0.0244} \approx 17.25\%
+    \end{equation}
+    
+    \item \textbf{Dynamic Elasticity ($\varepsilon(t)$):} 
+    \begin{enumerate}
+        \item \textbf{Short-term (2025):} Based on the problem description stating a "35\% drop in imports" immediately, the short-term elasticity is calibrated as $\varepsilon_{short} \approx -35\% / 17.25\% \approx -2.03$.
+        \item \textbf{Medium-term (2026-2028):} Considering supply chain shifts (leakage effects to Mexico as analyzed in Problem 2) and long-term substitution effects, we model the elasticity to deteriorate linearly over time, reaching $\varepsilon_{2028} = -2.8$.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Result Solving Analysis}
+Using the iterative simulation algorithm (Python), we calculated the revenue changes for 2025-2028. The results reveal a characteristic of "Short-term Surge, Long-term Erosion."
+
+\subsubsection{Simulation Results}
+The numerical results of the model are presented in Table 4.1.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Predicted Tariff Revenue Impact (2025-2028) [Billions USD]}
+    \begin{tabular}{ccccc}
+        \toprule
+        \textbf{Year} & \textbf{Baseline Revenue} & \textbf{Policy Revenue} & \textbf{Net Change} & \textbf{Policy Import Vol.} \\
+        \midrule
+        2025 & 83.7 & 448.4 & \textbf{+364.7} & 2,229.9 \\
+        2026 & 87.3 & 435.9 & \textbf{+348.5} & 2,167.3 \\
+        2027 & 90.9 & 420.6 & \textbf{+329.6} & 2,091.3 \\
+        2028 & 94.6 & 403.3 & \textbf{+308.6} & 2,005.3 \\
+        \midrule
+        \textbf{Total} & \textbf{356.5} & \textbf{1,708.2} & \textbf{+1,351.5} & - \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:revenue_results}
+\end{table}
+
+\subsubsection{Analysis of Dynamics}
+\begin{enumerate}
+    \item \textbf{The Rate Effect vs. Base Effect:} 
+    In 2025, the Net Change peaks at \textbf{\$364.7 Billion}. This occurs because the \textit{Rate Effect} (tariff increasing by $\approx 8.2\times$) significantly outweighs the \textit{Base Effect} (import volume dropping by $\approx 35\%$). This explains why tariffs are often used as a short-term financing tool.
+
+    \item \textbf{Diminishing Marginal Returns (Base Erosion):}
+    Observing the trend from 2025 to 2028, the net revenue gain declines annually (from \$364.7B to \$308.6B).
+    \begin{itemize}
+        \item While the CBO Baseline predicts economic expansion (nominal GDP growth), the Policy Scenario shows a continuous contraction in the tax base ($V_{policy}$ drops from \$2,229.9B to \$2,005.3B).
+        \item This $\approx 48\%$ potential loss in trade volume (compared to the 2028 baseline of $\approx \$3,862$B) indicates severe \textbf{Base Erosion}.
+    \end{itemize}
+
+    \item \textbf{Fiscal Illusion and Hidden Costs:}
+    The model predicts a cumulative 4-year net gain of approximately \textbf{\$1.35 Trillion}. However, this figure contains a "Fiscal Illusion":
+    \begin{itemize}
+        \item \textbf{Inflationary Masking:} The revenue figures are nominal, boosted by the CBO's high inflation expectations (PCE 2.1\%).
+        \item \textbf{Hidden Economic Cost:} The government gains $\approx \$300$B annually, but this is built upon suppressing nearly $\approx \$1.8$ Trillion in potential trade activity by 2028. As the elasticity $\varepsilon$ worsens (supply chains moving to non-tariff regions like Mexico), the U.S. government's ability to extract revenue from tariffs is essentially drying up.
+    \end{itemize}
+\end{enumerate}
 
 
 
@@ -439,7 +540,7 @@ We present the visualization results of some data as follows.
     \caption{Tariff Trends: China vs. U.S. (2018--2025)}
     \label{fig:tariff_trend}
 \end{subfigure}
-\caption{Macroeconomic Drivers: Exchange Rates and Tariff Barriers}
+\caption{Commodity Price Dynamics and Inflation Structure Evolution}
 \label{fig:combined_figures}
 \end{figure}
 

@@ -2,7 +2,7 @@
 \contentsline {subsection}{\numberline {1\,.\,1}Background}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1\,.\,2}Question Restatement}{2}{subsection.1.2}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,1}Question 1}{2}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,2}Question 2}{2}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,2}Question 2}{3}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,3}Question 3}{3}{subsubsection.1.2.3}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,4}Question 4}{3}{subsubsection.1.2.4}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,5}Question 5}{3}{subsubsection.1.2.5}%
@@ -11,8 +11,8 @@
 \contentsline {subsection}{\numberline {2\,.\,2}Analysis of Question 2}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2\,.\,3}Analysis of Question 3}{3}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2\,.\,4}Analysis of Question 4}{3}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2\,.\,5}Analysis of Question 5}{3}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Model Assumptions}{3}{section.3}%
+\contentsline {subsection}{\numberline {2\,.\,5}Analysis of Question 5}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Model Assumptions}{4}{section.3}%
 \contentsline {section}{\numberline {4}Description of the Symbols}{5}{section.4}%
 \contentsline {section}{\numberline {5}Problem 1: Impact of U.S. Tariff Adjustments on Global Soybean Trade}{6}{section.5}%
 \contentsline {subsection}{\numberline {5\,.\,1}Data Collection and Preprocessing}{6}{subsection.5.1}%
@@ -37,25 +37,30 @@
 \contentsline {subsection}{\numberline {7\,.\,3}Model Solving}{11}{subsection.7.3}%
 \contentsline {subsection}{\numberline {7\,.\,4}Result Analysis}{11}{subsection.7.4}%
 \contentsline {section}{\numberline {8}Problem 4: Establishment and Solution of the Model}{11}{section.8}%
-\contentsline {subsection}{\numberline {8\,.\,1}Data Analysis}{11}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8\,.\,2}Model Construction}{11}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8\,.\,3}Model Solving}{11}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8\,.\,4}Result Analysis}{11}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Problem 5: Establishment and Solution of the Model}{11}{section.9}%
-\contentsline {subsection}{\numberline {9\,.\,1}The Impact of Tariff Adjustments}{11}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9\,.\,2}Data Collection}{11}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9\,.\,3}Model Construction and Empirical Results}{12}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,1}Theoretical Framework and Model Specification}{12}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,2}Estimation Methodology}{12}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,3}Empirical Results}{13}{subsubsection.9.3.3}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,4}Economic Interpretation and Policy Implications}{13}{subsubsection.9.3.4}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,5}Robustness}{13}{subsubsection.9.3.5}%
-\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,6}Conclusion}{13}{subsubsection.9.3.6}%
-\contentsline {section}{\numberline {10}Model Evaluation}{14}{section.10}%
-\contentsline {subsection}{\numberline {10\,.\,1}Advantages of the Model}{14}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10\,.\,2}Disadvantages of the Model}{14}{subsection.10.2}%
-\contentsline {section}{\numberline {11}References}{14}{section.11}%
-\contentsline {subsection}{\numberline {11\,.\,1}Appendix A: Source Code}{14}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11\,.\,2}Appendix B: Supplementary Data}{15}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11\,.\,3}Appendix C: Additional Figures/Tables}{15}{subsection.11.3}%
+\contentsline {subsection}{\numberline {8\,.\,1}Data Collection and Parameter Calibration}{11}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,1}Effective Tax Base Calibration ($V_{base}$)}{11}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,1\,.\,2}Macroeconomic Growth Rate ($g$)}{12}{subsubsection.8.1.2}%
+\contentsline {subsection}{\numberline {8\,.\,2}Model Construction}{12}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,1}Core Equations}{12}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,2\,.\,2}Shock Magnitude and Dynamic Elasticity}{12}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8\,.\,3}Result Solving Analysis}{12}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,1}Simulation Results}{13}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8\,.\,3\,.\,2}Analysis of Dynamics}{13}{subsubsection.8.3.2}%
+\contentsline {section}{\numberline {9}Problem 5: Establishment and Solution of the Model}{13}{section.9}%
+\contentsline {subsection}{\numberline {9\,.\,1}The Impact of Tariff Adjustments}{14}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9\,.\,2}Data Collection}{14}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9\,.\,3}Model Construction and Empirical Results}{15}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,1}Theoretical Framework and Model Specification}{15}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,2}Estimation Methodology}{15}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,3}Empirical Results}{15}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,4}Economic Interpretation and Policy Implications}{16}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,5}Robustness}{16}{subsubsection.9.3.5}%
+\contentsline {subsubsection}{\numberline {9\,.\,3\,.\,6}Conclusion}{16}{subsubsection.9.3.6}%
+\contentsline {section}{\numberline {10}Model Evaluation}{17}{section.10}%
+\contentsline {subsection}{\numberline {10\,.\,1}Advantages of the Model}{17}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10\,.\,2}Disadvantages of the Model}{17}{subsection.10.2}%
+\contentsline {section}{\numberline {11}References}{17}{section.11}%
+\contentsline {subsection}{\numberline {11\,.\,1}Appendix A: Source Code}{17}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11\,.\,2}Appendix B: Supplementary Data}{18}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11\,.\,3}Appendix C: Additional Figures/Tables}{18}{subsection.11.3}%
 \contentsfinish 

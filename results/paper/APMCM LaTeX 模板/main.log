@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  22 NOV 2025 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  22 NOV 2025 15:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,90 +991,134 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 101.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 101.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 
-       [1]
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
-(Font)              scaled to size 12.0pt on input line 111.
- [2] [3]
+l.100 \section{Introduction}
+                             [1]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 101.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 163.
+(Font)              scaled to size 14.4pt on input line 101.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 104.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 104.
 
-Overfull \hbox (4.75157pt too wide) in paragraph at lines 164--185
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 104.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 104.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 104.
+
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 104.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
+(Font)              scaled to size 12.0pt on input line 112.
+[2] [3]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 168.
+
+Overfull \hbox (4.75157pt too wide) in paragraph at lines 169--190
  [][] 
  []
 
 [4] [5]
-<figures/soybean_data_hierarchy.png, id=406, 965.10562pt x 209.28188pt>
+<figures/soybean_data_hierarchy.png, id=442, 965.10562pt x 209.28188pt>
 File: figures/soybean_data_hierarchy.png Graphic file (type png)
 <use figures/soybean_data_hierarchy.png>
-Package pdftex.def Info: figures/soybean_data_hierarchy.png  used on input line 204.
+Package pdftex.def Info: figures/soybean_data_hierarchy.png  used on input line 209.
 (pdftex.def)             Requested size: 459.51054pt x 99.64302pt.
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 211.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 216.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 211.
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 212.
+(Font)              scaled to size 12.0pt on input line 216.
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 217.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
 File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 212.
+(Font)              scaled to size 12.0pt on input line 217.
  [6{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./figures/soybean_data_hierarchy.png>]
-<figures/2_import_share_stack.png, id=419, 1149.093pt x 570.2103pt>
+<figures/2_import_share_stack.png, id=455, 1149.093pt x 570.2103pt>
 File: figures/2_import_share_stack.png Graphic file (type png)
 <use figures/2_import_share_stack.png>
-Package pdftex.def Info: figures/2_import_share_stack.png  used on input line 228.
+Package pdftex.def Info: figures/2_import_share_stack.png  used on input line 233.
 (pdftex.def)             Requested size: 459.51054pt x 228.01917pt.
-<figures/exchange_rate_trend_optimized.png, id=420, 1003.5894pt x 569.2467pt>
+<figures/exchange_rate_trend_optimized.png, id=456, 1003.5894pt x 569.2467pt>
 File: figures/exchange_rate_trend_optimized.png Graphic file (type png)
 <use figures/exchange_rate_trend_optimized.png>
-Package pdftex.def Info: figures/exchange_rate_trend_optimized.png  used on input line 240.
+Package pdftex.def Info: figures/exchange_rate_trend_optimized.png  used on input line 245.
 (pdftex.def)             Requested size: 232.17242pt x 131.68835pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 241.
-<figures/1_tariff_trend.png, id=421, 998.0487pt x 570.2103pt>
+(Font)              scaled to size 10.0pt on input line 246.
+<figures/1_tariff_trend.png, id=457, 998.0487pt x 570.2103pt>
 File: figures/1_tariff_trend.png Graphic file (type png)
 <use figures/1_tariff_trend.png>
-Package pdftex.def Info: figures/1_tariff_trend.png  used on input line 247.
+Package pdftex.def Info: figures/1_tariff_trend.png  used on input line 252.
 (pdftex.def)             Requested size: 232.17242pt x 132.64212pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 262.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 262.
+(Font)              scaled to size 6.6pt on input line 267.
  [7 <./figures/2_import_share_stack.png> <./figures/exchange_rate_trend_optimized.png> <./figures/1_tariff_trend.png>] [8] [9]
-<figures/tariff_impact_plot.png, id=451, 1145.2386pt x 422.5386pt>
+<figures/tariff_impact_plot.png, id=487, 1145.2386pt x 422.5386pt>
 File: figures/tariff_impact_plot.png Graphic file (type png)
 <use figures/tariff_impact_plot.png>
-Package pdftex.def Info: figures/tariff_impact_plot.png  used on input line 354.
+Package pdftex.def Info: figures/tariff_impact_plot.png  used on input line 359.
 (pdftex.def)             Requested size: 459.51054pt x 169.53468pt.
- [10 <./figures/tariff_impact_plot.png>] [11]
-<figures/Commodity_Prices_Heatmap.png, id=464, 2834.33907pt x 1781.90718pt>
+ [10 <./figures/tariff_impact_plot.png>]
+<figures/historytrafgain.png, id=497, 1324.95pt x 466.74374pt>
+File: figures/historytrafgain.png Graphic file (type png)
+<use figures/historytrafgain.png>
+Package pdftex.def Info: figures/historytrafgain.png  used on input line 405.
+(pdftex.def)             Requested size: 459.51054pt x 161.86714pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 410.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 410.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 410.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 420.
+
+[11 <./figures/historytrafgain.png>] [12] [13]
+<figures/Commodity_Prices_Heatmap.png, id=537, 2834.33907pt x 1781.90718pt>
 File: figures/Commodity_Prices_Heatmap.png Graphic file (type png)
 <use figures/Commodity_Prices_Heatmap.png>
-Package pdftex.def Info: figures/Commodity_Prices_Heatmap.png  used on input line 431.
+Package pdftex.def Info: figures/Commodity_Prices_Heatmap.png  used on input line 532.
 (pdftex.def)             Requested size: 232.17242pt x 145.9542pt.
-<figures/Inflation_Structure_Evolution.png, id=465, 2539.23656pt x 2032.59375pt>
+<figures/Inflation_Structure_Evolution.png, id=538, 2539.23656pt x 2032.59375pt>
 File: figures/Inflation_Structure_Evolution.png Graphic file (type png)
 <use figures/Inflation_Structure_Evolution.png>
-Package pdftex.def Info: figures/Inflation_Structure_Evolution.png  used on input line 438.
+Package pdftex.def Info: figures/Inflation_Structure_Evolution.png  used on input line 539.
 (pdftex.def)             Requested size: 232.17242pt x 185.84094pt.
- [12 <./figures/Commodity_Prices_Heatmap.png (PNG copy)> <./figures/Inflation_Structure_Evolution.png (PNG copy)>] [13] (./main.bbl) (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+ [14] [15 <./figures/Commodity_Prices_Heatmap.png (PNG copy)> <./figures/Inflation_Structure_Evolution.png (PNG copy)>] [16] (./main.bbl) (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 554.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 655.
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 554.
- [14] [15] 
+(Font)              scaled to size 10.95pt on input line 655.
+ [17] [18] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1083,24 +1127,28 @@ L3 programming layer <2020/03/25>
  ***********
 
 
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0A8C82CCA7DD79A19564D8C473D00AFF;11334.
+(rerunfilecheck)             Checksum: 681EFDC6EF2723C0157C6F2820D7FADA;12650.
  ) 
 Here is how much of TeX's memory you used:
- 24899 strings out of 476065
- 439097 string characters out of 5791683
- 1958190 words of memory out of 5000000
- 46489 multiletter control sequences out of 15000+600000
- 596760 words of font info for 119 fonts, out of 8000000 for 9000
+ 25003 strings out of 476065
+ 440712 string characters out of 5791683
+ 1951190 words of memory out of 5000000
+ 46551 multiletter control sequences out of 15000+600000
+ 614037 words of font info for 160 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 95i,13n,131p,865b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,13n,131p,709b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (16 pages, 2808927 bytes).
+Output written on main.pdf (19 pages, 2867645 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 122 named destinations out of 1000 (max. 500000)
- 500 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 672 PDF objects out of 1000 (max. 8388607)
+ 548 compressed objects within 6 object streams
+ 151 named destinations out of 1000 (max. 500000)
+ 545 words of extra memory for PDF output out of 10000 (max. 10000000)
 
