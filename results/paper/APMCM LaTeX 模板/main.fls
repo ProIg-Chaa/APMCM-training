@@ -584,16 +584,27 @@ INPUT ./figures/ques2/sales_trend.png
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxsy.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
-INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
-INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
-INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
-INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
-INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-ot1.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Italic-tlf-ot1.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-ot1r.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi7.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI7.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmia.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT ./figures/ques2/import structure.png
 INPUT ./figures/ques2/import structure.png
 INPUT ./figures/ques2/import structure.png
 INPUT ./figures/ques2/import structure.png
 INPUT ./figures/ques2/import structure.png
+INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
+INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
+INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
+INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
+INPUT ./figures/ques2/supply_chain_reconfiguration1.jpg
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntxmi.tfm
@@ -638,16 +649,11 @@ INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi7.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI7.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
 INPUT ./figures/ques3/problem3result.png
 INPUT ./figures/ques3/problem3result.png
 INPUT ./figures/ques3/problem3result.png
 INPUT ./figures/ques3/problem3result.png
 INPUT ./figures/ques3/problem3result.png
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmia.vf
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT ./figures/historytrafgain.png
 INPUT ./figures/historytrafgain.png
 INPUT ./figures/historytrafgain.png

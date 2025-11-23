@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  22 NOV 2025 16:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  23 NOV 2025 21:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -905,7 +905,6 @@ Package caption Info: End \AtBeginDocument code.
 File: apmcmthesis.cfg 2019/11/05 v1.0 apmcmthesis configuration file
 )
 Package hyperref Info: Link coloring OFF on input line 64.
- (./test.out) (./test.out)
 \@outlinefile=\write4
 \openout4 = `test.out'.
 
@@ -921,14 +920,12 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 17.28pt on input line 83.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 83.
- (./test.toc
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 4.
- [2])
+
+No file test.toc.
 \tf@toc=\write5
 \openout5 = `test.toc'.
 
- [3]
+[2]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 91.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
@@ -952,6 +949,16 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.3pt on input line 94.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 94.
+
+LaTeX Warning: Citation `GACC' on page 1 undefined on input line 94.
+
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 95.
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 95.
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -961,31 +968,41 @@ l.95
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
 (Font)              scaled to size 12.0pt on input line 99.
 
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 108.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.108 \subsubsection{Question 4}
                                  [2]
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.135     \item T
-                 rading partners' responses (including counter-tariffs, non-... [3]
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 151.
 
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 135.
+
+[3]
 Overfull \hbox (4.75157pt too wide) in paragraph at lines 152--173
  [][] 
  []
 
-[4] [5]
-<figures/soybean_data_hierarchy.png, id=469, 965.10562pt x 209.28188pt>
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 174.
+
+[4]
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 180.
+
+[5]
+
+LaTeX Warning: Reference `fig:soybean_volume' on page 6 undefined on input line 188.
+
+<figures/soybean_data_hierarchy.png, id=68, 965.10562pt x 209.28188pt>
 File: figures/soybean_data_hierarchy.png Graphic file (type png)
 <use figures/soybean_data_hierarchy.png>
 Package pdftex.def Info: figures/soybean_data_hierarchy.png  used on input line 192.
 (pdftex.def)             Requested size: 459.51054pt x 99.64302pt.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 199.
- (d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+(d:/programfile/texlive/2024/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
@@ -996,84 +1013,224 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 200.
- [6{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./figures/soybean_data_hierarchy.png>]
-<figures/2_import_share_stack.png, id=481, 1149.093pt x 570.2103pt>
+
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 212.
+
+[6{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./figures/soybean_data_hierarchy.png>]
+<figures/2_import_share_stack.png, id=83, 1149.093pt x 570.2103pt>
 File: figures/2_import_share_stack.png Graphic file (type png)
 <use figures/2_import_share_stack.png>
 Package pdftex.def Info: figures/2_import_share_stack.png  used on input line 216.
 (pdftex.def)             Requested size: 459.51054pt x 228.01917pt.
-<figures/exchange_rate_trend_optimized.png, id=482, 1003.5894pt x 569.2467pt>
+<figures/exchange_rate_trend_optimized.png, id=84, 1003.5894pt x 569.2467pt>
 File: figures/exchange_rate_trend_optimized.png Graphic file (type png)
 <use figures/exchange_rate_trend_optimized.png>
 Package pdftex.def Info: figures/exchange_rate_trend_optimized.png  used on input line 228.
 (pdftex.def)             Requested size: 232.17242pt x 131.68835pt.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 229.
-<figures/1_tariff_trend.png, id=483, 998.0487pt x 570.2103pt>
+<figures/1_tariff_trend.png, id=85, 998.0487pt x 570.2103pt>
 File: figures/1_tariff_trend.png Graphic file (type png)
 <use figures/1_tariff_trend.png>
 Package pdftex.def Info: figures/1_tariff_trend.png  used on input line 235.
 (pdftex.def)             Requested size: 232.17242pt x 132.64212pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.6pt on input line 250.
- [7 <./figures/2_import_share_stack.png> <./figures/exchange_rate_trend_optimized.png> <./figures/1_tariff_trend.png>] [8] [9]
-<figures/tariff_impact_plot.png, id=514, 1145.2386pt x 422.5386pt>
+
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 252.
+
+[7 <./figures/2_import_share_stack.png> <./figures/exchange_rate_trend_optimized.png> <./figures/1_tariff_trend.png>]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 272.
+
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 299.
+
+[8]
+
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 337.
+
+[9]
+<figures/tariff_impact_plot.png, id=121, 1145.2386pt x 422.5386pt>
 File: figures/tariff_impact_plot.png Graphic file (type png)
 <use figures/tariff_impact_plot.png>
 Package pdftex.def Info: figures/tariff_impact_plot.png  used on input line 342.
 (pdftex.def)             Requested size: 459.51054pt x 169.53468pt.
- [10 <./figures/tariff_impact_plot.png>] [11]
-Overfull \hbox (134.29117pt too wide) in paragraph at lines 426--444
- [][] 
- []
 
-[12] [13]
-Package textcomp Info: Symbol \textrightarrow not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 497.
-Package textcomp Info: Symbol \textrightarrow not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 498.
-Package textcomp Info: Symbol \textdownarrow not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 537.
-Package textcomp Info: Symbol \textuparrow not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 537.
-Package textcomp Info: Symbol \textuparrow not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 538.
-Package textcomp Info: Symbol \textrightarrow not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 544.
- [14{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [15]
+
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 368.
+
+[10 <./figures/tariff_impact_plot.png>]
+
+LaTeX Warning: Reference `tab:q2_data_indicators' on page 11 undefined on input line 369.
+
+
+LaTeX Warning: Reference `fig:us_tariff_trend' on page 11 undefined on input line 390.
+
+
+LaTeX Warning: Reference `fig:jp_brand_sales' on page 11 undefined on input line 391.
+
+
+LaTeX Warning: Reference `fig:us_sales_import' on page 11 undefined on input line 391.
+
+<figures/ques2/tariff_table.jpg, id=130, 1947.275pt x 1284.8pt>
+File: figures/ques2/tariff_table.jpg Graphic file (type jpg)
+<use figures/ques2/tariff_table.jpg>
+Package pdftex.def Info: figures/ques2/tariff_table.jpg  used on input line 396.
+(pdftex.def)             Requested size: 411.14528pt x 271.2667pt.
+
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 400.
+
+[11]
+<figures/ques2/jp_automakers_us_performance.jpg, id=142, 1986.42125pt x 1284.8pt>
+File: figures/ques2/jp_automakers_us_performance.jpg Graphic file (type jpg)
+<use figures/ques2/jp_automakers_us_performance.jpg>
+Package pdftex.def Info: figures/ques2/jp_automakers_us_performance.jpg  used on input line 404.
+(pdftex.def)             Requested size: 232.17242pt x 150.15044pt.
+<figures/ques2/sales_trend.png, id=143, 1899.34593pt x 1230.09563pt>
+File: figures/ques2/sales_trend.png Graphic file (type png)
+<use figures/ques2/sales_trend.png>
+Package pdftex.def Info: figures/ques2/sales_trend.png  used on input line 410.
+(pdftex.def)             Requested size: 232.17242pt x 150.36426pt.
+
+
+LaTeX Warning: Reference `tab:q2_params' on page 12 undefined on input line 434.
+
+
+LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 451.
+
+[12 <./figures/ques2/tariff_table.jpg> <./figures/ques2/jp_automakers_us_performance.jpg> <./figures/ques2/sales_trend.png (PNG copy)>]
+
+LaTeX Warning: Reference `tab:cost_calculation' on page 13 undefined on input line 453.
+
+
+LaTeX Warning: Reference `tab:scenarios' on page 13 undefined on input line 470.
+
+
+LaTeX Warning: Reference `fig:import_structure' on page 13 undefined on input line 496.
+
+
+LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 498.
+
+[13]
+
+LaTeX Warning: File `figures/ques2/import_structure.png' not found on input line 504.
+
+
+d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex:504: Package pdftex.def Error: File `figures/ques2/import_structure.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.504 ...idth]{figures/ques2/import_structure.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:supply_chain_reconfiguration' on page 14 undefined on input line 510.
+
+<figures/ques2/supply_chain_reconfiguration1.jpg, id=167, 1003.75pt x 602.25pt>
+File: figures/ques2/supply_chain_reconfiguration1.jpg Graphic file (type jpg)
+<use figures/ques2/supply_chain_reconfiguration1.jpg>
+Package pdftex.def Info: figures/ques2/supply_chain_reconfiguration1.jpg  used on input line 518.
+(pdftex.def)             Requested size: 386.95897pt x 232.1748pt.
+
+LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 522.
+
+[14]
+
+d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex:526: LaTeX Error: \begin{document} ended by \end{CJK}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.526 \end{CJK}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/test.tex:526: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.526 \end{CJK}
+               
+Things are pretty mixed up, but I think the worst is over.
+
+
+LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 543.
+
+[15 <./figures/ques2/supply_chain_reconfiguration1.jpg>]
+
+LaTeX Warning: Citation `USTreasury2025' on page 16 undefined on input line 547.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 572.
+(hyperref)                removing `math shift' on input line 549.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 572.
+(hyperref)                removing `subscript' on input line 549.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 572.
+(hyperref)                removing `math shift' on input line 549.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 582.
+(hyperref)                removing `math shift' on input line 559.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 582.
+(hyperref)                removing `math shift' on input line 559.
 
-[16] [17] [18] [19] [20] [21] (./test.bbl) [22] (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+
+LaTeX Warning: Citation `Kee2008' on page 16 undefined on input line 579.
+
+
+LaTeX Warning: Citation `Cavallo2021' on page 16 undefined on input line 579.
+
+
+LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 585.
+
+[16]
+
+LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 634.
+
+[17]
+
+LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 646.
+
+[18]
+
+LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 698.
+
+[19]
+
+LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 711.
+
+[20]
+
+LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 730.
+
+[21] (./test.bbl)
+
+LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 738.
+
+[22] (d:/programfile/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 764.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 741.
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 764.
- [23] 
+(Font)              scaled to size 10.95pt on input line 741.
+
+
+LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 768.
+
+[23] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./test.aux)
  ***********
@@ -1085,22 +1242,37 @@ L3 programming layer <2020/03/25>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: 6463F8A1F845E8D0E919C6BFCB8C38D3;13902.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `test.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `test.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  2DA842ED8DBD62D715A6E09AB966CCA2;12813.
+
+Package lastpage Warning: Rerun to get the references right on input line 768.
+
  ) 
 Here is how much of TeX's memory you used:
- 21290 strings out of 476065
- 322811 string characters out of 5791683
+ 21251 strings out of 476065
+ 323280 string characters out of 5791683
  1957190 words of memory out of 5000000
- 42838 multiletter control sequences out of 15000+600000
- 614374 words of font info for 161 fonts, out of 8000000 for 9000
+ 42805 multiletter control sequences out of 15000+600000
+ 613441 words of font info for 158 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  95i,13n,131p,3195b,1372s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on test.pdf (26 pages, 1651997 bytes).
+<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on test.pdf (25 pages, 2099285 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 602 compressed objects within 7 object streams
- 164 named destinations out of 1000 (max. 500000)
- 562 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 364 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 168 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

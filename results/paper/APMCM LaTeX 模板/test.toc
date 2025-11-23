@@ -32,22 +32,17 @@
 \contentsline {subsubsection}{\numberline {5\,.\,4\,.\,3}Model Validity Check}{10}{subsubsection.5.4.3}%
 \contentsline {section}{\numberline {6}Problem 2: Establishment and Solution of the Model}{11}{section.6}%
 \contentsline {subsection}{\numberline {6\,.\,1}Data Collection and Preprocessing}{11}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6\,.\,1\,.\,1}Data Sources and Indicator Selection}{11}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6\,.\,1\,.\,2}Descriptive Statistical Analysis}{11}{subsubsection.6.1.2}%
-\contentsline {paragraph}{1. U.S. Auto Tariff Trend (2010--2025)}{11}{paragraph*.11}%
-\contentsline {paragraph}{2. U.S. Auto Market Demand and Japan Import Structure (2015--2025)}{12}{paragraph*.13}%
-\contentsline {paragraph}{3. Exchange Rate and Production Cost Calibration}{13}{paragraph*.15}%
-\contentsline {subsection}{\numberline {6\,.\,2}Model Construction}{13}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,1}Supply Side: Three-Path Cost Game (Non-Tariff Responses)}{13}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,2}Market Share Allocation (Logit Model)}{13}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,3}Demand Side: Economic Transmission Effects}{13}{subsubsection.6.2.3}%
-\contentsline {subsection}{\numberline {6\,.\,3}Model Solving and Parameter Calibration}{14}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6\,.\,3\,.\,1}Key Scenario Solving Results}{14}{subsubsection.6.3.1}%
-\contentsline {subsection}{\numberline {6\,.\,4}Result Analysis}{14}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,1}Impact on U.S.-Japan Auto Trade}{14}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,2}Impact on U.S. Auto Import Structure}{14}{subsubsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,3}Impact on U.S. Auto Industry}{15}{subsubsection.6.4.3}%
-\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,4}Deep Insight: Mexico Leakage Effect}{15}{subsubsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6\,.\,1\,.\,1}Data Sources and Indicators}{11}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,1\,.\,2}Descriptive Statistics}{11}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6\,.\,2}Model Construction}{12}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,1}Supply Side: Cost Minimization}{12}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,2\,.\,2}Demand Side: Logit and Elasticity}{12}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6\,.\,3}Calibration and Solution}{13}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6\,.\,4}Result Analysis}{13}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,1}U.S.-Japan Trade}{13}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,2}U.S. Import Structure}{14}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,3}U.S. Auto Industry}{14}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6\,.\,4\,.\,4}Key Insight: Mexico Leakage Effect}{15}{subsubsection.6.4.4}%
 \contentsline {section}{\numberline {7}Problem 3: Establishment and Solution of the Model}{15}{section.7}%
 \contentsline {subsection}{\numberline {7\,.\,1}Data Analysis}{15}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7\,.\,2}Model Construction}{15}{subsection.7.2}%

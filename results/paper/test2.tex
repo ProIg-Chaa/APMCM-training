@@ -1,0 +1,866 @@
+% !Mode:: "TeX:UTF-8"
+% Recommended compilation methods:
+% 1. pdfLaTeX (recommended)
+% 2. XeLaTeX
+
+\documentclass{apmcmthesis}
+
+\usepackage{booktabs}
+\usepackage{siunitx}
+\sisetup{
+    detect-all,
+    table-number-alignment = center,
+    table-format = 2.4
+}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning, shapes.geometric, arrows.meta}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\geometry{a4paper, top=2cm, bottom=1cm, left=2cm, right=2cm}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% =========================================================
+% [OPTIMIZATION START] Compact Formatting Adjustments
+% =========================================================
+
+% 1. Optimize Margins (Make page usage more efficient)
+\setlength{\headheight}{14pt}
+
+% 2. Compact Lists (Remove vertical space in itemize/enumerate)
+\usepackage{enumitem}
+\setlist{nosep} 
+
+% 3. Compact Section Headings (Reduce space around titles)
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.5em plus 0.2em minus 0.2em}{0.5em plus 0.2em minus 0.2em}
+\titlespacing*{\subsection}{0pt}{0.3em plus 0.1em minus 0.1em}{0.3em plus 0.1em minus 0.1em}
+\titlespacing*{\subsubsection}{0pt}{0.2em plus 0.1em minus 0.1em}{0.2em plus 0.1em minus 0.1em}
+
+% 4. Compact Float Spacing (Reduce gap around figures/tables)
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{10pt plus 2pt minus 4pt}
+\setlength{\intextsep}{10pt plus 2pt minus 4pt}
+
+% 5. Compact Equation Spacing (Reduce gap around math)
+\makeatletter
+\g@addto@macro\normalsize{%
+  \setlength\abovedisplayskip{5pt plus 2pt minus 2pt}
+  \setlength\belowdisplayskip{5pt plus 2pt minus 2pt}
+  \setlength\abovedisplayshortskip{0pt}
+  \setlength\belowdisplayshortskip{0pt}
+}
+\makeatother
+
+% 6. Compact Caption Spacing
+\usepackage[font=small,skip=4pt]{caption}
+
+% =========================================================
+% [OPTIMIZATION END]
+% =========================================================
+
+%%%%%%%%%%%% Contest Information %%%%%%%%%%%%%%%%%%%%%%%%%%
+\tihao{C}                            % Problem choice
+\baominghao{apmcm25304033}           % Team control number
+
+\begin{document}
+
+\pagestyle{frontmatterstyle}
+
+\begin{abstract}
+
+% Please fill in the abstract content here
+\keywords{U.S. Tariff Policies \quad Global Trade \quad Regional Economies \quad Mathematical Modeling \quad Trade Impact Analysis}
+\end{abstract}
+\newpage
+% Uncomment if Chinese abstract is required
+% \begin{abstract*}
+% 请在此填写中文摘要（可选）
+% \keywords{美国关税政策 \quad 全球贸易 \quad 区域经济 \quad 数学建模 \quad 贸易影响分析}
+% \end{abstract*}
+
+
+% Optional: Reduce ToC depth or spacing if needed
+{
+  \setlength{\parskip}{0pt}
+  \tableofcontents
+}
+
+
+
+
+
+
+\newpage
+\pagestyle{mainmatterstyle}
+\setcounter{page}{1}
+
+\section{Introduction}
+\subsection{Background}
+
+
+\subsection{Question Restatement}
+
+
+\subsubsection{Question 1}
+The U.S., Brazil and Argentina are top soybean exporters, and China the largest importer. Analyze their current soybean trade, build a model to assess U.S. tariff impacts on their soybean industries, and estimate post-adjustment export volume and value distribution.
+
+\subsubsection{Question 2}
+
+
+\subsubsection{Question 3}
+
+
+\subsubsection{Question 4}
+
+
+\subsubsection{Question 5}
+
+
+\section{Problem Analysis}
+\subsection{Analysis of Question 1}
+
+
+
+\subsection{Analysis of Question 2}
+% Please fill in the analysis of Question 2 here
+
+\subsection{Analysis of Question 3}
+% Please fill in the analysis of Question 3 here
+
+\subsection{Analysis of Question 4}
+
+
+% Please fill in the analysis of Question 4 here
+
+\subsection{Analysis of Question 5}
+% Please fill in the analysis of Question 5 here
+
+\section{Model Assumptions}
+\begin{enumerate}
+
+\end{enumerate}
+
+
+\section{Description of the Symbols}\label{sec:symbols}
+
+\begin{table}[H]
+\centering
+\caption{Main Symbols and Descriptions}
+\begin{tabular}{c >{\raggedright\arraybackslash}p{9.5cm} l}
+\toprule
+\textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\
+\midrule
+\multicolumn{3}{l}{\textit{General \& Policy Variables}} \\
+$\tau$ & Effective tariff rate imposed on commodities & \% \\
+$\tau_{US}$ & U.S. ``Reciprocal Tariffs'' rate (Baseline + Additional) & \% \\
+$R_{ex}$ & Exchange rate (e.g., JPY/USD, BRL/USD) & - \\
+$\varepsilon$ & Price elasticity of import demand / Dynamic elasticity & - \\
+$S_j$ & Market share of country $j$ & \% \\
+
+\midrule
+\multicolumn{3}{l}{\textit{Problem 1: Soybean Trade Model}} \\
+$Q_{exp}$ & Export volume of soybeans & Million Tons \\
+$P_{cif}$ & CIF price adjusted for tariffs and exchange rates & USD/Ton \\
+$S^{prod}$ & Production capacity share of exporting countries & \% \\
+
+\midrule
+\multicolumn{3}{l}{\textit{Problem 2 \& 3: Industrial Supply Chain Model}} \\
+$C_k$ & Landed cost or manufacturing cost for supply path $k$ & USD/Unit \\
+$\lambda$ & Cost sensitivity coefficient in Logit choice model & - \\
+$F_{capex}$ & Amortized fixed costs for local production & USD \\
+$Z_{sec}$ & National Security Index (Semiconductor Model) & 0--100 Score \\
+$I_{RnD}$ & Innovation Factor affected by export controls & 0--1.0 Index \\
+$S_{subsidy}$ & Government subsidy amount (e.g., CHIPS Act) & USD/Unit \\
+
+\midrule
+\multicolumn{3}{l}{\textit{Problem 4 \& 5: Macroeconomic \& Revenue Model}} \\
+$V(t)$ & Effective tax base (Total Import Value) at year $t$ & Billion USD \\
+$R_{gov}$ & U.S. Federal tariff revenue & Billion USD \\
+$RI$ & Reshoring Investment Index & Index \\
+$Cost_{input}$ & Cost of critical inputs (Lithium, Rare Earths) & USD/Unit \\
+\bottomrule
+\end{tabular}
+\label{tab:symbols}
+\end{table}
+
+\noindent \textit{Note: Minor auxiliary variables (e.g., regression coefficients $\beta_i$, time subscript $t$) are defined locally within the text.}
+
+
+\section{Problem 1: Impact of U.S. Tariff Adjustments on Global Soybean Trade}
+
+
+
+\section{Problem 2: Establishment and Solution of the Model}
+
+\subsection{Data Collection and Preprocessing}
+To address the dynamics of U.S.-Japan auto trade under tariff adjustments (2010--2025), we established a comprehensive longitudinal database. The preprocessing phase focused on normalizing cost indicators and quantifying structural breaks in trade flows caused by policy interventions.
+
+\subsubsection{Data Sources and Indicator Selection}
+We compiled data across six critical dimensions to ensure model robustness (Table \ref{tab:q2_data_indicators}).
+
+\begin{table}[H]
+\centering
+\caption{Core Indicators for Trade Dynamics Analysis}
+\begin{tabular}{l>{\raggedright\arraybackslash}p{3.5cm}>{\raggedright\arraybackslash}p{7.5cm}}
+\toprule
+\textbf{Dimension} & \textbf{Sub-Category} & \textbf{Key Variables} \\
+\midrule
+\textbf{Policy} & Tariff Regimes & MFN rates (2010--2025), USMCA Rules of Origin, Reciprocal Tariff proposals \\
+\textbf{Trade} & Bilateral Flows & HS Code 8703 export volumes (Japan $\to$ U.S.), Transshipment (Mexico $\to$ U.S.) \\
+\textbf{Supply Side} & Cost Structure & Manufacturing indices ($c_{JP}, c_{MX}, c_{US}$), Logistics costs ($t_{sea}, t_{land}$), FX rates \\
+\textbf{Demand} & Market Dynamics & Total SAAR, Brand-specific market share, Price elasticity of demand \\
+\textbf{Industry} & Spatial Distribution & Localization rates, FDI in North America, Production capacity constraints \\
+\bottomrule
+\end{tabular}
+\label{tab:q2_data_indicators}
+\end{table}
+
+\subsubsection{Descriptive Statistical Analysis}
+\textbf{1. Policy Discontinuity (2025 Shock):}
+From 2010 to 2024, the U.S. maintained a stable MFN tariff regime (2.5\% cars / 25\% trucks). The 2025 "Reciprocal Tariff" proposal introduces a structural break, elevating the baseline to 15\% and imposing discriminatory add-ons for Japan (see Figure \ref{fig:us_tariff_trend}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/ques2/tariff_table.jpg}
+    \caption{Evolution of U.S. MFN Tariff Rates (2010–2025)}
+    \label{fig:us_tariff_trend}
+\end{figure}
+
+\textbf{2. Structural Shifts in Supply:}
+While U.S. aggregate demand fluctuated (peaking at 17.55M units in 2016), the composition of Japanese brand sales reflects a strategic pivot towards localization. Direct imports have stagnated ($\approx 8.5\%$ share), while transshipments via Mexico and local U.S. production have surged to mitigate trade risks (Figures \ref{fig:jp_brand_sales} and \ref{fig:us_sales_import}).
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/ques2/jp_automakers_us_performance.jpg}
+        \caption{Sales Volume by Production Source}
+        \label{fig:jp_brand_sales}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/ques2/sales_trend.png}
+        \caption{Total Sales vs. Direct Imports}
+        \label{fig:us_sales_import}
+    \end{minipage}
+\end{figure}
+
+\subsection{Model Construction}
+
+\subsubsection{Supply Side: Multi-Echelon Cost Minimization}
+We model the landed cost ($C_k$) for a representative vehicle across three distinct supply chain pathways. The objective of the firm is to minimize $C_k$ subject to policy constraints:
+
+\begin{align}
+    \text{Path J (Direct):} & \quad C_J = \left(\frac{c_{JPY}}{R_{ex}} + t_{sea}\right) (1 + \tau_{base} + \tau_{add}) \\
+    \text{Path M (Transshipment):} & \quad C_M = (c_{MX} + t_{land}) (1 + \tau_{base}) \\
+    \text{Path U (Localization):} & \quad C_U = c_{US} + \frac{F_{capex}}{Q_{vol}}
+\end{align}
+where $R_{ex}$ denotes the exchange rate, $t$ represents logistics costs, and $F_{capex}$ captures amortized fixed costs for local production.
+
+\subsubsection{Demand Side: Logit Choice and Price Transmission}
+Market share allocation ($S_i$) is modeled using a multinomial Logit framework, assuming consumer utility is linear in price. The aggregate demand response ($Q_{new}$) incorporates price elasticity of demand ($\varepsilon$):
+
+\begin{equation}
+    S_i = \frac{\exp(-\lambda C_i)}{\sum_{k \in \{J, M, U\}} \exp(-\lambda C_k)}, \quad 
+    Q_{new} = Q_{base} \left[ 1 + \varepsilon \left(\frac{\bar{P}_{new} - \bar{P}_{base}}{\bar{P}_{base}}\right) \right]
+\end{equation}
+
+\subsection{Model Solution and Calibration}
+
+Parameters were calibrated using 2024 baseline data to ensure empirical validity (Table \ref{tab:q2_params}). The cost sensitivity $\lambda=0.2$ and elasticity $\varepsilon=-3.0$ were derived from industry literature.
+
+\begin{table}[H]
+\centering
+\caption{Calibrated Parameters for Simulation}
+\begin{tabular}{lclc}
+\toprule
+\textbf{Parameter} & \textbf{Value} & \textbf{Parameter} & \textbf{Value} \\
+\midrule
+Exchange Rate ($R_{ex}$) & 151.46 JPY/USD & Baseline Sales ($Q_{base}$) & 4.15 M units \\
+Sea Freight ($t_{sea}$) & \$1,600/unit & U.S. Prod. Cost ($c_{US}$) & \$24,000/unit \\
+Land Freight ($t_{land}$) & \$600/unit & Add. Tariff ($\tau_{add}$) & Variable (0--50\%) \\
+\bottomrule
+\end{tabular}
+\label{tab:q2_params}
+\end{table}
+
+Based on the calibrated parameters above and the 2025 baseline tariff policy ($\tau_{base}=15\%$), we derived the specific cost structure for the three supply paths (Table \ref{tab:cost_calculation}). 
+
+It is worth noting that the depreciation of the Yen ($R_{ex}=151.46$) significantly lowers Japan's raw manufacturing cost ($c_J \approx \$19,807$). However, after accounting for logistics and tariffs, Mexico (Path M) emerges as the lowest-cost option initially.
+
+\begin{table}[H]
+\centering
+\caption{Calculation of Landed Costs by Supply Path (Unit: USD/Vehicle)}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Supply Path} & \textbf{Mfg. Cost ($c_i$)} & \textbf{Logistics ($t_i$)} & \textbf{Fixed Cost ($F_U$)} & \textbf{Tariff Multiplier} & \textbf{Final Cost ($C_i$)} \\
+\midrule
+\textbf{Japan (J)} & 19,807 & 1,600 & -- & $\times (1 + 15\%)$ & \textbf{24,618} \\
+\textbf{Mexico (M)} & 19,680 & 600 & -- & $\times (1 + 15\%)$ & \textbf{23,322} \\
+\textbf{USA (U)} & 24,000 & -- & 900 & $\times (1 + 0\%)$ & \textbf{24,900} \\
+\bottomrule
+\end{tabular}
+\label{tab:cost_calculation}
+\vspace{0.5em}
+\parbox{0.9\textwidth}{\footnotesize \textit{Note: Japan's Mfg. Cost is calculated as 3,000,000 JPY / 151.46. Mexico's Mfg. Cost is derived from the BCG manufacturing index relative to the U.S. The Tariff Multiplier assumes the baseline scenario ($\tau_{add}=0$).}}
+\end{table}
+
+Furthermore, to evaluate the impact of additional tariffs on Japan ($\tau_{add}$), we conducted a deterministic cost sensitivity analysis (Table \ref{tab:scenarios}). The results reveal a critical structural insight: even as tariffs on Japan rise, the cost of the Mexican path remains constant and lower than the U.S. production cost, leading to persistent trade diversion.
+
+\begin{table}[H]
+\centering
+\caption{Cost Sensitivity Analysis under Policy Shocks}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Scenario} & \textbf{$\tau_{add}$} & \textbf{$C_J$ (USD)} & \textbf{$C_M$ (USD)} & \textbf{$C_U$ (USD)} & \textbf{Optimal Strategy} \\
+\midrule
+Baseline & 0\% & 24,618 & \textbf{23,322} & 24,900 & Mexico Transshipment \\
+Shock A & 10\% & 26,758 & \textbf{23,322} & 24,900 & Mexico Transshipment \\
+Shock B & 25\% & 31,040 & \textbf{23,322} & 24,900 & Mexico Transshipment \\
+\bottomrule
+\end{tabular}
+\label{tab:scenarios}
+\vspace{0.5em}
+\parbox{0.9\textwidth}{\footnotesize \textit{Note: Since Mexico's landed cost (\$23,322) remains consistently lower than U.S. production cost (\$24,900) in these scenarios, unilateral tariffs on Japan fail to drive reshoring immediately, instead diverting trade to Mexico.}}
+\end{table}
+
+\subsection{Result Analysis}
+
+Based on the model solution results, we analyze the three core questions raised by the problem and further explore the deep policy mechanisms revealed by the model.
+
+\subsubsection{Impact on U.S.-Japan Automobile Trade}
+\begin{itemize}
+    \item \textbf{Drastic Decline in Trade Volume:} The model shows that when the total tariff exceeds \textbf{20\%} (i.e., additional tariff $>$ 5\%), the direct export path from Japan ($C_J$) will lose its cost competitiveness against U.S. local manufacturing ($C_U$). Japan's direct export volume is projected to decrease from 1.52 million units in 2024 to below \textbf{1.20 million units} in 2025.
+    \item \textbf{Transformation of Trade Form:} Since the cost dividend brought by Yen depreciation (151.46) is completely offset by the 15\% baseline tariff, Japanese automakers will reduce whole-vehicle exports and instead increase capital investment (FDI) in the U.S. The \textbf{goods trade} deficit between the U.S. and Japan will narrow, but outflows under the capital account will increase.
+\end{itemize}
+
+\subsubsection{Impact on U.S. Import Structure}
+Based on the model output, we plotted the evolution of the U.S. automobile import structure with changes in tariffs, as shown in Figure \ref{fig:import_structure}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/ques2/import structure.png}
+    \caption{Projected Import Composition: Vehicles vs. Parts}
+    \label{fig:import_structure}
+\end{figure}
+
+Through the quantitative analysis of Figure \ref{fig:import_structure}, we observed a significant \textbf{dual substitution effect}, validating the model's conclusions on "source" and "content" restructuring.
+
+\begin{enumerate}
+    \item \textbf{Source Substitution:}
+    \begin{itemize}
+        \item \textbf{Phenomenon:} The red solid line (Japanese whole-vehicle imports) shows a cliff-like decline as tariffs rise, while the green dashed line (Mexican whole-vehicle imports) shows an upward trend in the initial stage (tariff $<$ 15\% range).
+        \item \textbf{Interpretation:} Under the baseline scenario, the calculated cost of the Mexican path (23,322) is significantly lower than that of Japan (24,618) and the U.S. (24,900). Tariff pressure causes Japan's direct exports to be squeezed out, shifting orders to the cost depression of Mexico. This indicates that if only unilateral tariffs are imposed on Japan while the USMCA framework is preserved, trade flows do not truly reshore to the U.S., but rather \textbf{Trade Diversion} to Mexico occurs.
+    \end{itemize}
+    \item \textbf{Content Substitution:}
+    \begin{itemize}
+        \item \textbf{Phenomenon:} The blue dotted line (parts import value) shows a \textbf{negative correlation} with the whole-vehicle import lines of Japan/Mexico, rising steadily.
+        \item \textbf{Interpretation:} With the increase in the share of U.S. local production capacity ($S_U$), the import demand for upstream core components (engines, transmissions, chips) grows rigidly. The model predicts that parts imports will climb from a low level to over \$20 billion. This means the U.S. automobile import form has completed a fundamental shift from \textbf{"Final Goods"} to \textbf{"Intermediate Goods"}.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Impact on U.S. Automobile Industry}
+The tariff policy's impact on the U.S. local automobile industry exhibits a typical \textbf{double-edged sword effect}, i.e., the coexistence of "capacity expansion" and "market contraction" (see Figure \ref{fig:supply_chain_reconfiguration}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/ques2/supply_chain_reconfiguration1.jpg}
+    \caption{Impact on U.S. Auto Industry: Reshoring vs. Demand Contraction}
+    \label{fig:supply_chain_reconfiguration}
+\end{figure}
+
+By analyzing the curve trends in Figure \ref{fig:supply_chain_reconfiguration}, we can draw the following conclusions regarding the trade-off between reshoring and efficiency:
+
+\begin{enumerate}
+    \item \textbf{Positive Impact: Reshoring Success}
+    \begin{itemize}
+        \item \textbf{Phenomenon:} When the additional tariff reaches 20\%, local production rises from 2.6 million units to over \textbf{3.0 million units}, and the localization rate ($S_U$) is expected to break through 75\%.
+        \item \textbf{Interpretation:} High tariffs successfully raised offshore production costs, making $C_J$ and $C_M$ both exceed $C_U$, forcing Japanese automakers to make capital investments (FDI) for survival. This directly verifies that the policy has achieved the expected \textbf{"employment reshoring"} goal, driving the output of U.S. local manufacturing.
+    \end{itemize}
+    \item \textbf{Negative Impact: Demand Contraction}
+    \begin{itemize}
+        \item \textbf{Phenomenon:} Under the 20\% additional tariff scenario, total market demand decreased by approximately \textbf{450,000 units}.
+        \item \textbf{Interpretation:} This decline reveals the economic cost of reshoring. Since the lowest-cost import path is blocked, and U.S. local manufacturing is constrained by high labor costs (24,000), the industry average price ($P_{avg}$) is expected to rise by \textbf{3.5\%--5.0\%}. Combined with a high demand elasticity of -3.0, the price increase directly suppressed consumption willingness.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Deep Insight: The Mexico Leakage Effect}
+Through simulations of extreme tariff scenarios ($\tau_{add} > 30\%$), our empirical results show an interesting and counter-intuitive phenomenon: \textbf{under extremely high tariffs, total market demand actually rebounds.} This finding reveals a potential loophole in policy design, which we define as the \textbf{"Mexico Leakage Effect"}.
+
+\begin{itemize}
+    \item \textbf{Mechanism Analysis:} Since model parameters show that Mexican production cost ($C_M \approx \$23,322$) is significantly lower than U.S. local cost ($C_U \approx \$24,900$), unilateral tariffs on Japan do not fully drive capacity reshoring to the U.S., but instead promote a large-scale supply chain shift to the lowest-cost Mexico.
+    \item \textbf{Result Impact:} This shift to the "price depression" optimizes the industry's weighted average cost, leading to a fallback in terminal prices and a rebound in demand.
+    \item \textbf{Policy Implication:} This strongly proves that: \textbf{if tariff barriers of equal magnitude are not implemented against Mexico in coordination, imposing tariffs only on Japan will make it difficult to achieve true manufacturing reshoring, and the U.S. market will be "penetrated" by low-cost products from USMCA partners.}
+\end{itemize}
+
+
+
+
+\section{Problem 3: Establishment and Solution of the Model}
+
+\subsection{Data Collection and Analysis}
+To accurately model the "Silicon Dilemma," we constructed a multi-dimensional dataset covering production capacity, trade flows, and policy events. The data analysis process focuses on calibrating the baseline international competitiveness of the U.S. semiconductor industry.
+
+\subsubsection{Data Sources}
+We utilized four primary datasets to support our empirical analysis:
+\begin{itemize}
+    \item \textbf{US\_Semiconductor\_Manufacturing\_2016\_2025.csv:} Used to track the "Reshoring" capability. Key indicators include \textit{US\_Global\_Capacity\_Share} and \textit{Industry\_CAPEX}, which serve as proxies for the supply-side response elasticity.
+    \item \textbf{US\_Import\_IC\_ByCountry\_2016\_2025.csv:} provided the baseline market structure. We extracted import shares from China, Taiwan, and Alternative countries (Vietnam/Malaysia) to initialize the trade matrix.
+    \item \textbf{US\_Tariff\_ExportControl\_Events\_2016\_2025.csv:} This allowed us to quantify policy shocks, specifically mapping the "Export Control Intensity" (0-5 scale) to the Innovation Factor ($I_{RnD}$) in our model.
+    \item \textbf{Chip\_Tier\_HSCode\_Mapping.csv:} We segmented the market into three distinct tiers based on HS Codes: \textbf{High-End} (AI/GPU, $<7$nm), \textbf{Mid-End} (Auto/Industrial, 14-28nm), and \textbf{Low-End} (Consumer Electronics, $>28$nm).
+\end{itemize}
+
+\subsubsection{Parameter Calibration: Reverse Engineering Costs}
+Since direct manufacturing cost data is proprietary, we employed a "Reverse Engineering" approach based on 2024 market share data to derive the Baseline Cost Index ($C_{base}$) for each region.
+Using the Logit market clearing condition, the cost index is derived as:
+\begin{equation}
+    C_i = C_{ref} - \frac{1}{\lambda} \ln \left( \frac{S_i}{S_{ref}} \right)
+\end{equation}
+Setting the ``Alternative Country'' (e.g., Vietnam) as the benchmark ($C_{Alt} = 100$) and cost sensitivity $\lambda = 0.15$\footnote{\cite{BLP1995} Berry, Levinsohn, and Pakes (1995) provide the foundational Logit demand estimation framework widely used in automobile trade studies, and typical cost-sensitivity parameters ($\lambda$) fall within the 0.1--0.3 range in empirical applications.}, we obtained the following calibrated costs (Table \ref{tab:cost_calibration}):
+
+
+\begin{table}[htbp]
+    \centering
+    \caption{Calibrated Baseline Cost Index ($C_{base}$) by Tier}
+    \begin{tabular}{lccc}
+        \toprule
+        \textbf{Tier} & \textbf{USA ($C_{US}$)} & \textbf{China ($C_{CN}$)} & \textbf{Alternative ($C_{Alt}$)} \\
+        \midrule
+        \textbf{High-End} & 113.3 & $\infty$ (Banned) & 100.0 \\
+        \textbf{Mid-End}  & 113.9 & 95.0 & 100.0 \\
+        \textbf{Low-End}  & 118.0 & 85.0 & 100.0 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:cost_calibration}
+\end{table}
+\textit{Note: $C_{US} > 113$ indicates a significant structural cost disadvantage compared to Asian competitors.}
+
+\subsection{Model Construction}
+We established a "Security-Efficiency" Equilibrium Model to simulate the trade-off between National Security goals and Economic Inflation under different policy mixtures (Tariffs vs. Subsidies).
+
+\subsubsection{Supply Side: Cost Structure}
+The final landed cost ($C_{final}$) for each region $k$ (US, CN, Alt) is modified by policy variables:
+\begin{align}
+    \text{USA:} \quad & C_{US}^k = C_{base, US}^k - S_{subsidy} \\
+    \text{China:} \quad & C_{CN}^k = C_{base, CN}^k \times (1 + \tau_{tariff}) \\
+    \text{Alternative:} \quad & C_{Alt}^k = C_{base, Alt}^k
+\end{align}
+Where $S_{subsidy}$ represents CHIPS Act incentives (e.g., equivalent to cost reduction), and $\tau_{tariff}$ is the punitive tariff rate.
+
+\subsubsection{Demand Side: Logit Market Allocation}
+Assuming global buyers maximize utility based on price, the market share $Share_i$ for each tier is:
+\footnote{The same cost-sensitivity parameter $\lambda=0.15$ is used consistently in both the cost-calibration (reverse-engineering) step and the Logit market-allocation function.}
+\begin{equation}
+    Share_i = \frac{\exp(-\lambda C_{final, i})}{\sum_{j \in \{US, CN, Alt\}} \exp(-\lambda C_{final, j})}
+\end{equation}
+
+\subsubsection{Objective Functions}
+We evaluate the policy outcome using two conflicting objectives:
+
+\textbf{1. National Security Index ($Z_{sec}$):}
+Reflecting supply chain autonomy and technological leadership:
+\begin{equation}
+    Z_{sec} = (0.7 \times Share_{US} + 0.3 \times I_{RnD}) \times 100
+\end{equation}
+\begin{itemize}
+    \item $Share_{US}$: Represents "Reshoring" success (Manufacturing Control).
+    \item $I_{RnD}$: Innovation Factor. Export controls reduce U.S. firms’ access to the
+Chinese market, which accounts for 30--40\% of revenue for major semiconductor
+and equipment companies. Lower revenue leads to cuts in R\&D expenditure,
+reducing the innovation factor to $I_{RnD} = 0.7$. When domestic subsidies
+(e.g., CHIPS Act incentives) compensate for lost revenue, firms maintain normal
+R\&D spending, and thus $I_{RnD} = 1.0$.
+\footnote{According to annual reports of NVIDIA, Lam Research, and Applied Materials, 
+the Chinese market accounts for 30--40\% of total revenue, implying significant
+R\&D exposure to export restrictions.}
+
+
+\end{itemize}
+
+\textbf{2. Economic Efficiency Loss (Inflation):}
+Defined as the percentage increase in average procurement price relative to the global minimum baseline:
+\begin{equation}
+    \text{Inflation} = \frac{P_{avg} - P_{min}}{P_{min}} \times 100\%
+\end{equation}
+
+\subsection{Result Analysis}
+We simulated two scenarios based on the problem description:
+\begin{itemize}
+    \item \textbf{Scenario A (Trump):} High Tariffs (50\%), No Subsidies ($S=0$), Strong Export Control.
+    \item \textbf{Scenario B (Biden):} Moderate Tariffs (25\%), High Subsidies ($S=15$), Strong Export Control.
+\end{itemize}
+
+The simulation results (Table \ref{tab:model_results}) reveal significant structural differences across chip tiers.Meanwhile, Figure \ref{fig:Simulation_Results} presents some other outputs of the model.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/ques3/problem3result.png}
+\caption{Visualization outputs}
+\label{fig:Simulation_Results}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Simulation Results: Market Share and Policy Efficacy}
+    \begin{tabular}{lccccc}
+        \toprule
+        \multirow{2}{*}{\textbf{Tier}} & \multicolumn{3}{c}{\textbf{Trump Scenario Market Share (\%)}} & \multicolumn{2}{c}{\textbf{Security Score ($Z_{sec}$)}} \\
+        \cmidrule(lr){2-4} \cmidrule(lr){5-6}
+         & \textbf{US} & \textbf{CN} & \textbf{Alt (Vietnam/etc)} & \textbf{Trump} & \textbf{Biden} \\
+        \midrule
+        \textbf{High-End} & 11.97 & 0.00 & 88.03 & \textbf{29.4} & \textbf{60.4} \\
+        \textbf{Mid-End} & 11.04 & 0.15 & 88.81 & 37.7 & 66.9 \\
+        \textbf{Low-End} & 6.20 & 1.49 & 92.30 & 34.3 & 52.0 \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:model_results}
+\end{table}
+
+\subsubsection{Evaluation of Policy Effectiveness}
+Based on the model outputs, we categorize the policy impacts into three distinct zones:
+
+\textbf{1. Misalignment in High-End Chips (The Innovation Paradox)}
+\begin{itemize}
+    \item \textbf{Result:} Under the Trump scenario, the Security Score is critically low (29.4).
+    \item \textbf{Analysis:} High-End manufacturing is capital intensive ($C_{US} \approx 113.3$). Tariffs on China are irrelevant because China is already excluded via Export Controls. Without subsidies ($S=0$), US manufacturers cannot lower costs enough to compete with Taiwan/Korea (Alternative). Furthermore, the loss of the Chinese market without compensation damages the $I_{RnD}$ factor, leading to a "Security Failure."
+    \item \textbf{Conclusion:} Subsidies are strictly superior to tariffs for High-End security ($60.4 > 29.4$).
+\end{itemize}
+
+\textbf{2. Failure Zone in Low-End Chips (Deadweight Loss)}
+\begin{itemize}
+    \item \textbf{Result:} Inflation hits \textbf{19.44\%}, yet US market share only inches up to 6.2\%.
+    \item \textbf{Trade Diversion:} The tariff successfully crushes Chinese share (from dominant to 1.49\%), but the volume does not return to the US ($C_{US}=118$ is too high). Instead, it flows entirely to Vietnam/Malaysia (Alt Share 92.3\%).
+    \item \textbf{Conclusion:} Tariffs on low-end chips purely export jobs to Southeast Asia while taxing US consumers, representing a policy failure.
+\end{itemize}
+
+\textbf{3. Partial Efficacy in Mid-End}
+\begin{itemize}
+    \item The Mid-End sector shows a moderate response. Inflation is contained at $\approx 7\%$, and US share exceeds 11\%. This indicates that tariffs have some effect where the cost gap is narrower, but subsidies (Biden Scenario) still yield a significantly higher security score (66.9 vs 37.7) by directly addressing the cost disadvantage.
+\end{itemize}
+
+
+\section{Problem 4: Establishment and Solution of the Model}
+
+\subsection{Data Collection and Parameter Calibration}
+To quantify the net impact of the tariff policy on U.S. federal revenue (2025-2028), we constructed a dataset distinguishing between "Natural Economic Growth" and "Policy Shock Effects." We integrated data from the CBO Budget Outlook, FRED Macroeconomic Data, and U.S. Treasury (MTS) detailed reports\footnote{\cite{USTreasury2025} U.S. Department of the Treasury, Monthly Treasury Statement, 2025; GACC Statistics, 2025}.
+We present the visualization results of some data as follows.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/historytrafgain.png}
+\caption{Historical U.S. Tariff Revenue and Trade-Weighted Average Tariff Rate (2015-2024)}
+\label{fig:history_traff_gain}
+\end{figure}
+
+\subsubsection{Effective Tax Base Calibration ($V_{base}$)}
+Based on the provided \textit{MTS\_RcptSrc.csv} file (U.S. Treasury Monthly Statement), we extracted the historical revenue data.
+\begin{itemize}
+    \item \textbf{Historical Data:} The actual customs duties revenue for FY2024 was identified as $\$80.3$ Billion.
+    \item \textbf{Reverse Engineering the Base:} Given the initial trade-weighted average tariff rate $\tau_{old} = 2.44\%$, we calibrated the effective tax base (total import value) for the initial state $t=0$ (Year 2024):
+    \begin{equation}
+        V_{2024} = \frac{\text{Actual Revenue}}{\tau_{old}} = \frac{80.3 \text{ Billion}}{0.0244} \approx 3,290 \text{ Billion USD}
+    \end{equation}
+\end{itemize}
+
+\subsubsection{Macroeconomic Growth Rate ($g$)}
+To simulate the "Business-as-Usual" (BAU) scenario, we adopted the Nominal GDP growth rates from the CBO's report. The growth rate $g(t)$ accounts for both Real GDP growth and PCE Inflation:
+\begin{itemize}
+    \item \textbf{2025-2026:} Real GDP ($2.2\%$) + Inflation ($2.1\%$) $\approx 4.3\%$.
+    \item \textbf{2027-2028:} Projected average nominal growth $\approx 4.1\%$.
+\end{itemize}
+Thus, the baseline growth sequence is defined as $g = [4.3\%, 4.3\%, 4.1\%, 4.1\%]$.
+
+\subsection{Model Construction}
+We established a **Dynamic Difference-in-Differences Revenue Model** to calculate the net revenue change ($Net\_Change$) under the Trump administration's second term tariff policy compared to the CBO baseline.
+
+\subsubsection{Core Equations}
+\textbf{1. CBO Baseline Scenario ($Baseline$):} Assuming the tariff rate remains at $\tau_{old} = 2.44\%$, the import volume grows naturally according to CBO predictions:
+\begin{equation}
+    V_{base}(t) = V_{2024} \cdot \prod_{i=1}^{t} (1 + g[i])
+\end{equation}
+\begin{equation}
+    R_{base}(t) = V_{base}(t) \cdot \tau_{old}
+\end{equation}
+
+\textbf{2. Policy Shock Scenario ($Policy$):} The tariff rate rises to $\tau_{new} = 20.11\%$. This creates a price shock that suppresses the import volume through a dynamic elasticity coefficient\footnote{\cite{Kee2008, Cavallo2021} Kee et al. (2008) and Cavallo et al. (2021); empirical estimates of import elasticity and tariff pass-through.}:
+\begin{equation}
+    V_{policy}(t) = V_{base}(t) \cdot [1 + \varepsilon(t) \cdot \Delta P]
+\end{equation}
+\begin{equation}
+    R_{policy}(t) = V_{policy}(t) \cdot \tau_{new}
+\end{equation}
+
+\subsubsection{Shock Magnitude and Dynamic Elasticity}
+\begin{itemize}
+    \item \textbf{Price Shock Factor ($\Delta P$):} The percentage increase in import costs due to tariffs is calculated as:
+    \begin{equation}
+        \Delta P = \frac{\tau_{new} - \tau_{old}}{1 + \tau_{old}} = \frac{20.11\% - 2.44\%}{1 + 0.0244} \approx 17.25\%
+    \end{equation}
+    
+    \item \textbf{Dynamic Elasticity ($\varepsilon(t)$):} 
+    \begin{enumerate}
+        \item \textbf{Short-term (2025):} Based on the problem description stating a "35\% drop in imports" immediately, the short-term elasticity is calibrated as $\varepsilon_{short} \approx -35\% / 17.25\% \approx -2.03$.
+        \item \textbf{Medium-term (2026-2028):} Considering supply chain shifts (leakage effects to Mexico as analyzed in Problem 2) and long-term substitution effects, we model the elasticity to deteriorate linearly over time, reaching $\varepsilon_{2028} = -2.8$.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Result Solving Analysis}
+Using the iterative simulation algorithm (Python), we calculated the revenue changes for 2025-2028. The results reveal a characteristic of "Short-term Surge, Long-term Erosion."
+
+\subsubsection{Simulation Results}
+The numerical results of the model are presented in Table 4.1.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Predicted Tariff Revenue Impact (2025-2028) [Billions USD]}
+    \begin{tabular}{ccccc}
+        \toprule
+        \textbf{Year} & \textbf{Baseline Revenue} & \textbf{Policy Revenue} & \textbf{Net Change} & \textbf{Policy Import Vol.} \\
+        \midrule
+        2025 & 83.7 & 448.4 & \textbf{+364.7} & 2,229.9 \\
+        2026 & 87.3 & 435.9 & \textbf{+348.5} & 2,167.3 \\
+        2027 & 90.9 & 420.6 & \textbf{+329.6} & 2,091.3 \\
+        2028 & 94.6 & 403.3 & \textbf{+308.6} & 2,005.3 \\
+        \midrule
+        \textbf{Total} & \textbf{356.5} & \textbf{1,708.2} & \textbf{+1,351.5} & - \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:revenue_results}
+\end{table}
+
+\subsubsection{Analysis of Dynamics}
+\begin{enumerate}
+    \item \textbf{The Rate Effect vs. Base Effect:} 
+    In 2025, the Net Change peaks at \textbf{\$364.7 Billion}. This occurs because the \textit{Rate Effect} (tariff increasing by $\approx 8.2\times$) significantly outweighs the \textit{Base Effect} (import volume dropping by $\approx 35\%$). This explains why tariffs are often used as a short-term financing tool.
+
+    \item \textbf{Diminishing Marginal Returns (Base Erosion):}
+    Observing the trend from 2025 to 2028, the net revenue gain declines annually (from \$364.7B to \$308.6B).
+    \begin{itemize}
+        \item While the CBO Baseline predicts economic expansion (nominal GDP growth), the Policy Scenario shows a continuous contraction in the tax base ($V_{policy}$ drops from \$2,229.9B to \$2,005.3B).
+        \item This $\approx 48\%$ potential loss in trade volume (compared to the 2028 baseline of $\approx \$3,862$B) indicates severe \textbf{Base Erosion}.
+    \end{itemize}
+
+    \item \textbf{Fiscal Illusion and Hidden Costs:}
+    The model predicts a cumulative 4-year net gain of approximately \textbf{\$1.35 Trillion}. However, this figure contains a "Fiscal Illusion":
+    \begin{itemize}
+        \item \textbf{Inflationary Masking:} The revenue figures are nominal, boosted by the CBO's high inflation expectations (PCE 2.1\%).
+        \item \textbf{Hidden Economic Cost:} The government gains $\approx \$300$B annually, but this is built upon suppressing nearly $\approx \$1.8$ Trillion in potential trade activity by 2028. As the elasticity $\varepsilon$ worsens (supply chains moving to non-tariff regions like Mexico), the U.S. government's ability to extract revenue from tariffs is essentially drying up.
+    \end{itemize}
+\end{enumerate}
+
+
+
+
+\section{Problem 5: Establishment and Solution of the Model}
+
+The objective is to construct an economic model to simulate the medium-to-short-term impact of US tariff adjustments and resulting reciprocal tariffs on the US economy, specifically evaluating the effectiveness of the "reciprocal tariff" policy in promoting manufacturing reshoring.
+
+\subsection{The Impact of Tariff Adjustments}
+The implementation of increased US tariffs on imports has historically led to retaliatory measures from trade partners. For instance, China implemented equivalent reciprocal tariffs and targeted export controls on strategic materials like rare earths and lithium batteries. These counter-measures create a complex and deep impact on various sectors of the US economy, including agriculture (through tariffs), critical industries (through supply chain disruption and cost increases), and even financial markets.
+
+Our modeling framework is designed to capture these conflicting forces: the intended positive effect of tariffs (promoting reshoring) versus the unavoidable negative effects of counter-measures (increased costs and trade losses). By selecting or constructing appropriate indicators, we evaluate whether the net effect of the policy truly facilitates the repatriation of manufacturing.
+
+\subsection{Data Collection}
+The analysis uses time-series data from the \texttt{allprocessed.csv} file. Six core indicators were selected to capture the mechanisms of the trade conflict: (1) \textbf{Reshoring\_Investment} (policy target), (2) \textbf{Ag\_Export\_Value} (trade loss), (3) \textbf{Cost\_Lithium} and \textbf{Cost\_Rare\_Earths} (supply chain impediments), and (4) \textbf{Reshoring\_Employment} and \textbf{Reshoring\_Production} (related controls).
+
+Correlation analysis highlights key relationships, including a strong negative correlation between \textbf{Reshoring\_Investment} and \textbf{Cost\_Lithium} ($-0.7833$), and a strong positive correlation with \textbf{Ag\_Export\_Value} ($+0.9817$), which guides the model specification.
+
+
+Prior correlation analysis (as shown in the provided output) highlighted the critical relationships, such as the $\text{Reshoring\_Investment}$'s extreme negative correlation with $\text{Cost\_Lithium}$ ($-0.7833$) and extreme positive correlation with $\text{Ag\_Export\_Value}$ ($+0.9817$), which is crucial for model specification.
+
+We present the visualization results of some data as follows.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/Commodity_Prices_Heatmap.png}
+    \caption{Exchange Rate Trends (2017--2025)}
+    \label{fig:exchange_rate}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figures/Inflation_Structure_Evolution.png}
+    \caption{Tariff Trends: China vs. U.S. (2018--2025)}
+    \label{fig:tariff_trend}
+\end{subfigure}
+\caption{Commodity Price Dynamics and Inflation Structure Evolution}
+\label{fig:combined_figures}
+\end{figure}
+
+\subsection{Model Construction and Empirical Results}
+
+\subsubsection{Theoretical Framework and Model Specification}
+We model the impact of trade policies on manufacturing reshoring as:
+
+\begin{equation}
+\mathrm{RI}_t = \beta_0 + \beta_1 \cdot \mathrm{Cost}_{\mathrm{Li},t} + \beta_2 \cdot \mathrm{AgExp}_t + \beta_3 \cdot \mathrm{Cost}_{\mathrm{RE},t} + \varepsilon_t,
+\end{equation}
+
+where $\mathrm{RI}_t$ is reshoring investment, $\mathrm{Cost}_{\mathrm{Li},t}$ and $\mathrm{Cost}_{\mathrm{RE},t}$ are critical input costs, $\mathrm{AgExp}_t$ is agricultural export value, and $\varepsilon_t$ is a classical error term.
+
+\subsubsection{Estimation Methodology}
+Given limited data, we generate a \textbf{correlation-preserving synthetic dataset} using Cholesky decomposition:
+
+\begin{align}
+\Sigma &= LL^T, & X_{\text{synthetic}} &= ZL^T, & Z \sim \mathcal{N}(0, I_p)
+\end{align}
+
+OLS estimation is applied:
+\[
+\hat{\beta} = (X^TX)^{-1}X^TY
+\]
+
+\subsubsection{Empirical Results}
+The estimated regression is:
+
+\begin{equation}
+\widehat{\mathrm{RI}} = 0.0001 - 0.4140 \cdot \mathrm{Cost}_{\mathrm{Li}} + 0.7869 \cdot \mathrm{AgExp} - 0.1835 \cdot \mathrm{Cost}_{\mathrm{RE}}
+\end{equation}
+
+\begin{table}[H]
+\centering
+\begin{minipage}{0.48\linewidth}
+\centering
+\caption{Regression Results}
+\begin{tabular}{lccc}
+\toprule
+Variable & Coefficient & t-statistic & p-value \\
+\midrule
+Intercept & 0.0001 & 0.044 & 0.965 \\
+Cost\_Lithium & -0.4140 & -46.598 & <0.001 \\
+Ag\_Export\_Value & 0.7869 & 165.107 & <0.001 \\
+Cost\_Rare\_Earths & -0.1835 & -23.474 & <0.001 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+\centering
+\caption{Model Fit and Diagnostics}
+\begin{tabular}{lc}
+\toprule
+Statistic & Value \\
+\midrule
+R-squared & 0.9944 \\
+F-statistic & 29,190 \\
+Durbin-Watson & 1.973 \\
+Jarque-Bera p-value & 0.217 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+
+\subsubsection{Economic Interpretation and Policy Implications}
+\begin{itemize}
+    \item \textbf{Resource Cost Channel:} Higher lithium and rare earth costs reduce reshoring investment ($\beta_{\mathrm{Li}}=-0.4140$, $\beta_{\mathrm{RE}}=-0.1835$).
+    \item \textbf{Trade Retaliation Effect:} Reduction in agricultural exports (due to tariffs) strongly suppresses reshoring ($\beta_{\mathrm{Ag}}=0.7869$).
+    \item \textbf{Net Policy Impact:} Summing absolute values, the total negative drag is $1.3844$, likely outweighing intended benefits of reciprocal tariffs.
+\end{itemize}
+
+\subsubsection{Robustness}
+\begin{itemize}
+    \item Residuals approximately normal (Jarque-Bera p = 0.217)
+    \item No significant autocorrelation (Durbin-Watson = 1.973)
+    \item No severe multicollinearity (condition number = 5.28)
+\end{itemize}
+
+\subsubsection{Conclusion}
+Reciprocal tariffs, while intended to promote reshoring, face strong negative counter-effects from critical input costs and trade losses. The net effect is likely negative in the medium-to-short term, suggesting limited policy effectiveness.
+
+
+\section{Model Evaluation}
+
+\subsection{Advantages of the Model}
+\begin{enumerate}
+    \item \textbf{Multi-Dimensional Structural Heterogeneity:}
+    The model distinguishes between sectors characterized by homogeneous commodities and those involving differentiated products. 
+    For agricultural goods, standard log-log demand estimation is applied, while for automobiles—treated as differentiated products—
+    a Multinomial Logit Choice framework is employed following the theoretical foundations established by McFadden (1974) \cite{McFadden1974}. 
+    This sector-specific modeling strategy enables more accurate characterization of tariff sensitivities across distinct market structures.
+
+    \item \textbf{Identification of Non-Linear Policy Thresholds:}
+    The model identifies structural tipping points in firms’ strategic responses to tariffs. 
+    In the automobile supply-chain analysis, it quantitatively captures the shift from direct export to transshipment and eventually to reshoring 
+    as additional tariffs rise, illustrating how differentiated-product trade exhibits non-linear adjustment dynamics consistent with 
+    theoretical insights on product differentiation and scale economies (Krugman, 1980) \cite{Krugman1980}. 
+    This provides policymakers with clear thresholds for anticipating behavioral shifts.
+
+    \item \textbf{Dynamic Assessment of Fiscal Illusion:}
+    By embedding a time-decaying elasticity parameter $\varepsilon(t)$ into the tariff revenue model, 
+    the framework differentiates between short-term “Rate Effects” and long-term “Base Erosion.” 
+    This dynamic structure avoids the static fiscal illusion often present in nominal revenue projections 
+    and highlights how shrinking import tax bases can offset initial gains—a mechanism consistent with long-run adjustment patterns 
+    observed in differentiated markets \cite{Krugman1980}.
+\end{enumerate}
+
+\subsection{Disadvantages of the Model}
+\begin{enumerate}
+    \item \textbf{Reliance on Indirect Parameter Calibration:}
+    Due to the lack of publicly available semiconductor cost data, key parameters were inferred indirectly from market outcomes. 
+    While such calibration is aligned with rational-choice modeling traditions, it may fail to capture unobserved factors 
+    such as geopolitical alignments or path-dependent technological constraints.
+
+    \item \textbf{Limitations of Partial Equilibrium Analysis:}
+    The modeling framework relies on \textit{ceteris paribus} assumptions and evaluates industries separately, 
+    without incorporating general-equilibrium feedback loops. 
+    For instance, a substantial decline in agricultural exports could induce exchange-rate adjustments, 
+    which would then influence manufacturing competitiveness—an effect not captured in the current structure.
+
+    \item \textbf{Simplification of Supply Chain Frictions:}
+    The soybean substitution model assumes competing exporters can fully absorb U.S. market losses. 
+    Real-world frictions—such as port capacity, logistics bottlenecks, and contractual rigidities—may constrain short-term substitution, 
+    meaning the model may overestimate adjustment efficiency for the sake of tractability.
+\end{enumerate}
+
+\newpage
+\section*{References}
+\bibliographystyle{apalike}
+\bibliography{refs}
+
+
+
+
+\newpage
+\section*{Appendix}
+\subsection{Appendix A: Source Code}
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 1}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 2}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 3}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 4}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\begin{lstlisting}[language=python,caption={Python Source Code for Question 5}]
+# Please fill in the source code here
+\end{lstlisting}
+
+\subsection{Appendix B: Supplementary Data}
+% Please fill in the supplementary data here
+
+\subsection{Appendix C: Additional Figures/Tables}
+% Please fill in the additional figures/tables here
+
+\end{document}
