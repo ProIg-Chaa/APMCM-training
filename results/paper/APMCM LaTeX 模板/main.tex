@@ -917,14 +917,18 @@ The implementation of increased US tariffs on imports has historically led to re
 Our modeling framework is designed to capture these conflicting forces: the intended positive effect of tariffs (promoting reshoring) versus the unavoidable negative effects of counter-measures (increased costs and trade losses). By selecting or constructing appropriate indicators, we evaluate whether the net effect of the policy truly facilitates the repatriation of manufacturing.
 
 \subsection{Data Collection}
-The analysis uses time-series data from the \texttt{allprocessed.csv} file. Six core indicators were selected to capture the mechanisms of the trade conflict: (1) \textbf{Reshoring\_Investment} (policy target), (2) \textbf{Ag\_Export\_Value} (trade loss), (3) \textbf{Cost\_Lithium} and \textbf{Cost\_Rare\_Earths} (supply chain impediments), and (4) \textbf{Reshoring\_Employment} and \textbf{Reshoring\_Production} (related controls).
 
-Correlation analysis highlights key relationships, including a strong negative correlation between \textbf{Reshoring\_Investment} and \textbf{Cost\_Lithium} ($-0.7833$), and a strong positive correlation with \textbf{Ag\_Export\_Value} ($+0.9817$), which guides the model specification.
+The analysis employs time-series data compiled from authoritative economic and trade datasets, which were integrated and standardized prior to model estimation. Specifically, six core indicators were extracted to capture the mechanisms underlying the U.S.–China trade conflict:
+(1) \texttt{Reshoring\_Investment} (policy target), sourced from the U.S. Department of Commerce and SelectUSA reshoring statistics;
+(2) \texttt{Ag\_Export\_Value} (trade loss), derived from USDA Foreign Agricultural Service and GACC bilateral trade records;
+(3) \texttt{Cost\_Lithium} and \texttt{Cost\_Rare\_Earths} (supply-chain impediments), constructed from benchmark commodity price series reported by the U.S. Geological Survey (USGS) and London Metal Exchange (LME);
+(4) \texttt{Reshoring\_Employment} and \texttt{Reshoring\_Production} (related controls), obtained from the U.S. Bureau of Labor Statistics (BLS) and Federal Reserve industrial output indices.
 
+Correlation analysis highlights key relationships, including a strong negative correlation between \texttt{Reshoring\_Investment} and \texttt{Cost\_Lithium} ($-0.7833$), and a strong positive correlation with \texttt{Ag\_Export\_Value} ($+0.9817$), which guides the model specification.
 
-Prior correlation analysis (as shown in the provided output) highlighted the critical relationships, such as the $\text{Reshoring\_Investment}$'s extreme negative correlation with $\text{Cost\_Lithium}$ ($-0.7833$) and extreme positive correlation with $\text{Ag\_Export\_Value}$ ($+0.9817$), which is crucial for model specification.
+Prior correlation diagnostics also confirmed these critical linkages, particularly the sharp inverse relationship between $\text{Reshoring\_Investment}$ and $\text{Cost\_Lithium}$, and its strong comovement with $\text{Ag\_Export\_Value}$, reinforcing the economic rationale for including these variables in the structural model.
 
-We present the visualization results of some data as follows.
+We present the visualization results of key indicators below.
 
 \begin{figure}[H]
 \centering
