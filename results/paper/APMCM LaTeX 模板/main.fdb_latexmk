@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex main"] 1763891908.31684 "main.aux" "main.bbl" "main" 1763891913.27528 0
+["bibtex main"] 1763895024.58598 "main.aux" "main.bbl" "main" 1763895033.56977 0
   "./refs.bib" 1763891897 5585 b311087e589b71e67528d4ba1897fc5a ""
   "d:/programfile/texlive/2024/texmf-dist/bibtex/bst/base/apalike.bst" 1727499712 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1763891912 20671 cfc4ee22ba4ddacf615626c4a5f26499 "pdflatex"
+  "main.aux" 1763895031 20773 71dcb1745676a8214afe8a04046cd874 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1763891908.68843 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" "main.pdf" "main" 1763891913.27573 0
+["pdflatex"] 1763895025.26519 "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" "main.pdf" "main" 1763895033.57075 0
   "apmcmthesis.cfg" 1763516798 3135 0a0756cee74f785872b894ae4e85c566 ""
   "apmcmthesis.cls" 1763516798 13415 41f2f271e9a04b028112181c0e45ab2b ""
-  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" 1763891897 63308 938ff6c02cdc46ce9532477891ff9948 ""
+  "d:/GS_LearningAndWork/MATH-model/APMCM-training/results/paper/APMCM LaTeX 模板/main.tex" 1763895016 62252 f1a351d114d41192890f2be5108fb326 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1727500340 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1727500696 3124 3813fd4c981d99822890a2861b0d274c ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727499996 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -299,11 +299,11 @@
   "figures/ques3/problem3result.png" 1763869785 89807 5ce4d9dba2b04e1764d24f1bb4a83eeb ""
   "figures/soybean_data_hierarchy.png" 1763730308 32979 2c45f039ac2efc99f2d9ac2b7cdd6b52 ""
   "figures/tariff_impact_plot.png" 1763654608 229843 0eda54dfec4bdc3c9438326a80402d0d ""
-  "main.aux" 1763891912 20671 cfc4ee22ba4ddacf615626c4a5f26499 "pdflatex"
-  "main.bbl" 1763891908 2010 5506b6aea336b42415a6785e2a02fc58 "bibtex main"
-  "main.out" 1763891912 16571 3322487be8bc772f606e58681b9099f0 "pdflatex"
-  "main.tex" 1763891897 63308 938ff6c02cdc46ce9532477891ff9948 ""
-  "main.toc" 1763891912 8382 1913e04fae785ef51cbf543a9b9027cf "pdflatex"
+  "main.aux" 1763895031 20773 71dcb1745676a8214afe8a04046cd874 "pdflatex"
+  "main.bbl" 1763895025 1590 1bc5e768ffd9c84ddd7c8320d7504a7b "bibtex main"
+  "main.out" 1763895031 17553 b0a849d9028553439e14d0f7cc723717 "pdflatex"
+  "main.tex" 1763895016 62252 f1a351d114d41192890f2be5108fb326 ""
+  "main.toc" 1763895031 8569 25695d9e5461ed39c65703c8b49c9407 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

@@ -7,12 +7,12 @@
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,4}Question 4}{2}{subsubsection.1.2.4}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,5}Question 5}{2}{subsubsection.1.2.5}%
 \contentsline {section}{\numberline {2}Problem Analysis}{2}{section.2}%
-\contentsline {subsection}{\numberline {2\,.\,1}Analysis of Question 1}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2\,.\,2}Analysis of Question 2}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2\,.\,3}Analysis of Question 3}{2}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2\,.\,4}Analysis of Question 4}{2}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2\,.\,5}Analysis of Question 5}{2}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Model Assumptions}{2}{section.3}%
+\contentsline {subsection}{\numberline {2\,.\,1}Analysis of Question 1: Soybean Trade Dynamics}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2\,.\,2}Analysis of Question 2: Automobile Supply Chain Reconfiguration}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2\,.\,3}Analysis of Question 3: Semiconductor Security–Efficiency Trade-off}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2\,.\,4}Analysis of Question 4: Dynamic Tariff Revenue Forecasting}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2\,.\,5}Analysis of Question 5: Evaluation of Reshoring Effectiveness}{3}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Model Assumptions}{3}{section.3}%
 \contentsline {section}{\numberline {4}Description of the Symbols}{4}{section.4}%
 \contentsline {section}{\numberline {5}Problem 1: Impact of U.S. Tariff Adjustments on Global Soybean Trade}{5}{section.5}%
 \contentsline {subsection}{\numberline {5\,.\,1}Data Collection and Preprocessing}{5}{subsection.5.1}%

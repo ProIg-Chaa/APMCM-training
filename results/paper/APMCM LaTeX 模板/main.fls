@@ -432,6 +432,7 @@ INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
@@ -441,7 +442,6 @@ INPUT d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.e
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Bold-tlf-ot1.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txbmiaX.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1r.tfm
@@ -517,13 +517,13 @@ INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxsy.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Bold-tlf-ot1.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txbmiaX.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1r.tfm
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxsy.vf
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT ./figures/soybean_data_hierarchy.png
 INPUT ./figures/soybean_data_hierarchy.png
 INPUT ./figures/soybean_data_hierarchy.png
