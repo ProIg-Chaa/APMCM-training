@@ -13,7 +13,8 @@
     table-format = 2.4
 }
 
-
+\usepackage{tikz}
+\usetikzlibrary{positioning, shapes.geometric, arrows.meta}
 
 \usepackage{indentfirst}
 \setlength{\parindent}{2em}
@@ -498,10 +499,13 @@ As illustrated in Figure \ref{fig:supply_chain_reconfig}, the supply chain under
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/ques2/supply_chain_reconfiguration.jpg}
-    \caption{Simulated Supply Chain Shifts under Varying $\tau_{add}$}
-    \label{fig:supply_chain_reconfig}
+    \includegraphics[width=0.8\textwidth]{figures/ques2/supply_chain_reconfiguration1.jpg}
+    \caption{Supply Chain Reconfiguration under Tariffs, Export Controls, and Subsidies}
+    \label{fig:supply_chain_reconfiguration}
 \end{figure}
+
+
+
 
 \subsubsection{Welfare Implications and Import Structure}
 The policy induces a "Dual Substitution" mechanism (Figure \ref{fig:import_structure}):
@@ -539,7 +543,8 @@ Using the Logit market clearing condition, the cost index is derived as:
 \begin{equation}
     C_i = C_{ref} - \frac{1}{\lambda} \ln \left( \frac{S_i}{S_{ref}} \right)
 \end{equation}
-Setting the "Alternative Country" (e.g., Vietnam) as the benchmark ($C_{Alt} = 100$) and cost sensitivity $\lambda = 0.15$, we obtained the following calibrated costs (Table \ref{tab:cost_calibration}):
+Setting the ``Alternative Country'' (e.g., Vietnam) as the benchmark ($C_{Alt} = 100$) and cost sensitivity $\lambda = 0.15$\footnote{\cite{BLP1995} Berry, Levinsohn, and Pakes (1995) provide the foundational Logit demand estimation framework widely used in automobile trade studies, and typical cost-sensitivity parameters ($\lambda$) fall within the 0.1--0.3 range in empirical applications.}, we obtained the following calibrated costs (Table \ref{tab:cost_calibration}):
+
 
 \begin{table}[htbp]
     \centering
@@ -558,7 +563,7 @@ Setting the "Alternative Country" (e.g., Vietnam) as the benchmark ($C_{Alt} = 1
 \textit{Note: $C_{US} > 113$ indicates a significant structural cost disadvantage compared to Asian competitors.}
 
 \subsection{Model Construction}
-We established a **"Security-Efficiency" Equilibrium Model** to simulate the trade-off between National Security goals and Economic Inflation under different policy mixtures (Tariffs vs. Subsidies).
+We established a "Security-Efficiency" Equilibrium Model to simulate the trade-off between National Security goals and Economic Inflation under different policy mixtures (Tariffs vs. Subsidies).
 
 \subsubsection{Supply Side: Cost Structure}
 The final landed cost ($C_{final}$) for each region $k$ (US, CN, Alt) is modified by policy variables:
@@ -571,6 +576,7 @@ Where $S_{subsidy}$ represents CHIPS Act incentives (e.g., equivalent to cost re
 
 \subsubsection{Demand Side: Logit Market Allocation}
 Assuming global buyers maximize utility based on price, the market share $Share_i$ for each tier is:
+\footnote{The same cost-sensitivity parameter $\lambda=0.15$ is used consistently in both the cost-calibration (reverse-engineering) step and the Logit market-allocation function.}
 \begin{equation}
     Share_i = \frac{\exp(-\lambda C_{final, i})}{\sum_{j \in \{US, CN, Alt\}} \exp(-\lambda C_{final, j})}
 \end{equation}
@@ -585,7 +591,17 @@ Reflecting supply chain autonomy and technological leadership:
 \end{equation}
 \begin{itemize}
     \item $Share_{US}$: Represents "Reshoring" success (Manufacturing Control).
-    \item $I_{RnD}$: The Innovation Factor. If Export Controls are strict but no subsidies are provided, US firms lose revenue from China, causing $I_{RnD}$ to drop to $0.7$ (R\&D Budget Cuts). If subsidies exist, $I_{RnD} = 1.0$.
+    \item $I_{RnD}$: Innovation Factor. Export controls reduce U.S. firms’ access to the
+Chinese market, which accounts for 30--40\% of revenue for major semiconductor
+and equipment companies. Lower revenue leads to cuts in R\&D expenditure,
+reducing the innovation factor to $I_{RnD} = 0.7$. When domestic subsidies
+(e.g., CHIPS Act incentives) compensate for lost revenue, firms maintain normal
+R\&D spending, and thus $I_{RnD} = 1.0$.
+\footnote{According to annual reports of NVIDIA, Lam Research, and Applied Materials, 
+the Chinese market accounts for 30--40\% of total revenue, implying significant
+R\&D exposure to export restrictions.}
+
+
 \end{itemize}
 
 \textbf{2. Economic Efficiency Loss (Inflation):}
@@ -601,7 +617,14 @@ We simulated two scenarios based on the problem description:
     \item \textbf{Scenario B (Biden):} Moderate Tariffs (25\%), High Subsidies ($S=15$), Strong Export Control.
 \end{itemize}
 
-The simulation results (Table \ref{tab:model_results}) reveal significant structural differences across chip tiers.
+The simulation results (Table \ref{tab:model_results}) reveal significant structural differences across chip tiers.Meanwhile, Figure \ref{fig:Simulation_Results} presents some other outputs of the model.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/ques3/problem3result.png}
+\caption{Visualization outputs}
+\label{fig:Simulation_Results}
+\end{figure}
 
 \begin{table}[htbp]
     \centering
@@ -633,7 +656,7 @@ Based on the model outputs, we categorize the policy impacts into three distinct
 \textbf{2. Failure Zone in Low-End Chips (Deadweight Loss)}
 \begin{itemize}
     \item \textbf{Result:} Inflation hits \textbf{19.44\%}, yet US market share only inches up to 6.2\%.
-    \item \textbf{Trade Diversion:} The tariff successfully crushes Chinese share (from dominant to 1.49%), but the volume does not return to the US ($C_{US}=118$ is too high). Instead, it flows entirely to Vietnam/Malaysia (Alt Share 92.3%).
+    \item \textbf{Trade Diversion:} The tariff successfully crushes Chinese share (from dominant to 1.49\%), but the volume does not return to the US ($C_{US}=118$ is too high). Instead, it flows entirely to Vietnam/Malaysia (Alt Share 92.3\%).
     \item \textbf{Conclusion:} Tariffs on low-end chips purely export jobs to Southeast Asia while taxing US consumers, representing a policy failure.
 \end{itemize}
 
