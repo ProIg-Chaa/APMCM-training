@@ -77,10 +77,23 @@
 \pagestyle{frontmatterstyle}
 
 \begin{abstract}
+    This study delves into the global trade disruptions and industrial restructuring triggered by the U.S. "Reciprocal Tariffs" policy since the 2020s. Centering on five core research directions, it employs various mathematical modeling techniques including panel data econometrics, Logit choice models, dynamic simulation, and game theory, integrating authoritative trade, economic, and industrial data from 2017 to 2025 to quantify policy impacts and predict development trends.
+
+For the first research direction, a two-stage modeling framework is constructed. First, a log-log panel data model is used to estimate the price elasticity of soybean import demand (corrected to -1.02 after adjusting for exogenous shocks such as African Swine Fever), followed by the establishment of a tariff gradient simulation engine to simulate the trade redistribution effect within different tariff ranges. Results indicate that an increase in U.S. tariffs will lead to a decline in its soybean export volume, with Brazil as the main substitute absorbing most of the diverted demand, while Argentina’s gain is limited due to logistical and production capacity constraints.
+
+Regarding the second research direction, a multi-dimensional analytical framework integrating a supply-side multi-echelon cost minimization model and a demand-side Logit market allocation model is built, incorporating key variables such as Mexican transshipment costs, fixed costs of U.S. local production, and price elasticity of demand (calibrated to -3.0). Simulations show that when the additional tariff on Japanese automobiles is relatively low, Japan will prioritize transshipment via Mexico to avoid trade barriers; when the additional tariff reaches a certain level, U.S. local production becomes the optimal strategy (localization rate exceeding 75%). However, this restructuring will push up the average price of U.S. automobiles, leading to a contraction in total market demand and triggering downstream employment risks.
+
+In addressing the third research direction, a "Security-Efficiency" equilibrium model is established to balance national security goals (supply chain autonomy) and economic efficiency (inflation control), dividing the chip market into high-end, mid-end, and low-end categories. Simulations of two policy scenarios (Trump: high tariffs without subsidies; Biden: moderate tariffs with high subsidies) reveal that under the Trump policy, the security score of high-end chips is relatively low, while low-end chips face high inflation without achieving industrial reshoring; the Biden policy, on the other hand, improves the security score and controls inflation in the mid-end market, confirming that subsidies are more effective than tariffs for technology-intensive industries.
+
+For the fourth research direction, a dynamic difference-in-differences revenue model is constructed, incorporating short-term and medium-to-long-term import demand elasticities (calibrated based on 2025 import data and supply chain leakage effects). Predictions for 2025-2028 show a trend of "short-term surge and long-term decline": tariff revenue will reach its peak in 2025 with a significant net increase, but the subsequent import tax base will continue to shrink; the cumulative net revenue gain over four years is considerable, yet long-term revenue growth will be constrained by the contraction in import volume.
+
+Regarding the fifth research direction, a multiple linear regression model is constructed to quantify the comprehensive impact of tariff retaliatory measures (such as China’s export controls on rare earths and lithium, and agricultural product tariffs), with core variables including reshoring investment, lithium/rare earth costs, and agricultural export value. Empirical results show that the rise in lithium and rare earth costs and the decline in agricultural exports form a significant negative drag, offsetting the positive effect of tariffs on manufacturing reshoring, indicating that the "Reciprocal Tariffs" policy is unlikely to effectively promote manufacturing reshoring in the short to medium term.
+
+Finally, the model is validated using historical trade data, and robustness tests (normal residual distribution, no significant autocorrelation) are conducted. This study provides quantitative references for countries to formulate tariff response strategies and safeguard industrial interests, as well as insights for maintaining the multilateral trading system. The limitation of the model lies in the failure to incorporate sudden geopolitical shocks; in the future, cross-domain variables such as climate policies can be added to enhance the comprehensiveness of the model.
 % Please fill in the abstract content here
 \keywords{U.S. Tariff Policies \quad Global Trade \quad Regional Economies \quad Mathematical Modeling \quad Trade Impact Analysis}
 \end{abstract}
-
+\newpage
 % Uncomment if Chinese abstract is required
 % \begin{abstract*}
 % 请在此填写中文摘要（可选）
@@ -95,6 +108,11 @@
 }
 
 
+
+
+
+
+\newpage
 \pagestyle{mainmatterstyle}
 \setcounter{page}{1}
 
@@ -163,34 +181,45 @@ We model U.S. tariff revenue by comparing a baseline scenario with constant tari
 \begin{table}[H]
 \centering
 \caption{Main Symbols and Descriptions}
-\begin{tabular}{c >{\raggedright\arraybackslash}p{8.5cm} l}
-\hline
+\begin{tabular}{c >{\raggedright\arraybackslash}p{9.5cm} l}
+\toprule
 \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\
-\hline
-$t$ & Effective tariff rate imposed by the United States on specific commodities or countries & \% \\
-$\tau_{US}$ & U.S. ``Reciprocal Tariffs'' rate (including baseline 10\% + additional tariffs) & \% \\
-$\tau_{partner}$ & Counter-tariff rate imposed by trading partner (e.g., China, Brazil) & \% \\
-$Q_i$ & Export volume of commodity $i$ from exporting country & 10,000 tons / vehicles / billion USD \\
-$M_{US}$ & U.S. import volume of specific commodity from partner country & 10,000 tons / vehicles / billion USD \\
-$P_w$ & World price of the commodity (CIF price before tariff) & USD/ton or USD/unit \\
-$P_d$ & Domestic price in the importing country after tariff & USD/ton or USD/unit \\
-$\varepsilon$ & Price elasticity of import demand & - \\
-$\eta$ & Price elasticity of export supply & + \\
-$S_j$ & Market share of exporting country $j$ (U.S., Brazil, Argentina, Japan, etc.) & \% \\[0.2em]
-$R_{tariff}$ & U.S. tariff revenue in the corresponding period & billion USD \\
-$\Delta GDP$ & Change in GDP of the relevant country/region caused by tariff policy & billion USD \\
-$\pi$ & Profit of enterprises or national welfare function & - \\
-$N$ & Nash equilibrium strategy combination in game theory model & - \\
-\hline
+\midrule
+\multicolumn{3}{l}{\textit{General \& Policy Variables}} \\
+$\tau$ & Effective tariff rate imposed on commodities & \% \\
+$\tau_{US}$ & U.S. ``Reciprocal Tariffs'' rate (Baseline + Additional) & \% \\
+$R_{ex}$ & Exchange rate (e.g., JPY/USD, BRL/USD) & - \\
+$\varepsilon$ & Price elasticity of import demand / Dynamic elasticity & - \\
+$S_j$ & Market share of country $j$ & \% \\
+
+\midrule
+\multicolumn{3}{l}{\textit{Problem 1: Soybean Trade Model}} \\
+$Q_{exp}$ & Export volume of soybeans & Million Tons \\
+$P_{cif}$ & CIF price adjusted for tariffs and exchange rates & USD/Ton \\
+$S^{prod}$ & Production capacity share of exporting countries & \% \\
+
+\midrule
+\multicolumn{3}{l}{\textit{Problem 2 \& 3: Industrial Supply Chain Model}} \\
+$C_k$ & Landed cost or manufacturing cost for supply path $k$ & USD/Unit \\
+$\lambda$ & Cost sensitivity coefficient in Logit choice model & - \\
+$F_{capex}$ & Amortized fixed costs for local production & USD \\
+$Z_{sec}$ & National Security Index (Semiconductor Model) & 0--100 Score \\
+$I_{RnD}$ & Innovation Factor affected by export controls & 0--1.0 Index \\
+$S_{subsidy}$ & Government subsidy amount (e.g., CHIPS Act) & USD/Unit \\
+
+\midrule
+\multicolumn{3}{l}{\textit{Problem 4 \& 5: Macroeconomic \& Revenue Model}} \\
+$V(t)$ & Effective tax base (Total Import Value) at year $t$ & Billion USD \\
+$R_{gov}$ & U.S. Federal tariff revenue & Billion USD \\
+$RI$ & Reshoring Investment Index & Index \\
+$Cost_{input}$ & Cost of critical inputs (Lithium, Rare Earths) & USD/Unit \\
+\bottomrule
 \end{tabular}
 \label{tab:symbols}
 \end{table}
 
-\noindent All monetary values are in current U.S. dollars unless otherwise specified. Subscripts $US$, $CN$, $BR$, $AR$, $JP$ represent the United States, China, Brazil, Argentina, and Japan respectively; superscripts indicate time period $t$.
+\noindent \textit{Note: Minor auxiliary variables (e.g., regression coefficients $\beta_i$, time subscript $t$) are defined locally within the text.}
 
-% Please fill in the symbol descriptions here
-
-% 手动分页，避免Problem部分跨页混乱
 
 \section{Problem 1: Impact of U.S. Tariff Adjustments on Global Soybean Trade}
 
@@ -899,26 +928,51 @@ Jarque-Bera p-value & 0.217 \\
 Reciprocal tariffs, while intended to promote reshoring, face strong negative counter-effects from critical input costs and trade losses. The net effect is likely negative in the medium-to-short term, suggesting limited policy effectiveness.
 
 
-
 \section{Model Evaluation}
+
 \subsection{Advantages of the Model}
 \begin{enumerate}
-    \item Advantage 1
-    \item Advantage 2
-    \item Advantage 3
-    % Add more advantages as needed
+    \item \textbf{Multi-Dimensional Structural Heterogeneity:}
+    The model distinguishes between sectors characterized by homogeneous commodities and those involving differentiated products. 
+    For agricultural goods, standard log-log demand estimation is applied, while for automobiles—treated as differentiated products—
+    a Multinomial Logit Choice framework is employed following the theoretical foundations established by McFadden (1974) \cite{McFadden1974}. 
+    This sector-specific modeling strategy enables more accurate characterization of tariff sensitivities across distinct market structures.
+
+    \item \textbf{Identification of Non-Linear Policy Thresholds:}
+    The model identifies structural tipping points in firms’ strategic responses to tariffs. 
+    In the automobile supply-chain analysis, it quantitatively captures the shift from direct export to transshipment and eventually to reshoring 
+    as additional tariffs rise, illustrating how differentiated-product trade exhibits non-linear adjustment dynamics consistent with 
+    theoretical insights on product differentiation and scale economies (Krugman, 1980) \cite{Krugman1980}. 
+    This provides policymakers with clear thresholds for anticipating behavioral shifts.
+
+    \item \textbf{Dynamic Assessment of Fiscal Illusion:}
+    By embedding a time-decaying elasticity parameter $\varepsilon(t)$ into the tariff revenue model, 
+    the framework differentiates between short-term “Rate Effects” and long-term “Base Erosion.” 
+    This dynamic structure avoids the static fiscal illusion often present in nominal revenue projections 
+    and highlights how shrinking import tax bases can offset initial gains—a mechanism consistent with long-run adjustment patterns 
+    observed in differentiated markets \cite{Krugman1980}.
 \end{enumerate}
 
 \subsection{Disadvantages of the Model}
 \begin{enumerate}
-    \item Disadvantage 1
-    \item Disadvantage 2
-    \item Disadvantage 3
-    % Add more disadvantages as needed
+    \item \textbf{Reliance on Indirect Parameter Calibration:}
+    Due to the lack of publicly available semiconductor cost data, key parameters were inferred indirectly from market outcomes. 
+    While such calibration is aligned with rational-choice modeling traditions, it may fail to capture unobserved factors 
+    such as geopolitical alignments or path-dependent technological constraints.
+
+    \item \textbf{Limitations of Partial Equilibrium Analysis:}
+    The modeling framework relies on \textit{ceteris paribus} assumptions and evaluates industries separately, 
+    without incorporating general-equilibrium feedback loops. 
+    For instance, a substantial decline in agricultural exports could induce exchange-rate adjustments, 
+    which would then influence manufacturing competitiveness—an effect not captured in the current structure.
+
+    \item \textbf{Simplification of Supply Chain Frictions:}
+    The soybean substitution model assumes competing exporters can fully absorb U.S. market losses. 
+    Real-world frictions—such as port capacity, logistics bottlenecks, and contractual rigidities—may constrain short-term substitution, 
+    meaning the model may overestimate adjustment efficiency for the sake of tractability.
 \end{enumerate}
 
-
-
+\newpage
 \section*{References}
 \bibliographystyle{apalike}
 \bibliography{refs}
@@ -926,7 +980,7 @@ Reciprocal tariffs, while intended to promote reshoring, face strong negative co
 
 
 
-
+\newpage
 \section*{Appendix}
 \subsection{Appendix A: Source Code}
 \begin{lstlisting}[language=python,caption={Python Source Code for Question 1}]

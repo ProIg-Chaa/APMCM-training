@@ -1,18 +1,18 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
 \contentsline {subsection}{\numberline {1\,.\,1}Background}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1\,.\,2}Question Restatement}{2}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,1}Question 1}{2}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,2}Question 2}{2}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1\,.\,2}Question Restatement}{1}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,1}Question 1}{1}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1\,.\,2\,.\,2}Question 2}{1}{subsubsection.1.2.2}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,3}Question 3}{2}{subsubsection.1.2.3}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,4}Question 4}{2}{subsubsection.1.2.4}%
 \contentsline {subsubsection}{\numberline {1\,.\,2\,.\,5}Question 5}{2}{subsubsection.1.2.5}%
 \contentsline {section}{\numberline {2}Problem Analysis}{2}{section.2}%
 \contentsline {subsection}{\numberline {2\,.\,1}Analysis of Question 1}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2\,.\,2}Analysis of Question 2}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2\,.\,3}Analysis of Question 3}{3}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2\,.\,4}Analysis of Question 4}{3}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2\,.\,5}Analysis of Question 5}{3}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Model Assumptions}{3}{section.3}%
+\contentsline {subsection}{\numberline {2\,.\,2}Analysis of Question 2}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2\,.\,3}Analysis of Question 3}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2\,.\,4}Analysis of Question 4}{2}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2\,.\,5}Analysis of Question 5}{2}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Model Assumptions}{2}{section.3}%
 \contentsline {section}{\numberline {4}Description of the Symbols}{4}{section.4}%
 \contentsline {section}{\numberline {5}Problem 1: Impact of U.S. Tariff Adjustments on Global Soybean Trade}{5}{section.5}%
 \contentsline {subsection}{\numberline {5\,.\,1}Data Collection and Preprocessing}{5}{subsection.5.1}%
@@ -75,8 +75,8 @@
 \contentsline {section}{\numberline {10}Model Evaluation}{22}{section.10}%
 \contentsline {subsection}{\numberline {10\,.\,1}Advantages of the Model}{22}{subsection.10.1}%
 \contentsline {subsection}{\numberline {10\,.\,2}Disadvantages of the Model}{22}{subsection.10.2}%
-\contentsline {section}{\numberline {11}References}{22}{section.11}%
-\contentsline {subsection}{\numberline {11\,.\,1}Appendix A: Source Code}{22}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11\,.\,2}Appendix B: Supplementary Data}{23}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11\,.\,3}Appendix C: Additional Figures/Tables}{23}{subsection.11.3}%
+\contentsline {section}{\numberline {11}References}{23}{section.11}%
+\contentsline {subsection}{\numberline {11\,.\,1}Appendix A: Source Code}{24}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11\,.\,2}Appendix B: Supplementary Data}{24}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11\,.\,3}Appendix C: Additional Figures/Tables}{24}{subsection.11.3}%
 \contentsfinish 
