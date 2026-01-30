@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1769739041.36483 "d:/GS_LearningAndWork/MATH-model/APMCM-training/result/paper/templete/mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1769739042.54755 0
+["pdflatex"] 1769789642.86747 "d:/GS_LearningAndWork/MATH-model/APMCM-training/result/paper/templete/mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1769789644.09699 0
   "code/mcmthesis-matlab1.m" 1727504238 196 85a5d87496a269d2df36a0b391613a70 ""
   "code/mcmthesis-sudoku.cpp" 1727504238 806 8e46a15e9b6cabfe145dc3e886e0a890 ""
-  "d:/GS_LearningAndWork/MATH-model/APMCM-training/result/paper/templete/mcmthesis-demo.tex" 1769739040 6498 859eafd9da9b9b5746598bba48934017 ""
+  "d:/GS_LearningAndWork/MATH-model/APMCM-training/result/paper/templete/mcmthesis-demo.tex" 1769789642 6978 8673e3d369da9921436517abd917b54d ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1727499897 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727499996 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm" 1727499829 1292 3059476c50a24578715759f22652f3d0 ""
@@ -199,10 +199,10 @@
   "d:/programfile/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727501034 6812652 7a7cf0d09ff8fe263beb1c2fa3d7c578 ""
   "d:/programfile/texlive/2024/texmf.cnf" 1727500920 713 e69b156964470283e0530f5060668171 ""
   "figures/mcmthesis-aaa.eps" 1727504239 458067 0292347d89fcc11b2fd4cfd67307e029 ""
-  "mcmthesis-demo.aux" 1769739042 2544 e75159f70daf11f4e025ae1ae7d0bc15 "pdflatex"
-  "mcmthesis-demo.out" 1769739042 2113 c213b4e85efe756c7e0a58fe6d1141df "pdflatex"
-  "mcmthesis-demo.tex" 1769739040 6498 859eafd9da9b9b5746598bba48934017 ""
-  "mcmthesis-demo.toc" 1769739042 1077 56f530eca0be046a21635f57436c7e5a "pdflatex"
+  "mcmthesis-demo.aux" 1769789643 2483 a3fef8e104d836d90a6af3773881caf3 "pdflatex"
+  "mcmthesis-demo.out" 1769789643 1974 41d018eb035d4114c44b581e5b243786 "pdflatex"
+  "mcmthesis-demo.tex" 1769789642 6978 8673e3d369da9921436517abd917b54d ""
+  "mcmthesis-demo.toc" 1769789643 1060 0af11621b28d5c7bd079b65fc90dad20 "pdflatex"
   "mcmthesis.cls" 1727504237 10286 6ea78ec4c54414ca42f3c13d58a5de3d ""
   (generated)
   "mcmthesis-demo.aux"

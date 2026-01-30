@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  30 JAN 2026 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  31 JAN 2026 00:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,14 +655,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [1]
-
-Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
-(lipsum)                'english' will be used instead.
-
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 49.
-(d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 50.
+ (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
+Overfull \hbox (5.61894pt too wide) in paragraph at lines 58--59
+[]\T1/ppl/m/n/12 Market dy-nam-ics in-flu-enced by team lo-ca-tion and league-wide con-straints like salary
+ []
+
+
+Overfull \hbox (7.08873pt too wide) in paragraph at lines 66--67
+[][]\T1/ppl/b/n/12 Theorem 1.1. []\T1/ppl/m/it/12 Op-ti-mal Ros-ter Ef-fi-ciency oc-curs when the marginal cost of $\OML/cmm/m/it/12 OPI$ \T1/ppl/m/it/12 equals the marginal
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -678,16 +683,17 @@ Package epstopdf Info: Source file: <./figures/mcmthesis-aaa.eps>
 (epstopdf)                    date: 2024-09-28 14:17:19
 (epstopdf)                    size: 79086 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/mcmthesis-aaa-eps-converted-to.pdf ./figures/mcmthesis-aaa.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
-<./figures/mcmthesis-aaa-eps-converted-to.pdf, id=95, 421.575pt x 317.185pt>
+<./figures/mcmthesis-aaa-eps-converted-to.pdf, id=97, 421.575pt x 317.185pt>
 File: ./figures/mcmthesis-aaa-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures/mcmthesis-aaa-eps-converted-to.pdf>
-Package pdftex.def Info: ./figures/mcmthesis-aaa-eps-converted-to.pdf  used on input line 123.
+Package pdftex.def Info: ./figures/mcmthesis-aaa-eps-converted-to.pdf  used on input line 89.
 (pdftex.def)             Requested size: 341.43306pt x 256.89423pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
+(lipsum)                'english' will be used instead.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -696,20 +702,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[4
+[3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.143 
-       <./figures/mcmthesis-aaa-eps-converted-to.pdf>]
+l.107 \]
+         <./figures/mcmthesis-aaa-eps-converted-to.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 162.
+ (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -718,19 +728,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[6]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 196.
- (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 213.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 179.
  (./code/mcmthesis-matlab1.m) (./code/mcmthesis-sudoku.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -739,7 +737,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7])
+[6])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -747,7 +745,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8] 
+[7] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./mcmthesis-demo.aux)
  ***********
@@ -755,21 +753,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: C213B4E85EFE756C7E0A58FE6D1141DF;2113.
+(rerunfilecheck)             Checksum: 41D018EB035D4114C44B581E5B243786;1974.
  ) 
 Here is how much of TeX's memory you used:
- 16819 strings out of 476065
- 258442 string characters out of 5791683
- 1957190 words of memory out of 5000000
- 38470 multiletter control sequences out of 15000+600000
- 598529 words of font info for 118 fonts, out of 8000000 for 9000
+ 16810 strings out of 476065
+ 258303 string characters out of 5791683
+ 1961190 words of memory out of 5000000
+ 38464 multiletter control sequences out of 15000+600000
+ 596976 words of font info for 116 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,13n,99p,621b,2390s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on mcmthesis-demo.pdf (9 pages, 257430 bytes).
+Output written on mcmthesis-demo.pdf (8 pages, 258962 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 85 named destinations out of 1000 (max. 500000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
