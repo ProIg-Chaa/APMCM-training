@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9cc7134-078b-4444-b2d0-df7b832e4c06" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/corecode/utils/plot/ques2/车企美国市场表现/jp车企美国市场表现.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/paper/APMCM LaTeX 模板/figures/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/paper/APMCM LaTeX 模板/figures/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/paper/APMCM LaTeX 模板/figures/jp_automakers_us_performance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/paper/APMCM LaTeX 模板/figures/sales_trend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results/paper/APMCM LaTeX 模板/figures/tariff_table.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="35jMshbTYaA697pnlgnnJE6Dg6S" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.dataprocess.executor&quot;: &quot;Run&quot;,
+    &quot;Python.final_prediction.executor&quot;: &quot;Run&quot;,
+    &quot;Python.formalresult.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jp车企美国市场表现.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q2_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q2_1_deprecated.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q2_2_deprecated.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q2_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q2_3_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ques1_export.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ques1_soybean_import.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ques1_tariff.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ques1_value.executor&quot;: &quot;Run&quot;,
+    &quot;Python.solution_plus_english.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.价格与通胀.executor&quot;: &quot;Run&quot;,
+    &quot;Python.大宗商品加价格.executor&quot;: &quot;Run&quot;,
+    &quot;Python.树状图.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/15963/Desktop/APMCM-training/results/paper/APMCM LaTeX 模板/figures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\15963\Desktop\APMCM-training\results\paper\APMCM LaTeX 模板\figures" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\15963\Desktop\APMCM-training\results\figures\ques5\大宗商品与关键材料" />
+      <recent name="C:\Users\15963\Desktop\APMCM-training\corecode\utils\plot\ques1" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PY-243.23654.177" />
+        <option value="bundled-python-sdk-91d3a02ef49d-43b77aa2d136-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.23654.177" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a9cc7134-078b-4444-b2d0-df7b832e4c06" name="更改" comment="" />
+      <created>1763619235639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763619235639</updated>
+      <workItem from="1763619236782" duration="22000" />
+      <workItem from="1763619264745" duration="98000" />
+      <workItem from="1763619374591" duration="105000" />
+      <workItem from="1763619513980" duration="683000" />
+      <workItem from="1763620325510" duration="356000" />
+      <workItem from="1763620690982" duration="4264000" />
+      <workItem from="1763625008469" duration="19000" />
+      <workItem from="1763625036541" duration="13000" />
+      <workItem from="1763625787404" duration="1563000" />
+      <workItem from="1763628892429" duration="328000" />
+      <workItem from="1763649162124" duration="160000" />
+      <workItem from="1763649332059" duration="5049000" />
+      <workItem from="1763687747424" duration="5072000" />
+      <workItem from="1763717816954" duration="3827000" />
+      <workItem from="1763724417937" duration="2304000" />
+      <workItem from="1763726847167" duration="597000" />
+      <workItem from="1763727559398" duration="1543000" />
+      <workItem from="1763729419477" duration="67000" />
+      <workItem from="1763729516963" duration="5843000" />
+      <workItem from="1763737137348" duration="3950000" />
+      <workItem from="1763782583002" duration="6238000" />
+      <workItem from="1763795528436" duration="5948000" />
+      <workItem from="1763803372748" duration="1109000" />
+      <workItem from="1763826450177" duration="1213000" />
+      <workItem from="1763907865974" duration="40000" />
+      <workItem from="1766642085747" duration="214000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/APMCM_training$ques1_soybean_import.coverage" NAME="ques1_soybean_import 覆盖结果" MODIFIED="1763620143734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot" />
+    <SUITE FILE_PATH="coverage/APMCM_training$q2_2_deprecated.coverage" NAME="q2_2_deprecated 覆盖结果" MODIFIED="1763796548211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/ques2" />
+    <SUITE FILE_PATH="coverage/APMCM_training$test.coverage" NAME="test 覆盖结果" MODIFIED="1763620779447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot" />
+    <SUITE FILE_PATH="coverage/APMCM_training$solution_plus_english.coverage" NAME="solution_plus_english 覆盖结果" MODIFIED="1763731408765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/ques1" />
+    <SUITE FILE_PATH="coverage/APMCM_training$final_prediction.coverage" NAME="final_prediction 覆盖结果" MODIFIED="1763652379413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot/ques1" />
+    <SUITE FILE_PATH="coverage/APMCM_training$ques1_value.coverage" NAME="ques1_value 覆盖结果" MODIFIED="1763627341387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot/ques1" />
+    <SUITE FILE_PATH="coverage/APMCM_training$.coverage" NAME="价格与通胀 覆盖结果" MODIFIED="1763785185211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot/ques5" />
+    <SUITE FILE_PATH="coverage/APMCM_training$dataprocess.coverage" NAME="dataprocess 覆盖结果" MODIFIED="1763729041606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils" />
+    <SUITE FILE_PATH="coverage/APMCM_training$q2_3_1.coverage" NAME="q2_3_1 覆盖结果" MODIFIED="1763803661822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/ques2" />
+    <SUITE FILE_PATH="coverage/APMCM_training$q2_3.coverage" NAME="q2_3 覆盖结果" MODIFIED="1763803638262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/ques2" />
+    <SUITE FILE_PATH="coverage/APMCM_training$ques1_export.coverage" NAME="ques1_export 覆盖结果" MODIFIED="1763623999426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot/ques1" />
+    <SUITE FILE_PATH="coverage/APMCM_training$ques1_tariff.coverage" NAME="ques1_tariff 覆盖结果" MODIFIED="1763622569726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot/ques1" />
+    <SUITE FILE_PATH="coverage/APMCM_training$formalresult.coverage" NAME="formalresult 覆盖结果" MODIFIED="1763629082482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot/ques1" />
+    <SUITE FILE_PATH="coverage/APMCM_training$q2_1_deprecated.coverage" NAME="q2_1_deprecated 覆盖结果" MODIFIED="1763796536405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/ques2" />
+    <SUITE FILE_PATH="coverage/APMCM_training$q2_1.coverage" NAME="q2_1 覆盖结果" MODIFIED="1763730196522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/ques2" />
+    <SUITE FILE_PATH="coverage/APMCM_training$jp.coverage" NAME="jp车企美国市场表现 覆盖结果" MODIFIED="1763803720959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/corecode/utils/plot/ques2/车企美国市场表现" />
+  </component>
+</project>
