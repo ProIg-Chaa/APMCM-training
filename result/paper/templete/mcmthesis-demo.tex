@@ -77,53 +77,129 @@ To ensure the model is both robust and applicable, we establish the following as
 
 
 
-\section{Assumptions and Justifications}
+\section{Preparation of the Models}
+\subsection{Assumptions}
+To simplify the complex environment of professional sports and ensure the mathematical tractability of our model, we establish the following core assumptions:
 
-\section{Notations}
+\begin{itemize}
+    \item \textbf{Discrete Decision Epochs}: Management evaluates team status and makes strategic adjustments at discrete intervals (e.g., monthly or every 10 games), rather than continuously. 
+    \item \textbf{Decoupling of Performance and Commercial Value}: A player's total value can be decomposed into independent athletic (OPI) and commercial (CVI) components, which are not always positively correlated.
+    \item \textbf{Rational Financial Management}: The team owner acts as a rational economic agent aiming to maximize profit and asset value while strictly adhering to debt constraints such as the Debt Service Coverage Ratio (DSCR).
+    \item \textbf{Non-linear Impact of Key Injuries}: The injury of a "key player" has a disproportionate, non-linear downward impact on the team's health index $H_t$, triggering an immediate defensive shift in management strategy.
+    \item \textbf{Price Elasticity of Demand}: Market demand for tickets and merchandise is sensitive to pricing and team performance, following an exponential decay function relative to price increases.
+    \item \textbf{Structural Expansion Shocks}: League expansion is treated as an external shock that impacts existing teams through talent dilution, revenue redistribution, and increased travel burdens.
+\end{itemize}
+
+
+\subsection{Notations}
+
+To provide a clear structure for our mathematical framework, we categorize the primary symbols into four functional groups: General State, Financial Management, Player Valuation, and Business Strategy.
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of Notations Categorized by Modeling Tasks}
+\label{tab:notations}
+\begin{tabular}{@{}llc@{}}
+\toprule
+\textbf{Symbol} & \textbf{Description} & \textbf{Unit/Range} \\ \midrule
+\multicolumn{3}{l}{\textit{\textbf{Group 1: General State \& Performance (Q1 \& Q3)}}} \\
+$t$ & Decision step or epoch (e.g., monthly or 10-game block) & - \\
+$ES_t$ & Environmental Score (composite signal for state transition) & $[0, 1]$ \\
+$OPI_t$ & On-court Performance Index (athletic efficiency metric) & $[0, 1]$ \\
+$CVI_t$ & Commercial Value Index (brand asset and monetization potential) & $[0, 1]$ \\
+$W_t, H_t$ & Normalized winning percentage and Team Health index & $[0, 1]$ \\
+$r_t$ & Prevailing market financing/interest rate index & $[0, 1]$ \\ \midrule
+\multicolumn{3}{l}{\textit{\textbf{Group 2: Financial Management \& Leverage (Q1)}}} \\
+$L_t$ & Leverage ratio (Debt-to-Equity ratio) & Ratio \\
+$D_{max}$ & Debt ceiling (maximum sustainable debt based on $DSCR$) & Currency \\
+$EBITDA_t$ & Earnings before interest, taxes, depreciation, and amortization & Currency \\
+$DSCR$ & Debt Service Coverage Ratio (minimum threshold for solvency) & Ratio \\ \midrule
+\multicolumn{3}{l}{\textit{\textbf{Group 3: Player Valuation \& Acquisition (Q2)}}} \\
+$V^{sport}_i$ & Athletic value of player $i$ (based on performance and potential) & Scalar \\
+$V^{biz}_i$ & Commercial value of player $i$ (based on brand and marketability) & Scalar \\
+$x_i$ & Binary decision variable ($x_i=1$ if player $i$ is acquired/retained) & $\{0, 1\}$ \\
+$\lambda(ES)$ & State-driven weighting factor for "Winning vs. Monetization" & $[0, 1]$ \\ \midrule
+\multicolumn{3}{l}{\textit{\textbf{Group 4: Business Strategy - Ticket Pricing (Additional Task)}}} \\
+$p_g$ & Price of a single ticket for game $g$ & Currency \\
+$D_g(p)$ & Market demand function for game $g$ at price $p$ & Scalar \\
+$A_g$ & Base demand multiplier (reflecting rivalry and star power) & Scalar \\
+$k$ & Price sensitivity (elasticity) coefficient & Constant \\ \bottomrule
+\end{tabular}
+\end{table}
+
 
 \section{The Dual-Index Model}
-% 
-\begin{figure}[h]
-\small
+\label{sec:dual-index}
+
+Professional sports teams must balance two distinct but interconnected objectives: on-court success and commercial profitability. Winning games drives fan engagement and revenue, yet popularity, market size, and macroeconomic conditions can generate substantial value even in periods of mediocre performance. To capture this duality, we propose a unified decision-making framework centered on two independent yet linkable indices—the On-court Performance Index (OPI) and the Commercial Value Index (CVI)—combined with a dynamic state signal, the Environmental Score (ES), that drives conditional strategy selection through a three-state regime.
+
+\subsection{The Dual-Index Framework}
+
+\subsubsection{On-court Performance Index (OPI)}
+The On-court Performance Index compresses competitive strength into a single normalized metric in $[0,1]$:
+
+\[
+OPI_t = \omega_1 \cdot WinRate_t + \omega_2 \cdot NetRating_t + \omega_3 \cdot PlayoffProb_t,
+\]
+
+where weights $\omega_1 + \omega_2 + \omega_3 = 1$ (default: $\omega_1 = 0.5$, $\omega_2 = 0.3$, $\omega_3 = 0.2$). When detailed data are unavailable, OPI may be approximated by normalized win rate or Elo rating alone. OPI measures ``winning ability'' but does not necessarily correlate perfectly with financial returns.
+
+\subsubsection{Commercial Value Index (CVI)}
+The Commercial Value Index quantifies the team's ability to convert performance and brand appeal into revenue and long-term asset value:
+
+\[
+CVI_t = \nu_1 \cdot Revenue_t + \nu_2 \cdot Engagement_t + \nu_3 \cdot BrandValue_t,
+\]
+
+with $\nu_1 + \nu_2 + \nu_3 = 1$ (suggested: $\nu_1 = 0.4$, $\nu_2 = 0.3$, $\nu_3 = 0.3$). Revenue includes ticket sales, media rights shares, sponsorships, and merchandise; Engagement encompasses attendance rates and social media interactions; BrandValue is proxied by jersey sales rankings, All-Star votes, and market-adjusted follower growth. CVI explains why teams with high popularity but moderate records can remain financially attractive to owners.
+
+\subsection{Environmental Score (ES) as State Signal}
+Rather than optimizing a single static objective function, we adopt a state-driven conditional optimality approach: strategies adapt based on prevailing conditions. To operationalize this, we define a composite Environmental Score $ES_t \in \mathbb{R}$ that integrates competitive, operational, and macroeconomic signals:
+
+\[
+ES_t = \alpha W_t + \beta H_t - \gamma r_t, \quad \alpha + \beta + \gamma = 1,
+\]
+
+where
+\begin{itemize}
+    \item $W_t \in [0,1]$: normalized recent win rate,
+    \item $H_t \in [0,1]$: health/availability index (weighted attendance rate of core rotation players),
+    \item $r_t \in [0,1]$: normalized financing cost (e.g., federal funds rate or 10-year Treasury yield proxy).
+\end{itemize}
+
+Default weights are $\alpha = 0.4$, $\beta = 0.3$, $\gamma = 0.3$. High win rates and player health improve investment attractiveness, while rising interest rates increase the cost of leverage.
+
+\subsection{Three-State Regime and Action Mapping}
+The value of $ES_t$ determines the operating state and corresponding strategic posture:
+
+\begin{table}[htbp]
 \centering
-\includegraphics[width=12cm]{mcmthesis-aaa.eps}
-\caption{aa} \label{fig:aa}
-\end{figure}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{ES Range} & \textbf{State}      & \textbf{Target Leverage}\\ %& \textbf{Key Actions (Summary)} \\
+\hline
+$ES_t > 0.6$      & Aggressive         & High ($\approx 1.0$)  \\  %& Increase leverage for roster investment; premium pricing on high-demand games; aggressive marketing and sponsorship development \\
+\hline
+$0.3 \leq ES_t \leq 0.6$ & Neutral     & Moderate ($\approx 0.5$)\\%& Maintain capital structure; pursue cost-effective additions; balanced pricing and operations \\
+\hline
+$ES_t < 0.3$      & Defensive          & Low ($\approx 0$)       \\%& Delever to preserve cash; shed high-salary/high-risk contracts; prioritize attendance and season-ticket conversion via stable pricing \\
+\hline
+\end{tabular}
+\caption{Three-state regime driven by Environmental Score.}
+\label{tab:states}
+\end{table}
+\begin{itemize}
+    \item \textbf{Aggressive State ($ES_t > 0.6$):} Favor growth and championship pursuit. Target high leverage to finance star acquisitions, premium ticket pricing, and aggressive marketing.
+    \item \textbf{Neutral State ($0.3 \leq ES_t \leq 0.6$):} Balance growth and stability. Maintain moderate leverage, pursue cost-effective roster improvements, and optimize operations.
+    \item \textbf{Defensive State ($ES_t < 0.3$):} Prioritize cash-flow safety and risk reduction. Delever aggressively, shed high-risk contracts, and focus on attendance retention through stable pricing.
+\end{itemize}
 
-\lipsum[8] \eqref{aa}
+This state machine enables conditional optimality: in favorable environments the framework favors growth and championship pursuit; in adverse conditions it prioritizes cash-flow safety and risk reduction. Safety constraints (Debt Ceiling and Equity Trigger, detailed in Section~\ref{sec:debt}) prevent excessive risk even in Aggressive states.
 
-% \begin{equation}……\end{equation} 这种形式可以实现右编号
-\begin{equation}
-a^2 \label{aa}
-\end{equation}
-% \[   \]这种形式无编号
-\[
-  \begin{pmatrix}{*{20}c}
-  {a_{11} } & {a_{12} } & {a_{13} }  \\
-  {a_{21} } & {a_{22} } & {a_{23} }  \\
-  {a_{31} } & {a_{32} } & {a_{33} }  \\
-  \end{pmatrix}
-  = \frac{{Opposite}}{{Hypotenuse}}\cos ^{ - 1} \theta \arcsin \theta
-\]
-\lipsum[9]
+The unified Dual-Index Model with ES-driven states serves as the core engine for all subsequent analyses: dynamic leverage control (Q1), player acquisition weighting (Q2), expansion impact assessment (Q3), ticket pricing policy, and automatic injury response.
 
-\[
-  p_{j}=\begin{cases} 0,&\text{if $j$ is odd}\\
-  r!\,(-1)^{j/2},&\text{if $j$ is even}
-  \end{cases}
-\]
-
-\lipsum[10]
-
-\[
-  \arcsin \theta  =
-  \mathop{{\int\!\!\!\!\!\int\!\!\!\!\!\int}\mkern-31.2mu
-  \bigodot}\limits_\varphi
-  {\mathop {\lim }\limits_{x \to \infty } \frac{{n!}}{{r!\left( {n - r}
-  \right)!}}} \eqno (1)
-\]
-
-\section{Task-Specific Models}
+\section{Model I: Dynamic Leverage Control Model}
+\label{sec:debt}
 \lipsum[11]
 
 
