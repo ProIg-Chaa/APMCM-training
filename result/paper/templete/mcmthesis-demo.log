@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  31 JAN 2026 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  1 FEB 2026 00:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -542,30 +542,30 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 25.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 29.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (./mcmthesis-demo.aux)
 \openout1 = `mcmthesis-demo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 \c@lstlisting=\count331
  (d:/programfile/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -615,7 +615,7 @@ LaTeX Font Info:    ... okay on input line 25.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 29.
 (./mcmthesis-demo.out) (./mcmthesis-demo.out)
 \@outlinefile=\write4
 \openout4 = `mcmthesis-demo.out'.
@@ -623,26 +623,34 @@ Package hyperref Info: Link coloring OFF on input line 25.
  [1
 
 {d:/programfile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 36.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 40.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (./mcmthesis-demo.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 2.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-))
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[1])
 \tf@toc=\write5
 \openout5 = `mcmthesis-demo.toc'.
 
@@ -654,30 +662,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[1]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 50.
+[2]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 55.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Overfull \hbox (5.61894pt too wide) in paragraph at lines 58--59
-[]\T1/ppl/m/n/12 Market dy-nam-ics in-flu-enced by team lo-ca-tion and league-wide con-straints like salary
- []
-
-
-Overfull \hbox (7.08873pt too wide) in paragraph at lines 66--67
-[][]\T1/ppl/b/n/12 Theorem 1.1. []\T1/ppl/m/it/12 Op-ti-mal Ros-ter Ef-fi-ciency oc-curs when the marginal cost of $\OML/cmm/m/it/12 OPI$ \T1/ppl/m/it/12 equals the marginal
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[2]
-Overfull \hbox (22.69426pt too wide) in paragraph at lines 102--128
- [][] 
+Overfull \hbox (6.35988pt too wide) in paragraph at lines 63--64
+[]\T1/ppl/m/n/12 Conventional ap-proaches of-ten treat com-pet-i-tive met-rics (e.g., win con-tri-bu-tions, clutch
  []
 
 
@@ -688,6 +679,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
+Overfull \hbox (22.69426pt too wide) in alignment at lines 84--90
+ [] [] [] 
+ []
+
+
+Overfull \hbox (22.69426pt too wide) in alignment at lines 90--95
+ [] [] [] 
+ []
+
+
+Overfull \hbox (22.69426pt too wide) in alignment at lines 95--99
+ [] [] [] 
+ []
+
+
+Overfull \hbox (22.69426pt too wide) in alignment at lines 99--102
+ [] [] [] 
+ []
+
+
+Overfull \hbox (22.69426pt too wide) in alignment at lines 102--133
+ [] [] [] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -695,12 +710,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.143 \]
-        ]
+[4]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -709,14 +719,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
-Overfull \hbox (8.13628pt too wide) in paragraph at lines 197--198
-[]\T1/ppl/m/n/12 This state ma-chine en-ables con-di-tional op-ti-mal-ity: in fa-vor-able en-vi-ron-ments the frame-
- []
-
-
-Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
-(lipsum)                'english' will be used instead.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -728,10 +730,86 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.212 
-      ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 238.
- (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
+l.203 \end{itemize}
+                   ]
+Overfull \hbox (8.13628pt too wide) in paragraph at lines 205--206
+[]\T1/ppl/m/n/12 This state ma-chine en-ables con-di-tional op-ti-mal-ity: in fa-vor-able en-vi-ron-ments the frame-
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 225.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 225.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 225.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 225.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7]
+
+LaTeX Warning: Reference `sec:sensitivity' on page 8 undefined on input line 248.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 250.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8]
+Overfull \hbox (3.99748pt too wide) in paragraph at lines 283--284
+[]\T1/ppl/m/n/12 where $\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g$ \T1/ppl/m/n/12 in-di-cates se-lec-tion/re-ten-tion of player $\OML/cmm/m/it/12 i$\T1/ppl/m/n/12 , $\OML/cmm/m/it/12 Cost[]$ \T1/ppl/m/n/12 in-cludes salary, luxury-
+ []
+
+
+Overfull \hbox (3.61516pt too wide) in paragraph at lines 289--290
+[]\T1/ppl/m/n/12 Positional bal-ance: min-i-mum re-quire-ments per po-si-tion/-role (e.g., guards, for-wards,
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9]
+
+Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
+(lipsum)                'english' will be used instead.
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 328.
+(d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
@@ -741,8 +819,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 255.
+[10]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 345.
  (./code/mcmthesis-matlab1.m) (./code/mcmthesis-sudoku.cpp
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -751,7 +829,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8])
+[11]) (./mcmthesis-demo.bbl)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -759,29 +837,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9] 
+[12] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./mcmthesis-demo.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 0AF43F90DF1424DF1A3D32DF48783E78;3370.
+(rerunfilecheck)             Checksum: 51B434102B703D7BE7E20C950AF4EE30;4940.
  ) 
 Here is how much of TeX's memory you used:
- 16801 strings out of 476065
- 257950 string characters out of 5791683
- 1961190 words of memory out of 5000000
- 38451 multiletter control sequences out of 15000+600000
+ 16823 strings out of 476065
+ 258123 string characters out of 5791683
+ 1973190 words of memory out of 5000000
+ 38461 multiletter control sequences out of 15000+600000
  595810 words of font info for 109 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,13n,99p,758b,2390s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on mcmthesis-demo.pdf (10 pages, 200820 bytes).
+ 90i,13n,99p,1025b,2390s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on mcmthesis-demo.pdf (13 pages, 216206 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
- 91 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
