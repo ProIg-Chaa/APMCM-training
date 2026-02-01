@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  1 FEB 2026 22:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  1 FEB 2026 23:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -541,45 +541,54 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip84
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
+) (d:/programfile/texlive/2024/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen193
+\c@nlinenum=\count331
+\TeXr@lab=\toks45
 )
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 32.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 34.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-) (./mcmthesis-demo.aux)
+) (./mcmthesis-demo.aux
+
+LaTeX Warning: Label `tab:q1-example' multiply defined.
+
+)
 \openout1 = `mcmthesis-demo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-\c@lstlisting=\count331
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+\c@lstlisting=\count332
  (d:/programfile/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
-\scratchdimen=\dimen193
+\scratchcounter=\count333
+\scratchdimen=\dimen194
 \scratchbox=\box67
-\nofMPsegments=\count333
-\nofMParguments=\count334
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count335
-\MPscratchDim=\dimen194
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks46
+\nofMPsegments=\count334
+\nofMParguments=\count335
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen195
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
+\everyMPtoPDFconversion=\toks47
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -615,7 +624,7 @@ LaTeX Font Info:    ... okay on input line 32.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 32.
+Package hyperref Info: Link coloring OFF on input line 34.
 (./mcmthesis-demo.out) (./mcmthesis-demo.out)
 \@outlinefile=\write4
 \openout4 = `mcmthesis-demo.out'.
@@ -623,7 +632,7 @@ Package hyperref Info: Link coloring OFF on input line 32.
  [1
 
 {d:/programfile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 44.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 46.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (./mcmthesis-demo.toc
@@ -667,7 +676,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 ...numberline {12}Conclusion}{19}{section.12}
+l.55 ...porating OPI and CVI}{20}{subsection.10.4}
                                                   % [2])
 \tf@toc=\write5
 \openout5 = `mcmthesis-demo.toc'.
@@ -684,13 +693,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45  \newpage
+l.47  \newpage
                [3]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 63.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Overfull \hbox (6.35988pt too wide) in paragraph at lines 69--70
+Overfull \hbox (6.35988pt too wide) in paragraph at lines 71--72
 []\T1/ppl/m/n/12 Conventional ap-proaches of-ten treat com-pet-i-tive met-rics (e.g., win con-tri-bu-tions, clutch
  []
 
@@ -702,27 +711,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [1]
-Overfull \hbox (22.69426pt too wide) in alignment at lines 90--96
+Overfull \hbox (22.69426pt too wide) in alignment at lines 92--98
  [] [] [] 
  []
 
 
-Overfull \hbox (22.69426pt too wide) in alignment at lines 96--101
+Overfull \hbox (22.69426pt too wide) in alignment at lines 98--103
  [] [] [] 
  []
 
 
-Overfull \hbox (22.69426pt too wide) in alignment at lines 101--105
+Overfull \hbox (22.69426pt too wide) in alignment at lines 103--107
  [] [] [] 
  []
 
 
-Overfull \hbox (22.69426pt too wide) in alignment at lines 105--108
+Overfull \hbox (22.69426pt too wide) in alignment at lines 107--110
  [] [] [] 
  []
 
 
-Overfull \hbox (22.69426pt too wide) in alignment at lines 108--139
+Overfull \hbox (22.69426pt too wide) in alignment at lines 110--141
  [] [] [] 
  []
 
@@ -753,13 +762,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.209 \end{itemize}
+l.211 \end{itemize}
                    ]
 
-LaTeX Warning: Reference `sec:sensitivity' on page 5 undefined on input line 220.
+LaTeX Warning: Reference `sec:sensitivity' on page 5 undefined on input line 222.
 
 
-Overfull \hbox (8.13628pt too wide) in paragraph at lines 222--223
+Overfull \hbox (8.13628pt too wide) in paragraph at lines 224--225
 []\T1/ppl/m/n/12 This state ma-chine en-ables con-di-tional op-ti-mal-ity: in fa-vor-able en-vi-ron-ments the frame-
  []
 
@@ -771,12 +780,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
-Overfull \hbox (2.18307pt too wide) in paragraph at lines 239--240
+Overfull \hbox (2.18307pt too wide) in paragraph at lines 241--242
 \T1/ppl/m/n/12 To make de-ci-sions com-putable, we dis-cretize the sea-son into de-ci-sion steps $\OML/cmm/m/it/12 t$ \T1/ppl/m/n/12 (e.g., monthly
  []
 
 
-Overfull \hbox (3.56339pt too wide) in paragraph at lines 263--264
+Overfull \hbox (3.56339pt too wide) in paragraph at lines 265--266
 []\T1/ppl/m/n/12 These vari-ables form a closed sys-tem: $\OML/cmm/m/it/12 W[]$\T1/ppl/m/n/12 , $\OML/cmm/m/it/12 H[]$\T1/ppl/m/n/12 , $\OML/cmm/m/it/12 r[]$ \T1/ppl/m/n/12 drive de-ci-sions; ac-tions up-date $\OML/cmm/m/it/12 Debt[]$\T1/ppl/m/n/12 ,
  []
 
@@ -804,8 +813,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [8]
-Overfull \hbox (79.3956pt too wide) in paragraph at lines 374--383
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T1/ppl/m/n/10.95 Tightening
+ []
+
+
+Overfull \hbox (46.30042pt too wide) in paragraph at lines 404--404
+[]|\T1/ppl/b/n/12 Outcome| 
+ []
+
+
+Overfull \hbox (37.36046pt too wide) in paragraph at lines 404--404
+[]|\T1/ppl/m/n/12 Expand| 
+ []
+
+
+Overfull \hbox (41.38008pt too wide) in paragraph at lines 404--404
+[]|\T1/ppl/m/n/12 Stabilize| 
+ []
+
+
+Overfull \hbox (37.85219pt too wide) in paragraph at lines 404--404
+[]|\T1/ppl/m/n/12 Delever
+ []
+
+
+Overfull \hbox (3.58072pt too wide) in paragraph at lines 404--404
+\T1/ppl/m/n/12 +
+ []
+
+
+Overfull \hbox (10.78056pt too wide) in paragraph at lines 404--404
+\T1/ppl/m/n/12 in-
+ []
+
+
+Overfull \hbox (14.10446pt too wide) in paragraph at lines 404--404
+\T1/ppl/m/n/12 ject| 
  []
 
 
@@ -819,24 +863,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.406 
-      ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 425.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 425.
-
+l.421 \]
+        
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.421 \]
+        ]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -846,23 +879,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
-LaTeX Warning: Reference `sec:sensitivity' on page 11 undefined on input line 448.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 450.
+(hyperref)                removing `superscript' on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 450.
+(hyperref)                removing `subscript' on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 450.
+(hyperref)                removing `math shift' on input line 448.
+
+
+LaTeX Warning: Reference `sec:sensitivity' on page 11 undefined on input line 471.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 450.
+(hyperref)                removing `math shift' on input line 473.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 473.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 473.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 473.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -872,18 +921,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [11]
-Overfull \hbox (3.99748pt too wide) in paragraph at lines 483--484
+Overfull \hbox (3.99748pt too wide) in paragraph at lines 506--507
 []\T1/ppl/m/n/12 where $\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g$ \T1/ppl/m/n/12 in-di-cates se-lec-tion/re-ten-tion of player $\OML/cmm/m/it/12 i$\T1/ppl/m/n/12 , $\OML/cmm/m/it/12 Cost[]$ \T1/ppl/m/n/12 in-cludes salary, luxury-
  []
 
 
-Overfull \hbox (3.61516pt too wide) in paragraph at lines 489--490
+Overfull \hbox (3.61516pt too wide) in paragraph at lines 512--513
 []\T1/ppl/m/n/12 Positional bal-ance: min-i-mum re-quire-ments per po-si-tion/-role (e.g., guards, for-wards,
- []
-
-
-Overfull \hbox (33.99355pt too wide) in paragraph at lines 505--514
- [][] 
  []
 
 
@@ -894,6 +938,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
+Overfull \hbox (33.99355pt too wide) in paragraph at lines 528--537
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -902,15 +950,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [13
-pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.559 
-      ]
-Overfull \hbox (23.49515pt too wide) detected at line 587
-\OML/cmm/m/it/12 CVI[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 CVI[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 Share \OT1/cmr/m/n/12 + ^^A\OML/cmm/m/it/12 Attention;  \OT1/cmr/m/n/12 (^^A\OML/cmm/m/it/12 Share > \OT1/cmr/m/n/12 0[]^^A\OML/cmm/m/it/12 Attention > \OT1/cmr/m/n/12 0[])
- []
-
+l.572     \[
+            ]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -919,42 +963,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-Overfull \hbox (37.6013pt too wide) in paragraph at lines 599--600
+Overfull \hbox (23.49515pt too wide) detected at line 610
+\OML/cmm/m/it/12 CVI[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 CVI[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 Share \OT1/cmr/m/n/12 + ^^A\OML/cmm/m/it/12 Attention;  \OT1/cmr/m/n/12 (^^A\OML/cmm/m/it/12 Share > \OT1/cmr/m/n/12 0[]^^A\OML/cmm/m/it/12 Attention > \OT1/cmr/m/n/12 0[])
+ []
+
+
+Overfull \hbox (37.6013pt too wide) in paragraph at lines 622--623
 \T1/ppl/m/n/12 vival) boosts league-wide vis-i-bil-ity with min-i-mal di-rect com-pe-ti-tion, in-creas-ing $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 Attention$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--627
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
 []|\T1/ppl/m/n/12 High lo-cal com-pe-ti-tion:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--627
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
 \OT1/cmr/m/n/12 ^^A$\T1/ppl/m/n/12 LocalCompetition $\OMS/cmsy/m/n/12 "!$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--627
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
 \T1/ppl/m/n/12 (spon-sor-ship and ticket
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--627
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
 []|\T1/ppl/m/n/12 Overall league growth:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--627
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
 \OT1/cmr/m/n/12 ^^A$\T1/ppl/m/n/12 Attention $\OMS/cmsy/m/n/12 "!$ \T1/ppl/m/n/12 CVI$[] \OMS/cmsy/m/n/12 "$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--627
+Underfull \hbox (badness 10000) in paragraph at lines 650--650
 \T1/ppl/m/n/12 (larger na-tional rev-enue
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 631.
+Package hyperref Warning: Ignoring empty anchor on input line 654.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -964,11 +1013,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15
-pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.644 \end{itemize}
-                   ]
+l.665     \item M
+                 ore frequent low-ES states: Reduce leverage, preserve cash,...]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -978,7 +1027,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 
-LaTeX Warning: Reference `sec:sensitivity' on page 17 undefined on input line 702.
+LaTeX Warning: Reference `sec:sensitivity' on page 17 undefined on input line 725.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -988,7 +1037,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [17]
-Overfull \hbox (532.76636pt too wide) in paragraph at lines 739--750
+Overfull \hbox (532.76636pt too wide) in paragraph at lines 762--773
  [][] 
  []
 
@@ -1000,11 +1049,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [18
-pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.780     R
-           evenue $\approx 8870$ (higher extraction), attendance $\approx 31...] (./mcmthesis-demo.bbl)
+l.794 M
+       aximum revenue at $p_g^*$: $R_g(20) \approx 7369$ (units), attendance...]
+Overfull \hbox (41.3191pt too wide) in paragraph at lines 817--818
+\T1/ppl/m/n/12 Sensitivity anal-y-sis ex-am-ines the ro-bust-ness of key de-sign choices in the frame-work^^Vparticularly
+ []
+
+
+Overfull \hbox (42.47128pt too wide) in paragraph at lines 817--818
+\T1/ppl/m/n/12 the En-vi-ron-men-tal Score (ES) weights, regime thresh-olds, and re-sponse to ex-ter-nal shocks^^Vrather
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1012,7 +1070,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[19] 
+[19]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.929 
+      ] (./mcmthesis-demo.bbl)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[21] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./mcmthesis-demo.aux)
  ***********
@@ -1023,22 +1102,25 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: F14DD843574187CB000F182F3EC6C40C;12074.
+(rerunfilecheck)             Checksum: BFB4787DDB5BC7181F05E2869E5E6144;13114.
  ) 
 Here is how much of TeX's memory you used:
- 15863 strings out of 476065
- 248274 string characters out of 5791683
- 1941190 words of memory out of 5000000
- 37512 multiletter control sequences out of 15000+600000
- 600048 words of font info for 127 fonts, out of 8000000 for 9000
+ 16051 strings out of 476065
+ 250596 string characters out of 5791683
+ 1945190 words of memory out of 5000000
+ 37686 multiletter control sequences out of 15000+600000
+ 604912 words of font info for 141 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,14n,93p,1025b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on mcmthesis-demo.pdf (23 pages, 246233 bytes).
+ 90i,14n,93p,1025b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on mcmthesis-demo.pdf (25 pages, 279136 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
- 464 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
- 433 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 505 compressed objects within 6 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 465 words of extra memory for PDF output out of 10000 (max. 10000000)
 
