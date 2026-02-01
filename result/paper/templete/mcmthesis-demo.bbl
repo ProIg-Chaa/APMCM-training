@@ -25,4 +25,14 @@
 {FiveThirtyEight}. (2025) How our nba predictions work. Methodology article, updated continuously. Core modeling framework described in post-2020 versions. [Online]. Available: \url{https://fivethirtyeight.com/methodology/how-our-nba-predictions-work/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{ForbesNBAValuations2025}
+\BIBentryALTinterwordspacing
+{Teitelbaum, Justin} and {Knight, Brett}. (2025) The most valuable nba teams 2025. Forbes valuations of all 30 NBA franchises. [Online]. Available: \url{https://www.forbes.com/sites/justinteitelbaum/2025/10/23/the-most-valuable-nba-teams-2025/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{SporticoNBAValuations2025}
+\BIBentryALTinterwordspacing
+{Sportico}. (2025) Nba team valuations 2025. Sportico 2025 NBA valuations (rankings and estimated team values). [Online]. Available: \url{https://www.sportico.com/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

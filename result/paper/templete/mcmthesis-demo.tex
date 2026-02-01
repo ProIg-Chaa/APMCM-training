@@ -10,6 +10,8 @@
 \usepackage{algpseudocode}
 \usepackage{longtable}
 \usepackage{url}
+\usepackage{tabularx}
+
 
 
 % \usepackage{amsmath}
@@ -175,7 +177,7 @@ where
     \item $r_t \in [0,1]$: normalized financing cost (e.g., federal funds rate or 10-year Treasury yield proxy).
 \end{itemize}
 
-Default weights are $\alpha = 0.4$, $\beta = 0.3$, $\gamma = 0.3$. High win rates and player health improve investment attractiveness, while rising interest rates increase the cost of leverage.
+Default weights are $\alpha = 0.4$, $\beta = 0.3$, $\gamma = 0.3$\cite{ForbesNBAValuations2025}\cite{SporticoNBAValuations2025}. High win rates and player health improve investment attractiveness, while rising interest rates increase the cost of leverage.
 
 \subsection{Three-State Regime and Action Mapping}
 The value of $ES_t$ determines the operating state and corresponding strategic posture:
@@ -293,8 +295,218 @@ Key constraints include:
 
 The problem can be solved heuristically (greedy ranking by value-per-cost with positional fixes) or exactly via integer linear programming for small instances. In practice, managers iterate candidates from draft prospects, free agents, and trade targets.
 
+\subsection{Illustrative Example of Player Acquisition}
+\label{subsec:q2-example}
+
+To demonstrate the practical application of our acquisition strategy, we present a simplified end-to-end numerical illustration using three hypothetical candidate players available via free agency or trade. The example shows how the model produces different roster decisions under varying team states, proving that the framework generates actionable, state-dependent outcomes rather than static recommendations.
+
+Assume the team must select exactly two players under a normalized salary budget (total Salary $\leq 0.6$ for illustration; real constraints scale similarly). MarketMultiplier = 1.0 (mid-market team). Player attributes (normalized to [0,1]) are:
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Player} & \textbf{Type} & \textbf{Base} & \textbf{Clutch} & \textbf{Hustle} & \textbf{Risk} & \textbf{Potential} & \textbf{Brand} & \textbf{Salary} \\
+\hline
+A & Veteran Contributor & 0.75 & 0.80 & 0.60 & 0.30 & 0.20 & 0.40 & 0.30 \\
+B & Marketable Star     & 0.65 & 0.70 & 0.50 & 0.20 & 0.30 & 0.90 & 0.35 \\
+C & High-Potential Young & 0.55 & 0.40 & 0.60 & 0.10 & 0.80 & 0.30 & 0.20 \\
+\hline
+\end{tabular}
+\caption{Hypothetical candidate player attributes (all values normalized to [0,1]).}
+\label{tab:q2-players}
+\end{table}
+
+Coefficients for $V^{sport}_i$ (calibrated defaults): $a=0.3$, $b=0.2$, $c=0.3$, $d=0.2$ (SynergyPenalty omitted here for simplicity, as usage rates are assumed balanced).
+
+\textbf{Step 1: Compute Competitive and Commercial Values}
+
+\[
+V^{sport}_i = Base_i + 0.3 \cdot Clutch_i + 0.2 \cdot Hustle_i - 0.3 \cdot Risk_i + 0.2 \cdot Potential_i
+\]
+
+Results: $V^{sport}_A = 0.77$, $V^{sport}_B = 0.74$, $V^{sport}_C = 0.68$
+
+\[
+V^{biz}_i = Brand_i \times 1.0
+\]
+
+Results: $V^{biz}_A = 0.40$, $V^{biz}_B = 0.90$, $V^{biz}_C = 0.30$
+
+\textbf{Step 2: State-Dependent Composite Values and Selections}
+
+\begin{itemize}
+    \item \textbf{Aggressive State} ($ES_t = 0.7$, $\lambda = 0.7$):
+    
+    \[
+    V_i = 0.7 V^{sport}_i + 0.3 V^{biz}_i
+    \]
+    
+    Results: $V_A = 0.66$, $V_B = 0.79$, $V_C = 0.57$
+    
+    Optimal pair (maximizing total $V$ within budget): \textbf{B + A} (total $V = 1.45$, Salary = 0.65). Prioritizes proven competitive impact with strong brand upside for championship contention.
+    
+    \item \textbf{Defensive State} ($ES_t = 0.25$, $\lambda = 0.3$):
+    
+    \[
+    V_i = 0.3 V^{sport}_i + 0.7 V^{biz}_i
+    \]
+    
+    Results: $V_A = 0.51$, $V_B = 0.85$, $V_C = 0.41$
+    
+    Optimal pair: \textbf{B + C} (total $V = 1.26$, Salary = 0.55). Shifts toward high-brand, low-risk, low-cost assets to preserve flexibility and cash flow.
+\end{itemize}
+
+This closed-loop illustration—from raw attributes to state-driven composite values to concrete roster choices—shows how the model automatically adapts acquisition priorities to current conditions, enabling general managers to make informed, context-specific decisions.
+
 \subsection{Strengths and Limitations}
 This strategy excels at reconciling performance and profitability, dynamically adapting to team state, and explicitly modeling contextual fit via the synergy penalty—avoiding common pitfalls of overpaying for individually talented but poorly fitting stars. Limitations include reliance on accurate Brand and USG data (which can be noisy) and the need for periodic coefficient recalibration using historical outcomes (addressed in backtesting, Section~\ref{sec:backtesting}).
+
+
+
+\section{Model III: League Expansion Scenario Analysis}
+\label{sec:expansion}
+
+League expansion introduces structural shocks that affect all teams through talent dilution, revenue redistribution, and operational burdens. We analyze these impacts within our unified framework by applying parameter perturbations to OPI, CVI, health index $H_t$, and MarketMultiplier. These changes propagate to the Environmental Score $ES_t$, automatically triggering state transitions and corresponding adjustments in leverage, player acquisition, ticket pricing, and risk management—ensuring the model's dynamic adaptability without requiring a separate strategy.
+
+\subsection{Structural Impacts of Expansion}
+Expansion primarily affects teams via three channels:
+
+1. \textbf{Talent Dilution}: New franchises draw from the player pool (draft, free agency, expansion draft), reducing average talent density and competitive intensity.
+   
+2. \textbf{Revenue and Attention Redistribution}: National media deals and sponsorships are shared among more teams (negative share effect), but overall league popularity may rise (positive attention effect).
+
+3. \textbf{Schedule and Travel Burden}: Additional games or longer travel increases fatigue and injury risk.
+
+We model these as perturbations:
+
+\[
+OPI'_t = OPI_t - \Delta Talent, \quad (\Delta Talent > 0 \text{ reflects dilution})
+\]
+
+\[
+CVI'_t = CVI_t - \Delta Share + \Delta Attention, \quad (\Delta Share > 0 \text{ for dilution; } \Delta Attention > 0 \text{ for growth})
+\]
+
+\[
+H'_t = H_t - \Delta Travel, \quad (\Delta Travel > 0 \text{ for increased fatigue})
+\]
+
+The updated values feed into $ES'_t$, driving regime shifts.
+
+\subsection{Impact of New Team Locations}
+The geographic location of new franchises modulates these perturbations, directly affecting owner profitability and franchise value:
+\begin{itemize}
+\item{Harmful examples}: A new team in a proximate large market (e.g., hypothetical Las Vegas expansion near Western Conference teams) diverts local sponsorships and media attention, lowering MarketMultiplier and CVI—reducing owner revenue and forcing more Defensive strategies (deleveraging, conservative acquisitions).
+\item{Beneficial examples}: Expansion into underserved small markets (e.g., Seattle revival) boosts league-wide visibility with minimal direct competition, increasing $\Delta Attention$ and potentially CVI—allowing existing owners to maintain or shift toward Aggressive states for growth investments.
+\end{itemize}
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{|l|X|X|}
+\hline
+\textbf{Location Factor} &
+\textbf{Harmful Scenario (to Existing Teams)} &
+\textbf{Beneficial Scenario (to Existing Teams)} \\
+\hline
+Nearby large market\footnotemark &
+High local competition: $\Delta$LocalCompetition $\uparrow \rightarrow$
+MarketMultiplier$' \downarrow \rightarrow$ CVI$' \downarrow$
+(sponsorship and ticket diversion) &
+Minimal overlap: limited direct revenue loss \\
+\hline
+Distant or small market &
+Minimal sponsorship diversion &
+Overall league growth: $\Delta$Attention $\uparrow \rightarrow$ CVI$' \uparrow$
+(larger national revenue base) \\
+\hline
+High travel distance &
+$\Delta$Travel $\uparrow \rightarrow$ H$' \downarrow \rightarrow$
+injury risk $\uparrow \rightarrow$ OPI$' \downarrow$ &
+Low additional travel: negligible impact on team health $H_t$ \\
+\hline
+\end{tabularx}
+\caption{Location-dependent expansion impacts on key parameters and owner outcomes.}
+\label{tab:expansion-location}
+\end{table}
+\footnotetext{e.g., new team in competing metro area}
+
+
+
+
+
+
+
+\subsection{Strategy Adjustments Under Expansion}
+Post-expansion $ES'_t$ typically declines due to combined dilution and travel effects, shifting regimes toward Defensive:
+\begin{itemize}
+    \item More frequent low-ES states: Reduce leverage, preserve cash, favor low-risk/high-brand players in acquisitions (higher $\lambda$ toward V$^{biz}$), and stabilize ticket pricing for attendance/season-ticket conversion.
+    \item If positive attention dominates (e.g., successful market entry raising league revenue shares): $ES'_t$ may stabilize or rise, permitting Neutral/Aggressive postures with cautious growth.
+\end{itemize}
+
+\subsection{Illustrative Example of Expansion Impacts}
+\label{subsec:q3-example}
+
+We now illustrate how league expansion propagates through the framework in an end-to-end manner, automatically altering the Environmental Score and subsequent strategies without manual reconfiguration.
+
+Assume a baseline mid-season scenario for an established NBA team:
+
+\begin{itemize}
+    \item Pre-expansion: $W_t = 0.55$ (moderate win rate), $H_t = 0.80$ (good health), $r_t = 0.40$ (moderate financing costs).
+    
+    \[
+    ES_t = 0.4(0.55) + 0.3(0.80) - 0.3(0.40) = 0.22 + 0.24 - 0.12 = 0.34
+    \]
+    
+    $\to$ \textbf{Neutral state} (0.3 $\leq$ ES $\leq$ 0.6).
+    
+    Recommended actions: Moderate leverage ($\approx 0.5$), balanced acquisition weighting ($\lambda \approx 0.5$), efficient ticket pricing.
+\end{itemize}
+
+\textbf{Post-expansion shock} (moderate scenario: two new teams added, causing talent dilution, slight revenue share reduction, and increased travel):
+
+\begin{itemize}
+    \item Perturbations: $W_t' = 0.50$ ($\Delta Talent = 0.05$), $H_t' = 0.70$ ($\Delta Travel = 0.10$), $r_t$ unchanged.
+    
+    \[
+    ES'_t = 0.4(0.50) + 0.3(0.70) - 0.3(0.40) = 0.20 + 0.21 - 0.12 = 0.29
+    \]
+    
+    $\to$ \textbf{Approaches Defensive threshold} (ES drops below 0.3 in severe cases).
+    
+    Automatic adjustments:
+    \begin{itemize}
+        \item Leverage target: Tightened to $\approx 0.3$--0.4 (closer Debt Ceiling enforcement).
+        \item Acquisition: $\lambda$ shifts toward 0.3 (greater emphasis on low-risk, high-brand players; shorter contracts preferred).
+        \item Ticket pricing: Reduced premium surcharges on high-demand games; focus shifts toward attendance stabilization and season-ticket conversion.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Severe expansion scenario} (e.g., new teams in proximate markets with high local competition):
+
+\begin{itemize}
+    \item Further drop: $H_t'' = 0.60$ (increased fatigue/injury risk).
+    
+    \[
+    ES''_t = 0.4(0.50) + 0.3(0.60) - 0.3(0.40) = 0.20 + 0.18 - 0.12 = 0.26
+    \]
+    
+    $\to$ \textbf{Defensive state} triggered.
+    
+    Full regime shift: Aggressive deleveraging, cash preservation, and conservative operations as described in Section~\ref{sec:dual-index}.
+\end{itemize}
+
+This end-to-end flow—from expansion shocks to parameter changes to recalculated ES to regime-specific actions—demonstrates the framework's robustness: external disruptions are naturally absorbed, yielding clear, owner-protective strategy updates (e.g., reduced risk exposure in adverse locations vs. potential growth opportunities in beneficial ones).
+
+
+
+In our NBA case study, historical expansions (e.g., 2004 Charlotte Bobcats) initially diluted talent and increased travel for distant teams, lowering short-term valuations—but long-term league growth benefited most owners via larger media deals. Sensitivity analysis (Section~\ref{sec:sensitivity}) tests perturbation magnitudes to ensure robust recommendations.
+
+This integration demonstrates the framework's strength: expansion risks are absorbed as natural inputs, yielding clear, owner-focused strategy shifts without ad-hoc modifications.
+
+
+
 
 \section{Sensitivity Analysis And Backtesting}
 \label{sec:backtesting}
