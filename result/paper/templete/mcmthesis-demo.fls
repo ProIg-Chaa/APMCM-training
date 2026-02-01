@@ -344,6 +344,8 @@ INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/palatino/pplri8t.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -369,8 +371,6 @@ INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy10
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
-INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf

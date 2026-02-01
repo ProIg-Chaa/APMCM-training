@@ -12,6 +12,7 @@
 \usepackage{url}
 \usepackage{tabularx}
 
+\newcommand{\clip}{\operatorname{clip}}
 
 
 % \usepackage{amsmath}
@@ -29,6 +30,7 @@
 % %\memologo{\LARGE I'm pretending to be a LOGO!}
 
 \begin{document}
+\pagenumbering{gobble}
 \begin{abstract}
 % lipsum为随机生产的内容，这一部分为摘要，使用时把\lipsum[1]替换为你摘要的内容
 hellow everyone
@@ -48,6 +50,8 @@ keyword1; keyword2
 %%\section为一级标题，\subsection为二级标题 \subsubsection为三级标题
 
 \section{Introduction}
+\pagenumbering{arabic}
+\setcounter{page}{1}
 \label{sec:introduction}
 
 Professional sports are fundamentally an entertainment business, where the core objective is to generate profit and long-term franchise value for owners rather than solely pursuing victories. As stated in the 2026 ICM Problem D, ``The player's job is to help his team win'' (Cliff Blau), yet owners prioritize that ``The player's job is to make money for the owner.'' Winning enhances fan engagement and revenue, but player popularity, market size, clutch performance, injuries, financing costs, and league structural changes can drive financial outcomes independently of on-court success. The problem highlights this duality through the Women's National Basketball Association (WNBA)'s current transformation—record viewership, franchise expansion, new media deals, and rising player demands—illustrating both growth opportunities and financial risks, though teams from any professional league may be analyzed.
@@ -218,6 +222,189 @@ Compared to the baseline, $$   ES^{alt}   $$ increases utilization of OPI and CV
 This state machine enables conditional optimality: in favorable environments the framework favors growth and championship pursuit; in adverse conditions it prioritizes cash-flow safety and risk reduction. Safety constraints (Debt Ceiling and Equity Trigger, detailed in Section~\ref{sec:debt}) prevent excessive risk even in Aggressive states.
 
 The unified Dual-Index Model with ES-driven states serves as the core engine for all subsequent analyses: dynamic leverage control (Q1), player acquisition weighting (Q2), expansion impact assessment (Q3), ticket pricing policy, and automatic injury response.
+
+
+\section{Model I: Dynamic Leverage Control (DLC) -- Addressing Q1}
+\label{sec:leverage}
+
+Question 1 requires a practical dynamic decision-making framework that guides adjustments to capital structure (debt versus equity and leverage) as team performance and economic conditions evolve, maximizing profit and long-term franchise value while adapting to shocks such as key player injuries.
+
+Professional sports management is not a single static optimization but a recurring process across the season. The key to Q1 is therefore not a fixed objective function but a repeatable decision loop:
+
+> Observe (win rate, health, financing environment) $\to$ Determine state $\to$ Issue leverage and financing actions $\to$ Update cash flow and balance sheet $\to$ Proceed to next period.
+
+We define ``optimality'' conditionally: in different environments, the framework selects different operating objectives (growth, balance, preservation) while hard constraints ensure survival. This conditional optimality is more realistic than a single universal target.
+
+\subsection{Core Variables and Indicator System}
+To make decisions computable, we discretize the season into decision steps $t$ (e.g., monthly or every 10 games):
+
+\begin{itemize}
+    \item State variables (observable/estimable by management):
+    \begin{itemize}
+        \item $W_t \in [0,1]$: normalized recent win rate,
+        \item $H_t \in [0,1]$: health/availability index (weighted games played by core rotation),
+        \item $r_t \in [0,1]$: normalized financing cost (e.g., interest rate proxy),
+        \item $Debt_t \geq 0$, $Equity_t > 0$: current debt and equity,
+        \item $Cash_t$: available cash buffer.
+    \end{itemize}
+    \item Decision variables (management actions):
+    \begin{itemize}
+        \item $\Delta Debt_t \in \mathbb{R}$: net new debt issuance/repayment,
+        \item $\Delta Equity_t \geq 0$: equity injection (e.g., owner capital call),
+        \item $\Delta Invest_t \geq 0$: investment intensity (roster, medical, marketing, facilities).
+    \end{itemize}
+\end{itemize}
+
+Leverage is defined as
+\[
+L_t = \frac{Debt_t}{Equity_t}.
+\]
+
+These variables form a closed system: $W_t$, $H_t$, $r_t$ drive decisions; actions update $Debt_{t+1}$, $Equity_{t+1}$, $Cash_{t+1}$.
+
+\subsection{Environmental Score and State Classification}
+We compress performance, health, and macroeconomic signals into a single interpretable score:
+\[
+ES_t = \alpha W_t + \beta H_t - \gamma r_t, \quad \alpha + \beta + \gamma = 1
+\]
+with default $\alpha=0.4$, $\beta=0.3$, $\gamma=0.3$. Higher win rate and health improve investment attractiveness; higher rates increase leverage cost.
+
+The score maps to three operating states:
+\begin{itemize}
+    \item \textbf{Aggressive (Expansion)}: $ES_t > \tau_1$ (default $\tau_1=0.6$),
+    \item \textbf{Neutral (Balanced)}: $\tau_2 \leq ES_t \leq \tau_1$ (default $\tau_2=0.3$),
+    \item \textbf{Defensive (Preservation)}: $ES_t < \tau_2$.
+\end{itemize}
+Thresholds are tested for robustness in sensitivity analysis.
+
+\subsection{Operating and Financial Update Equations}
+To close the decision loop, we specify simplified but reproducible cash-flow and balance-sheet dynamics.
+
+\subsubsection{Revenue and Cost Structure}
+Period revenue (tickets, media, sponsorships, merchandise) is
+\[
+Rev_t = Rev_0 + a_1 \cdot OPI_t + a_2 \cdot CVI_t,
+\]
+where for Q1 (limited player-level needs) $OPI_t \approx W_t$ is acceptable. Costs are
+\[
+Cost_t = Cost_0 + b_1 \cdot Salary_t + b_2 \cdot \Delta Invest_t,
+\]
+and interest expense is
+\[
+Int_t = r_t \cdot Debt_t.
+\]
+
+\subsubsection{Cash Flow Update}
+\[
+Cash_{t+1} = Cash_t + Rev_t - Cost_t - Int_t + \Delta Debt_t + \Delta Equity_t.
+\]
+
+\subsubsection{Balance Sheet Update}
+\[
+Debt_{t+1} = Debt_t + \Delta Debt_t, \quad Equity_{t+1} = Equity_t + \Delta Equity_t.
+\]
+
+\subsection{Risk Constraints: Debt Ceiling and Equity Trigger}
+Unconstrained profit maximization would encourage unlimited leverage. We impose financial safeguards.
+
+\subsubsection{Debt Ceiling (Repayment Coverage Constraint)}
+Require minimum debt service coverage:
+\[
+\frac{EBITDA_t}{r_t \cdot Debt_t} \geq DSCR_{\min},
+\]
+yielding maximum debt
+\[
+Debt_t \leq D_{\max} = \frac{EBITDA_t}{DSCR_{\min} \cdot r_t},
+\]
+with $EBITDA_t \approx Rev_t - Cost_t$.
+
+\subsubsection{Equity Trigger (Cash Crisis Protection)}
+If $Cash_t < 0$ and $Debt_t > \eta D_{\max}$ ($\eta \approx 0.9$), force deleveraging and equity injection:
+\[
+\Delta Debt_t \leq 0, \quad \Delta Equity_t \geq E_{\min}.
+\]
+
+\subsection{State-to-Action Mapping}
+Each period produces an actionable package centered on target leverage, financing mode, and investment intensity.
+
+\subsubsection{Target Leverage}
+\[
+L^*(S_t) =
+\begin{cases}
+L_{\text{high}} \approx 1.0 & S_t = \text{Aggressive} \\
+L_{\text{mid}} \approx 0.5 & S_t = \text{Neutral} \\
+L_{\text{low}} \approx 0 & S_t = \text{Defensive}
+\end{cases}
+\]
+
+\subsubsection{Leverage Adjustment}
+Desired debt level: $Debt^*_t = L^*(S_t) \cdot Equity_t$. Base adjustment:
+\[
+\Delta Debt_t = \clip(Debt^*_t - Debt_t, \Delta D_{\min}, \Delta D_{\max}).
+\]
+If violating Debt Ceiling, downscale $\Delta Debt_t$. If projected $Cash_{t+1} < 0$, trigger equity injection:
+\[
+\Delta Equity_t = \max(0, -Cash_t + \text{Buffer}).
+\]
+
+\subsubsection{Investment Intensity}
+Tie to state: high in Aggressive, moderate in Neutral, low in Defensive.
+
+\subsection{Implementation Algorithm}
+\textbf{Algorithm 1: Dynamic Leverage Control (DLC)}
+
+\begin{enumerate}
+    \item Compute $ES_t = \alpha W_t + \beta H_t - \gamma r_t$.
+    \item Determine state $S_t$.
+    \item Set target leverage $L^*(S_t)$ $\to$ $Debt^*_t = L^*(S_t) \cdot Equity_t$.
+    \item Propose $\Delta Debt_t = \clip(Debt^*_t - Debt_t)$.
+    \item Enforce Debt Ceiling; downscale $\Delta Debt_t$ if needed.
+    \item Set $\Delta Invest_t$ per state.
+    \item Forecast $Cash_{t+1}$; if negative and near ceiling, force $\Delta Debt_t \leq 0$ and $\Delta Equity_t \geq E_{\min}$.
+    \item Update balance sheet and cash.
+\end{enumerate}
+
+Output: state, target leverage, financing actions, investment level, risk alerts.
+
+\subsection{Illustrative Numerical Example}
+The following table demonstrates end-to-end application (units: millions USD; initial $Debt_0=200$, $Equity_0=300$, $Cash_0=50$).
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|l|c|c|c|c|l|c|c|c|l|}
+\hline
+\textbf{Scenario} & $W_t$ & $H_t$ & $r_t$ & $ES_t$ & \textbf{State} & $L^*$ & $\Delta Debt_t$ & $\Delta Equity_t$ & \textbf{Outcome} \\
+\hline
+Normal period     & 0.65 & 0.90 & 0.30 & 0.62 & Aggressive & 1.0 & Positive & 0 & Expand \\
+Injury shock      & 0.65 & 0.40 & 0.30 & 0.47 & Neutral    & 0.5 & 0/--     & 0 & Stabilize \\
+Tightening rates  & 0.65 & 0.40 & 0.80 & 0.29 & Defensive  & 0.0 & Negative & Positive & Delever + inject \\
+\hline
+\end{tabular}
+\caption{Example state transitions and actions under different shocks.}
+\label{tab:q1-example}
+\end{table}
+
+\subsection{Near-Optimality Discussion}
+DLC is near-optimal under the defined objective and constraints.
+
+\subsubsection{Objective Definition}
+Period profit is defined as 
+\[
+\mathrm{Profit}_t = Rev_t - Cost_t - Int_t,
+\] 
+and the long-term value proxy is $CVI_t$. The discounted objective function is:
+\[
+\max_{\pi} \mathbb{E}\left[ \sum_{t=0}^{T-1} \delta^t \left(\mathrm{Profit}_t + \lambda CVI_t \right) \right],
+\]
+subject to the Debt Ceiling ($D_{\max}$) and Equity Trigger constraints.
+
+\subsubsection{Threshold Structure Rationale}
+Leverage and investment are justified when the marginal revenue benefit (driven by $W_t$ and $H_t$) exceeds the marginal cost or risk (driven by $r_t$). The environmental score $ES_t$ monotonically captures this trade-off, yielding a threshold-based policy typical in such dynamic decision problems.
+
+\subsubsection{Near-Optimality of DLC}
+The DLC framework aligns with the objective, since actions directly affect $\mathrm{Profit}_t$ and $CVI_t$, respects the feasible region defined by hard constraints, and employs a structurally reasonable threshold policy. Backtesting against baselines (fixed leverage or always aggressive/conservative policies) in later sections will empirically validate its performance in terms of discounted utility and risk mitigation.
+
+\section{Model I: Dynamic Leverage Control Model}
 
 \section{Model I: Dynamic Leverage Control Model}
 \label{sec:debt}

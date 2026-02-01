@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex mcmthesis-demo"] 1769956026.91647 "mcmthesis-demo.aux" "mcmthesis-demo.bbl" "mcmthesis-demo" 1769956029.39398 0
+["bibtex mcmthesis-demo"] 1769956886.07966 "mcmthesis-demo.aux" "mcmthesis-demo.bbl" "mcmthesis-demo" 1769956888.41912 0
   "./refs.bib" 1769923957 1029 67fa574212459b7bb62a184150e89db6 ""
   "d:/programfile/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1727500096 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "mcmthesis-demo.aux" 1769956028 7331 a984d5a5a55399650b387a0bf3fd024b "pdflatex"
+  "mcmthesis-demo.aux" 1769956887 10704 4d12489bda65194cbf7d90c849dc4403 "pdflatex"
   (generated)
   "mcmthesis-demo.bbl"
   "mcmthesis-demo.blg"
   (rewritten before read)
-["pdflatex"] 1769956027.34663 "d:/GS_LearningAndWork/MATH-model/APMCM-training/result/paper/templete/mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1769956029.39438 0
-  "d:/GS_LearningAndWork/MATH-model/APMCM-training/result/paper/templete/mcmthesis-demo.tex" 1769956024 35997 57e2272524ee5baa5471bd237d036fea ""
+["pdflatex"] 1769956886.46497 "d:/GS_LearningAndWork/MATH-model/APMCM-training/result/paper/templete/mcmthesis-demo.tex" "mcmthesis-demo.pdf" "mcmthesis-demo" 1769956888.41962 0
+  "d:/GS_LearningAndWork/MATH-model/APMCM-training/result/paper/templete/mcmthesis-demo.tex" 1769956883 44379 3a222964b97b1d415eddb791a6d0a394 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1727499897 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1727499996 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1727500069 4484 b828043cbd581d289d955903c1339981 ""
@@ -207,11 +207,11 @@
   "d:/programfile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727500931 5421115 77b0a5bd00d59a9884f9fb52a9325dac ""
   "d:/programfile/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727501034 6812652 7a7cf0d09ff8fe263beb1c2fa3d7c578 ""
   "d:/programfile/texlive/2024/texmf.cnf" 1727500920 713 e69b156964470283e0530f5060668171 ""
-  "mcmthesis-demo.aux" 1769956028 7331 a984d5a5a55399650b387a0bf3fd024b "pdflatex"
-  "mcmthesis-demo.bbl" 1769956027 1815 db61e0c92bc405db8d324a666c90291d "bibtex mcmthesis-demo"
-  "mcmthesis-demo.out" 1769956028 7397 ad901387ac94851d11fb41b5ec716483 "pdflatex"
-  "mcmthesis-demo.tex" 1769956024 35997 57e2272524ee5baa5471bd237d036fea ""
-  "mcmthesis-demo.toc" 1769956028 3209 6e33c1945dec02b90395fd1dae976d74 "pdflatex"
+  "mcmthesis-demo.aux" 1769956887 10704 4d12489bda65194cbf7d90c849dc4403 "pdflatex"
+  "mcmthesis-demo.bbl" 1769956886 1815 db61e0c92bc405db8d324a666c90291d "bibtex mcmthesis-demo"
+  "mcmthesis-demo.out" 1769956887 12074 f14dd843574187cb000f182f3ec6c40c "pdflatex"
+  "mcmthesis-demo.tex" 1769956883 44379 3a222964b97b1d415eddb791a6d0a394 ""
+  "mcmthesis-demo.toc" 1769956887 5337 015aafddb204ea2a55e72d90dfdfac8f "pdflatex"
   "mcmthesis.cls" 1727504237 10286 6ea78ec4c54414ca42f3c13d58a5de3d ""
   (generated)
   "mcmthesis-demo.aux"
