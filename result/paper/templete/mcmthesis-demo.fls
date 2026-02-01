@@ -386,13 +386,13 @@ INPUT ./code/mcmthesis-matlab1.m
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT ./code/mcmthesis-matlab1.m
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrb8t.tfm
-INPUT ./code/mcmthesis-sudoku.cpp
-INPUT ./code/mcmthesis-sudoku.cpp
-INPUT ./code/mcmthesis-sudoku.cpp
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT ./code/mcmthesis-sudoku.cpp
+INPUT ./code/mcmthesis-sudoku.cpp
+INPUT ./code/mcmthesis-sudoku.cpp
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/courier/pcrb8t.vf
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
@@ -405,6 +405,7 @@ INPUT ./mcmthesis-demo.out
 INPUT ./mcmthesis-demo.out
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb

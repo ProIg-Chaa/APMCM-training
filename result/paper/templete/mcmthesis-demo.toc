@@ -8,24 +8,29 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Commercial Value Index (CVI)}{5}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}Environmental Score (ES) as State Signal}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Three-State Regime and Action Mapping}{6}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Model I: Dynamic Leverage Control Model}{7}{section.4}%
-\contentsline {section}{\numberline {5}Model II: Player Acquisition Strategy}{7}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Player Valuation: Dual-Value Framework with Team Context}{7}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Competitive Value $V^{sport}_i$}{7}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Commercial Value $V^{biz}_i$}{8}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Composite Value with State-Dependent Weighting}{8}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {3.4}Alternative ES Formulation Incorporating OPI and CVI}{7}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Model I: Dynamic Leverage Control Model}{8}{section.4}%
+\contentsline {section}{\numberline {5}Model II: Player Acquisition Strategy}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Player Valuation: Dual-Value Framework with Team Context}{8}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Competitive Value $V^{sport}_i$}{8}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Commercial Value $V^{biz}_i$}{9}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Composite Value with State-Dependent Weighting}{9}{subsubsection.5.1.3}%
 \contentsline {subsection}{\numberline {5.2}Acquisition Optimization and Constraints}{9}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Illustrative Example of Player Acquisition}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Illustrative Example of Player Acquisition}{10}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Strengths and Limitations}{11}{subsection.5.4}%
 \contentsline {section}{\numberline {6}Model III: League Expansion Scenario Analysis}{11}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Structural Impacts of Expansion}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.1}Structural Impacts of Expansion}{12}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Impact of New Team Locations}{12}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Strategy Adjustments Under Expansion}{12}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Illustrative Example of Expansion Impacts}{13}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Sensitivity Analysis And Backtesting}{14}{section.7}%
-\contentsline {section}{\numberline {8}Model Evaluation and Further Discussion}{14}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Strengths}{14}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Conclusion}{14}{section.9}%
-\contentsline {section}{Appendices}{15}{section*.2}%
-\contentsline {section}{Appendix \numberline {A}First appendix}{15}{appendix.a.A}%
-\contentsline {section}{Appendix \numberline {B}Second appendix}{15}{appendix.a.B}%
+\contentsline {section}{\numberline {7}Additional Business Decision: Dynamic Ticket Pricing Strategy}{15}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Demand and Revenue Model}{15}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}State-Driven Pricing Policy}{15}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Illustrative Example of Pricing Application}{16}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Sensitivity Analysis And Backtesting}{16}{section.8}%
+\contentsline {section}{\numberline {9}Model Evaluation and Further Discussion}{16}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Strengths}{16}{subsection.9.1}%
+\contentsline {section}{\numberline {10}Conclusion}{17}{section.10}%
+\contentsline {section}{Appendices}{17}{section*.2}%
+\contentsline {section}{Appendix \numberline {A}First appendix}{17}{appendix.a.A}%
+\contentsline {section}{Appendix \numberline {B}Second appendix}{18}{appendix.a.B}%

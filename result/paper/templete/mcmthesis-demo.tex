@@ -204,6 +204,17 @@ $ES_t < 0.3$      & Defensive          & Low ($\approx 0$)       \\%& Delever to
     \item \textbf{Defensive State ($ES_t < 0.3$):} Prioritize cash-flow safety and risk reduction. Delever aggressively, shed high-risk contracts, and focus on attendance retention through stable pricing.
 \end{itemize}
 
+\subsection{Alternative ES Formulation Incorporating OPI and CVI}
+While our primary ES signal prioritizes raw, observable drivers (win rate, health, financing costs) for maximal interpretability and direct actionability, an alternative formulation could explicitly integrate the dual indices:
+
+$$   
+ES_t^{alt} = \alpha OPI_t + \beta CVI_t - \gamma r_t
+   $$
+
+with suggested weights $$   \alpha=0.4   $$, $$   \beta=0.3   $$, $$   \gamma=0.3   $$. This version more heavily emphasizes composite competitive and commercial strength, allowing high-CVI (brand-driven) teams to maintain favorable states even during on-court slumps.
+
+Compared to the baseline, $$   ES^{alt}   $$ increases utilization of OPI and CVI but risks over-weighting correlated factors (e.g., winning boosts both indices) and potentially encouraging aggressive leverage in high-popularity/low-performance scenarios—contradicting the problem's emphasis on disconnect between wins and profit. Sensitivity tests (Section~\ref{sec:sensitivity}) show the original ES yields more conservative, risk-aware regime shifts in injury or expansion shocks, better aligning with owner capital preservation priorities.
+
 This state machine enables conditional optimality: in favorable environments the framework favors growth and championship pursuit; in adverse conditions it prioritizes cash-flow safety and risk reduction. Safety constraints (Debt Ceiling and Equity Trigger, detailed in Section~\ref{sec:debt}) prevent excessive risk even in Aggressive states.
 
 The unified Dual-Index Model with ES-driven states serves as the core engine for all subsequent analyses: dynamic leverage control (Q1), player acquisition weighting (Q2), expansion impact assessment (Q3), ticket pricing policy, and automatic injury response.
@@ -505,7 +516,90 @@ In our NBA case study, historical expansions (e.g., 2004 Charlotte Bobcats) init
 
 This integration demonstrates the framework's strength: expansion risks are absorbed as natural inputs, yielding clear, owner-focused strategy shifts without ad-hoc modifications.
 
+\section{Additional Business Decision: Dynamic Ticket Pricing Strategy}
+\label{sec:ticket}
 
+As required, we select dynamic ticket pricing as our additional business decision, a critical revenue driver influenced by team performance, opponent appeal, and fan engagement. Ticket sales vary significantly by game (e.g., rival matchups, weekend timing, current hot streak) and overall season context. Teams face a classic trade-off: maximize per-game revenue via premium pricing (risking lower attendance) or prioritize high occupancy and season-ticket conversion for stable long-term cash flow and brand loyalty.
+
+We integrate pricing directly into the unified framework: the Environmental Score $ES_t$ and resulting state (Aggressive, Neutral, Defensive) drive regime-specific objectives and adjustments around a baseline demand model. This ensures pricing aligns with broader priorities—growth-oriented extraction in favorable conditions versus preservation in adverse ones—while connecting short-term revenue to long-term CVI.
+
+\subsection{Demand and Revenue Model}
+For each game $g$, demand is modeled as price-sensitive with baseline appeal $A_g > 0$ (higher for strong opponents, stars, or high OPI/CVI periods) and elasticity $k > 0$:
+
+\[
+D_g(p_g) = A_g e^{-k p_g}, \quad p_g \geq 0
+\]
+
+Revenue per game:
+
+\[
+R_g(p_g) = p_g \cdot D_g(p_g) = p_g A_g e^{-k p_g}
+\]
+
+The unconstrained single-game revenue-maximizing price is:
+
+\[
+p_g^* = \frac{1}{k}
+\]
+
+(derived from $\frac{d R_g}{d p_g} = 0$). In practice, $A_g$ is proxied by historical attendance for similar matchups, adjusted by current OPI (win streak effect) and CVI (brand/engagement boost).
+
+\subsection{State-Driven Pricing Policy}
+The three-state regime adapts pricing objectives and deviations from $p_g^*$:
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{State} & \textbf{Primary Objective} & \textbf{Pricing Guideline} \\
+\hline
+Aggressive ($ES_t > 0.6$) & Maximize single-game revenue & Float above $p_g^*$ (e.g., +20--50\% premium on high-$A_g$ games); dynamic surcharges to capture demand surges \\
+\hline
+Neutral ($0.3 \leq ES_t \leq 0.6$) & Balanced revenue and attendance & Price near $p_g^*$; moderate adjustments for efficiency \\
+\hline
+Defensive ($ES_t < 0.3$) & Maximize occupancy and season-ticket conversion & Discount below $p_g^*$ (e.g., -10--30\%); bundle promotions to boost baseline engagement \\
+\hline
+\end{tabular}
+\caption{State-dependent ticket pricing objectives.}
+\label{tab:ticket-states}
+\end{table}
+
+In Defensive states, the objective expands to include conversion:
+
+\[
+\max \sum_g \left[ R_g(p_g) + \xi \cdot \operatorname{Convert}(Attendance_g) \right]
+\]
+
+where $\xi > 0$ weights long-term season-ticket value and
+$\operatorname{Convert}(\cdot)$ is increasing in attendance
+(e.g., a logistic function of occupancy rate).
+
+This integration ensures pricing supports overall goals: Aggressive regimes amplify revenue during peaks; Defensive regimes stabilize cash flow and CVI amid downturns.
+
+\subsection{Illustrative Example of Pricing Application}
+To demonstrate end-to-end application, consider a high-appeal home game (e.g., rivalry matchup) with baseline $A_g = 10000$ (full capacity proxy) and elasticity $k = 0.05$ (calibrated from historical data). Unconstrained optimal price: $p_g^* = 20$ (normalized units).
+
+\textbf{Step 1: Baseline Calculation}
+
+Maximum revenue at $p_g^*$: $R_g(20) \approx 7369$ (units), attendance $\approx 3685$.
+
+\textbf{Step 2: State-Dependent Adjustments}
+
+\begin{itemize}
+    \item \textbf{Aggressive State} ($ES_t = 0.7$, high win streak boosts $A_g$ effectively to 12000):
+    
+    Premium pricing: $p_g = 28$ (+40\%).
+    
+    Revenue $\approx 8870$ (higher extraction), attendance $\approx 3170$. Prioritizes short-term profit surge.
+    
+    \item \textbf{Defensive State} ($ES_t = 0.25$, post-injury slump reduces effective $A_g$ to 8000):
+    
+    Discount pricing: $p_g = 15$ (-25\%), plus promotion.
+    
+    Revenue $\approx 6630$ (lower per ticket), attendance $\approx 4420$ (higher occupancy supports +$\xi \cdot Convert$ term, stabilizing seasonal cash flow and fan retention).
+\end{itemize}
+
+This closed-loop example—from demand parameters to state context to adjusted price to outcomes—shows how the framework yields concrete, differentiated pricing decisions that align with owner priorities across varying conditions.
 
 
 \section{Sensitivity Analysis And Backtesting}
