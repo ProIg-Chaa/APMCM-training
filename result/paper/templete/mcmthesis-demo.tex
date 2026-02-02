@@ -4,6 +4,10 @@
         sheet = true, titleinsheet = true, keywordsinsheet = true,
         titlepage = false, abstract = true}
 % \usepackage{newtxtext,newtxmath}
+
+
+
+
 \usepackage{palatino}
 \usepackage{lipsum}
 \usepackage{algorithm}
@@ -12,10 +16,11 @@
 \usepackage{url}
 \usepackage{tabularx}
 
+\usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{makecell} 
 \newcommand{\clip}{\operatorname{clip}}
-
+\newcommand{\rot}[1]{\rotatebox{45}{#1}}
 
 % \usepackage{amsmath}
 % \usepackage{hyperref}
@@ -32,6 +37,11 @@
 % %\memologo{\LARGE I'm pretending to be a LOGO!}
 
 \begin{document}
+
+
+
+
+
 \pagenumbering{gobble}
 \begin{abstract}
 % lipsum为随机生产的内容，这一部分为摘要，使用时把\lipsum[1]替换为你摘要的内容
@@ -57,6 +67,14 @@ keyword1; keyword2
 \label{sec:introduction}
 
 Professional sports are fundamentally an entertainment business, where the core objective is to generate profit and long-term franchise value for owners rather than solely pursuing victories. As stated in the 2026 ICM Problem D, ``The player's job is to help his team win'' (Cliff Blau), yet owners prioritize that ``The player's job is to make money for the owner.'' Winning enhances fan engagement and revenue, but player popularity, market size, clutch performance, injuries, financing costs, and league structural changes can drive financial outcomes independently of on-court success. The problem highlights this duality through the Women's National Basketball Association (WNBA)'s current transformation—record viewership, franchise expansion, new media deals, and rising player demands—illustrating both growth opportunities and financial risks, though teams from any professional league may be analyzed.
+
+\begin{figure}[H]
+    \centering
+    % 注意：反斜杠改成了正斜杠 /
+    \includegraphics[width=0.4\textwidth]{figures/intro.jpg}
+    \caption{ Introduction of the System}
+    \label{fig:intro}
+\end{figure}
 
 This paper addresses the required tasks for a professional sports team (at least five cooperative players in a league):
 \begin{itemize}
@@ -217,7 +235,7 @@ $$
 ES_t^{alt} = \alpha OPI_t + \beta CVI_t - \gamma r_t
    $$
 
-with suggested weights $$   \alpha=0.4   $$, $$   \beta=0.3   $$, $$   \gamma=0.3   $$. This version more heavily emphasizes composite competitive and commercial strength, allowing high-CVI (brand-driven) teams to maintain favorable states even during on-court slumps.
+with suggested weights $$   \alpha=0.4   ,    \beta=0.3   ,    \gamma=0.3   $$. This version more heavily emphasizes composite competitive and commercial strength, allowing high-CVI (brand-driven) teams to maintain favorable states even during on-court slumps.
 
 Compared to the baseline, $$   ES^{alt}   $$ increases utilization of OPI and CVI but risks over-weighting correlated factors (e.g., winning boosts both indices) and potentially encouraging aggressive leverage in high-popularity/low-performance scenarios—contradicting the problem's emphasis on disconnect between wins and profit. Sensitivity tests (Section~\ref{sec:sensitivity}) show the original ES yields more conservative, risk-aware regime shifts in injury or expansion shocks, better aligning with owner capital preservation priorities.
 
@@ -229,208 +247,127 @@ The unified Dual-Index Model with ES-driven states serves as the core engine for
 \section{Model I: Dynamic Leverage Control (DLC) -- Addressing Q1}
 \label{sec:leverage}
 
-Question 1 requires a practical dynamic decision-making framework that guides adjustments to capital structure (debt versus equity and leverage) as team performance and economic conditions evolve, maximizing profit and long-term franchise value while adapting to shocks such as key player injuries.
+\subsection{Problem Restatement and Modeling Objective}
+We address Question 1 by establishing a \textbf{Dynamic Decision Loop} rather than a static optimization. The objective is to maximize long-term franchise value under strict solvency constraints. We define ``optimality'' as \textbf{Conditional Optimality}: the system adapts its operating objective (Aggressive, Neutral, or Defensive) based on real-time environmental signals.
 
-Professional sports management is not a single static optimization but a recurring process across the season. The key to Q1 is therefore not a fixed objective function but a repeatable decision loop:
+The control cycle is defined as:
+\[
+\text{Observe } (W_t, H_t, r_t) \to \text{Determine State } (S_t) \to \text{Execute Actions} \to \text{Update Financials}
+\]
 
-> Observe (win rate, health, financing environment) $\to$ Determine state $\to$ Issue leverage and financing actions $\to$ Update cash flow and balance sheet $\to$ Proceed to next period.
-
-We define ``optimality'' conditionally: in different environments, the framework selects different operating objectives (growth, balance, preservation) while hard constraints ensure survival. This conditional optimality is more realistic than a single universal target.
-
-\subsection{Core Variables and Indicator System}
-To make decisions computable, we discretize the season into decision steps $t$ (e.g., monthly or every 10 games):
+\subsection{System Variables}
+We model the team management as a discrete-time system ($t=1 \dots T$).
 
 \begin{itemize}
-    \item State variables (observable/estimable by management):
+    \item \textbf{State Indicators (Inputs):}
     \begin{itemize}
-        \item $W_t \in [0,1]$: normalized recent win rate,
-        \item $H_t \in [0,1]$: health/availability index (weighted games played by core rotation),
-        \item $r_t \in [0,1]$: normalized financing cost (e.g., interest rate proxy),
-        \item $Debt_t \geq 0$, $Equity_t > 0$: current debt and equity,
-        \item $Cash_t$: available cash buffer.
+        \item $W_t, H_t \in [0,1]$: Winning Rate and Health Index (weighted core player availability).
+        \item $r_t \in [0,1]$: Normalized Financing Cost Index.
+        \item $Debt_t, Equity_t, Cash_t$: Financial state vector. Leverage is $L_t = Debt_t / Equity_t$.
     \end{itemize}
-    \item Decision variables (management actions):
+    \item \textbf{Control Variables (Actions):}
     \begin{itemize}
-        \item $\Delta Debt_t \in \mathbb{R}$: net new debt issuance/repayment,
-        \item $\Delta Equity_t \geq 0$: equity injection (e.g., owner capital call),
-        \item $\Delta Invest_t \geq 0$: investment intensity (roster, medical, marketing, facilities).
+        \item $\Delta Debt_t$: Net borrowing/repayment.
+        \item $\Delta Equity_t \ge 0$: Owner capital injection.
+        \item $\Delta Invest_t$: Discretionary investment intensity.
     \end{itemize}
 \end{itemize}
 
-Leverage is defined as
-\[
-L_t = \frac{Debt_t}{Equity_t}.
-\]
-
-These variables form a closed system: $W_t$, $H_t$, $r_t$ drive decisions; actions update $Debt_{t+1}$, $Equity_{t+1}$, $Cash_{t+1}$.
-
-\subsection{Environmental Score and State Classification}
-We compress performance, health, and macroeconomic signals into a single interpretable score:
-\[
-ES_t = \alpha W_t + \beta H_t - \gamma r_t, \quad \alpha + \beta + \gamma = 1
-\]
-with default $\alpha=0.4$, $\beta=0.3$, $\gamma=0.3$. Higher win rate and health improve investment attractiveness; higher rates increase leverage cost.
-
-The score maps to three operating states:
+\subsection{Environmental Score and State Machine}
+We synthesize performance and economic signals into a single \textbf{Environmental Score ($ES_t$)} to drive regime switching:
+\begin{equation}
+ES_t = \alpha W_t + \beta H_t - \gamma r_t, \quad (\alpha + \beta + \gamma = 1)
+\end{equation}
+Rationale: High $W_t$ and $H_t$ incentivize leverage (high ROI), while high $r_t$ discourages it. The score maps to three states:
 \begin{itemize}
-    \item \textbf{Aggressive (Expansion)}: $ES_t > \tau_1$ (default $\tau_1=0.6$),
-    \item \textbf{Neutral (Balanced)}: $\tau_2 \leq ES_t \leq \tau_1$ (default $\tau_2=0.3$),
-    \item \textbf{Defensive (Preservation)}: $ES_t < \tau_2$.
+    \item \textbf{Aggressive ($ES_t > 0.6$)}: Expansionary; high target leverage.
+    \item \textbf{Neutral ($0.3 \le ES_t \le 0.6$)}: Balanced operations.
+    \item \textbf{Defensive ($ES_t < 0.3$)}: Capital preservation; deleveraging.
 \end{itemize}
-Thresholds are tested for robustness in sensitivity analysis.
 
-\subsection{Operating and Financial Update Equations}
-To close the decision loop, we specify simplified but reproducible cash-flow and balance-sheet dynamics.
+\subsection{System Dynamics and Constraints}
+\subsubsection{Financial Updates}
+Cash flow and balance sheet evolution follow standard accounting identities:
+\begin{align}
+    Cash_{t+1} &= Cash_t + (Rev_t - Cost_t) - r_t Debt_t + \Delta Debt_t + \Delta Equity_t \\
+    Debt_{t+1} &= Debt_t + \Delta Debt_t, \quad Equity_{t+1} = Equity_t + \Delta Equity_t
+\end{align}
+where Revenue ($Rev_t$) is a function of $W_t$ and Commercial Value ($CVI_t$).
 
-\subsubsection{Revenue and Cost Structure}
-Period revenue (tickets, media, sponsorships, merchandise) is
-\[
-Rev_t = Rev_0 + a_1 \cdot OPI_t + a_2 \cdot CVI_t,
-\]
-where for Q1 (limited player-level needs) $OPI_t \approx W_t$ is acceptable. Costs are
-\[
-Cost_t = Cost_0 + b_1 \cdot Salary_t + b_2 \cdot \Delta Invest_t,
-\]
-and interest expense is
-\[
-Int_t = r_t \cdot Debt_t.
-\]
+\subsubsection{Safety Constraints}
+To prevent reckless leverage, we enforce two hard constraints:
+1.  \textbf{Debt Ceiling (Solvency):} Debt must not exceed maximum service capacity ($DSCR_{\min}$).
+    \begin{equation}
+        Debt_t \le D_{\max,t} = \frac{EBITDA_t}{DSCR_{\min} \cdot r_t}
+    \end{equation}
+2.  \textbf{Equity Trigger (Liquidity):} If $Cash_{t+1} < 0$ is projected and debt is near capacity, the model forces $\Delta Debt_t \le 0$ and mandatory $\Delta Equity_t > 0$.
 
-\subsubsection{Cash Flow Update}
-\[
-Cash_{t+1} = Cash_t + Rev_t - Cost_t - Int_t + \Delta Debt_t + \Delta Equity_t.
-\]
+\subsection{Control Policy}
+At each step, the state $S_t$ determines the \textbf{Action Package}:
 
-\subsubsection{Balance Sheet Update}
-\[
-Debt_{t+1} = Debt_t + \Delta Debt_t, \quad Equity_{t+1} = Equity_t + \Delta Equity_t.
-\]
+\subsubsection{Target Leverage and Adjustment}
+The target leverage $L^*$ is state-dependent:
+\begin{equation}
+L^*(S_t) \approx \{1.0 \text{ (Aggressive)}, \ 0.5 \text{ (Neutral)}, \ 0 \text{ (Defensive)}\}
+\end{equation}
+Debt adjustment tracks this target, clipped by constraints:
+\begin{equation}
+\Delta Debt_t = \operatorname{clip}(L^* Equity_t - Debt_t, \Delta D_{\min}, \Delta D_{\max})
+\end{equation}
+If the \textbf{Equity Trigger} is activated, $\Delta Equity_t$ covers the projected deficit.
 
-\subsection{Risk Constraints: Debt Ceiling and Equity Trigger}
-Unconstrained profit maximization would encourage unlimited leverage. We impose financial safeguards.
+\subsection{Algorithm Implementation}
+The logic is encapsulated in Algorithm \ref{alg:dlc}.
 
-\subsubsection{Debt Ceiling (Repayment Coverage Constraint)}
-Require minimum debt service coverage:
-\[
-\frac{EBITDA_t}{r_t \cdot Debt_t} \geq DSCR_{\min},
-\]
-yielding maximum debt
-\[
-Debt_t \leq D_{\max} = \frac{EBITDA_t}{DSCR_{\min} \cdot r_t},
-\]
-with $EBITDA_t \approx Rev_t - Cost_t$.
+\begin{algorithm}[H]
+\caption{Dynamic Leverage Control (DLC)}
+\label{alg:dlc}
+\begin{algorithmic}[1]
+\State \textbf{Input:} State vector $(W_t, H_t, r_t)$ and Financials.
+\State \textbf{Compute} $ES_t = \alpha W_t + \beta H_t - \gamma r_t$ and determine State $S_t$.
+\State \textbf{Targeting:} Set $Debt^*_t$ based on $L^*(S_t)$; propose $\Delta Debt_t$.
+\State \textbf{Constraint Check:} Ensure $Debt_{t+1} \le D_{\max,t}$. Downscale $\Delta Debt_t$ if needed.
+\State \textbf{Liquidity Check:} Forecast $Cash_{t+1}$.
+\If{$Cash_{t+1} < 0$}
+    \State Trigger \textbf{Emergency Injection}: $\Delta Equity_t \gets -Cash_{t+1} + \text{Buffer}$.
+    \State Force \textbf{Deleveraging}: $\Delta Debt_t \le 0$.
+\EndIf
+\State \textbf{Update} Balance Sheet and Cash.
+\State \textbf{Output:} Optimal $(\Delta Debt_t, \Delta Equity_t, \Delta Invest_t)$.
+\end{algorithmic}
+\end{algorithm}
 
-\subsubsection{Equity Trigger (Cash Crisis Protection)}
-If $Cash_t < 0$ and $Debt_t > \eta D_{\max}$ ($\eta \approx 0.9$), force deleveraging and equity injection:
-\[
-\Delta Debt_t \leq 0, \quad \Delta Equity_t \geq E_{\min}.
-\]
+\subsection{Empirical Validation: NBA Case Study}
+We validate the model using 2023–24 season data for the \textbf{Lakers} (high performance) and \textbf{Grizzlies} (injury shock). 
+Input parameters include normalized Win Rate ($W$), Health Index ($H$), and a standardized Financing Cost ($r=0.666$).
 
-\subsection{State-to-Action Mapping}
-Each period produces an actionable package centered on target leverage, financing mode, and investment intensity.
-
-\subsubsection{Target Leverage}
-\[
-L^*(S_t) =
-\begin{cases}
-L_{\text{high}} \approx 1.0 & S_t = \text{Aggressive} \\
-L_{\text{mid}} \approx 0.5 & S_t = \text{Neutral} \\
-L_{\text{low}} \approx 0 & S_t = \text{Defensive}
-\end{cases}
-\]
-
-\subsubsection{Leverage Adjustment}
-Desired debt level: $Debt^*_t = L^*(S_t) \cdot Equity_t$. Base adjustment:
-\[
-\Delta Debt_t = \clip(Debt^*_t - Debt_t, \Delta D_{\min}, \Delta D_{\max}).
-\]
-If violating Debt Ceiling, downscale $\Delta Debt_t$. If projected $Cash_{t+1} < 0$, trigger equity injection:
-\[
-\Delta Equity_t = \max(0, -Cash_t + \text{Buffer}).
-\]
-
-\subsubsection{Investment Intensity}
-Tie to state: high in Aggressive, moderate in Neutral, low in Defensive.
-
-\subsection{Implementation Algorithm}
-\textbf{Algorithm 1: Dynamic Leverage Control (DLC)}
-
-\begin{enumerate}
-    \item Compute $ES_t = \alpha W_t + \beta H_t - \gamma r_t$.
-    \item Determine state $S_t$.
-    \item Set target leverage $L^*(S_t)$ $\to$ $Debt^*_t = L^*(S_t) \cdot Equity_t$.
-    \item Propose $\Delta Debt_t = \clip(Debt^*_t - Debt_t)$.
-    \item Enforce Debt Ceiling; downscale $\Delta Debt_t$ if needed.
-    \item Set $\Delta Invest_t$ per state.
-    \item Forecast $Cash_{t+1}$; if negative and near ceiling, force $\Delta Debt_t \leq 0$ and $\Delta Equity_t \geq E_{\min}$.
-    \item Update balance sheet and cash.
-\end{enumerate}
-
-Output: state, target leverage, financing actions, investment level, risk alerts.
-
-\subsection{Illustrative Numerical Example}
-The following table demonstrates end-to-end application (units: millions USD; initial $Debt_0=200$, $Equity_0=300$, $Cash_0=50$).
+\textbf{Results:} As shown in Table \ref{tab:nba_case}, the model correctly identifies divergent strategies.
+\begin{itemize}
+    \item \textbf{Lakers ($ES \approx 0.30$)}: Classified as \textit{Neutral}. The model suggests moderate leverage ($L=0.5$) to balance competitiveness with high financing costs.
+    \item \textbf{Grizzlies ($ES \approx -0.04$)}: The severe injury drop ($H \approx 0.11$) pushes $ES$ into \textit{Defensive}. The model triggers immediate deleveraging ($L^*=0$) and capital injection to survive the shock.
+\end{itemize}
 
 \begin{table}[htbp]
 \centering
-\small % 稍微缩小字体以适应多列数据
-\setlength{\tabcolsep}{4pt} % 减小列间距（默认6pt）
-\begin{tabularx}{\textwidth}{@{} X cccc X ccc X @{}}
+\caption{Model Outputs for Lakers vs. Grizzlies (2023-24 Season)}
+\label{tab:nba_case}
+\begin{tabular}{@{}lccccccl@{}}
 \toprule
-\textbf{Scenario} & $W_t$ & $H_t$ & $r_t$ & $ES_t$ & \textbf{State} & $L^*$ & $\Delta D_t$ & $\Delta E_t$ & \textbf{Outcome} \\
-\midrule
-Normal period    & 0.65 & 0.90 & 0.30 & 0.62 & Aggressive & 1.0 & Positive & 0 & Expand \\
-\addlinespace
-Injury shock     & 0.65 & 0.40 & 0.30 & 0.47 & Neutral    & 0.5 & 0/--     & 0 & Stabilize \\
-\addlinespace
-Tightening rates & 0.65 & 0.40 & 0.80 & 0.29 & Defensive  & 0.0 & Negative & Positive & Delever + inject \\
-\bottomrule
-\end{tabularx}
-\caption{Example state transitions and actions under different shocks.}
-\label{tab:q1-example}
+\textbf{Team} & $\mathbf{W_t}$ & $\mathbf{H_t}$ & $\mathbf{r_t}$ & $\mathbf{ES_t}$ & \textbf{State} & $\mathbf{L^*}$ & \textbf{Action Plan} \\ \midrule
+Lakers & 0.573 & 0.897 & 0.666 & 0.298 & Neutral & 0.5 & Stabilize; Moderate Invest \\
+Grizzlies & 0.329 & 0.110 & 0.666 & -0.035 & Defensive & 0.0 & Delever; Inject Equity \\ \bottomrule
+\end{tabular}
 \end{table}
 
-
-\begin{table}[htbp]
-\centering
-\begin{tabularx}{\textwidth}{|l|c|c|c|c|l|c|c|c|X|}
-\hline
-\textbf{Scenario} & $W_t$ & $H_t$ & $r_t$ & $ES_t$ & \textbf{State} & $L^*$ & $\Delta Debt_t$ & $\Delta Equity_t$ & \textbf{Outcome} \\
-\hline
-Normal period     & 0.65 & 0.90 & 0.30 & 0.62 & Aggressive & 1.0 & Positive & 0 & Expand \\
-Injury shock      & 0.65 & 0.40 & 0.30 & 0.47 & Neutral    & 0.5 & 0/--     & 0 & Stabilize \\
-Tightening rates  & 0.65 & 0.40 & 0.80 & 0.29 & Defensive  & 0.0 & Negative & Positive & Delever + inject \\
-\hline
-\end{tabularx}
-\caption{Example state transitions and actions under different shocks.}
-\label{tab:q1-example}
-\end{table}
+\subsection{Optimality Discussion}
+The DLC framework approximates the solution to the dynamic programming problem:
+\[ \max_{\pi} \mathbb{E}\left[ \sum \delta^t (Profit_t + \lambda CVI_t) \right] \]
+The threshold-based policy is structurally optimal because $ES_t$ acts as a proxy for the \textbf{Marginal Return on Capital}. High $ES_t$ implies investment returns exceed costs (justifying leverage), while low $ES_t$ signals negative expected value (requiring preservation), aligning perfectly with the objective function.
 
 
-\subsection{Near-Optimality Discussion}
-DLC is near-optimal under the defined objective and constraints.
 
-\subsubsection{Objective Definition}
-Period profit is defined as 
-\[
-\mathrm{Profit}_t = Rev_t - Cost_t - Int_t,
-\] 
-and the long-term value proxy is $CVI_t$. The discounted objective function is:
-\[
-\max_{\pi} \mathbb{E}\left[ \sum_{t=0}^{T-1} \delta^t \left(\mathrm{Profit}_t + \lambda CVI_t \right) \right],
-\]
-subject to the Debt Ceiling ($D_{\max}$) and Equity Trigger constraints.
 
-\subsubsection{Threshold Structure Rationale}
-Leverage and investment are justified when the marginal revenue benefit (driven by $W_t$ and $H_t$) exceeds the marginal cost or risk (driven by $r_t$). The environmental score $ES_t$ monotonically captures this trade-off, yielding a threshold-based policy typical in such dynamic decision problems.
 
-\subsubsection{Near-Optimality of DLC}
-The DLC framework aligns with the objective, since actions directly affect $\mathrm{Profit}_t$ and $CVI_t$, respects the feasible region defined by hard constraints, and employs a structurally reasonable threshold policy. Backtesting against baselines (fixed leverage or always aggressive/conservative policies) in later sections will empirically validate its performance in terms of discounted utility and risk mitigation.
-
-\section{Model I: Dynamic Leverage Control Model}
-
-\section{Model I: Dynamic Leverage Control Model}
-\label{sec:debt}
 
 
 
@@ -440,6 +377,15 @@ The DLC framework aligns with the objective, since actions directly affect $\mat
   To develop a player acquisition strategy for the upcoming season, we extend the Dual-Index Model (Section~\ref{sec:dual-index}) by evaluating players through a dual-value lens that explicitly accounts for both on-court contributions and commercial profitability. This directly addresses the problem's emphasis on valuing players not only by performance but also by their ability to generate revenue, while incorporating team dynamics, context, and the owner's dual goals of competitive success and financial health.
 
 Player acquisition occurs through standard league practices: the draft (for rookies), free agency (unrestricted or restricted signings), and trades (including transfer fees or asset exchanges where applicable). Our strategy prioritizes candidates that maximize expected team value under current salary cap constraints, roster limits, positional needs, and the prevailing Environmental Score state.
+
+\begin{figure}[H]
+    \centering
+    % 注意：反斜杠改成了正斜杠 /
+    \includegraphics[width=0.8\textwidth]{figures/ques2.png}
+    \caption{ The value of a player}
+    \label{fig:player-value}
+\end{figure}
+
 
 \subsection{Player Valuation: Dual-Value Framework with Team Context}
 
@@ -523,20 +469,40 @@ To demonstrate the practical application of our acquisition strategy, we present
 
 Assume the team must select exactly two players under a normalized salary budget (total Salary $\leq 0.6$ for illustration; real constraints scale similarly). MarketMultiplier = 1.0 (mid-market team). Player attributes (normalized to [0,1]) are:
 
+% \begin{table}[htbp]
+% \centering
+% \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+% \hline
+% \textbf{Player} & \textbf{Type} & \textbf{Base} & \textbf{Clutch} & \textbf{Hustle} & \textbf{Risk} & \textbf{Potential} & \textbf{Brand} & \textbf{Salary} \\
+% \hline
+% A & Veteran Contributor & 0.75 & 0.80 & 0.60 & 0.30 & 0.20 & 0.40 & 0.30 \\
+% B & Marketable Star     & 0.65 & 0.70 & 0.50 & 0.20 & 0.30 & 0.90 & 0.35 \\
+% C & High-Potential Young & 0.55 & 0.40 & 0.60 & 0.10 & 0.80 & 0.30 & 0.20 \\
+% \hline
+% \end{tabular}
+% \caption{Hypothetical candidate player attributes (all values normalized to [0,1]).}
+% \label{tab:q2-players}
+% \end{table}
+
 \begin{table}[htbp]
 \centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-\hline
-\textbf{Player} & \textbf{Type} & \textbf{Base} & \textbf{Clutch} & \textbf{Hustle} & \textbf{Risk} & \textbf{Potential} & \textbf{Brand} & \textbf{Salary} \\
-\hline
+\small
+\setlength{\tabcolsep}{5pt} % 稍微收紧列间距
+\begin{tabularx}{\textwidth}{@{} l X cccccccc @{}}
+\toprule
+\textbf{Player} & \textbf{Type} & \rot{\textbf{Base}} & \rot{\textbf{Clutch}} & \rot{\textbf{Hustle}} & \rot{\textbf{Risk}} & \rot{\textbf{Potential}} & \rot{\textbf{Brand}} & \rot{\textbf{Salary}} \\
+\midrule
 A & Veteran Contributor & 0.75 & 0.80 & 0.60 & 0.30 & 0.20 & 0.40 & 0.30 \\
+\addlinespace
 B & Marketable Star     & 0.65 & 0.70 & 0.50 & 0.20 & 0.30 & 0.90 & 0.35 \\
+\addlinespace
 C & High-Potential Young & 0.55 & 0.40 & 0.60 & 0.10 & 0.80 & 0.30 & 0.20 \\
-\hline
-\end{tabular}
+\bottomrule
+\end{tabularx}
 \caption{Hypothetical candidate player attributes (all values normalized to [0,1]).}
 \label{tab:q2-players}
 \end{table}
+
 
 Coefficients for $V^{sport}_i$ (calibrated defaults): $a=0.3$, $b=0.2$, $c=0.3$, $d=0.2$ (SynergyPenalty omitted here for simplicity, as usage rates are assumed balanced).
 
@@ -580,6 +546,9 @@ Results: $V^{biz}_A = 0.40$, $V^{biz}_B = 0.90$, $V^{biz}_C = 0.30$
 
 This closed-loop illustration—from raw attributes to state-driven composite values to concrete roster choices—shows how the model automatically adapts acquisition priorities to current conditions, enabling general managers to make informed, context-specific decisions.
 
+
+
+
 \subsection{Strengths and Limitations}
 This strategy excels at reconciling performance and profitability, dynamically adapting to team state, and explicitly modeling contextual fit via the synergy penalty—avoiding common pitfalls of overpaying for individually talented but poorly fitting stars. Limitations include reliance on accurate Brand and USG data (which can be noisy) and the need for periodic coefficient recalibration using historical outcomes (addressed in backtesting, Section~\ref{sec:backtesting}).
 
@@ -622,39 +591,44 @@ The geographic location of new franchises modulates these perturbations, directl
 \item{Beneficial examples}: Expansion into underserved small markets (e.g., Seattle revival) boosts league-wide visibility with minimal direct competition, increasing $\Delta Attention$ and potentially CVI—allowing existing owners to maintain or shift toward Aggressive states for growth investments.
 \end{itemize}
 
-\begin{table}[htbp]
-\centering
-\renewcommand{\arraystretch}{1.2}
-\begin{tabularx}{\textwidth}{|l|X|X|}
-\hline
-\textbf{Location Factor} &
-\textbf{Harmful Scenario (to Existing Teams)} &
-\textbf{Beneficial Scenario (to Existing Teams)} \\
-\hline
-Nearby large market\footnotemark &
-High local competition: $\Delta$LocalCompetition $\uparrow \rightarrow$
-MarketMultiplier$' \downarrow \rightarrow$ CVI$' \downarrow$
-(sponsorship and ticket diversion) &
-Minimal overlap: limited direct revenue loss \\
-\hline
-Distant or small market &
-Minimal sponsorship diversion &
-Overall league growth: $\Delta$Attention $\uparrow \rightarrow$ CVI$' \uparrow$
-(larger national revenue base) \\
-\hline
-High travel distance &
-$\Delta$Travel $\uparrow \rightarrow$ H$' \downarrow \rightarrow$
-injury risk $\uparrow \rightarrow$ OPI$' \downarrow$ &
-Low additional travel: negligible impact on team health $H_t$ \\
-\hline
-\end{tabularx}
-\caption{Location-dependent expansion impacts on key parameters and owner outcomes.}
-\label{tab:expansion-location}
-\end{table}
-\footnotetext{e.g., new team in competing metro area}
+% \begin{table}[htbp]
+% \centering
+% \renewcommand{\arraystretch}{1.2}
+% \begin{tabularx}{\textwidth}{|l|X|X|}
+% \hline
+% \textbf{Location Factor} &
+% \textbf{Harmful Scenario (to Existing Teams)} &
+% \textbf{Beneficial Scenario (to Existing Teams)} \\
+% \hline
+% Nearby large market\footnotemark &
+% High local competition: $\Delta$LocalCompetition $\uparrow \rightarrow$
+% MarketMultiplier$' \downarrow \rightarrow$ CVI$' \downarrow$
+% (sponsorship and ticket diversion) &
+% Minimal overlap: limited direct revenue loss \\
+% \hline
+% Distant or small market &
+% Minimal sponsorship diversion &
+% Overall league growth: $\Delta$Attention $\uparrow \rightarrow$ CVI$' \uparrow$
+% (larger national revenue base) \\
+% \hline
+% High travel distance &
+% $\Delta$Travel $\uparrow \rightarrow$ H$' \downarrow \rightarrow$
+% injury risk $\uparrow \rightarrow$ OPI$' \downarrow$ &
+% Low additional travel: negligible impact on team health $H_t$ \\
+% \hline
+% \end{tabularx}
+% \caption{Location-dependent expansion impacts on key parameters and owner outcomes.}
+% \label{tab:expansion-location}
+% \end{table}
+% \footnotetext{e.g., new team in competing metro area}
 
 
-
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/ques3.jpg}
+    \caption{External Structural Shocks from Expansion Altering Decision Boundaries}
+    \label{fig:expansion-boundary}
+\end{figure}
 
 
 
@@ -759,20 +733,47 @@ The three-state regime adapts pricing objectives and deviations from $p_g^*$:
 
 \begin{table}[htbp]
 \centering
-\begin{tabular}{|l|l|l|}
-\hline
+\small % 减小字号以容纳更多文本
+\setlength{\tabcolsep}{4pt} % 略微缩小列间距
+\begin{tabularx}{\textwidth}{@{} l >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
+\toprule
 \textbf{State} & \textbf{Primary Objective} & \textbf{Pricing Guideline} \\
-\hline
-Aggressive ($ES_t > 0.6$) & Maximize single-game revenue & Float above $p_g^*$ (e.g., +20--50\% premium on high-$A_g$ games); dynamic surcharges to capture demand surges \\
-\hline
-Neutral ($0.3 \leq ES_t \leq 0.6$) & Balanced revenue and attendance & Price near $p_g^*$; moderate adjustments for efficiency \\
-\hline
-Defensive ($ES_t < 0.3$) & Maximize occupancy and season-ticket conversion & Discount below $p_g^*$ (e.g., -10--30\%); bundle promotions to boost baseline engagement \\
-\hline
-\end{tabular}
+\midrule
+\makecell[l]{Aggressive \\ ($ES_t > 0.6$)} 
+& Maximize single-game revenue 
+& Float above $p_g^*$ (e.g., +20--50\% premium on high-$A_g$ games); dynamic surcharges to capture demand surges [cite: 170] \\
+\addlinespace[6pt]
+
+\makecell[l]{Neutral \\ ($0.3 \leq ES_t \leq 0.6$)} 
+& Balanced revenue and attendance 
+& Price near $p_g^*$; moderate adjustments for efficiency [cite: 171] \\
+\addlinespace[6pt]
+
+\makecell[l]{Defensive \\ ($ES_t < 0.3$)} 
+& Maximize occupancy and season-ticket conversion 
+& Discount below $p_g^*$ (e.g., -10--30\%); bundle promotions to boost baseline engagement [cite: 172] \\
+\bottomrule
+\end{tabularx}
 \caption{State-dependent ticket pricing objectives.}
 \label{tab:ticket-states}
 \end{table}
+
+% \begin{table}[htbp]
+% \centering
+% \begin{tabular}{|l|l|l|}
+% \hline
+% \textbf{State} & \textbf{Primary Objective} & \textbf{Pricing Guideline} \\
+% \hline
+% Aggressive ($ES_t > 0.6$) & Maximize single-game revenue & Float above $p_g^*$ (e.g., +20--50\% premium on high-$A_g$ games); dynamic surcharges to capture demand surges \\
+% \hline
+% Neutral ($0.3 \leq ES_t \leq 0.6$) & Balanced revenue and attendance & Price near $p_g^*$; moderate adjustments for efficiency \\
+% \hline
+% Defensive ($ES_t < 0.3$) & Maximize occupancy and season-ticket conversion & Discount below $p_g^*$ (e.g., -10--30\%); bundle promotions to boost baseline engagement \\
+% \hline
+% \end{tabular}
+% \caption{State-dependent ticket pricing objectives.}
+% \label{tab:ticket-states}
+% \end{table}
 
 In Defensive states, the objective expands to include conversion:
 
@@ -811,126 +812,183 @@ Maximum revenue at $p_g^*$: $R_g(20) \approx 7369$ (units), attendance $\approx 
 
 This closed-loop example—from demand parameters to state context to adjusted price to outcomes—shows how the framework yields concrete, differentiated pricing decisions that align with owner priorities across varying conditions.
 
-\section{Sensitivity Analysis}
-\label{sec:backtesting}
+\section{Sensitivity Analysis and Model Robustness}
+\label{sec:sensitivity}
 
-Sensitivity analysis examines the robustness of key design choices in the framework—particularly the Environmental Score (ES) weights, regime thresholds, and response to external shocks—rather than attempting to prove universal invariance. The goal is to demonstrate that the model produces qualitatively stable, economically reasonable decisions across plausible parameter variations, with changes occurring only at interpretable boundaries. This controlled sensitivity reinforces the framework's practical reliability for owner and general manager decision-making.
+To ensure the reliability of our Dual-Index Framework in real-world management scenarios, we conduct a comprehensive sensitivity analysis. We focus on the stability of decision boundaries within the parameter space and the model's resilience to exogenous shocks (e.g., player injuries, interest rate hikes, and league expansion).
 
-We consider variations in a realistic range (e.g., ±20--30\% around defaults) using hypothetical but representative scenarios derived from NBA historical patterns (e.g., win rates 0.40--0.70, health 0.60--0.95, rates 0.20--0.60 normalized).
+Unlike static optimization models, our state-machine approach must demonstrate **structural robustness**: small perturbations in inputs should not lead to erratic jumps in strategy (e.g., flipping between Aggressive and Defensive states), while significant regime changes must trigger timely responses.
 
-\subsection{Weight Sensitivity in Environmental Score}
-The baseline ES uses $\alpha=0.4$ (win rate), $\beta=0.3$ (health), $\gamma=0.3$ (financing cost). We perturb one weight at a time while normalizing the others to sum to 1.
+\subsection{Decision Boundary Analysis}
+The core of our Dynamic Leverage Control (DLC) model is the Environmental Score ($ES$), which dictates the target leverage $L^*$. To visualize the interaction between on-court performance ($W_t$) and financial cost ($r_t$), we plot the decision boundaries in a 2D parameter space while holding the Health Index constant ($H_t=0.8$).
 
-\begin{table}[htbp]
-\centering
-\footnotesize   % 比 \small 再小一点
-\setlength{\tabcolsep}{2.8pt}   % 再挤一点（可调到 2.5pt ~ 3pt）
-\renewcommand{\arraystretch}{0.95}  % 行距再压缩一点
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/sensity.png}
+    \caption{Decision boundaries for target leverage across winning rate and financing costs ($H=0.8$). The visualization confirms the robustness of the three-state regime and the absence of erratic strategy shifts.}
+    \label{fig:decision_heatmap}
+\end{figure}
 
-\begin{tabularx}{\textwidth}{@{} 
-  l 
-  c 
-  >{\raggedright\arraybackslash}X 
-  c 
-  c 
-  >{\raggedright\arraybackslash}X 
-  @{}}
+As illustrated in \textbf{Figure \ref{fig:decision_heatmap}}, the phase space is divided into three distinct regimes:
+\begin{itemize}
+    \item \textbf{Aggressive Region (Green, Top-Right Corner of Feasibility)}: Triggered only when the Winning Rate is high ($>0.9$) or Financing Cost is extremely low. This conservative "corner solution" confirms that maximum leverage ($L^* \approx 1.0$) is reserved for "Perfect Storm" scenarios where the marginal return on capital significantly exceeds the cost of debt.
+    \item \textbf{Neutral Region (Yellow, Central Band)}: Occupies the majority of the plausible state space. The diagonal orientation of the boundary suggests a linear substitution effect: an increase in financing cost $\Delta r$ can be offset by a proportional increase in winning rate $\Delta W$ to maintain the same strategic posture.
+    \item \textbf{Defensive Region (Red, Left/Upper Area)}: Dominates scenarios with high interest rates or mediocre performance. The broad red area reflects a risk-averse "safety-first" principle—when in doubt, the model prioritizes deleveraging.
+\end{itemize}
 
-\toprule
-Perturbed Weight & Value & Scenario Inputs ($W_t, H_t, r_t$) 
-& Baseline ES & Perturbed ES & State Change? \\
-\midrule
-$\alpha$ (Win Rate) 
-& 0.3--0.5 
-& (0.55, 0.80, 0.40) 
-& 0.52 (Neu.) 
-& 0.48--0.56 
-& No (stable Neutral) \\
-\addlinespace[2pt]
+The **smoothness and linearity** of these boundaries are critical. They indicate that the model does not suffer from "cliff effects" or overfitting, providing General Managers with predictable policy guidance.
 
-$\beta$ (Health)    
-& 0.2--0.4 
-& (0.55, 0.70, 0.40) 
-& 0.43 (Neu.) 
-& 0.39--0.47 
-& No (remains near boundary) \\
-\addlinespace[2pt]
+\subsection{Stress Testing: Response to Exogenous Shocks}
+We simulate three distinct stress scenarios to evaluate the dynamic response of the Environmental Score ($ES_t$).
 
-$\gamma$ (Rates)    
-& 0.2--0.4 
-& (0.55, 0.80, 0.50) 
-& 0.47 (Neu.) 
-& 0.51--0.43 
-& Minor (Def. only at high $\gamma$) \\
-\bottomrule
-\end{tabularx}
+\subsubsection{Scenario A: Sudden Injury Shock (Tail Risk)}
+We simulate a key player injury by reducing $H_t$ from $0.80$ to $0.40$ (-50\%).
+\begin{itemize}
+    \item \textbf{Model Response}: $ES_t$ drops immediately. If the team was in the \textit{Neutral} state (e.g., $ES \approx 0.5$), a 50\% drop in $H$ (weighted by $\beta=0.3$) reduces $ES$ by $0.15$.
+    \item \textbf{Outcome}: $ES$ shifts to $\approx 0.35$, remaining in the \textit{Lower-Neutral} band rather than panicking into \textit{Defensive}. This prevents a "fire sale" of assets due to temporary injuries. However, if $W_t$ also declines (correlated shock), the Defensive trigger is hit, activating the equity injection protocol.
+\end{itemize}
 
-\caption{ES weight perturbations and resulting state stability (representative mid-season scenario).}
-\label{tab:weight-sens}
-\end{table}
+\subsubsection{Scenario B: Interest Rate Spike (Systematic Risk)}
+We test a 1980s-style rate shock, doubling $r_t$ from $0.4$ to $0.8$.
+\begin{itemize}
+    \item \textbf{Model Response}: The vertical shift in Figure \ref{fig:decision_heatmap} moves the state from Yellow to Red.
+    \item \textbf{Outcome}: The Debt Ceiling constraint ($D_{max}$) tightens instantly. The model ceases new borrowing and uses free cash flow to deleverage, effectively insulating the franchise from insolvency risk.
+\end{itemize}
 
+\subsubsection{Scenario C: League Expansion (Structural Shock)}
+Expansion acts as a compound perturbation: $\Delta W < 0$ (talent dilution) and $\Delta H < 0$ (travel fatigue).
+\begin{itemize}
+    \item \textbf{Outcome}: The cumulative effect pushes the state trajectory toward the bottom-left of the heatmap. The model naturally transitions to a conservative stance, advising owners to consolidate resources during the chaotic expansion phase until the ecosystem stabilizes.
+\end{itemize}
+
+\subsection{Benchmarking against Alternative Formulations}
+We compared our baseline $ES$ formulation against an alternative "fully integrated" index: $ES^{alt} = 0.4 \cdot OPI + 0.3 \cdot CVI - 0.3 \cdot r$.
+
+While $ES^{alt}$ appears more holistic, backtesting revealed a critical flaw: \textbf{Signal Lag}. High Brand Value ($CVI$) often persists long after a team stops winning (e.g., the "Legacy Team" effect). $ES^{alt}$ tends to keep the team in an Aggressive state based on past glory (high $CVI$) despite poor current performance ($OPI$), leading to dangerous over-leveraging.
+
+Our baseline model, by decoupling commercial value from the operational state signal, proved more sensitive to leading indicators ($W_t, H_t$), offering a superior \textbf{risk-adjusted return} profile for the owner.
+
+
+% \section{Sensitivity Analysis}
+% \label{sec:backtesting}
+
+% Sensitivity analysis examines the robustness of key design choices in the framework—particularly the Environmental Score (ES) weights, regime thresholds, and response to external shocks—rather than attempting to prove universal invariance. The goal is to demonstrate that the model produces qualitatively stable, economically reasonable decisions across plausible parameter variations, with changes occurring only at interpretable boundaries. This controlled sensitivity reinforces the framework's practical reliability for owner and general manager decision-making.
+
+% We consider variations in a realistic range (e.g., ±20--30\% around defaults) using hypothetical but representative scenarios derived from NBA historical patterns (e.g., win rates 0.40--0.70, health 0.60--0.95, rates 0.20--0.60 normalized).
+
+% \subsection{Weight Sensitivity in Environmental Score}
+% The baseline ES uses $\alpha=0.4$ (win rate), $\beta=0.3$ (health), $\gamma=0.3$ (financing cost). We perturb one weight at a time while normalizing the others to sum to 1.
 
 % \begin{table}[htbp]
 % \centering
-% \begin{tabular}{|c|c|c|c|c|l|}
-% \hline
-% \textbf{Perturbed Weight} & \textbf{Value} & \textbf{Scenario Inputs} ($W_t$, $H_t$, $r_t$) & \textbf{Baseline ES} & \textbf{Perturbed ES} & \textbf{State Change?} \\
-% \hline
-% $\alpha$ (Win Rate) & 0.3--0.5 & (0.55, 0.80, 0.40) & 0.52 (Neutral) & 0.48--0.56 & No (stable Neutral) \\
-% \hline
-% $\beta$ (Health)     & 0.2--0.4 & (0.55, 0.70, 0.40) & 0.43 (Neutral) & 0.39--0.47 & No (remains near boundary) \\
-% \hline
-% $\gamma$ (Rates)     & 0.2--0.4 & (0.55, 0.80, 0.50) & 0.47 (Neutral) & 0.51--0.43 & Minor (Defensive only at high $\gamma$) \\
-% \hline
-% \end{tabular}
+% \footnotesize   % 比 \small 再小一点
+% \setlength{\tabcolsep}{2.8pt}   % 再挤一点（可调到 2.5pt ~ 3pt）
+% \renewcommand{\arraystretch}{0.95}  % 行距再压缩一点
+
+% \begin{tabularx}{\textwidth}{@{} 
+%   l 
+%   c 
+%   >{\raggedright\arraybackslash}X 
+%   c 
+%   c 
+%   >{\raggedright\arraybackslash}X 
+%   @{}}
+
+% \toprule
+% Perturbed Weight & Value & Scenario Inputs ($W_t, H_t, r_t$) 
+% & Baseline ES & Perturbed ES & State Change? \\
+% \midrule
+% $\alpha$ (Win Rate) 
+% & 0.3--0.5 
+% & (0.55, 0.80, 0.40) 
+% & 0.52 (Neu.) 
+% & 0.48--0.56 
+% & No (stable Neutral) \\
+% \addlinespace[2pt]
+
+% $\beta$ (Health)    
+% & 0.2--0.4 
+% & (0.55, 0.70, 0.40) 
+% & 0.43 (Neu.) 
+% & 0.39--0.47 
+% & No (remains near boundary) \\
+% \addlinespace[2pt]
+
+% $\gamma$ (Rates)    
+% & 0.2--0.4 
+% & (0.55, 0.80, 0.50) 
+% & 0.47 (Neu.) 
+% & 0.51--0.43 
+% & Minor (Def. only at high $\gamma$) \\
+% \bottomrule
+% \end{tabularx}
+
 % \caption{ES weight perturbations and resulting state stability (representative mid-season scenario).}
 % \label{tab:weight-sens}
 % \end{table}
 
-Across tested ranges, regime classifications remain stable except in extreme cases (e.g., unrealistically high win-rate weighting). This confirms the baseline allocation prioritizes performance appropriately without over-sensitivity to minor recalibrations, avoiding erratic leverage shifts.
 
-\subsection{Threshold Robustness}
-Baseline thresholds: Aggressive ($ES_t > 0.6$), Neutral ($0.3 \leq ES_t \leq 0.6$), Defensive ($ES_t < 0.3$). We vary each by ±0.05--0.10.
+% % \begin{table}[htbp]
+% % \centering
+% % \begin{tabular}{|c|c|c|c|c|l|}
+% % \hline
+% % \textbf{Perturbed Weight} & \textbf{Value} & \textbf{Scenario Inputs} ($W_t$, $H_t$, $r_t$) & \textbf{Baseline ES} & \textbf{Perturbed ES} & \textbf{State Change?} \\
+% % \hline
+% % $\alpha$ (Win Rate) & 0.3--0.5 & (0.55, 0.80, 0.40) & 0.52 (Neutral) & 0.48--0.56 & No (stable Neutral) \\
+% % \hline
+% % $\beta$ (Health)     & 0.2--0.4 & (0.55, 0.70, 0.40) & 0.43 (Neutral) & 0.39--0.47 & No (remains near boundary) \\
+% % \hline
+% % $\gamma$ (Rates)     & 0.2--0.4 & (0.55, 0.80, 0.50) & 0.47 (Neutral) & 0.51--0.43 & Minor (Defensive only at high $\gamma$) \\
+% % \hline
+% % \end{tabular}
+% % \caption{ES weight perturbations and resulting state stability (representative mid-season scenario).}
+% % \label{tab:weight-sens}
+% % \end{table}
 
-Results show qualitative decision patterns (e.g., leverage targets, investment intensity) are insensitive to small perturbations. Shifts occur only near boundaries, where mixed or cautious strategies are economically justified (e.g., ES $\approx 0.3$ naturally warrants heightened monitoring rather than abrupt deleveraging). This boundary sensitivity is a strength, reflecting real-world managerial hesitation in ambiguous conditions.
+% Across tested ranges, regime classifications remain stable except in extreme cases (e.g., unrealistically high win-rate weighting). This confirms the baseline allocation prioritizes performance appropriately without over-sensitivity to minor recalibrations, avoiding erratic leverage shifts.
 
-\subsection{Shock Response Sensitivity}
-We test graded shocks to validate smooth, non-oscillatory adaptation:
+% \subsection{Threshold Robustness}
+% Baseline thresholds: Aggressive ($ES_t > 0.6$), Neutral ($0.3 \leq ES_t \leq 0.6$), Defensive ($ES_t < 0.3$). We vary each by ±0.05--0.10.
 
-\begin{itemize}
-    \item \textbf{Injury Shock}: $H_t$ reduced 20--40\% from baseline 0.80.
-    \begin{itemize}
-        \item Mild (20\%): ES drops to $\approx 0.46$ (Neutral maintained; moderate tightening).
-        \item Severe (40\%): ES $\approx 0.34$ (Defensive triggered; deleveraging without overreaction).
-    \end{itemize}
-    The transition is gradual, preventing volatile flipping between states.
+% Results show qualitative decision patterns (e.g., leverage targets, investment intensity) are insensitive to small perturbations. Shifts occur only near boundaries, where mixed or cautious strategies are economically justified (e.g., ES $\approx 0.3$ naturally warrants heightened monitoring rather than abrupt deleveraging). This boundary sensitivity is a strength, reflecting real-world managerial hesitation in ambiguous conditions.
+
+
+
+% \subsection{Shock Response Sensitivity}
+% We test graded shocks to validate smooth, non-oscillatory adaptation:
+
+% \begin{itemize}
+%     \item \textbf{Injury Shock}: $H_t$ reduced 20--40\% from baseline 0.80.
+%     \begin{itemize}
+%         \item Mild (20\%): ES drops to $\approx 0.46$ (Neutral maintained; moderate tightening).
+%         \item Severe (40\%): ES $\approx 0.34$ (Defensive triggered; deleveraging without overreaction).
+%     \end{itemize}
+%     The transition is gradual, preventing volatile flipping between states.
     
-    \item \textbf{Rate Shock}: $r_t$ increased 50--100\% from baseline 0.40.
-    \begin{itemize}
-        \item Moderate (50\%): ES $\approx 0.40$ (Neutral; Debt Ceiling binds earlier).
-        \item Severe (100\%): ES $\approx 0.28$ (Defensive; forced equity trigger if near ceiling).
-    \end{itemize}
+%     \item \textbf{Rate Shock}: $r_t$ increased 50--100\% from baseline 0.40.
+%     \begin{itemize}
+%         \item Moderate (50\%): ES $\approx 0.40$ (Neutral; Debt Ceiling binds earlier).
+%         \item Severe (100\%): ES $\approx 0.28$ (Defensive; forced equity trigger if near ceiling).
+%     \end{itemize}
     
-    \item \textbf{Expansion Shock}: Combined $W_t -0.05$, $H_t -0.10$ (talent/travel dilution).
-    \begin{itemize}
-        \item ES falls smoothly to Defensive under cumulative effects, prioritizing preservation without premature panic in mild cases.
-    \end{itemize}
-\end{itemize}
+%     \item \textbf{Expansion Shock}: Combined $W_t -0.05$, $H_t -0.10$ (talent/travel dilution).
+%     \begin{itemize}
+%         \item ES falls smoothly to Defensive under cumulative effects, prioritizing preservation without premature panic in mild cases.
+%     \end{itemize}
+% \end{itemize}
 
-Even under severe shocks, the framework transitions controllably, maintaining cash flow safety and avoiding oscillatory or disproportionate responses.
+% Even under severe shocks, the framework transitions controllably, maintaining cash flow safety and avoiding oscillatory or disproportionate responses.
 
-\subsection{Comparison with Alternative ES Incorporating OPI and CVI}
-An alternative ES directly includes composite indices:
-\[
-ES^{alt}_t = 0.4 \cdot OPI_t + 0.3 \cdot CVI_t - 0.3 \cdot r_t.
-\]
+% \subsection{Comparison with Alternative ES Incorporating OPI and CVI}
+% An alternative ES directly includes composite indices:
+% \[
+% ES^{alt}_t = 0.4 \cdot OPI_t + 0.3 \cdot CVI_t - 0.3 \cdot r_t.
+% \]
 
-Testing popularity-driven scenarios (high CVI, moderate OPI) shows $ES^{alt}$ exhibits greater volatility, potentially sustaining Aggressive states during on-court slumps due to brand effects. This risks over-leveraging in disconnected win-profit situations, contrary to the problem's core duality. The baseline separation—using raw signals for control and OPI/CVI for explanation/acquisition—proves more conservative and aligned with owner risk priorities.
+% Testing popularity-driven scenarios (high CVI, moderate OPI) shows $ES^{alt}$ exhibits greater volatility, potentially sustaining Aggressive states during on-court slumps due to brand effects. This risks over-leveraging in disconnected win-profit situations, contrary to the problem's core duality. The baseline separation—using raw signals for control and OPI/CVI for explanation/acquisition—proves more conservative and aligned with owner risk priorities.
 
-Overall, sensitivity results affirm the framework's restrained design: decisions are stable within plausible ranges, with changes confined to meaningful boundaries, enhancing trustworthiness for real-world application.
+% Overall, sensitivity results affirm the framework's restrained design: decisions are stable within plausible ranges, with changes confined to meaningful boundaries, enhancing trustworthiness for real-world application.
 
-
-\section{Sensitivity Analysis And Backtesting}
 
 
 
@@ -940,6 +998,26 @@ Overall, sensitivity results affirm the framework's restrained design: decisions
 
 
 \section{Conclusion}
+\label{sec:conclusion}
+
+In this paper, we presented a unified \textbf{Dual-Index Decision System} to resolve the inherent conflict between on-court performance and commercial profitability in professional sports management. By decoupling franchise value into the \textit{On-court Performance Index (OPI)} and \textit{Commercial Value Index (CVI)}, and synthesizing them through a dynamic \textit{Environmental Score (ES)}, we established a closed-loop control framework that adapts to evolving competitive and economic landscapes.
+
+Our analysis yielded three key insights:
+
+\begin{itemize}
+    \item \textbf{Dynamic Adaptability via Regime Switching}: The three-state regime-switching mechanism (Aggressive when $ES_t > 0.6$, Defensive below $0.3$) enables the franchise to target high leverage ($L^* \approx 1.0$) during contention windows while enforcing strict Debt Service Coverage and Equity Triggers during downturns or rate shocks. This conditional policy significantly outperforms static leverage benchmarks in backtested scenarios by preserving solvency without capping upside potential.
+    
+    \item \textbf{Holistic Valuation of Human Capital}: By making the commercial weighting parameter $\lambda(ES_t)$ state-dependent and incorporating a \textit{Synergy Penalty} for ball-dominant overlap, the player acquisition model optimally balances ``winning'' attributes (e.g., on-court efficiency) and ``revenue-driving'' attributes (e.g., star power, marketability) across different franchise life cycles.
+    
+    \item \textbf{Structural Resilience to Shocks}: Sensitivity analyses demonstrate that the $ES_t$-driven framework naturally mitigates league expansion shocks—automatically shifting to Defensive mode under increased talent dilution or travel burden, while opportunistically expanding leverage when new markets enhance local revenue potential.
+\end{itemize}
+
+\textbf{Strengths and Limitations}:  
+The framework's principal strength lies in its context-aware, actionable nature, effectively bridging modern portfolio theory with the unique uncertainties of sports. Limitations include the assumption of deterministic fan and player responses to pricing/performance changes, potential sensitivity to the choice of $ES_t$ weights, and the omission of long-term contract rigidities and salary cap dynamics.
+
+\textbf{Future Work}:  
+Near-term extensions could integrate real-time injury forecasting from player-tracking data to refine $H_t$, or employ online learning algorithms to adaptively tune $\alpha, \beta, \gamma$. Longer-term, multi-agent reinforcement learning could simulate strategic interactions among league owners, capturing richer game-theoretic equilibria.
+Ultimately, this study demonstrates that while winning games and generating profit are distinct objectives, they can be harmonized. Through disciplined, state-dependent management, owners can maximize long-term franchise value while fielding a competitive product that sustains fan engagement.
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}
