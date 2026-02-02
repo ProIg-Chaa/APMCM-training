@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  2 FEB 2026 18:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.28)  2 FEB 2026 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -625,29 +625,33 @@ Package hyperref Info: Link coloring OFF on input line 39.
 \@outlinefile=\write4
 \openout4 = `mcmthesis-demo.out'.
 
- [1
-
-{d:/programfile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 56.
- (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-) (./mcmthesis-demo.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 59.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 3.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 59.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+Overfull \hbox (10.69655pt too wide) in paragraph at lines 59--59
+\T1/ppl/b/n/12 Keywords\T1/ppl/m/n/12 : Pro-fes-sional Sports Man-age-ment; Dual-Index De-ci-sion Sys-tem; Dy-namic Lever-
+ []
+
+[1
+
+{d:/programfile/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/programfile/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 61.
+ (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+) (./mcmthesis-demo.toc
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -659,7 +663,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...alue $V^{biz}_i$}{10}{subsubsection.5.1.2}
+l.29 ...ue $V^{sport}_i$}{11}{subsubsection.5.1.1}
                                                   % [1])
 \tf@toc=\write5
 \openout5 = `mcmthesis-demo.toc'.
@@ -676,18 +680,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57  \newpage
+l.62  \newpage
                [2]
-<figures/intro.jpg, id=270, 986.68625pt x 948.54375pt>
+<figures/intro.jpg, id=278, 986.68625pt x 948.54375pt>
 File: figures/intro.jpg Graphic file (type jpg)
 <use figures/intro.jpg>
-Package pdftex.def Info: figures/intro.jpg  used on input line 74.
+Package pdftex.def Info: figures/intro.jpg  used on input line 79.
 (pdftex.def)             Requested size: 187.89914pt x 180.63045pt.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 81.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 86.
  (d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Overfull \hbox (6.35988pt too wide) in paragraph at lines 89--90
+Overfull \hbox (6.35988pt too wide) in paragraph at lines 94--95
 []\T1/ppl/m/n/12 Conventional ap-proaches of-ten treat com-pet-i-tive met-rics (e.g., win con-tri-bu-tions, clutch
  []
 
@@ -702,29 +706,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.90 
+l.95 
       <./figures/intro.jpg>]
-Overfull \hbox (22.69426pt too wide) in alignment at lines 110--116
+Overfull \hbox (22.69426pt too wide) in alignment at lines 115--121
  [] [] [] 
  []
 
 
-Overfull \hbox (22.69426pt too wide) in alignment at lines 116--121
+Overfull \hbox (22.69426pt too wide) in alignment at lines 121--126
  [] [] [] 
  []
 
 
-Overfull \hbox (22.69426pt too wide) in alignment at lines 121--125
+Overfull \hbox (22.69426pt too wide) in alignment at lines 126--130
  [] [] [] 
  []
 
 
-Overfull \hbox (22.69426pt too wide) in alignment at lines 125--128
+Overfull \hbox (22.69426pt too wide) in alignment at lines 130--133
  [] [] [] 
  []
 
 
-Overfull \hbox (22.69426pt too wide) in alignment at lines 128--159
+Overfull \hbox (22.69426pt too wide) in alignment at lines 133--164
  [] [] [] 
  []
 
@@ -736,6 +740,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
+Overfull \hbox (47.014pt too wide) in paragraph at lines 181--195
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -751,12 +759,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4]
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \[
+        ]
 
-LaTeX Warning: Reference `sec:debt' on page 5 undefined on input line 242.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5]
+
+LaTeX Warning: Reference `sec:debt' on page 6 undefined on input line 280.
 
 
-Overfull \hbox (8.13628pt too wide) in paragraph at lines 242--243
+Overfull \hbox (8.13628pt too wide) in paragraph at lines 280--281
 []\T1/ppl/m/n/12 This state ma-chine en-ables con-di-tional op-ti-mal-ity: in fa-vor-able en-vi-ron-ments the frame-
  []
 
@@ -767,11 +788,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.243 
+l.290 
       ]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -780,17 +801,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 323.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [7]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 361.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -798,33 +811,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.374 \section
-              {Model II: Player Acquisition Strategy}]
-<figures/ques2.png, id=344, 609.02531pt x 331.2375pt>
-File: figures/ques2.png Graphic file (type png)
-<use figures/ques2.png>
-Package pdftex.def Info: figures/ques2.png  used on input line 384.
-(pdftex.def)             Requested size: 375.80544pt x 204.39975pt.
+[8]
+Overfull \hbox (8.04384pt too wide) in paragraph at lines 410--411
+\T1/ppl/m/n/12 ob-served 2024 trade-deadline ac-tions, fo-cus-ing on move in-ten-sity and competitive-window
+ []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 394.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 412.
+(d:/programfile/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 412--412
+[][][][]$\T1/pcr/m/n/10 https : / / www . nba . com / news / grizzlies-[]trade-[]steven-[]adams-[]to-[]rockets$[]\T1/ppl/m/n/10 ; []$\T1/pcr/m/n/10 https :
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -834,26 +832,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.399 \]
-         <./figures/ques2.png (PNG copy)>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 419.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 419.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 419.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 419.
+l.415 
+      ]
+<figures/ques2.png, id=364, 609.02531pt x 331.2375pt>
+File: figures/ques2.png Graphic file (type png)
+<use figures/ques2.png>
+Package pdftex.def Info: figures/ques2.png  used on input line 456.
+(pdftex.def)             Requested size: 375.80544pt x 204.39975pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -862,13 +850,71 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10]
-Overfull \hbox (3.99748pt too wide) in paragraph at lines 452--453
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.460 
+      ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 466.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 466.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 466.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 466.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.487 \end{itemize}
+                    <./figures/ques2.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 491.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 491.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 491.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 491.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12]
+Overfull \hbox (3.99748pt too wide) in paragraph at lines 524--525
 []\T1/ppl/m/n/12 where $\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g$ \T1/ppl/m/n/12 in-di-cates se-lec-tion/re-ten-tion of player $\OML/cmm/m/it/12 i$\T1/ppl/m/n/12 , $\OML/cmm/m/it/12 Cost[]$ \T1/ppl/m/n/12 in-cludes salary, luxury-
  []
 
 
-Overfull \hbox (3.61516pt too wide) in paragraph at lines 458--459
+Overfull \hbox (3.61516pt too wide) in paragraph at lines 530--531
 []\T1/ppl/m/n/12 Positional bal-ance: min-i-mum re-quire-ments per po-si-tion/-role (e.g., guards, for-wards,
  []
 
@@ -879,45 +925,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[12
-pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.538     \[
-            ]
-
-LaTeX Warning: Reference `sec:backtesting' on page 13 undefined on input line 553.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
 [13]
-Overfull \hbox (23.49515pt too wide) detected at line 579
-\OML/cmm/m/it/12 CVI[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 CVI[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 Share \OT1/cmr/m/n/12 + ^^A\OML/cmm/m/it/12 Attention;  \OT1/cmr/m/n/12 (^^A\OML/cmm/m/it/12 Share > \OT1/cmr/m/n/12 0[]^^A\OML/cmm/m/it/12 Attention > \OT1/cmr/m/n/12 0[])
- []
 
+LaTeX Warning: Reference `sec:backtesting' on page 14 undefined on input line 625.
 
-Overfull \hbox (37.6013pt too wide) in paragraph at lines 591--592
-\T1/ppl/m/n/12 vival) boosts league-wide vis-i-bil-ity with min-i-mal di-rect com-pe-ti-tion, in-creas-ing $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 Attention$
- []
-
-<figures/ques3.jpg, id=374, 1027.84pt x 530.98375pt>
-File: figures/ques3.jpg Graphic file (type jpg)
-<use figures/ques3.jpg>
-Package pdftex.def Info: figures/ques3.jpg  used on input line 628.
-(pdftex.def)             Requested size: 328.82707pt x 169.86964pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -926,11 +937,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.640     \item I
-                 f positive attention dominates (e.g., successful market ent... <./figures/ques3.jpg>]
+l.629 \section
+              {Model III: League Expansion Scenario Analysis}]
+Overfull \hbox (23.49515pt too wide) detected at line 651
+\OML/cmm/m/it/12 CVI[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 CVI[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 Share \OT1/cmr/m/n/12 + ^^A\OML/cmm/m/it/12 Attention;  \OT1/cmr/m/n/12 (^^A\OML/cmm/m/it/12 Share > \OT1/cmr/m/n/12 0[]^^A\OML/cmm/m/it/12 Attention > \OT1/cmr/m/n/12 0[])
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -939,36 +954,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[17
-pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.788 T
-       his integration ensures pricing supports overall goals: Aggressive re...]
-Overfull \hbox (17.1003pt too wide) in paragraph at lines 820--821
-[]\T1/ppl/m/n/12 Unlike static op-ti-miza-tion mod-els, our state-machine ap-proach must demon-strate **struc-
+Overfull \hbox (37.6013pt too wide) in paragraph at lines 663--664
+\T1/ppl/m/n/12 vival) boosts league-wide vis-i-bil-ity with min-i-mal di-rect com-pe-ti-tion, in-creas-ing $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 Attention$
  []
 
-<figures/sensity.png, id=403, 1129.21875pt x 789.70032pt>
-File: figures/sensity.png Graphic file (type png)
-<use figures/sensity.png>
-Package pdftex.def Info: figures/sensity.png  used on input line 827.
-(pdftex.def)             Requested size: 328.82707pt x 229.95917pt.
+<figures/ques3.jpg, id=405, 1027.84pt x 530.98375pt>
+File: figures/ques3.jpg Graphic file (type jpg)
+<use figures/ques3.jpg>
+Package pdftex.def Info: figures/ques3.jpg  used on input line 700.
+(pdftex.def)             Requested size: 328.82707pt x 169.86964pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.727     \]
+             <./figures/ques3.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -985,33 +1000,55 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [19
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.883 \end{itemize}
+                   ]
+Overfull \hbox (17.1003pt too wide) in paragraph at lines 892--893
+[]\T1/ppl/m/n/12 Unlike static op-ti-miza-tion mod-els, our state-machine ap-proach must demon-strate **struc-
+ []
+
+<figures/sensity.png, id=433, 1129.21875pt x 789.70032pt>
+File: figures/sensity.png Graphic file (type png)
+<use figures/sensity.png>
+Package pdftex.def Info: figures/sensity.png  used on input line 899.
+(pdftex.def)             Requested size: 328.82707pt x 229.95917pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[20
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.844 \subsubsection
-                    {Scenario A: Sudden Injury Shock (Tail Risk)} <./figures/sensity.png (PNG copy)>]
-Overfull \hbox (8.74431pt too wide) in paragraph at lines 867--868
+l.906     \item \textbf
+                       {Aggressive Region (Green, Top-Right Corner of Feasib... <./figures/sensity.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[21]
+Overfull \hbox (8.74431pt too wide) in paragraph at lines 939--940
 \T1/ppl/m/n/12 (high $\OML/cmm/m/it/12 CVI$\T1/ppl/m/n/12 ) de-spite poor cur-rent per-for-mance ($\OML/cmm/m/it/12 OPI$\T1/ppl/m/n/12 ), lead-ing to dan-ger-ous over-leveraging. 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[20]
-Overfull \hbox (10.99332pt too wide) in paragraph at lines 1010--1011
+Overfull \hbox (10.99332pt too wide) in paragraph at lines 1078--1079
 \T1/ppl/m/n/12 ram-e-ter $\OML/cmm/m/it/12 ^^U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ES[]\OT1/cmr/m/n/12 )$ \T1/ppl/m/n/12 state-dependent and in-cor-po-rat-ing a \T1/ppl/m/it/12 Syn-ergy Penalty \T1/ppl/m/n/12 for ball-dominant
  []
 
 
-Overfull \hbox (4.1545pt too wide) in paragraph at lines 1012--1013
+Overfull \hbox (4.1545pt too wide) in paragraph at lines 1080--1081
 \T1/ppl/m/n/12 driven frame-work nat-u-rally mit-i-gates league ex-pan-sion shocks^^Vautomatically shift-
  []
 
-(./mcmthesis-demo.bbl
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1019,7 +1056,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[21])
+[22]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1027,7 +1064,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22] 
+[23]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[24] (./mcmthesis-demo.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+[]\T1/ppl/m/n/12 NBA.com News, ``Griz-zlies' ja morant to un-dergo season-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+\T1/ppl/m/n/12 ending shoul-der surgery,'' []$https : / / www . nba . com / news /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+\T1/ppl/m/n/12 grizzlies-[]ja-[]morant-[]to-[]undergo-[]season-[]ending-[]shoulder-[]surgery$[], 2023, ac-cessed:
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[25] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./mcmthesis-demo.aux)
  ***********
@@ -1039,21 +1107,21 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `mcmthesis-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 93E34B3153C6ACB0B60753E0B1124FB8;11337.
+(rerunfilecheck)             Checksum: D5176C71E91F74D96C7811E65BA1A99D;11652.
  ) 
 Here is how much of TeX's memory you used:
- 16055 strings out of 476065
- 251194 string characters out of 5791683
- 1940190 words of memory out of 5000000
- 37711 multiletter control sequences out of 15000+600000
- 597362 words of font info for 115 fonts, out of 8000000 for 9000
+ 16149 strings out of 476065
+ 252367 string characters out of 5791683
+ 1944190 words of memory out of 5000000
+ 37769 multiletter control sequences out of 15000+600000
+ 605533 words of font info for 143 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,18n,93p,1025b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on mcmthesis-demo.pdf (25 pages, 692972 bytes).
+ 90i,18n,93p,1025b,540s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><d:/programfile/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on mcmthesis-demo.pdf (28 pages, 701049 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
- 413 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 586 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
 

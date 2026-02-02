@@ -2,48 +2,51 @@
 \contentsline {section}{\numberline {2}Preparation of the Models}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Assumptions}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Notations}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Key Parameters and Calibration}{3}{subsection.2.3}%
 \contentsline {section}{\numberline {3}The Dual-Index Model}{3}{section.3}%
 \contentsline {subsection}{\numberline {3.1}The Dual-Index Framework}{4}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}On-court Performance Index (OPI)}{4}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Commercial Value Index (CVI)}{4}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Environmental Score (ES) as State Signal}{4}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}Commercial Value Index (CVI)}{5}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Environmental Score (ES) as State Signal}{5}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Three-State Regime and Action Mapping}{5}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Alternative ES Formulation Incorporating OPI and CVI}{5}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Model I: Dynamic Leverage Control (DLC) -- Addressing Q1}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Problem Restatement and Modeling Objective}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}System Variables}{6}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Environmental Score and State Machine}{6}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}System Dynamics and Constraints}{7}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Financial Updates}{7}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Safety Constraints}{7}{subsubsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}Control Policy}{7}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Target Leverage and Adjustment}{7}{subsubsection.4.5.1}%
+\contentsline {subsection}{\numberline {3.4}Alternative ES Formulation Incorporating OPI and CVI}{6}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Model I: Dynamic Leverage Control (DLC) -- Addressing Q1}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problem Restatement and Modeling Objective}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}System Variables}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Environmental Score and State Machine}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}System Dynamics and Constraints}{8}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Financial Updates}{8}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Safety Constraints}{8}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Control Policy}{8}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Target Leverage and Adjustment}{8}{subsubsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.6}Algorithm Implementation}{8}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Empirical Validation: NBA Case Study}{8}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Optimality Discussion}{8}{subsection.4.8}%
-\contentsline {section}{\numberline {5}Model II: Player Acquisition Strategy}{9}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Player Valuation: Dual-Value Framework with Team Context}{9}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Competitive Value $V^{sport}_i$}{9}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Commercial Value $V^{biz}_i$}{10}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Composite Value with State-Dependent Weighting}{11}{subsubsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.2}Acquisition Optimization and Constraints}{11}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Illustrative Example of Player Acquisition}{12}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Strengths and Limitations}{13}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Model III: League Expansion Scenario Analysis}{13}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Structural Impacts of Expansion}{13}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Impact of New Team Locations}{14}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Strategy Adjustments Under Expansion}{15}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Illustrative Example of Expansion Impacts}{15}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Additional Business Decision: Dynamic Ticket Pricing Strategy}{16}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Demand and Revenue Model}{17}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}State-Driven Pricing Policy}{17}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Illustrative Example of Pricing Application}{18}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Sensitivity Analysis and Model Robustness}{18}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Decision Boundary Analysis}{18}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Stress Testing: Response to Exogenous Shocks}{20}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Scenario A: Sudden Injury Shock (Tail Risk)}{20}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Scenario B: Interest Rate Spike (Systematic Risk)}{20}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Scenario C: League Expansion (Structural Shock)}{20}{subsubsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.3}Benchmarking against Alternative Formulations}{20}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Model Evaluation and Further Discussion}{21}{section.9}%
-\contentsline {section}{\numberline {10}Conclusion}{21}{section.10}%
+\contentsline {subsection}{\numberline {4.7}Empirical Validation and Reality Check: NBA Case Study (2023--24)}{9}{subsection.4.7}%
+\contentsline {paragraph}{Model outputs.}{9}{section*.1}%
+\contentsline {paragraph}{Reality check against front-office behavior.}{9}{section*.2}%
+\contentsline {subsection}{\numberline {4.8}Optimality Discussion}{10}{subsection.4.8}%
+\contentsline {section}{\numberline {5}Model II: Player Acquisition Strategy}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Player Valuation: Dual-Value Framework with Team Context}{11}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Competitive Value $V^{sport}_i$}{11}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Commercial Value $V^{biz}_i$}{12}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Composite Value with State-Dependent Weighting}{12}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Acquisition Optimization and Constraints}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Illustrative Example of Player Acquisition}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Strengths and Limitations}{14}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Model III: League Expansion Scenario Analysis}{15}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Structural Impacts of Expansion}{15}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Impact of New Team Locations}{15}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Strategy Adjustments Under Expansion}{16}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Illustrative Example of Expansion Impacts}{16}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Additional Business Decision: Dynamic Ticket Pricing Strategy}{18}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Demand and Revenue Model}{18}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}State-Driven Pricing Policy}{18}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Illustrative Example of Pricing Application}{19}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Sensitivity Analysis and Model Robustness}{20}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Decision Boundary Analysis}{20}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Stress Testing: Response to Exogenous Shocks}{21}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Scenario A: Sudden Injury Shock (Tail Risk)}{21}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Scenario B: Interest Rate Spike (Systematic Risk)}{21}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Scenario C: League Expansion (Structural Shock)}{22}{subsubsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.3}Benchmarking against Alternative Formulations}{22}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Conclusion And Model Evaluation}{22}{section.9}%
+\contentsline {section}{\numberline {10}Letter}{23}{section.10}%
